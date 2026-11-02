@@ -1,0 +1,14 @@
+---
+id: "ec2"
+area: devops
+subject: aws
+group: "Cómputo"
+title: "Amazon EC2 y AMI"
+summary: "Instancias, tipos, AMI, red, roles, user data, almacenamiento, etiquetas y grupos de seguridad."
+icon: "▣"
+source: "Tema 6 - Computación"
+---
+
+import NoteSections from "../../../../../components/NoteSections.astro";
+
+<NoteSections sections={[{"title":"Qué es EC2","html":"<p><b>Amazon Elastic Compute Cloud (EC2)<\/b> proporciona máquinas virtuales llamadas instancias. El usuario tiene control sobre el sistema operativo invitado y puede lanzar capacidad en las AZ disponibles.<\/p>"},{"title":"AMI","html":"<p>Una <b>Amazon Machine Image<\/b> es una plantilla para crear una instancia EC2. Incluye un sistema operativo y puede incluir software adicional. Los apuntes diferencian AMI de inicio rápido, AMI propias y AMI de Marketplace/comunidad.<\/p><div class=\"diagram\"><div class=\"flow\"><span class=\"node\">AMI<\/span><span class=\"arrow\">→<\/span><span class=\"node\">Lanzar<\/span><span class=\"arrow\">→<\/span><span class=\"node\">Instancia EC2<\/span><\/div><\/div>"},{"title":"Tipo de instancia","html":"<p>El tipo determina recursos como CPU, memoria, almacenamiento y rendimiento de red. Se agrupan en familias de propósito general, optimizadas para cómputo, memoria, almacenamiento y cómputo acelerado.<\/p>"},{"title":"Decisiones al lanzar una instancia","html":"<ol><li>AMI.<\/li><li>Tipo de instancia.<\/li><li>Configuración de red.<\/li><li>Rol de IAM opcional.<\/li><li>User data opcional.<\/li><li>Almacenamiento.<\/li><li>Etiquetas.<\/li><li>Grupo de seguridad.<\/li><li>Par de claves.<\/li><\/ol>"},{"title":"User data, tags y security groups","html":"<p><b>User data<\/b> permite ejecutar scripts al iniciar la instancia para personalizarla. Las <b>tags<\/b> añaden metadatos clave-valor útiles para filtrado, automatización, costes y control. Los <b>security groups<\/b> definen reglas de firewall para el tráfico de la instancia.<\/p>"}]} />

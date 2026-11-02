@@ -1,0 +1,22 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import { areas, subjects } from "../../config/library";
+const allNotes = await getCollection("notes");
+export function getStaticPaths() { return areas.map((area) => ({ params: { area: area.id }, props: { area } })); }
+const { area } = Astro.props;
+const root = import.meta.env.BASE_URL;
+---
+<BaseLayout title={area.title}>
+  <div class="breadcrumb"><a href={root}>Biblioteca</a> / {area.title}</div>
+  <section class="page-intro reveal"><span class="eyebrow">Área de estudio</span><h1>{area.title}</h1><p class="lead">{area.description}</p></section>
+  <div class="subject-grid">{area.subjects.map((id) => {
+    const subject = subjects[id];
+    const count = allNotes.filter((note) => note.data.subject === id).length;
+    return <a class="subject-card" href={`${root}materias/${id}/`}>
+      <div class="subject-top"><span class="area-icon" aria-hidden="true">{subject.icon}</span><span class="count-label">{count ? `${count} apuntes` : "Colección nueva"}</span></div>
+      <h3>{subject.title}</h3><p>{subject.description}</p>
+      <span class="arrow">{count ? "Abrir materia" : "Preparar materia"} <span aria-hidden="true">→</span></span>
+    </a>;
+  })}</div>
+</BaseLayout>

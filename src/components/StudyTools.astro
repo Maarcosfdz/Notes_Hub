@@ -1,0 +1,16 @@
+---
+const { subject } = Astro.props;
+const root = import.meta.env.BASE_URL;
+const pathname = Astro.url.pathname;
+const tools = subject === "aws" ? [
+  { label: "Apuntes", href: `${root}materias/aws/`, match: pathname === `${root}materias/aws/` },
+  { label: "Preguntas", href: `${root}materias/aws/preguntas/`, match: pathname.includes("/preguntas/") },
+  { label: "Glosario", href: `${root}materias/aws/terminos/`, match: pathname.includes("/terminos/") },
+  { label: "Comparativas", href: `${root}materias/aws/comparativas/`, match: pathname.includes("/comparativas/") },
+  { label: "Progreso", href: `${root}materias/aws/estadisticas/`, match: pathname.includes("/estadisticas/") },
+] : [];
+---
+{tools.length > 0 && <nav class="study-nav" aria-label="Herramientas de estudio de AWS">
+  <span class="study-nav-label">Estudia AWS</span>
+  {tools.map((tool) => <a href={tool.href} aria-current={tool.match ? "page" : undefined}>{tool.label}</a>)}
+</nav>}

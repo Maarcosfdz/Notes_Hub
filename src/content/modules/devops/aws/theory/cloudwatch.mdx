@@ -1,0 +1,14 @@
+---
+id: "cloudwatch"
+area: devops
+subject: aws
+group: "Monitorización y escalado"
+title: "Amazon CloudWatch"
+summary: "Métricas, alarmas, eventos y relación con Auto Scaling."
+icon: "◔"
+source: "Tema 9 - Amazon CloudWatch"
+---
+
+import NoteSections from "../../../../../components/NoteSections.astro";
+
+<NoteSections sections={[{"title":"Monitorización y observabilidad","html":"<p>CloudWatch es el servicio de monitorización y observabilidad de AWS. Recopila y sigue métricas de recursos y aplicaciones.<\/p>"},{"title":"Métricas y alarmas","html":"<p>Los apuntes distinguen métricas estándar y personalizadas. Una alarma se construye a partir de una métrica o expresión, estadística, periodo, umbral/condición y acciones.<\/p><ul><li>Ejemplo: CPU media de EC2 por encima de un umbral durante un periodo.<\/li><li>Las alarmas pueden notificar mediante SNS.<\/li><li>También pueden desencadenar acciones de Auto Scaling o EC2.<\/li><\/ul>"},{"title":"Eventos","html":"<p>CloudWatch también puede responder a eventos o cambios del entorno y dirigirlos a destinos para su procesamiento.<\/p>"}]} />

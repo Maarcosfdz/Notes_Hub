@@ -1,0 +1,660 @@
+[
+  [
+    "AWS",
+    "Amazon Web Services",
+    "Fundamentos",
+    "cloud-basics",
+    "Plataforma de servicios cloud accesibles bajo demanda."
+  ],
+  [
+    "AZ",
+    "Availability Zone",
+    "Infraestructura",
+    "global-infra",
+    "Partición aislada de la infraestructura dentro de una región."
+  ],
+  [
+    "PoP",
+    "Point of Presence",
+    "Infraestructura",
+    "global-infra",
+    "Ubicación perimetral usada para acercar servicios y contenido a usuarios."
+  ],
+  [
+    "IAM",
+    "Identity and Access Management",
+    "Seguridad",
+    "iam",
+    "Gestión de identidades, autenticación y permisos."
+  ],
+  [
+    "MFA",
+    "Multi-Factor Authentication",
+    "Seguridad",
+    "iam",
+    "Segundo factor de autenticación además de usuario y contraseña."
+  ],
+  [
+    "SCP",
+    "Service Control Policy",
+    "Seguridad",
+    "organizations",
+    "Política de Organizations que limita permisos máximos de cuentas u OU."
+  ],
+  [
+    "OU",
+    "Organizational Unit",
+    "Seguridad",
+    "organizations",
+    "Agrupación jerárquica de cuentas en AWS Organizations."
+  ],
+  [
+    "KMS",
+    "Key Management Service",
+    "Seguridad",
+    "security-services",
+    "Creación y administración de claves de cifrado."
+  ],
+  [
+    "CloudTrail",
+    "AWS CloudTrail",
+    "Seguridad",
+    "security-services",
+    "Registro de actividad y llamadas API de la cuenta."
+  ],
+  [
+    "Config",
+    "AWS Config",
+    "Seguridad",
+    "security-services",
+    "Evaluación e historial de configuraciones de recursos."
+  ],
+  [
+    "Cognito",
+    "Amazon Cognito",
+    "Seguridad",
+    "security-services",
+    "Registro, inicio de sesión y acceso para usuarios de aplicaciones."
+  ],
+  [
+    "Shield",
+    "AWS Shield",
+    "Seguridad",
+    "security-services",
+    "Protección administrada frente a ataques DDoS."
+  ],
+  [
+    "VPC",
+    "Virtual Private Cloud",
+    "Redes",
+    "vpc",
+    "Red virtual lógicamente aislada dentro de AWS."
+  ],
+  [
+    "CIDR",
+    "Classless Inter-Domain Routing",
+    "Redes",
+    "networking-basics",
+    "Notación para representar rangos de direcciones IP."
+  ],
+  [
+    "ENI",
+    "Elastic Network Interface",
+    "Redes",
+    "vpc",
+    "Interfaz de red virtual asociable a una instancia."
+  ],
+  [
+    "EIP",
+    "Elastic IP",
+    "Redes",
+    "vpc",
+    "Dirección IPv4 pública estática y reasignable."
+  ],
+  [
+    "IGW",
+    "Internet Gateway",
+    "Redes",
+    "vpc-connectivity",
+    "Gateway administrado que conecta una VPC con Internet."
+  ],
+  [
+    "NAT Gateway",
+    "Network Address Translation Gateway",
+    "Redes",
+    "vpc-connectivity",
+    "Permite salida a Internet desde subredes privadas sin aceptar conexiones entrantes iniciadas desde Internet."
+  ],
+  [
+    "VPC Peering",
+    "VPC Peering Connection",
+    "Redes",
+    "vpc-connectivity",
+    "Interconexión privada entre dos VPC sin solapamiento de rangos."
+  ],
+  [
+    "VPN",
+    "Site-to-Site VPN",
+    "Redes",
+    "vpc-connectivity",
+    "Conexión cifrada entre una red externa y AWS a través de Internet."
+  ],
+  [
+    "DX",
+    "AWS Direct Connect",
+    "Redes",
+    "vpc-connectivity",
+    "Conexión dedicada y privada entre red corporativa y AWS."
+  ],
+  [
+    "SG",
+    "Security Group",
+    "Redes",
+    "vpc-security",
+    "Firewall stateful a nivel de instancia."
+  ],
+  [
+    "NACL",
+    "Network ACL",
+    "Redes",
+    "vpc-security",
+    "Firewall stateless a nivel de subred."
+  ],
+  [
+    "CloudFront",
+    "Amazon CloudFront",
+    "Redes",
+    "edge-dns",
+    "CDN que entrega contenido desde ubicaciones de borde."
+  ],
+  [
+    "Route 53",
+    "Amazon Route 53",
+    "Redes",
+    "edge-dns",
+    "Servicio DNS de AWS."
+  ],
+  [
+    "EC2",
+    "Elastic Compute Cloud",
+    "Cómputo",
+    "ec2",
+    "Máquinas virtuales en AWS."
+  ],
+  [
+    "AMI",
+    "Amazon Machine Image",
+    "Cómputo",
+    "ec2",
+    "Plantilla usada para crear instancias EC2."
+  ],
+  [
+    "User Data",
+    "EC2 User Data",
+    "Cómputo",
+    "ec2",
+    "Script/datos ejecutados al iniciar una instancia para personalizarla."
+  ],
+  [
+    "ECS",
+    "Elastic Container Service",
+    "Contenedores",
+    "containers",
+    "Orquestación administrada de contenedores en AWS."
+  ],
+  [
+    "EKS",
+    "Elastic Kubernetes Service",
+    "Contenedores",
+    "containers",
+    "Kubernetes administrado en AWS."
+  ],
+  [
+    "ECR",
+    "Elastic Container Registry",
+    "Contenedores",
+    "containers",
+    "Registro administrado de imágenes de contenedores."
+  ],
+  [
+    "Fargate",
+    "AWS Fargate",
+    "Contenedores",
+    "containers",
+    "Ejecución de contenedores sin administrar instancias EC2."
+  ],
+  [
+    "Lambda",
+    "AWS Lambda",
+    "Cómputo",
+    "lambda-beanstalk",
+    "Cómputo serverless basado en funciones."
+  ],
+  [
+    "Beanstalk",
+    "AWS Elastic Beanstalk",
+    "Cómputo",
+    "lambda-beanstalk",
+    "Plataforma administrada para desplegar aplicaciones."
+  ],
+  [
+    "EBS",
+    "Elastic Block Store",
+    "Almacenamiento",
+    "ebs",
+    "Almacenamiento persistente a nivel de bloque para EC2."
+  ],
+  [
+    "Snapshot",
+    "EBS Snapshot",
+    "Almacenamiento",
+    "ebs",
+    "Copia puntual de un volumen EBS usada para recuperación o creación de nuevos volúmenes."
+  ],
+  [
+    "S3",
+    "Simple Storage Service",
+    "Almacenamiento",
+    "s3",
+    "Almacenamiento de objetos basado en buckets."
+  ],
+  [
+    "Bucket",
+    "S3 Bucket",
+    "Almacenamiento",
+    "s3",
+    "Contenedor lógico de objetos de S3 en una región."
+  ],
+  [
+    "Lifecycle",
+    "S3 Lifecycle",
+    "Almacenamiento",
+    "s3",
+    "Reglas que mueven o eliminan objetos automáticamente según antigüedad."
+  ],
+  [
+    "Glacier",
+    "Amazon S3 Glacier",
+    "Almacenamiento",
+    "glacier-efs",
+    "Archivado de bajo coste y recuperación no inmediata."
+  ],
+  [
+    "EFS",
+    "Elastic File System",
+    "Almacenamiento",
+    "glacier-efs",
+    "Sistema de archivos elástico y compartido basado en NFS."
+  ],
+  [
+    "RDS",
+    "Relational Database Service",
+    "Bases de datos",
+    "rds",
+    "Servicio administrado de bases de datos relacionales."
+  ],
+  [
+    "Multi-AZ",
+    "RDS Multi-AZ",
+    "Bases de datos",
+    "rds",
+    "Despliegue de alta disponibilidad con copia en espera en otra AZ."
+  ],
+  [
+    "DynamoDB",
+    "Amazon DynamoDB",
+    "Bases de datos",
+    "dynamodb",
+    "Base NoSQL administrada, particionada y escalable."
+  ],
+  [
+    "Partition Key",
+    "DynamoDB Partition Key",
+    "Bases de datos",
+    "dynamodb",
+    "Clave usada para determinar la partición de un elemento."
+  ],
+  [
+    "Sort Key",
+    "DynamoDB Sort Key",
+    "Bases de datos",
+    "dynamodb",
+    "Segundo componente de una clave primaria compuesta."
+  ],
+  [
+    "Redshift",
+    "Amazon Redshift",
+    "Bases de datos",
+    "redshift-aurora",
+    "Data warehouse administrado orientado a analítica SQL."
+  ],
+  [
+    "Aurora",
+    "Amazon Aurora",
+    "Bases de datos",
+    "redshift-aurora",
+    "Base relacional de AWS compatible con MySQL y PostgreSQL."
+  ],
+  [
+    "ELB",
+    "Elastic Load Balancing",
+    "Escalado",
+    "elb",
+    "Distribución de tráfico entre múltiples destinos."
+  ],
+  [
+    "ALB",
+    "Application Load Balancer",
+    "Escalado",
+    "elb",
+    "Balanceador de capa de aplicación para HTTP/HTTPS."
+  ],
+  [
+    "NLB",
+    "Network Load Balancer",
+    "Escalado",
+    "elb",
+    "Balanceador de capa de transporte para TCP/UDP/TLS."
+  ],
+  [
+    "CLB",
+    "Classic Load Balancer",
+    "Escalado",
+    "elb",
+    "Generación anterior de balanceador de AWS."
+  ],
+  [
+    "GWLB",
+    "Gateway Load Balancer",
+    "Escalado",
+    "elb",
+    "Balanceador orientado a appliances virtuales de red."
+  ],
+  [
+    "CloudWatch",
+    "Amazon CloudWatch",
+    "Monitorización",
+    "cloudwatch",
+    "Métricas, alarmas, eventos y observabilidad."
+  ],
+  [
+    "ASG",
+    "Auto Scaling Group",
+    "Escalado",
+    "autoscaling",
+    "Grupo lógico de instancias EC2 administradas y escaladas conjuntamente."
+  ],
+  [
+    "Auto Scaling",
+    "Amazon EC2 Auto Scaling",
+    "Escalado",
+    "autoscaling",
+    "Ajuste automático de capacidad EC2 según demanda y políticas."
+  ],
+  [
+    "TCO",
+    "Total Cost of Ownership",
+    "Economía",
+    "pricing",
+    "Estimación de costes directos e indirectos de una solución."
+  ],
+  [
+    "AWS Support",
+    "AWS Support",
+    "Soporte",
+    "support-plans",
+    "Planes y recursos de asistencia para operar y solucionar problemas en AWS."
+  ],
+  [
+    "Trusted Advisor",
+    "AWS Trusted Advisor",
+    "Soporte",
+    "support-plans",
+    "Analiza el entorno y recomienda mejoras de coste, rendimiento, seguridad y resiliencia."
+  ],
+  [
+    "TAM",
+    "Technical Account Manager",
+    "Soporte",
+    "support-plans",
+    "Asesor técnico estratégico. Enterprise Support incluye un TAM designado."
+  ],
+  [
+    "Support Concierge",
+    "AWS Support Concierge",
+    "Soporte",
+    "support-plans",
+    "Término clásico asociado a asistencia personalizada de cuenta y facturación en Enterprise."
+  ],
+  [
+    "Business Support+",
+    "AWS Business Support+",
+    "Soporte",
+    "support-plans",
+    "Plan actual orientado a cargas de producción; no incluye TAM designado."
+  ],
+  [
+    "Enterprise Support",
+    "AWS Enterprise Support",
+    "Soporte",
+    "support-plans",
+    "Plan para cargas críticas con TAM designado y orientación proactiva."
+  ],
+  [
+    "Unified Operations",
+    "AWS Unified Operations",
+    "Soporte",
+    "support-plans",
+    "Nivel superior para operaciones de misión crítica con especialistas."
+  ],
+  [
+    "Enterprise On-Ramp",
+    "AWS Enterprise On-Ramp",
+    "Soporte",
+    "support-plans",
+    "Plan en retirada durante 2026; históricamente ofrecía acceso a un pool de TAMs."
+  ],
+  [
+    "AWS Health",
+    "AWS Health",
+    "Soporte",
+    "support-plans",
+    "Eventos y estado personalizado que pueden afectar a recursos de tu cuenta."
+  ],
+  [
+    "Support API",
+    "AWS Support API",
+    "Soporte",
+    "support-plans",
+    "API para automatizar operaciones de soporte disponibles en el plan."
+  ],
+  [
+    "Trusted Advisor Priority",
+    "AWS Trusted Advisor Priority",
+    "Soporte",
+    "support-plans",
+    "Recomendaciones priorizadas y contextualizadas para planes Enterprise/Unified Operations."
+  ],
+  [
+    "re:Post",
+    "AWS re:Post",
+    "Soporte",
+    "support-plans",
+    "Comunidad de conocimiento y preguntas/respuestas de AWS."
+  ],
+  [
+    "CPD",
+    "Centro de Procesamiento de Datos / Data Center",
+    "Infraestructura",
+    "global-infra",
+    "Instalación física con servidores, red, alimentación y demás infraestructura."
+  ],
+  [
+    "Developer Support",
+    "AWS Developer Support",
+    "Soporte",
+    "support-plans",
+    "Plan antiguo para desarrollo/pruebas, con soporte técnico por email en horario laboral. En retirada en 2027."
+  ],
+  [
+    "Business Support",
+    "AWS Business Support",
+    "Soporte",
+    "support-plans",
+    "Plan antiguo 24/7 con conjunto completo de Trusted Advisor. En retirada en 2027."
+  ],
+  [
+    "Simple Routing",
+    "Route 53 Simple Routing",
+    "Redes",
+    "edge-dns",
+    "Routing DNS sencillo hacia un recurso o conjunto básico de valores."
+  ],
+  [
+    "Weighted Routing",
+    "Route 53 Weighted Routing",
+    "Redes",
+    "edge-dns",
+    "Distribuye respuestas DNS entre recursos según pesos/proporciones."
+  ],
+  [
+    "Latency Routing",
+    "Route 53 Latency-Based Routing",
+    "Redes",
+    "edge-dns",
+    "Dirige al recurso que proporciona la menor latencia para el usuario."
+  ],
+  [
+    "Failover Routing",
+    "Route 53 Failover Routing",
+    "Redes",
+    "edge-dns",
+    "Routing activo-pasivo usando un recurso primario y otro secundario."
+  ],
+  [
+    "Geolocation Routing",
+    "Route 53 Geolocation Routing",
+    "Redes",
+    "edge-dns",
+    "Routing según la ubicación geográfica del usuario."
+  ],
+  [
+    "Geoproximity Routing",
+    "Route 53 Geoproximity Routing",
+    "Redes",
+    "edge-dns",
+    "Routing por proximidad geográfica con posibilidad de aplicar bias."
+  ],
+  [
+    "Multivalue Routing",
+    "Route 53 Multivalue Answer Routing",
+    "Redes",
+    "edge-dns",
+    "Devuelve hasta ocho registros saludables seleccionados al azar aproximadamente."
+  ],
+  [
+    "IP-based Routing",
+    "Route 53 IP-based Routing",
+    "Redes",
+    "edge-dns",
+    "Routing basado en el rango IP/CIDR de origen."
+  ],
+  [
+    "TTL",
+    "DNS Time To Live",
+    "Redes",
+    "edge-dns",
+    "Tiempo durante el que una respuesta DNS puede permanecer almacenada en caché."
+  ],
+  [
+    "Health Check",
+    "Route 53 Health Check",
+    "Redes",
+    "edge-dns",
+    "Comprobación de salud usada para evitar endpoints no saludables y facilitar failover."
+  ],
+  [
+    "CDN",
+    "Content Delivery Network",
+    "Redes",
+    "edge-dns",
+    "Red distribuida que acerca contenido a usuarios para reducir latencia."
+  ],
+  [
+    "Edge Location",
+    "CloudFront Edge Location",
+    "Redes",
+    "edge-dns",
+    "Ubicación de borde desde la que CloudFront entrega contenido a usuarios."
+  ],
+  [
+    "Origin",
+    "CloudFront Origin",
+    "Redes",
+    "edge-dns",
+    "Fuente original del contenido que CloudFront distribuye, como S3 o un servidor HTTP."
+  ],
+  [
+    "Cache Hit",
+    "CloudFront Cache Hit",
+    "Redes",
+    "edge-dns",
+    "La ubicación de borde ya tiene el objeto y puede devolverlo sin consultar al origen."
+  ],
+  [
+    "Cache Miss",
+    "CloudFront Cache Miss",
+    "Redes",
+    "edge-dns",
+    "El objeto no está en caché y CloudFront debe recuperarlo del origen."
+  ],
+  [
+    "Regional Edge Cache",
+    "CloudFront Regional Edge Cache",
+    "Redes",
+    "edge-dns",
+    "Capa de caché regional entre edge locations y el origen."
+  ],
+  [
+    "Spot",
+    "EC2 Spot Instance",
+    "Cómputo",
+    "ec2-pricing",
+    "Capacidad EC2 sobrante con gran descuento y posibilidad de interrupción por AWS."
+  ],
+  [
+    "Spot Interruption Notice",
+    "EC2 Spot Instance Interruption Notice",
+    "Cómputo",
+    "ec2-pricing",
+    "Aviso best-effort normalmente emitido dos minutos antes de detener o terminar una Spot Instance."
+  ],
+  [
+    "Kubernetes",
+    "Kubernetes",
+    "Contenedores",
+    "containers",
+    "Plataforma de orquestación de contenedores; EKS es el servicio administrado de Kubernetes en AWS."
+  ],
+  [
+    "NFS",
+    "Network File System",
+    "Almacenamiento",
+    "glacier-efs",
+    "Protocolo de archivos usado por Amazon EFS; soporta NFSv4.0 y NFSv4.1."
+  ],
+  [
+    "EBS Snapshot",
+    "Amazon EBS Snapshot",
+    "Almacenamiento",
+    "storage",
+    "Copia puntual incremental de un volumen EBS, almacenada internamente en Amazon S3."
+  ],
+  [
+    "Standby Replica",
+    "RDS Standby Replica",
+    "Bases de datos",
+    "rds",
+    "Réplica sincronizada en otra AZ usada por RDS Multi-AZ para alta disponibilidad y failover."
+  ]
+]

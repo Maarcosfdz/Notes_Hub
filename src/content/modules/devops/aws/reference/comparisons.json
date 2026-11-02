@@ -1,0 +1,459 @@
+[
+  {
+    "title": "EBS vs EFS vs S3",
+    "cols": [
+      "EBS",
+      "EFS",
+      "S3"
+    ],
+    "rows": [
+      [
+        "Modelo",
+        "Bloques",
+        "Sistema de archivos",
+        "Objetos"
+      ],
+      [
+        "Acceso típico",
+        "Volumen adjunto a EC2",
+        "Compartido por múltiples EC2 mediante NFS",
+        "API/HTTP, CLI, SDK"
+      ],
+      [
+        "Alcance de diseño",
+        "Volumen en una AZ",
+        "Servicio de ficheros elástico",
+        "Bucket en una región"
+      ],
+      [
+        "Cuándo pensarlo",
+        "Disco persistente de una instancia",
+        "Ficheros compartidos",
+        "Objetos, backup, estáticos, multimedia"
+      ]
+    ]
+  },
+  {
+    "title": "Security Group vs NACL",
+    "cols": [
+      "Security Group",
+      "NACL"
+    ],
+    "rows": [
+      [
+        "Nivel",
+        "Instancia",
+        "Subred"
+      ],
+      [
+        "Estado",
+        "Stateful",
+        "Stateless"
+      ],
+      [
+        "Reglas",
+        "Solo permitir",
+        "Permitir y denegar"
+      ],
+      [
+        "Orden",
+        "No importa",
+        "Se evalúan por número"
+      ]
+    ]
+  },
+  {
+    "title": "ALB vs NLB vs CLB vs GWLB",
+    "cols": [
+      "ALB",
+      "NLB",
+      "CLB",
+      "GWLB"
+    ],
+    "rows": [
+      [
+        "Enfoque",
+        "HTTP/HTTPS, capa de aplicación",
+        "TCP/UDP/TLS, capa de transporte",
+        "Generación anterior",
+        "Appliances virtuales de red"
+      ],
+      [
+        "Fortaleza",
+        "Routing de aplicaciones",
+        "Rendimiento y latencia baja",
+        "Compatibilidad heredada",
+        "Inspección/firewalls de terceros"
+      ]
+    ]
+  },
+  {
+    "title": "EC2 vs Lambda vs Fargate",
+    "cols": [
+      "EC2",
+      "Lambda",
+      "Fargate"
+    ],
+    "rows": [
+      [
+        "Unidad",
+        "Máquina virtual",
+        "Función",
+        "Contenedor"
+      ],
+      [
+        "Administración",
+        "Mayor control y mayor gestión",
+        "No administras servidores",
+        "No administras hosts EC2"
+      ],
+      [
+        "Uso conceptual",
+        "Aplicaciones/servidores tradicionales",
+        "Código disparado por eventos",
+        "Contenedores sin gestionar infraestructura"
+      ]
+    ]
+  },
+  {
+    "title": "RDS Multi-AZ vs réplica de lectura",
+    "cols": [
+      "Multi-AZ",
+      "Réplica de lectura"
+    ],
+    "rows": [
+      [
+        "Objetivo principal",
+        "Alta disponibilidad / failover",
+        "Escalar lecturas"
+      ],
+      [
+        "Copia",
+        "En espera",
+        "Legible por aplicaciones"
+      ],
+      [
+        "En los apuntes",
+        "Se enfatiza recuperación automática ante fallo",
+        "Se estudia como concepto distinto de HA"
+      ]
+    ]
+  },
+  {
+    "title": "RDS vs DynamoDB vs Redshift",
+    "cols": [
+      "RDS",
+      "DynamoDB",
+      "Redshift"
+    ],
+    "rows": [
+      [
+        "Modelo",
+        "Relacional",
+        "NoSQL",
+        "Data warehouse"
+      ],
+      [
+        "Consulta",
+        "SQL según motor",
+        "Clave / Query / Scan",
+        "SQL analítico"
+      ],
+      [
+        "Uso",
+        "Aplicaciones transaccionales relacionales",
+        "Baja latencia y escalado horizontal",
+        "Analítica sobre grandes volúmenes"
+      ]
+    ]
+  },
+  {
+    "title": "On-Demand vs Reserved vs Spot",
+    "cols": [
+      "On-Demand",
+      "Reserved",
+      "Spot"
+    ],
+    "rows": [
+      [
+        "Compromiso",
+        "No",
+        "Sí",
+        "No"
+      ],
+      [
+        "Interrupción",
+        "No por el modelo",
+        "No por el modelo",
+        "Puede interrumpirse"
+      ],
+      [
+        "Encaja",
+        "Variable/impredecible",
+        "Predecible y estable",
+        "Flexible/interrumpible"
+      ]
+    ]
+  },
+  {
+    "title": "IAM vs SCP",
+    "cols": [
+      "IAM",
+      "SCP"
+    ],
+    "rows": [
+      [
+        "Ámbito",
+        "Identidades y recursos en una cuenta",
+        "Cuentas/OU de Organizations"
+      ],
+      [
+        "Concede permisos",
+        "Sí, puede permitir",
+        "No concede por sí sola"
+      ],
+      [
+        "Función",
+        "Autorizar acciones concretas",
+        "Definir el máximo permitido"
+      ]
+    ]
+  },
+  {
+    "title": "AWS Support: Business Support+ vs Enterprise vs Unified Operations",
+    "cols": [
+      "Business Support+",
+      "Enterprise Support",
+      "Unified Operations"
+    ],
+    "rows": [
+      [
+        "Uso",
+        "Producción",
+        "Cargas críticas",
+        "Misión crítica"
+      ],
+      [
+        "TAM designado",
+        "No",
+        "Sí",
+        "Sí"
+      ],
+      [
+        "Trusted Advisor",
+        "Conjunto completo",
+        "Completo + Priority",
+        "Completo + Priority"
+      ],
+      [
+        "Enfoque",
+        "Soporte técnico 24/7",
+        "Orientación proactiva y estratégica",
+        "Operación proactiva con especialistas"
+      ]
+    ]
+  },
+  {
+    "title": "TAM vs Support Concierge vs Trusted Advisor",
+    "cols": [
+      "TAM",
+      "Support Concierge",
+      "Trusted Advisor"
+    ],
+    "rows": [
+      [
+        "Qué es",
+        "Figura técnica estratégica",
+        "Ayuda de cuenta/facturación (término clásico)",
+        "Herramienta automática de recomendaciones"
+      ],
+      [
+        "Pregunta típica",
+        "¿Quién da orientación técnica proactiva?",
+        "¿Quién ayuda con cuenta/facturación?",
+        "¿Qué detecta oportunidades de reducir costes?"
+      ],
+      [
+        "Asociación",
+        "Enterprise o superior",
+        "Enterprise en bancos antiguos",
+        "Conjunto completo desde Business Support+"
+      ]
+    ]
+  },
+  {
+    "title": "Route 53: políticas de routing",
+    "cols": [
+      "Weighted",
+      "Latency",
+      "Geolocation",
+      "Failover"
+    ],
+    "rows": [
+      [
+        "Decide por",
+        "Peso o porcentaje",
+        "Menor latencia",
+        "Ubicación del usuario",
+        "Estado primario/secundario"
+      ],
+      [
+        "Ejemplo",
+        "90/10 entre versiones",
+        "Irlanda vs Frankfurt según latencia",
+        "España vs Francia",
+        "Producción + disaster recovery"
+      ],
+      [
+        "Palabra clave",
+        "Porcentaje",
+        "Rendimiento/latencia",
+        "País/continente",
+        "Activo-pasivo"
+      ]
+    ]
+  },
+  {
+    "title": "AWS Support antiguo: Developer vs Business vs On-Ramp vs Enterprise",
+    "cols": [
+      "Developer",
+      "Business",
+      "Enterprise On-Ramp",
+      "Enterprise"
+    ],
+    "rows": [
+      [
+        "Soporte",
+        "Email en horario laboral",
+        "24/7 teléfono/chat/web",
+        "24/7 + respuesta más rápida",
+        "24/7 + máximo acompañamiento"
+      ],
+      [
+        "Trusted Advisor",
+        "Acceso limitado/principal",
+        "Conjunto completo",
+        "Conjunto completo + capacidades proactivas",
+        "Avanzado/Priority"
+      ],
+      [
+        "TAM",
+        "No",
+        "No",
+        "Pool/acceso a TAMs",
+        "TAM designado"
+      ]
+    ]
+  },
+  {
+    "title": "CloudFront: estático vs dinámico",
+    "cols": [
+      "Contenido estático",
+      "Contenido dinámico"
+    ],
+    "rows": [
+      [
+        "Ejemplos",
+        "Imágenes, CSS, JS, HTML, descargas",
+        "Contenido generado/personalizado por una aplicación"
+      ],
+      [
+        "Caché",
+        "Caso clásico y normalmente muy cacheable",
+        "También puede acelerarse; la caché suele requerir una configuración más cuidadosa"
+      ],
+      [
+        "Pregunta básica",
+        "Si preguntan qué entrega principalmente una CDN, suele ser la respuesta esperada",
+        "No significa que CloudFront no pueda servirlo"
+      ]
+    ]
+  },
+  {
+    "title": "CloudFront vs Route 53",
+    "cols": [
+      "CloudFront",
+      "Route 53"
+    ],
+    "rows": [
+      [
+        "Qué es",
+        "CDN",
+        "DNS"
+      ],
+      [
+        "Función",
+        "Entregar/acelerar contenido",
+        "Resolver nombres y elegir destinos"
+      ],
+      [
+        "Mecanismo",
+        "Edge locations + caché",
+        "Políticas de routing DNS"
+      ],
+      [
+        "Ejemplos",
+        "Imágenes, web, vídeo",
+        "Weighted, Latency, Geolocation, Failover"
+      ]
+    ]
+  },
+  {
+    "title": "EBS vs EFS: acceso y protocolo",
+    "cols": [
+      "EBS",
+      "EFS"
+    ],
+    "rows": [
+      [
+        "Tipo",
+        "Bloques",
+        "Archivos"
+      ],
+      [
+        "Acceso",
+        "Volumen adjunto a EC2 a través de la infraestructura de EBS",
+        "Sistema de archivos montado por red"
+      ],
+      [
+        "Protocolo visible para el usuario",
+        "Se presenta como dispositivo de bloques",
+        "NFSv4.0 / NFSv4.1"
+      ],
+      [
+        "Compartición",
+        "Normalmente ligado a una instancia/AZ; Multi-Attach tiene casos concretos",
+        "Diseñado para múltiples clientes simultáneos"
+      ]
+    ]
+  },
+  {
+    "title": "RDS Multi-AZ vs Read Replica",
+    "cols": [
+      "Multi-AZ",
+      "Read Replica"
+    ],
+    "rows": [
+      [
+        "Objetivo",
+        "Alta disponibilidad",
+        "Escalar lecturas"
+      ],
+      [
+        "Replicación",
+        "Síncrona hacia standby en otra AZ en el despliegue clásico",
+        "Asíncrona en el modelo habitual"
+      ],
+      [
+        "Failover",
+        "Automático",
+        "No es su objetivo principal"
+      ],
+      [
+        "Lecturas",
+        "Standby clásica no atiende lecturas",
+        "Sí, puede atender SELECT"
+      ]
+    ]
+  }
+]

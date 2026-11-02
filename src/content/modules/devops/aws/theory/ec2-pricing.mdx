@@ -1,0 +1,14 @@
+---
+id: "ec2-pricing"
+area: devops
+subject: aws
+group: "Cómputo"
+title: "Modelos de precios y optimización de EC2"
+summary: "On-Demand, Reserved, Spot, hosts dedicados y los cuatro pilares de optimización del material."
+icon: "€"
+source: "Tema 6 - Optimización de costes de Amazon EC2"
+---
+
+import NoteSections from "../../../../../components/NoteSections.astro";
+
+<NoteSections sections={[{"title":"Modelos de precios","html":"<ul><li><b>On-Demand:<\/b> pago por uso sin compromiso a largo plazo.<\/li><li><b>Reserved Instances:<\/b> compromiso para obtener descuento en cargas previsibles.<\/li><li><b>Spot:<\/b> aprovecha capacidad sobrante con descuento, pero puede interrumpirse.<\/li><li><b>Dedicated Hosts / Dedicated Instances:<\/b> opciones dedicadas para requisitos de aislamiento o licencias.<\/li><\/ul>"},{"title":"Cuándo encaja cada uno","html":"<p>El material relaciona On-Demand con cargas variables o impredecibles, Spot con cargas flexibles e interrumpibles, Reserved con uso estable y predecible, y dedicado con cargas persistentes o requisitos específicos.<\/p>"},{"title":"Cuatro pilares de optimización","html":"<ol><li>Dimensionamiento adecuado.<\/li><li>Aumentar la elasticidad.<\/li><li>Elegir el modelo de precios óptimo.<\/li><li>Optimizar las opciones de almacenamiento.<\/li><\/ol><p>CloudWatch aparece como fuente de métricas para decidir si una instancia está infrautilizada y debe redimensionarse.<\/p>"},{"title":"Spot Instances: interrupciones y aviso de 2 minutos","html":"<p>Las <b>EC2 Spot Instances<\/b> aprovechan capacidad sobrante de AWS con descuentos muy altos, pero AWS puede recuperar esa capacidad cuando la necesita.<\/p><div class=\"callout warn\"><b>Dato de examen:<\/b> normalmente AWS emite un <b>aviso de interrupción con 2 minutos de antelación<\/b> antes de detener o terminar una Spot Instance. El aviso es <i>best effort<\/i>. Si el comportamiento configurado es <b>hibernar<\/b>, la hibernación comienza inmediatamente y no existe ese margen de dos minutos.<\/div><ul><li>Encajan con cargas tolerantes a fallos, flexibles o stateless.<\/li><li>Ejemplos: batch, CI/CD, renderizado, análisis, contenedores y procesamiento distribuido.<\/li><li>No son adecuadas cuando la carga no tolera interrupciones inesperadas.<\/li><\/ul>"}]} />

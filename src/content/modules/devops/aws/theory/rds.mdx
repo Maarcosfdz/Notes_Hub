@@ -1,0 +1,14 @@
+---
+id: "rds"
+area: devops
+subject: aws
+group: "Bases de datos"
+title: "Amazon RDS y Multi-AZ"
+summary: "Servicio relacional administrado, motores, subredes privadas y alta disponibilidad."
+icon: "◉"
+source: "Tema 8 - Bases de datos"
+---
+
+import NoteSections from "../../../../../components/NoteSections.astro";
+
+<NoteSections sections={[{"title":"Qué resuelve RDS","html":"<p><b>Amazon RDS<\/b> es un servicio administrado para bases de datos relacionales. AWS automatiza tareas que, al instalar una base de datos por cuenta propia, recaerían en el usuario: mantenimiento del servidor, parte del parcheado, copias de seguridad y disponibilidad.<\/p>"},{"title":"Motores","html":"<p>Los apuntes muestran motores como MySQL, Amazon Aurora, SQL Server, PostgreSQL, MariaDB, Oracle e IBM Db2.<\/p>"},{"title":"RDS dentro de una VPC","html":"<p>La arquitectura mostrada sitúa normalmente la base de datos en una <b>subred privada<\/b>, accesible desde la capa de aplicación y no expuesta directamente a los usuarios.<\/p>"},{"title":"Multi-AZ","html":"<p>En un despliegue Multi-AZ se mantiene una copia en espera en otra zona de disponibilidad. Si falla la principal, RDS puede realizar failover hacia la instancia en espera.<\/p><div class=\"callout\"><b>Clave de examen:<\/b> Multi-AZ está orientado a alta disponibilidad y recuperación ante fallos, no a descargar lecturas de la instancia principal.<\/div>"},{"title":"Multi-AZ: réplica síncrona y failover automático","html":"<p>En un despliegue <b>RDS Multi-AZ<\/b> clásico, AWS aprovisiona y mantiene una <b>réplica en espera síncrona en otra Availability Zone<\/b>.<\/p><ul><li>Su objetivo principal es <b>alta disponibilidad<\/b>.<\/li><li>La réplica standby clásica no se usa para descargar consultas de lectura.<\/li><li>Si la instancia primaria falla, RDS realiza <b>failover automáticamente<\/b> sin intervención administrativa.<\/li><\/ul><div class=\"callout warn\"><b>No confundir:<\/b> <b>Multi-AZ = alta disponibilidad<\/b>. <b>Read Replica = escalado de lecturas<\/b>.<\/div>"}]} />

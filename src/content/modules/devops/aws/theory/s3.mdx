@@ -1,0 +1,14 @@
+---
+id: "s3"
+area: devops
+subject: aws
+group: "Almacenamiento"
+title: "Amazon S3 y clases de almacenamiento"
+summary: "Buckets, objetos, redundancia regional, clases, costes, lifecycle y seguridad."
+icon: "▰"
+source: "Tema 7 - Amazon S3"
+---
+
+import NoteSections from "../../../../../components/NoteSections.astro";
+
+<NoteSections sections={[{"title":"Modelo de S3","html":"<p>S3 almacena datos como <b>objetos<\/b> dentro de <b>buckets<\/b>. Un bucket se crea en una región y los objetos tienen datos y metadatos. El material destaca acceso mediante consola, CLI, SDK y API REST.<\/p>"},{"title":"Redundancia y casos de uso","html":"<p>Los objetos se almacenan de forma redundante dentro de la región. Casos de uso que aparecen: copias de seguridad, almacenamiento de aplicaciones, hosting web estático, multimedia y distribución de software.<\/p>"},{"title":"Clases de almacenamiento","html":"<ul><li>S3 Standard.<\/li><li>S3 Standard-IA.<\/li><li>S3 One Zone-IA.<\/li><li>S3 Intelligent-Tiering.<\/li><li>S3 Glacier.<\/li><li>S3 Glacier Deep Archive.<\/li><\/ul><p>La lógica es elegir una clase según frecuencia de acceso, durabilidad, disponibilidad, latencia y coste.<\/p>"},{"title":"Lifecycle","html":"<p>Las <b>políticas de ciclo de vida<\/b> pueden mover objetos entre clases o eliminarlos automáticamente según su antigüedad. Es una de las herramientas de optimización de costes del almacenamiento.<\/p>"},{"title":"Seguridad","html":"<p>Los buckets y objetos se consideran privados de forma predeterminada. El material menciona bloqueo de acceso público, IAM, políticas de bucket, ACL y cifrado.<\/p>"}]} />

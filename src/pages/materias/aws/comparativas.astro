@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import StudyTools from "../../../components/StudyTools.astro";
+import comparisons from "../../../content/modules/devops/aws/reference/comparisons.json";
+const root = import.meta.env.BASE_URL;
+---
+<BaseLayout title="Comparativas AWS">
+  <div class="breadcrumb"><a href={root}>Biblioteca</a> / <a href={`${root}materias/aws/`}>AWS</a> / Comparativas</div>
+  <section class="page-intro"><span class="eyebrow">Aprender por contraste / AWS</span><h1>Comparar para entender.</h1><p class="lead">16 comparativas para distinguir servicios, modelos y decisiones de arquitectura.</p><StudyTools subject="aws" /></section>
+  <div class="note-list">{comparisons.map((item) => <section class="card"><h2>{item.title}</h2><div class="table-wrap"><table class="data-table"><thead><tr>{item.rows[0].map((cell) => <th>{cell}</th>)}</tr></thead><tbody>{item.rows.slice(1).map((row) => <tr>{row.map((cell, index) => index === 0 ? <th>{cell}</th> : <td>{cell}</td>)}</tr>)}</tbody></table></div></section>)}</div>
+</BaseLayout>

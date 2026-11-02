@@ -1,0 +1,14 @@
+---
+id: "dynamodb"
+area: devops
+subject: aws
+group: "Bases de datos"
+title: "Amazon DynamoDB"
+summary: "NoSQL administrado, tablas, elementos, atributos, particiones, claves y Query vs Scan."
+icon: "⚡"
+source: "Tema 8 - Amazon DynamoDB"
+---
+
+import NoteSections from "../../../../../components/NoteSections.astro";
+
+<NoteSections sections={[{"title":"SQL vs NoSQL","html":"<p>Los apuntes contraponen bases relacionales con esquemas fijos, tablas y SQL frente a bases NoSQL con modelos más flexibles y escalado horizontal.<\/p>"},{"title":"Qué es DynamoDB","html":"<p>DynamoDB es una base de datos <b>NoSQL administrada<\/b>, pensada para baja latencia y escalabilidad. Los datos se distribuyen automáticamente en particiones.<\/p>"},{"title":"Tablas, elementos y atributos","html":"<p>Una tabla contiene <b>elementos<\/b> y cada elemento contiene <b>atributos<\/b>. Los elementos pueden tener distintos atributos entre sí y cada elemento debe ser identificable mediante su clave principal.<\/p>"},{"title":"Claves","html":"<ul><li><b>Clave de partición:<\/b> una única clave primaria simple.<\/li><li><b>Clave compuesta:<\/b> clave de partición + clave de ordenación.<\/li><\/ul><p>La clave de partición influye en dónde se almacena físicamente el elemento.<\/p>"},{"title":"Query vs Scan","html":"<p><b>Query<\/b> aprovecha la clave para localizar elementos de forma eficiente. <b>Scan<\/b> recorre la tabla buscando coincidencias y es menos eficiente.<\/p>"}]} />

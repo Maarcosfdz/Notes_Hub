@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const root = import.meta.env.BASE_URL;
+---
+<BaseLayout title="Organizar los apuntes" description="Guía para añadir y organizar apuntes en la biblioteca.">
+  <div class="breadcrumb"><a href={root}>Biblioteca</a> / Organizar los apuntes</div>
+  <article class="article">
+    <header class="article-head reveal"><span class="eyebrow">Guía de la biblioteca</span><h1>Un sitio para cada idea.</h1><p class="article-summary">Cada área reúne materias. Cada materia puede tener teoría, preguntas y referencias, guardadas junto al resto del contenido del proyecto.</p></header>
+
+    <section class="card guide-section"><span class="section-kicker">01 / Estructura</span><h2>Organiza el contenido por módulo</h2><p>Las materias viven bajo <code>src/content/modules/</code>. Usa una carpeta por área y otra por materia:</p><pre><code>src/content/modules/
+  devops/
+    aws/
+      theory/       # apuntes en Markdown o MDX
+      questions/    # banco de preguntas JSON
+      reference/    # glosario y tablas de referencia</code></pre><p>Así, AWS queda dentro de DevOps y las demás materias mantienen la misma estructura aunque al principio solo tengan apuntes.</p></section>
+
+    <section class="card guide-section"><span class="section-kicker">02 / Apuntes</span><h2>Un archivo por tema</h2><p>Crea un archivo <code>.mdx</code> en <code>theory/</code>. El identificador del archivo se usa en los enlaces internos.</p><pre><code>---
+id: "principio-responsabilidad-unica"
+area: development
+subject: clean-code
+group: "Principios"
+title: "Principio de responsabilidad única"
+summary: "Una descripción breve para encontrar el apunte."
+source: "Libro, curso o enlace de referencia"
+---
+
+## Idea principal
+
+Explica el concepto con tus palabras.
+
+## Ejemplo
+
+Incluye un ejemplo y enlaza con otros apuntes cuando aporte contexto.</code></pre></section>
+
+    <section class="card guide-section"><span class="section-kicker">03 / Práctica</span><h2>Preguntas y referencias</h2><p>Las preguntas se guardan en <code>questions/bank.json</code>; cada respuesta incluye tema, nivel, opciones, índices correctos y una explicación. Los glosarios y comparativas van en <code>reference/</code>. AWS ya tiene esas herramientas conectadas a su progreso local.</p><p>Al añadir contenido, ejecuta <code>pnpm verify:content</code> y <code>pnpm build</code> antes de publicar.</p></section>
+
+    <nav class="article-pager" aria-label="Volver a la biblioteca"><a href={`${root}materias/aws/`}><span>DevOps / AWS</span><strong>Volver a los apuntes →</strong></a><a href={root}><span>Inicio</span><strong>Explorar la biblioteca →</strong></a></nav>
+  </article>
+</BaseLayout>

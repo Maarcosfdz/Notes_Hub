@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import StudyTools from "../../../components/StudyTools.astro";
+import terms from "../../../content/modules/devops/aws/reference/glossary.json";
+const root = import.meta.env.BASE_URL;
+const groups = ["Todos", ...new Set(terms.map((term) => term[2]))];
+---
+<BaseLayout title="Glosario AWS">
+  <div class="breadcrumb"><a href={root}>Biblioteca</a> / <a href={`${root}materias/aws/`}>AWS</a> / Glosario</div>
+  <section class="page-intro"><span class="eyebrow">Glosario / AWS</span><h1>Términos clave.</h1><p class="lead">94 conceptos enlazados con su explicación dentro de los apuntes.</p><StudyTools subject="aws" /></section>
+  <input class="search-box" type="search" placeholder="Buscar término o significado…" aria-label="Filtrar términos" data-search />
+  <div class="filters" data-groups>{groups.map((group) => <button class="filter-button" type="button" data-group={group}>{group}</button>)}</div>
+  <p class="result-count" data-count></p>
+  <div class="table-wrap"><table class="data-table"><thead><tr><th>Término</th><th>Significado</th><th>Grupo</th><th>Apuntes</th></tr></thead><tbody>{terms.map((term) => <tr class="term-row" data-term data-group={term[2]} data-search-text={term.join(" ").toLocaleLowerCase("es")}><td><strong>{term[0]}</strong> · {term[1]}</td><td>{term[4]}</td><td>{term[2]}</td><td><a href={`${root}materias/aws/${term[3]}/`}>Abrir →</a></td></tr>)}</tbody></table></div>
+  <script lang="ts">
+    const search = document.querySelector("[data-search]"); const rows = [...document.querySelectorAll("[data-term]")]; const count = document.querySelector("[data-count]"); let group = "Todos";
+    function filter() { const query = search.value.trim().toLocaleLowerCase("es"); let visible = 0; for (const row of rows) { const show = (group === "Todos" || row.getAttribute("data-group") === group) && (row.getAttribute("data-search-text") || "").includes(query); row.toggleAttribute("hidden", !show); if (show) visible++; } count.textContent = `${visible} términos`; }
+    for (const button of document.querySelectorAll("[data-group]")) button.addEventListener("click", () => { group = button.getAttribute("data-group") || "Todos"; for (const item of document.querySelectorAll(".filter-button")) item.classList.toggle("active", item === button); filter(); });
+    search.addEventListener("input", filter); document.querySelector(".filter-button")?.classList.add("active"); filter();
+  </script>
+</BaseLayout>

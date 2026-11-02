@@ -1,0 +1,14 @@
+---
+id: "vpc"
+area: devops
+subject: aws
+group: "Redes"
+title: "Amazon VPC, subredes y direccionamiento"
+summary: "Bloques CIDR, subredes públicas/privadas, ENI, IP públicas/elásticas y tablas de rutas."
+icon: "▦"
+source: "Tema 5 - Amazon VPC"
+---
+
+import NoteSections from "../../../../../components/NoteSections.astro";
+
+<NoteSections sections={[{"title":"Qué es una VPC","html":"<p><b>Amazon VPC<\/b> permite aprovisionar una sección lógicamente aislada de la nube. Dentro de ella se despliegan recursos en una red virtual definida por el usuario.<\/p><ul><li>Selección de rangos IP.<\/li><li>Creación de subredes.<\/li><li>Configuración de tablas de rutas y gateways.<\/li><li>Soporte IPv4/IPv6.<\/li><li>Capas de seguridad mediante grupos de seguridad y NACL.<\/li><\/ul>"},{"title":"VPC y subredes","html":"<p>Una VPC pertenece a una única región y puede abarcar varias AZ. Una <b>subred<\/b> pertenece a una sola AZ y representa un intervalo de direcciones IP dentro del bloque de la VPC. Puede clasificarse como pública o privada según su conectividad y rutas.<\/p>"},{"title":"Bloques CIDR y direcciones reservadas","html":"<p>Los apuntes indican que, al crear una VPC, se asigna un bloque CIDR IPv4. Para las subredes, AWS reserva varias direcciones de cada bloque para funciones internas como red, router, DNS, uso futuro y broadcast.<\/p>"},{"title":"ENI e IP","html":"<p>Una <b>Elastic Network Interface (ENI)<\/b> es una interfaz de red virtual. Puede asociarse a instancias y conservar atributos cuando se reasigna. Cada instancia en una VPC obtiene una dirección IPv4 privada. Una <b>Elastic IP<\/b> es una IPv4 pública estática asociada a la cuenta y que puede reasignarse.<\/p>"},{"title":"Tablas de enrutamiento","html":"<p>Una tabla contiene reglas que dirigen tráfico desde una subred hacia destinos. Cada ruta combina <b>destino<\/b> y <b>objetivo<\/b>. Existe una ruta local para la comunicación interna de la VPC.<\/p>"}]} />

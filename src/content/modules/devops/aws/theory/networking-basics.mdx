@@ -1,0 +1,14 @@
+---
+id: "networking-basics"
+area: devops
+subject: aws
+group: "Redes"
+title: "Redes, IPv4/IPv6, CIDR y modelo OSI"
+summary: "Bases de red necesarias antes de entrar en VPC: direcciones IP, CIDR y capas OSI."
+icon: "⌁"
+source: "Tema 5 - Redes y entrega de contenido"
+---
+
+import NoteSections from "../../../../../components/NoteSections.astro";
+
+<NoteSections sections={[{"title":"Red y subred","html":"<p>Una red conecta máquinas para compartir recursos y puede dividirse lógicamente en subredes aisladas. Los dispositivos de red, como routers y switches, permiten conectar segmentos y dirigir comunicaciones.<\/p>"},{"title":"IPv4 e IPv6","html":"<p>Una dirección IP identifica una máquina en una red. Los apuntes muestran IPv4 como direcciones de 32 bits e IPv6 como direcciones de 128 bits.<\/p>"},{"title":"CIDR","html":"<p><b>Classless Inter-Domain Routing<\/b> es una notación compacta para representar rangos de direcciones IP. En <code>192.0.2.0/24<\/code>, el <code>/24<\/code> indica cuántos bits forman el prefijo de red.<\/p><div class=\"callout\"><b>Casos extremos:<\/b> en IPv4, /32 representa una única dirección y /0 representa todo el espacio de direcciones.<\/div>"},{"title":"Modelo OSI","html":"<p>Los apuntes repasan las siete capas: física, enlace, red, transporte, sesión, presentación y aplicación. Es útil para ubicar protocolos y para entender, por ejemplo, que ALB trabaja a nivel de aplicación y NLB a nivel de transporte.<\/p>"}]} />

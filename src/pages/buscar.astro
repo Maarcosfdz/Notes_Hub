@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import { subjects } from "../config/library";
+import terms from "../content/modules/devops/aws/reference/glossary.json";
+const notes = await getCollection("notes");
+const root = import.meta.env.BASE_URL;
+const index = [
+  ...notes.map((note) => ({
+    title: note.data.title,
+    summary: note.data.summary,
+    group: `${subjects[note.data.subject]?.title ?? note.data.subject} · ${note.data.group}`,
+    url: `${root}materias/${note.data.subject}/${note.data.id}/`,
+    text: `${note.data.title} ${note.data.summary} ${note.data.group} ${(note.body ?? "").replace(/<[^>]*>/g, " ")}`,
+  })),
+  ...terms.map((term) => ({ title: `${term[0]} · ${term[1]}`, summary: term[4], group: `AWS · ${term[2]}`, url: `${root}materias/aws/${term[3]}/`, text: term.join(" ") })),
+];
+---
+<BaseLayout title="Buscar">
+  <section class="page-intro reveal"><span class="eyebrow">Encuentra una idea</span><h1>Buscar en tus apuntes.</h1><p class="lead">Busca conceptos, materias y explicaciones. Los resultados te llevan directamente al apunte donde aparece cada idea.</p></section>
+  <label class="section-kicker" for="library-search">Busca por palabra o concepto</label>
+  <input id="library-search" class="search-box" type="search" placeholder="Por ejemplo: IAM, refactorización, inglés…" aria-label="Buscar en los apuntes" data-search />
+  <p class="result-count" data-result-count aria-live="polite">Escribe algo para buscar.</p>
+  <div class="note-list" data-results></div>
+  <script define:vars={{ index }}>
+    const input = document.querySelector("[data-search]");
+    const output = document.querySelector("[data-results]");
+    const count = document.querySelector("[data-result-count]");
+    const normalize = (value) => value.toLocaleLowerCase("es").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    const render = () => {
+      const query = normalize(input.value.trim());
+      const results = query ? index.filter((item) => normalize(item.text).includes(query)).slice(0, 60) : [];
+      count.textContent = query ? `${results.length} resultado${results.length === 1 ? "" : "s"}${results.length === 60 ? " · muestra los primeros 60" : ""}` : "Escribe algo para buscar.";
+      output.replaceChildren(...results.map((item) => {
+        const link = document.createElement("a"); link.className = "note-link"; link.href = item.url;
+        const icon = document.createElement("span"); icon.className = "note-icon"; icon.setAttribute("aria-hidden", "true"); icon.textContent = item.group.slice(0, 2).toLocaleUpperCase("es");
+        const content = document.createElement("span"); const title = document.createElement("h3"); title.textContent = item.title;
+        const summary = document.createElement("p"); summary.textContent = `${item.group} · ${item.summary}`; content.append(title, summary); link.append(icon, content); return link;
+      }));
+    };
+    input.value = new URLSearchParams(location.search).get("q") || "";
+    input.addEventListener("input", render);
+    render();
+  </script>
+</BaseLayout>

@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import StudyTools from "../../../components/StudyTools.astro";
+import { getCollection } from "astro:content";
+import { subjects, areas } from "../../../config/library";
+const allNotes = await getCollection("notes");
+export function getStaticPaths() { return Object.keys(subjects).map((subject) => ({ params: { subject } })); }
+const slug = Astro.params.subject!;
+const subject = subjects[slug];
+const root = import.meta.env.BASE_URL;
+const notes = allNotes.filter((note) => note.data.subject === slug).sort((a, b) => a.data.group.localeCompare(b.data.group, "es") || a.data.title.localeCompare(b.data.title, "es"));
+const groups = [...new Set(notes.map((note) => note.data.group))];
+const area = areas.find((item) => item.id === subject.area);
+---
+<BaseLayout title={subject.title} description={subject.description}>
+  <div class="breadcrumb"><a href={root}>Biblioteca</a> / <a href={`${root}areas/${subject.area}/`}>{area?.title ?? subject.area}</a> / {subject.title}</div>
+  <section class="page-intro reveal"><span class="eyebrow">{area?.title ?? "Colección"} / materia</span><h1>{subject.title}</h1><p class="lead">{subject.description}</p></section>
+  {notes.length > 0 ? <>
+    {slug === "aws" && <StudyTools subject={slug} />}
+    <div class="section-heading"><div><span class="section-kicker">Ruta de estudio</span><h2>{notes.length} apuntes</h2><p>Ordenados por tema para que encuentres el hilo de cada idea.</p></div></div>
+    <div class="note-list">{groups.map((group) => {
+      const groupedNotes = notes.filter((note) => note.data.group === group);
+      return <section aria-labelledby={`group-${group.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}>
+        <div class="note-group"><h2 id={`group-${group.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}>{group}</h2><span>{String(groupedNotes.length).padStart(2, "0")} {groupedNotes.length === 1 ? "apunte" : "apuntes"}</span></div>
+        {groupedNotes.map((note) => <a class="note-link" href={`${root}materias/${slug}/${note.data.id}/`}>
+          <span class="note-icon" aria-hidden="true">{String(group).slice(0, 2).toLocaleUpperCase("es")}</span>
+          <span><h3>{note.data.title}</h3><p>{note.data.summary}</p></span>
+          <span class="note-meta">Leer apunte <span aria-hidden="true">→</span></span>
+        </a>)}
+      </section>;
+    })}</div>
+  </> : <section class="empty reveal"><strong>Esta colección está preparada para tus apuntes.</strong><p>Aún no hay contenido aquí. Puedes añadir teoría, preguntas y referencias sin cambiar la estructura de la biblioteca.</p><a href={`${root}como-aportar/`}>Ver cómo organizar y añadir apuntes →</a></section>}
+</BaseLayout>

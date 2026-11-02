@@ -1,0 +1,14 @@
+---
+id: "storage"
+area: devops
+subject: aws
+group: "Almacenamiento"
+title: "EBS, S3 y EFS: tres modelos distintos"
+summary: "Bloques, objetos y archivos: qué problema resuelve cada servicio."
+icon: "▱"
+source: "Tema 7 - Almacenamiento"
+---
+
+import NoteSections from "../../../../../components/NoteSections.astro";
+
+<NoteSections sections={[{"title":"La comparación esencial","html":"<div class=\"compare\"><table><tr><th>Servicio<\/th><th>Modelo<\/th><th>Idea clave<\/th><\/tr><tr><td>EBS<\/td><td>Bloques<\/td><td>Volumen persistente asociado a EC2, normalmente dentro de la misma AZ.<\/td><\/tr><tr><td>S3<\/td><td>Objetos<\/td><td>Datos almacenados como objetos dentro de buckets.<\/td><\/tr><tr><td>EFS<\/td><td>Archivos<\/td><td>Sistema de archivos compartido y elástico accesible por múltiples instancias.<\/td><\/tr><\/table><\/div>"},{"title":"Bloques vs objetos","html":"<p>Los apuntes utilizan un ejemplo muy visual: si se cambia una parte de un archivo, el almacenamiento en bloques puede modificar el bloque afectado; en almacenamiento de objetos se actualiza el objeto completo.<\/p>"},{"title":"EBS y EFS: ambos se acceden por red, pero no son lo mismo","html":"<p>Una afirmación que puede aparecer en preguntas es que <b>EBS y EFS son servicios de almacenamiento accesibles a través de la red<\/b>. Es correcta, pero representan modelos distintos.<\/p><div class=\"compare\"><table><tr><th>EBS<\/th><th>EFS<\/th><\/tr><tr><td>Almacenamiento en <b>bloques<\/b><\/td><td>Almacenamiento de <b>archivos<\/b><\/td><\/tr><tr><td>Se adjunta a EC2 y el sistema lo trata de forma parecida a un disco local<\/td><td>Se monta como sistema de archivos compartido<\/td><\/tr><tr><td>El volumen y la instancia deben estar en la <b>misma AZ<\/b><\/td><td>Puede compartirse entre múltiples clientes y AZ según la configuración<\/td><\/tr><tr><td>No es un “file share” NFS<\/td><td>Usa <b>NFS<\/b><\/td><\/tr><\/table><\/div>"},{"title":"EBS Snapshots y Amazon S3","html":"<p>Una <b>EBS Snapshot<\/b> es una copia puntual e incremental de un volumen EBS.<\/p><div class=\"callout good\"><b>Dato de examen:<\/b> las instantáneas de EBS se almacenan internamente en <b>Amazon S3<\/b>, en buckets administrados por AWS a los que tú <b>no accedes directamente<\/b> mediante la consola o API de S3.<\/div><p>Puedes utilizar una snapshot para crear nuevos volúmenes EBS y restaurarlos en cualquier AZ de la región correspondiente.<\/p>"}]} />

@@ -1,0 +1,57 @@
+---
+import "../styles/global.css";
+const { title = "Biblioteca", description = "Apuntes, conceptos y recursos organizados por áreas y materias." } = Astro.props;
+const root = import.meta.env.BASE_URL;
+const path = Astro.url.pathname;
+---
+<!doctype html>
+<html lang="es" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f5f2eb" />
+    <title>{title} · Notes Hub</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+      <a class="wordmark" href={root} aria-label="Notes Hub, inicio">
+        <span class="mark" aria-hidden="true">n.</span><span>Notes Hub<span class="wordmark-soft">/</span></span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <a href={root} aria-current={path === root ? "page" : undefined}>Biblioteca</a>
+        <a href={`${root}buscar/`} aria-current={path.includes("/buscar/") ? "page" : undefined}>Buscar</a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-search" href={`${root}buscar/`} aria-label="Buscar apuntes">
+          <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.8" cy="10.8" r="6.5"/><path d="m16 16 4.3 4.3"/></svg>
+          <span class="search-label">Buscar apuntes</span>
+        </a>
+        <button class="theme-toggle" type="button" aria-label="Cambiar a tema oscuro" data-theme-toggle>
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.3 15.1A8.4 8.4 0 0 1 8.9 3.7 8.5 8.5 0 1 0 20.3 15.1Z"/></svg>
+          <span class="theme-label">Tema</span>
+        </button>
+      </div>
+    </header>
+    <main id="contenido"><slot /></main>
+    <footer><span>Un espacio personal para aprender con calma.</span><a href={root}>Volver a la biblioteca ↑</a></footer>
+    <script lang="ts">
+      import { migrate } from "../scripts/progress";
+      migrate("aws");
+      const toggle = document.querySelector("[data-theme-toggle]");
+      const storedTheme = localStorage.getItem("studyTheme");
+      const applyTheme = (theme) => {
+        document.documentElement.dataset.theme = theme;
+        document.querySelector('meta[name="theme-color"]')?.setAttribute("content", theme === "dark" ? "#191d1a" : "#f5f2eb");
+        toggle?.setAttribute("aria-label", theme === "dark" ? "Cambiar a tema claro" : "Cambiar a tema oscuro");
+      };
+      applyTheme(storedTheme === "dark" ? "dark" : "light");
+      toggle?.addEventListener("click", () => {
+        const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+        applyTheme(next);
+        localStorage.setItem("studyTheme", next);
+      });
+    </script>
+  </body>
+</html>

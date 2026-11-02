@@ -1,0 +1,17 @@
+---
+interface Props { title?: string; nodes: string[] }
+const { title, nodes } = Astro.props;
+---
+<figure class="study-diagram" aria-label={title || "Diagrama"}>
+  {title && <figcaption>{title}</figcaption>}
+  <ol>{nodes.map((node, index) => <li><span>{node}</span>{index < nodes.length - 1 && <span class="diagram-arrow" aria-hidden="true">→</span>}</li>)}</ol>
+</figure>
+
+<style>
+  .study-diagram { margin: 1.5rem 0; padding: 1rem 1.2rem; overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+  figcaption { margin-bottom: .8rem; color: var(--muted); font-size: .8rem; }
+  ol { display: flex; align-items: center; gap: .65rem; width: max-content; max-width: 100%; margin: 0; padding: 0; list-style: none; }
+  li { display: flex; align-items: center; gap: .65rem; }
+  li > span:first-child { padding: .5rem .75rem; border: 1px solid var(--line); border-radius: 8px; background: var(--surface-raised); }
+  .diagram-arrow { color: var(--accent); }
+</style>

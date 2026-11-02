@@ -1,0 +1,12 @@
+---
+interface Props {
+  sections: { title: string; html: string }[];
+}
+const { sections } = Astro.props;
+---
+{sections.map((section, index) => (
+  <details class="accordion" open={index === 0}>
+    <summary>{section.title}<span aria-hidden="true">＋</span></summary>
+    <div class="accordion-body" set:html={section.html} />
+  </details>
+))}

@@ -1,0 +1,14 @@
+---
+id: "containers"
+area: devops
+subject: aws
+group: "Cómputo"
+title: "Contenedores, Docker, ECS, EKS, ECR y Fargate"
+summary: "Virtualización por contenedores, orquestación y alternativas de ejecución."
+icon: "▤"
+source: "Tema 6 - Servicios de contenedores"
+---
+
+import NoteSections from "../../../../../components/NoteSections.astro";
+
+<NoteSections sections={[{"title":"Contenedores","html":"<p>Los apuntes presentan los contenedores como una virtualización a nivel de sistema operativo. Comparten el kernel y empaquetan lo necesario para ejecutar una aplicación de forma reproducible.<\/p><p>Frente a las VM, suelen iniciar y detenerse más rápido porque no necesitan un sistema operativo invitado completo por contenedor.<\/p>"},{"title":"Docker","html":"<p>Docker permite crear, probar y desplegar aplicaciones empaquetadas en contenedores. Una imagen contiene la definición necesaria; un contenedor es una ejecución de esa imagen.<\/p>"},{"title":"Amazon ECS","html":"<p><b>Elastic Container Service<\/b> es el servicio administrado de contenedores de AWS. Administra el clúster y la ejecución/escalado de contenedores. Los apuntes muestran integración con balanceadores, EBS, IAM y grupos de seguridad.<\/p>"},{"title":"Fargate","html":"<p>Fargate aparece como una opción para ejecutar contenedores sin tener que administrar las instancias EC2 del clúster. La idea clave es reducir la gestión de infraestructura.<\/p>"},{"title":"Kubernetes y EKS","html":"<p>Kubernetes orquesta contenedores a gran escala y automatiza aprovisionamiento, red, balanceo y escalado. <b>Amazon EKS<\/b> permite ejecutar Kubernetes en AWS sin administrar el plano de control.<\/p>"},{"title":"Amazon ECR","html":"<p><b>Elastic Container Registry<\/b> es el registro administrado para almacenar y administrar imágenes de contenedores y se integra con ECS.<\/p>"},{"title":"Qué gestiona realmente Amazon EKS","html":"<p><b>Amazon EKS<\/b> es el servicio administrado de Kubernetes de AWS. La idea de examen es: <b>EKS = Kubernetes administrado<\/b>.<\/p><div class=\"callout\"><b>Matiz importante:<\/b> decir “ejecutar Kubernetes sin gestionarlo” es una simplificación. AWS administra el <b>plano de control de Kubernetes<\/b> y su disponibilidad/escalado. Según cómo despliegues los nodos de trabajo, también puedes reducir o eliminar su gestión usando <b>EKS Auto Mode<\/b> o <b>AWS Fargate<\/b>.<\/div><div class=\"diagram\"><div class=\"flow\"><span class=\"node\">Kubernetes<\/span><span class=\"arrow\">→<\/span><span class=\"node\">Amazon EKS<br><small>control plane administrado<\/small><\/span><span class=\"arrow\">→<\/span><span class=\"node\">EC2 / Fargate / Auto Mode<br><small>workers<\/small><\/span><\/div><\/div>"}]} />

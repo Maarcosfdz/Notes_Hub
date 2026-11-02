@@ -1,0 +1,14 @@
+---
+id: "vpc-connectivity"
+area: devops
+subject: aws
+group: "Redes"
+title: "Internet Gateway, NAT, Peering, VPN y Direct Connect"
+summary: "Cómo sale y entra tráfico de una VPC y cómo se interconectan redes."
+icon: "⇄"
+source: "Tema 5 - VPC networking"
+---
+
+import NoteSections from "../../../../../components/NoteSections.astro";
+
+<NoteSections sections={[{"title":"Internet Gateway","html":"<p>Un <b>Internet Gateway (IGW)<\/b> es un servicio administrado, altamente disponible y escalable que permite comunicación entre recursos con IP pública e Internet. Se utiliza como objetivo en tablas de rutas para tráfico hacia Internet.<\/p>"},{"title":"NAT Gateway","html":"<p>Permite que instancias de subredes privadas inicien conexiones hacia Internet u otros servicios sin aceptar conexiones entrantes iniciadas desde Internet. Los apuntes lo sitúan en una subred pública y lo asocian a una Elastic IP.<\/p>"},{"title":"VPC Peering","html":"<p>Conecta VPC de forma privada. Restricciones destacadas en los apuntes:<\/p><ul><li>Los espacios IP no pueden solaparse.<\/li><li>No se admite enrutamiento transitivo.<\/li><li>La conexión es entre dos VPC.<\/li><\/ul>"},{"title":"Site-to-Site VPN y Direct Connect","html":"<p><b>Site-to-Site VPN<\/b> conecta una red corporativa con AWS a través de Internet mediante una conexión VPN. <b>Direct Connect<\/b> establece una conexión dedicada y privada entre la red corporativa y una ubicación de AWS Direct Connect.<\/p>"}]} />
