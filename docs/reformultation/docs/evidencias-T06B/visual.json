@@ -1,0 +1,9 @@
+{
+  "screenshots": [
+    "quiz-desktop-light.png",
+    "quiz-desktop-dark.png",
+    "quiz-mobile-dark.png"
+  ],
+  "syntheticOnly": true,
+  "independentHumanReview": false
+}

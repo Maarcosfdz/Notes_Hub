@@ -1,0 +1,17 @@
+import fs from 'node:fs';import path from 'node:path';import os from 'node:os';import {randomBytes,randomUUID} from 'node:crypto';import {spawn,spawnSync} from 'node:child_process';import {chromium} from 'playwright';
+export const must=(value,message)=>{if(!value)throw Error(message);};
+export async function setupServer(phase){
+ const dir=fs.mkdtempSync(path.join(os.tmpdir(),`notes-hub-${phase}-`)),port='4330',base=`http://127.0.0.1:${port}`;
+ const env={...process.env,NODE_ENV:'production',NOTES_DATA_DIR:dir,NOTES_DB_PATH:path.join(dir,'synthetic.sqlite'),BETTER_AUTH_SECRET:randomBytes(48).toString('base64url'),NOTES_ORIGIN:base,HOST:'127.0.0.1',PORT:port};
+ Object.assign(process.env,env);
+ const {migrateAuth}=await import('../../../src/server/auth.ts');await migrateAuth();
+ const users=[];for(const label of ['a','b']){const user={email:`synthetic-${label}-${randomUUID()}@example.invalid`,password:randomBytes(24).toString('base64url'),name:`Synthetic ${label}`};const result=spawnSync(process.execPath,['scripts/users.mjs','create',user.email,user.name],{env,input:user.password,encoding:'utf8',windowsHide:true});must(result.status===0,'Administrative creation failed (credentials omitted)');users.push(user);}
+ const child=spawn(process.execPath,['dist/server/entry.mjs'],{env,stdio:['ignore','pipe','pipe'],windowsHide:true});let serverLog='';child.stdout.on('data',s=>{serverLog+=s.toString();});child.stderr.on('data',s=>{serverLog+=s.toString();});
+ for(let i=0;i<200;i++){try{const r=await fetch(base+'/login');if(r.status===200)break;}catch{}if(child.exitCode!==null)throw Error('Development server exited before readiness');await new Promise(r=>setTimeout(r,100));if(i===199)throw Error('Development server readiness timeout');}
+ const cache=path.join(process.env.LOCALAPPDATA||path.join(os.homedir(),'AppData/Local'),'ms-playwright');let executable=chromium.executablePath();
+ if(!fs.existsSync(executable)&&fs.existsSync(cache)){const candidates=fs.readdirSync(cache).filter(n=>/^chromium-\d+$/.test(n)).sort((a,b)=>Number(b.split('-')[1])-Number(a.split('-')[1]));for(const c of candidates)for(const name of ['chrome-win64/chrome.exe','chrome-win/chrome.exe']){const f=path.join(cache,c,name);if(fs.existsSync(f)){executable=f;break;}}}
+ let browser;try{browser=await chromium.launch({executablePath:executable,headless:true});}catch{child.kill();throw Error('Isolated Chromium launch failed; check installed browser executable');}
+ return{dir,env,base,users,browser,child,admin:(command,user,password)=>spawnSync(process.execPath,['scripts/users.mjs',command,user.email],{env,input:password,encoding:'utf8',windowsHide:true}),async close(){await browser.close();child.kill();await new Promise(resolve=>{if(child.exitCode!==null)return resolve();child.once('exit',resolve);setTimeout(resolve,3000);});must(!serverLog.includes(env.BETTER_AUTH_SECRET)&&!users.some(u=>serverLog.includes(u.password)),'Sensitive value unexpectedly present in server output');}};
+}
+export async function login(context,base,user){const p=await context.newPage();await p.goto(base+'/login');await p.locator('[name=email]').fill(user.email);await p.locator('[name=password]').fill(user.password);await p.getByRole('button',{name:'Entrar',exact:true}).click();await p.waitForURL(base+'/');return p;}
+export function writeReport(phase,name,result){const dir=`docs/reformultation/docs/evidencias-${phase}`;fs.mkdirSync(dir,{recursive:true});fs.writeFileSync(`${dir}/${name}.json`,JSON.stringify(result,null,2)+'\n');}

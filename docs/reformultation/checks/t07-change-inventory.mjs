@@ -1,0 +1,8 @@
+import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';
+const baseline=JSON.parse(fs.readFileSync(path.resolve('../Notes_Hub_Recovery/POST-T06B-20261103-qd1ZEv/manifest.json'),'utf8')),before=new Map(baseline.files.map(e=>[e.path,e.sha256]));
+const walk=d=>fs.readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(d+'/'+e.name):e.isFile()?[d+'/'+e.name]:[]);
+const files=[...walk('src'),...walk('scripts'),...walk('docs'),...['README.md','package.json','pnpm-lock.yaml','astro.config.mjs','.gitignore']].filter(f=>!f.includes('/evidencias-'));
+const changes=files.map(file=>({file,before:before.get(file)||null,after:crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')})).filter(e=>e.before!==e.after);
+if(changes.some(e=>e.file.startsWith('src/server/')||e.file.startsWith('src/pages/api/')||e.file==='src/middleware.ts'||['package.json','pnpm-lock.yaml','astro.config.mjs'].includes(e.file)))throw Error('Architecture/dependency scope changed');
+const deleted=baseline.files.filter(e=>(e.path.startsWith('src/')||e.path.startsWith('scripts/')||e.path.startsWith('tmp/')||e.path.startsWith('aws-clf-c02/')||e.path.startsWith('private/'))&&!fs.existsSync(e.path)).map(e=>e.path);if(deleted.length)throw Error('Unexpected deletion');
+fs.writeFileSync('docs/reformultation/docs/evidencias-T07/changed-files.json',JSON.stringify({baseline:'Verified durable post-T06B checkpoint, not Git HEAD',changes,deleted,evidence:'New logs/JSON/screenshots under evidencias-T07 are listed by directory; no credentials or real user data'},null,2)+'\n');console.log(JSON.stringify({changes:changes.length,deleted:deleted.length,architectureUnchanged:true}));

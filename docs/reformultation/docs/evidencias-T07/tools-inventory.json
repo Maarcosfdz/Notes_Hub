@@ -1,0 +1,356 @@
+{
+  "inventory": [
+    {
+      "file": "scripts/auth-migrate.mjs",
+      "sha256": "b7012453235870238335f39b167fe8d0a79e811627e54759ba6a832a6d0ab867",
+      "status": "Mantenido",
+      "references": [
+        "scripts/dev-server.mjs",
+        "scripts/README.md"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    },
+    {
+      "file": "scripts/check-block1-editorial.py",
+      "sha256": "b2a6125d94383aad5e14aa728a58be3fcc5184b785906b5781545c9485906018",
+      "status": "Histórico/una sola ejecución; no ejecutar automáticamente",
+      "references": [
+        "scripts/README.md",
+        "docs/reformultation/checks/t07-data-tools-audit.mjs",
+        "docs/reformultation/docs/T00_INVENTARIO.json"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    },
+    {
+      "file": "scripts/close-t03b.mjs",
+      "sha256": "5fbfdebb451fa79829dc19e00744f5e134a496045cdb8ea5fb3ba0a7c9b6041c",
+      "status": "Histórico/una sola ejecución; no ejecutar automáticamente",
+      "references": [
+        "scripts/README.md",
+        "docs/reformultation/checks/t07-data-tools-audit.mjs"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    },
+    {
+      "file": "scripts/close-ticket.mjs",
+      "sha256": "0caf42ea0b0b19e6b5fc6d49b2bcc0ae1903875f005fec7084f42540fcb7bfd3",
+      "status": "Histórico/una sola ejecución; no ejecutar automáticamente",
+      "references": [
+        "scripts/close-t03b.mjs",
+        "scripts/README.md",
+        "docs/reformultation/checks/t07-data-tools-audit.mjs"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    },
+    {
+      "file": "scripts/content-manifest.json",
+      "sha256": "35fa229a5112abf60c0d3033774f60af83fe710ea4ae98326617669a6ebef5f6",
+      "status": "Mantenido",
+      "references": [
+        "scripts/content-pipeline.mjs",
+        "scripts/inspect-study-assets.py",
+        "scripts/integrate-glossaries.mjs",
+        "scripts/README.md",
+        "scripts/verify-private-publication.mjs",
+        "docs/ARQUITECTURA.md",
+        "docs/FLUJO_CONTENIDO.md",
+        "docs/reformultation/checks/content-pipeline.test.mjs",
+        "docs/reformultation/docs/T02A_RESULTADOS.md"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    },
+    {
+      "file": "scripts/content-pipeline.mjs",
+      "sha256": "d875744427285b8a4b9ed0de53975320683264bef7dd732f72f5fcf7ec0cda05",
+      "status": "Mantenido",
+      "references": [
+        "scripts/README.md",
+        "scripts/verify-private-publication.mjs",
+        "scripts/verify-publication.mjs",
+        "docs/ARQUITECTURA.md",
+        "docs/FLUJO_CONTENIDO.md",
+        "docs/reformultation/checks/content-pipeline.test.mjs",
+        "docs/reformultation/checks/validate-b07.mjs",
+        "docs/reformultation/docs/T02A_RESULTADOS.md",
+        "package.json"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    },
+    {
+      "file": "scripts/database.mjs",
+      "sha256": "f7ef93df49ac8e1150a6d0745d24257433af50baa5d1f2d817b5941d763dd860",
+      "status": "Mantenido",
+      "references": [
+        "scripts/README.md",
+        "docs/SERVIDOR_DESARROLLO.md"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    },
+    {
+      "file": "scripts/dev-server.mjs",
+      "sha256": "8138e899cc9927999fca0c4ddc33fddd26b0b891ceac6df3aefeebbe3417782a",
+      "status": "Mantenido",
+      "references": [
+        "scripts/README.md",
+        "docs/reformultation/docs/tickets/T03A_node_sqlite_y_migraciones.md",
+        "docs/SERVIDOR_DESARROLLO.md",
+        "package.json"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    },
+    {
+      "file": "scripts/dev-users.mjs",
+      "sha256": "bff94a75d5445a57319c37b3130b1e15a3696488a4d606878d9b0de231e01f37",
+      "status": "Mantenido",
+      "references": [
+        "scripts/close-t03b.mjs",
+        "scripts/README.md",
+        "docs/reformultation/docs/RESULTADOS_T02B_T06B.md",
+        "docs/SERVIDOR_DESARROLLO.md",
+        "README.md"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    },
+    {
+      "file": "scripts/development-env.mjs",
+      "sha256": "85951988e29ff649bd70c903de274580b87378d1a83a606126e1d0d567b48270",
+      "status": "Mantenido",
+      "references": [
+        "scripts/dev-server.mjs",
+        "scripts/dev-users.mjs",
+        "scripts/README.md"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    },
+    {
+      "file": "scripts/extract-block1-diagrams.py",
+      "sha256": "e847a27c8b36cf3588890b72de9c10ee6d9005e7efabcbddd3603da9f47b20dd",
+      "status": "Histórico/una sola ejecución; no ejecutar automáticamente",
+      "references": [
+        "scripts/README.md",
+        "docs/reformultation/checks/t07-data-tools-audit.mjs",
+        "docs/reformultation/docs/T00_INVENTARIO.json"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    },
+    {
+      "file": "scripts/extract-quiz-controller.mjs",
+      "sha256": "bcbe83be5baf37a41ebc73c97da5c8e366bf1060bf71f6ceb47af832fffd06d2",
+      "status": "Histórico/una sola ejecución; no ejecutar automáticamente",
+      "references": [
+        "scripts/README.md",
+        "docs/reformultation/checks/t07-data-tools-audit.mjs"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    },
+    {
+      "file": "scripts/inspect-study-assets.py",
+      "sha256": "69bc1e4f328476d92f598b8ac8a17ad1eba7b24caf9d6748c61963e4592c6caa",
+      "status": "Mantenido",
+      "references": [
+        "scripts/README.md",
+        "docs/FLUJO_CONTENIDO.md"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    },
+    {
+      "file": "scripts/integrate-glossaries.mjs",
+      "sha256": "a64ff1469fdd6016d1023686553ebf461e56ad1b45ac1e26e69ffc2dc2e1352a",
+      "status": "Reproducción editorial controlada, con guardia de divergencias",
+      "references": [
+        "scripts/README.md",
+        "docs/GLOSARIO_INTEGRADO.md",
+        "docs/reformultation/checks/t07-data-tools-audit.mjs"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    },
+    {
+      "file": "scripts/polish-block1-editorial.py",
+      "sha256": "3a930e22bba8450c95a80e2970f9da209d5de9680458bd30c802d86424cac044",
+      "status": "Histórico/una sola ejecución; no ejecutar automáticamente",
+      "references": [
+        "scripts/README.md",
+        "docs/reformultation/checks/t07-data-tools-audit.mjs",
+        "docs/reformultation/docs/T00_INVENTARIO.json"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    },
+    {
+      "file": "scripts/polish-block1-glossary.py",
+      "sha256": "7d0ef42e5678ae8aba68ac36273dde4dc4c571202f837758c978bb85b9027f1b",
+      "status": "Histórico/una sola ejecución; no ejecutar automáticamente",
+      "references": [
+        "scripts/README.md",
+        "docs/reformultation/checks/t07-data-tools-audit.mjs",
+        "docs/reformultation/docs/T00_INVENTARIO.json"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    },
+    {
+      "file": "scripts/run-regressions.mjs",
+      "sha256": "ce2cfdeae96924cc2a66af4654e96a651d5d7b866da8cc92ee95920f82de4fa1",
+      "status": "Mantenido",
+      "references": [
+        "scripts/README.md",
+        "package.json"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    },
+    {
+      "file": "scripts/t07-css-consolidate.mjs",
+      "sha256": "d84031e6618f8efc929d0e9517f247029f765ea5f8d4881fc20755de4a99dc2b",
+      "status": "Histórico/una sola ejecución; no ejecutar automáticamente",
+      "references": [
+        "scripts/README.md",
+        "docs/reformultation/checks/t07-data-tools-audit.mjs"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    },
+    {
+      "file": "scripts/users.mjs",
+      "sha256": "11d6c303e0c68592484672c6929c730e72cd1804875d9518828839816effa9dd",
+      "status": "Mantenido",
+      "references": [
+        "scripts/close-t03b.mjs",
+        "scripts/dev-users.mjs",
+        "scripts/README.md",
+        "docs/reformultation/checks/e2e-support.mjs",
+        "docs/reformultation/docs/RESULTADOS_T02B_T06B.md",
+        "docs/SERVIDOR_DESARROLLO.md",
+        "README.md"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    },
+    {
+      "file": "scripts/verify-content.mjs",
+      "sha256": "0e6acda3dba8dbe49d32906b825993fff360f1f37f57bde217b7da77e70fae79",
+      "status": "Mantenido",
+      "references": [
+        "scripts/README.md",
+        "docs/ARQUITECTURA.md",
+        "docs/reformultation/checks/baseline.mjs",
+        "docs/reformultation/checks/phase-check.mjs",
+        "docs/reformultation/checks/README.md",
+        "docs/reformultation/checks/validate-b07.mjs",
+        "docs/reformultation/checks/validate-T01B.mjs",
+        "docs/reformultation/docs/T00_AUDITORIA.md",
+        "docs/reformultation/docs/T00_INVENTARIO.json",
+        "docs/reformultation/docs/T01_RESULTADOS.md",
+        "docs/reformultation/docs/T07_RESULTADOS.md",
+        "package.json"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    },
+    {
+      "file": "scripts/verify-glossary.mjs",
+      "sha256": "882846d431a3c7ad3c78117b81c95773a8019a59a3fb151af301efc03d09a01b",
+      "status": "Mantenido",
+      "references": [
+        "scripts/README.md",
+        "scripts/run-regressions.mjs",
+        "docs/GLOSARIO_INTEGRADO.md",
+        "package.json"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    },
+    {
+      "file": "scripts/verify-private-publication.mjs",
+      "sha256": "914b3a22cd6ccb400393e366b25e7ffc4d52154d81b7aa8506ff07e4dcac3916",
+      "status": "Mantenido",
+      "references": [
+        "scripts/README.md",
+        "scripts/verify-publication.mjs"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    },
+    {
+      "file": "scripts/verify-publication.mjs",
+      "sha256": "c4588e2ed4b867ec5954fd5a1f5dc65fdc26e0475014d88d0fe31ae58134fd3d",
+      "status": "Mantenido",
+      "references": [
+        "scripts/README.md",
+        "docs/FLUJO_CONTENIDO.md",
+        "docs/reformultation/checks/validate-b07.mjs",
+        "package.json"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    },
+    {
+      "file": "tmp/check-integration.cjs",
+      "sha256": "aeaa149d89e23ec8902c3aae99da49255b981e309e4bbbe98f35812fb9645e54",
+      "status": "Histórico/una sola ejecución; no ejecutar automáticamente",
+      "references": [
+        "scripts/README.md",
+        "docs/reformultation/docs/T00_AUDITORIA.md",
+        "docs/reformultation/docs/T00_INVENTARIO.json"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    },
+    {
+      "file": "tmp/check-study-files.py",
+      "sha256": "f806737351e089eadb12bb6598cd05bc0a05814376ac669b7ce269a87f45ac00",
+      "status": "Histórico/una sola ejecución; no ejecutar automáticamente",
+      "references": [
+        "scripts/README.md",
+        "docs/reformultation/docs/T00_AUDITORIA.md",
+        "docs/reformultation/docs/T00_INVENTARIO.json"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    },
+    {
+      "file": "tmp/integrate-study.py",
+      "sha256": "31883bb04cb27a49cee50f85307714d51cebf0abda8b0bca0d94b68c6e4413f2",
+      "status": "Histórico/una sola ejecución; no ejecutar automáticamente",
+      "references": [
+        "scripts/README.md",
+        "docs/reformultation/docs/T00_AUDITORIA.md",
+        "docs/reformultation/docs/T00_INVENTARIO.json"
+      ],
+      "history": "Los scripts estaban sin seguimiento al inicio; manifiestos T01/post-T06B y evidencias por ticket conservan la procedencia. No se inventa historia Git.",
+      "action": "Conservar en su ruta, sin borrar ni mover"
+    }
+  ],
+  "tmpFiles": 487,
+  "deleted": [],
+  "moved": [],
+  "maintainedCommands": {
+    "dev": "node scripts/dev-server.mjs dev",
+    "build": "astro check && astro build",
+    "preview": "node scripts/dev-server.mjs preview",
+    "check": "astro check",
+    "verify:content": "node scripts/verify-content.mjs",
+    "content:check": "node scripts/content-pipeline.mjs check",
+    "content:plan": "node scripts/content-pipeline.mjs plan",
+    "content:sync": "node scripts/content-pipeline.mjs apply",
+    "verify:publication": "node scripts/verify-publication.mjs",
+    "test:server": "node docs/reformultation/checks/server-e2e.mjs",
+    "test:regression": "node scripts/run-regressions.mjs",
+    "glossary:check": "node scripts/verify-glossary.mjs"
+  },
+  "noMaintainedTmpDependency": true
+}

@@ -1,0 +1,836 @@
+[
+  {
+    "original": "ACL / NACL",
+    "canonical": "Network ACL",
+    "anchor": "network-acl",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AMI — Amazon Machine Image",
+    "canonical": "AMI — Amazon Machine Image",
+    "anchor": "ami-amazon-machine-image",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "API",
+    "canonical": "API",
+    "anchor": "api",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS",
+    "canonical": "AWS",
+    "anchor": "aws",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS Artifact",
+    "canonical": "AWS Artifact",
+    "anchor": "aws-artifact",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS Auto Scaling",
+    "canonical": "AWS Auto Scaling",
+    "anchor": "aws-auto-scaling",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS Batch",
+    "canonical": "AWS Batch",
+    "anchor": "aws-batch",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS Budgets",
+    "canonical": "AWS Budgets",
+    "anchor": "aws-budgets",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS CAF",
+    "canonical": "AWS CAF",
+    "anchor": "aws-caf",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS CLI",
+    "canonical": "AWS CLI",
+    "anchor": "aws-cli",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS CloudTrail",
+    "canonical": "AWS CloudTrail",
+    "anchor": "aws-cloudtrail",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS Config",
+    "canonical": "AWS Config",
+    "anchor": "aws-config",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS Cost Explorer",
+    "canonical": "AWS Cost Explorer",
+    "anchor": "aws-cost-explorer",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS Cost and Usage Report",
+    "canonical": "AWS Cost and Usage Report",
+    "anchor": "aws-cost-and-usage-report",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS Direct Connect",
+    "canonical": "AWS Direct Connect",
+    "anchor": "aws-direct-connect",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS Elastic Beanstalk",
+    "canonical": "AWS Elastic Beanstalk",
+    "anchor": "aws-elastic-beanstalk",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS Fargate",
+    "canonical": "AWS Fargate",
+    "anchor": "aws-fargate",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS IAM",
+    "canonical": "AWS IAM",
+    "anchor": "aws-iam",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS KMS",
+    "canonical": "AWS KMS",
+    "anchor": "aws-kms",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS Lambda",
+    "canonical": "AWS Lambda",
+    "anchor": "aws-lambda",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS License Manager",
+    "canonical": "AWS License Manager",
+    "anchor": "aws-license-manager",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS Management Console",
+    "canonical": "AWS Management Console",
+    "anchor": "aws-management-console",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS Organizations",
+    "canonical": "AWS Organizations",
+    "anchor": "aws-organizations",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS Outposts",
+    "canonical": "AWS Outposts",
+    "anchor": "aws-outposts",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS SDK",
+    "canonical": "AWS SDK",
+    "anchor": "aws-sdk",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS Shield",
+    "canonical": "AWS Shield",
+    "anchor": "aws-shield",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS Transit Gateway",
+    "canonical": "AWS Transit Gateway",
+    "anchor": "aws-transit-gateway",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS Trusted Advisor",
+    "canonical": "AWS Trusted Advisor",
+    "anchor": "aws-trusted-advisor",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS VPN",
+    "canonical": "AWS VPN",
+    "anchor": "aws-vpn",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS Well-Architected Framework",
+    "canonical": "AWS Well-Architected Framework",
+    "anchor": "aws-well-architected-framework",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "AWS Well-Architected Tool",
+    "canonical": "AWS Well-Architected Tool",
+    "anchor": "aws-well-architected-tool",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Alta disponibilidad",
+    "canonical": "Alta disponibilidad",
+    "anchor": "alta-disponibilidad",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Amazon Aurora",
+    "canonical": "Amazon Aurora",
+    "anchor": "amazon-aurora",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Amazon CloudFront",
+    "canonical": "Amazon CloudFront",
+    "anchor": "amazon-cloudfront",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Amazon CloudWatch",
+    "canonical": "Amazon CloudWatch",
+    "anchor": "amazon-cloudwatch",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Amazon Cognito",
+    "canonical": "Amazon Cognito",
+    "anchor": "amazon-cognito",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Amazon DynamoDB",
+    "canonical": "Amazon DynamoDB",
+    "anchor": "amazon-dynamodb",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Amazon EBS",
+    "canonical": "Amazon EBS",
+    "anchor": "amazon-ebs",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Amazon EC2",
+    "canonical": "Amazon EC2",
+    "anchor": "amazon-ec2",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Amazon ECR",
+    "canonical": "Amazon ECR",
+    "anchor": "amazon-ecr",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Amazon ECS",
+    "canonical": "Amazon ECS",
+    "anchor": "amazon-ecs",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Amazon EFS",
+    "canonical": "Amazon EFS",
+    "anchor": "amazon-efs",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Amazon EKS",
+    "canonical": "Amazon EKS",
+    "anchor": "amazon-eks",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Amazon EventBridge",
+    "canonical": "Amazon EventBridge",
+    "anchor": "amazon-eventbridge",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Amazon Lightsail",
+    "canonical": "Amazon Lightsail",
+    "anchor": "amazon-lightsail",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Amazon RDS",
+    "canonical": "Amazon RDS",
+    "anchor": "amazon-rds",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Amazon Redshift",
+    "canonical": "Amazon Redshift",
+    "anchor": "amazon-redshift",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Amazon Route 53",
+    "canonical": "Amazon Route 53",
+    "anchor": "amazon-route-53",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Amazon S3",
+    "canonical": "Amazon S3",
+    "anchor": "amazon-s3",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Amazon S3 Glacier",
+    "canonical": "Amazon S3 Glacier",
+    "anchor": "amazon-s3-glacier",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Amazon VPC",
+    "canonical": "Amazon VPC",
+    "anchor": "amazon-vpc",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Availability",
+    "canonical": "Availability",
+    "anchor": "availability",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "BYOL",
+    "canonical": "BYOL",
+    "anchor": "byol",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Business Case",
+    "canonical": "Business Case",
+    "anchor": "business-case",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "CAPEX",
+    "canonical": "CAPEX",
+    "anchor": "capex",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "CDC",
+    "canonical": "CDC",
+    "anchor": "cdc",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "CDN",
+    "canonical": "CDN",
+    "anchor": "cdn",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "CPD / Data Center",
+    "canonical": "CPD / Data Center",
+    "anchor": "cpd-data-center",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Cloud Computing",
+    "canonical": "Cloud Computing",
+    "anchor": "cloud-computing",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Cloud Financial Management",
+    "canonical": "Cloud Financial Management",
+    "anchor": "cloud-financial-management",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "CloudFormation",
+    "canonical": "CloudFormation",
+    "anchor": "cloudformation",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Cost Optimization",
+    "canonical": "Cost Optimization",
+    "anchor": "cost-optimization",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "DAS",
+    "canonical": "DAS",
+    "anchor": "das",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "DMS",
+    "canonical": "DMS",
+    "anchor": "dms",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "DNS",
+    "canonical": "DNS",
+    "anchor": "dns",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Data at rest / in transit",
+    "canonical": "Data at rest / in transit",
+    "anchor": "data-at-rest-in-transit",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "DataSync",
+    "canonical": "DataSync",
+    "anchor": "datasync",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "EC2 Auto Scaling",
+    "canonical": "EC2 Auto Scaling",
+    "anchor": "ec2-auto-scaling",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "EC2 Auto Scaling / Auto Scaling Group",
+    "canonical": "EC2 Auto Scaling",
+    "anchor": "ec2-auto-scaling",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "ESG",
+    "canonical": "ESG",
+    "anchor": "esg",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Economías de escala",
+    "canonical": "Economías de escala",
+    "anchor": "economias-de-escala",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Edge Location",
+    "canonical": "Edge Location",
+    "anchor": "edge-location",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Elastic Load Balancing",
+    "canonical": "Elastic Load Balancing",
+    "anchor": "elastic-load-balancing",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Elastic Load Balancing (ELB)",
+    "canonical": "Elastic Load Balancing",
+    "anchor": "elastic-load-balancing",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Elasticidad",
+    "canonical": "Elasticidad",
+    "anchor": "elasticidad",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Escalabilidad",
+    "canonical": "Escalabilidad",
+    "anchor": "escalabilidad",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Fault tolerance",
+    "canonical": "Tolerancia a fallos",
+    "anchor": "tolerancia-a-fallos",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "High availability",
+    "canonical": "Alta disponibilidad",
+    "anchor": "alta-disponibilidad",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "IaaS",
+    "canonical": "IaaS",
+    "anchor": "iaas",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Infrastructure as Code (IaC)",
+    "canonical": "Infrastructure as Code (IaC)",
+    "anchor": "infrastructure-as-code-iac",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Instancia",
+    "canonical": "Instancia",
+    "anchor": "instancia",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "JSON",
+    "canonical": "JSON",
+    "anchor": "json",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Landing Zone",
+    "canonical": "Landing Zone",
+    "anchor": "landing-zone",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Latencia",
+    "canonical": "Latencia",
+    "anchor": "latencia",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "License Included",
+    "canonical": "License Included",
+    "anchor": "license-included",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "MFA",
+    "canonical": "MFA",
+    "anchor": "mfa",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "MGN / AWS Transform MGN",
+    "canonical": "MGN / AWS Transform MGN",
+    "anchor": "mgn-aws-transform-mgn",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "MTBF",
+    "canonical": "MTBF",
+    "anchor": "mtbf",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "MTTF",
+    "canonical": "MTTF",
+    "anchor": "mttf",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "MTTR",
+    "canonical": "MTTR",
+    "anchor": "mttr",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Migration Evaluator",
+    "canonical": "Migration Evaluator",
+    "anchor": "migration-evaluator",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Migration Wave",
+    "canonical": "Migration Wave",
+    "anchor": "migration-wave",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Multi-tenancy",
+    "canonical": "Multi-tenancy",
+    "anchor": "multi-tenancy",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "NAS",
+    "canonical": "NAS",
+    "anchor": "nas",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "NIST",
+    "canonical": "NIST",
+    "anchor": "nist",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Network ACL",
+    "canonical": "Network ACL",
+    "anchor": "network-acl",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Network ACL (NACL)",
+    "canonical": "Network ACL",
+    "anchor": "network-acl",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "OPEX",
+    "canonical": "OPEX",
+    "anchor": "opex",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Operational Excellence",
+    "canonical": "Operational Excellence",
+    "anchor": "operational-excellence",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "PaaS",
+    "canonical": "PaaS",
+    "anchor": "paas",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Pago por uso",
+    "canonical": "Pago por uso",
+    "anchor": "pago-por-uso",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Performance Efficiency",
+    "canonical": "Performance Efficiency",
+    "anchor": "performance-efficiency",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Point of Presence (PoP)",
+    "canonical": "Point of Presence (PoP)",
+    "anchor": "point-of-presence-pop",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Queue / cola de mensajes",
+    "canonical": "Queue / cola de mensajes",
+    "anchor": "queue-cola-de-mensajes",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "RDBMS",
+    "canonical": "RDBMS",
+    "anchor": "rdbms",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "RDBMS / base de datos relacional",
+    "canonical": "RDBMS",
+    "anchor": "rdbms",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "RPO",
+    "canonical": "RPO",
+    "anchor": "rpo",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "RTO",
+    "canonical": "RTO",
+    "anchor": "rto",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Recoverability",
+    "canonical": "Recoverability",
+    "anchor": "recoverability",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Redundancia",
+    "canonical": "Redundancia",
+    "anchor": "redundancia",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Refactor",
+    "canonical": "Refactor",
+    "anchor": "refactor",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Regional Edge Cache",
+    "canonical": "Regional Edge Cache",
+    "anchor": "regional-edge-cache",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Región (Region)",
+    "canonical": "Región (Region)",
+    "anchor": "region-region",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Rehost",
+    "canonical": "Rehost",
+    "anchor": "rehost",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Reliability",
+    "canonical": "Reliability",
+    "anchor": "reliability",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Relocate",
+    "canonical": "Relocate",
+    "anchor": "relocate",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Rendering",
+    "canonical": "Rendering",
+    "anchor": "rendering",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Replatform",
+    "canonical": "Replatform",
+    "anchor": "replatform",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Repurchase",
+    "canonical": "Repurchase",
+    "anchor": "repurchase",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Retain",
+    "canonical": "Retain",
+    "anchor": "retain",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Retire",
+    "canonical": "Retire",
+    "anchor": "retire",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Rightsizing",
+    "canonical": "Rightsizing",
+    "anchor": "rightsizing",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "SAN",
+    "canonical": "SAN",
+    "anchor": "san",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "SLA — Service Level Agreement",
+    "canonical": "SLA — Service Level Agreement",
+    "anchor": "sla-service-level-agreement",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "SaaS",
+    "canonical": "SaaS",
+    "anchor": "saas",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Security",
+    "canonical": "Security",
+    "anchor": "security",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Security Group",
+    "canonical": "Security Group",
+    "anchor": "security-group",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Security Groups",
+    "canonical": "Security Group",
+    "anchor": "security-group",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Serverless",
+    "canonical": "Serverless",
+    "anchor": "serverless",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Service limits / quotas",
+    "canonical": "Service limits / quotas",
+    "anchor": "service-limits-quotas",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Snowball Edge",
+    "canonical": "Snowball Edge",
+    "anchor": "snowball-edge",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Sustainability",
+    "canonical": "Sustainability",
+    "anchor": "sustainability",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "TCO",
+    "canonical": "TCO",
+    "anchor": "tco",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Tolerancia a fallos",
+    "canonical": "Tolerancia a fallos",
+    "anchor": "tolerancia-a-fallos",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "VMware Cloud on AWS",
+    "canonical": "VMware Cloud on AWS",
+    "anchor": "vmware-cloud-on-aws",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Well-Architected review",
+    "canonical": "Well-Architected review",
+    "anchor": "well-architected-review",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "XML",
+    "canonical": "XML",
+    "anchor": "xml",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "Zona de disponibilidad (AZ)",
+    "canonical": "Zona de disponibilidad (AZ)",
+    "anchor": "zona-de-disponibilidad-az",
+    "status": "revisada individualmente"
+  },
+  {
+    "original": "root user",
+    "canonical": "root user",
+    "anchor": "root-user",
+    "status": "revisada individualmente"
+  }
+]

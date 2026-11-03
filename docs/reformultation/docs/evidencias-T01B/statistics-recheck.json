@@ -1,0 +1,26 @@
+{
+  "results": [
+    {
+      "name": "Published quiz and statistics client scripts execute",
+      "status": "PASS"
+    },
+    {
+      "name": "Simple and multiple correction with explanation; failed-only retry",
+      "status": "PASS",
+      "evidence": {
+        "done": 4,
+        "ok": 3
+      }
+    },
+    {
+      "name": "Statistics and attempts persist after reload",
+      "status": "PASS"
+    }
+  ],
+  "broken": [],
+  "pageErrors": [],
+  "isolation": "new browser context; closed in finally",
+  "passed": 3,
+  "failed": 0,
+  "blocked": 0
+}

@@ -1,0 +1,11 @@
+{
+  "status": "FAIL",
+  "error": "Registration open",
+  "project": "notes-hub-t08-d38d406c",
+  "results": [
+    {
+      "case": "Required environment, frozen build and pinned runtime",
+      "status": "PASS"
+    }
+  ]
+}

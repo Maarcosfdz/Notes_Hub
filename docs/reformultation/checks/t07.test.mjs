@@ -1,0 +1,2 @@
+import fs from 'node:fs';import crypto from 'node:crypto';import test from 'node:test';import assert from 'node:assert/strict';
+test('T07 does not modify any chapter, bank, series, glossary, editorial original or study resource',()=>{const {hashes}=JSON.parse(fs.readFileSync('docs/reformultation/docs/evidencias-T07/content-baseline.json','utf8'));for(const[file,hash]of Object.entries(hashes)){assert.ok(fs.existsSync(file),file+' removed');assert.equal(crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex'),hash,file+' changed');}});

@@ -1,0 +1,38 @@
+{
+  "modes": [
+    {
+      "mode": "1",
+      "practiceInitialized": true,
+      "examHeadingCount": 0,
+      "errors": [
+        {
+          "message": "Cannot read properties of undefined (reading 'id')",
+          "stack": "TypeError: Cannot read properties of undefined (reading 'id')\n    at http://127.0.0.1:4329/_astro/preguntas.astro_astro_type_script_index_0_lang.DtuwyKW1.js:1:342125\n    at Array.find (<anonymous>)\n    at _ (http://127.0.0.1:4329/_astro/preguntas.astro_astro_type_script_index_0_lang.DtuwyKW1.js:1:342103)\n    at HTMLSelectElement.<anonymous> (http://127.0.0.1:4329/_astro/preguntas.astro_astro_type_script_index_0_lang.DtuwyKW1.js:1:344681)"
+        }
+      ]
+    },
+    {
+      "mode": "2",
+      "practiceInitialized": true,
+      "examHeadingCount": 0,
+      "errors": [
+        {
+          "message": "Cannot read properties of undefined (reading 'id')",
+          "stack": "TypeError: Cannot read properties of undefined (reading 'id')\n    at http://127.0.0.1:4329/_astro/preguntas.astro_astro_type_script_index_0_lang.DtuwyKW1.js:1:342125\n    at Array.find (<anonymous>)\n    at _ (http://127.0.0.1:4329/_astro/preguntas.astro_astro_type_script_index_0_lang.DtuwyKW1.js:1:342103)\n    at HTMLSelectElement.<anonymous> (http://127.0.0.1:4329/_astro/preguntas.astro_astro_type_script_index_0_lang.DtuwyKW1.js:1:344681)"
+        }
+      ]
+    },
+    {
+      "mode": "3",
+      "practiceInitialized": true,
+      "examHeadingCount": 0,
+      "errors": [
+        {
+          "message": "Cannot read properties of undefined (reading 'id')",
+          "stack": "TypeError: Cannot read properties of undefined (reading 'id')\n    at http://127.0.0.1:4329/_astro/preguntas.astro_astro_type_script_index_0_lang.DtuwyKW1.js:1:342125\n    at Array.find (<anonymous>)\n    at _ (http://127.0.0.1:4329/_astro/preguntas.astro_astro_type_script_index_0_lang.DtuwyKW1.js:1:342103)\n    at HTMLSelectElement.<anonymous> (http://127.0.0.1:4329/_astro/preguntas.astro_astro_type_script_index_0_lang.DtuwyKW1.js:1:344681)"
+        }
+      ]
+    }
+  ],
+  "isolated": true
+}

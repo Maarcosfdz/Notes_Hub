@@ -19,11 +19,14 @@ const path = Astro.url.pathname;
       <a class="wordmark" href={root} aria-label="Notes Hub, inicio">
         <span class="mark" aria-hidden="true">n.</span><span>Notes Hub<span class="wordmark-soft">/</span></span>
       </a>
-      <nav aria-label="Navegación principal">
+      <nav class="desktop-nav" aria-label="Navegación principal">
         <a href={root} aria-current={path === root ? "page" : undefined}>Biblioteca</a>
         <a href={`${root}buscar/`} aria-current={path.includes("/buscar/") ? "page" : undefined}>Buscar</a>
+        <a href={`${root}como-aportar/`}>Guía</a>
       </nav>
+      <details class="mobile-menu"><summary>Menú</summary><nav aria-label="Navegación móvil"><a href={root}>Biblioteca</a><a href={`${root}buscar/`}>Buscar</a><a href={`${root}como-aportar/`}>Guía</a></nav></details>
       <div class="header-actions">
+        {Astro.locals.user && <button class="action-button" type="button" data-logout>Salir</button>}
         <a class="header-search" href={`${root}buscar/`} aria-label="Buscar apuntes">
           <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.8" cy="10.8" r="6.5"/><path d="m16 16 4.3 4.3"/></svg>
           <span class="search-label">Buscar apuntes</span>
@@ -34,14 +37,21 @@ const path = Astro.url.pathname;
         </button>
       </div>
     </header>
-    <main id="contenido"><slot /></main>
+    <main id="contenido" tabindex="-1"><slot /><p class="operation-status" role="status" aria-live="polite" aria-atomic="true" data-persistence-status></p></main>
     <footer><span>Un espacio personal para aprender con calma.</span><a href={root}>Volver a la biblioteca ↑</a></footer>
-    <script lang="ts">
-      import { migrate } from "../scripts/progress";
-      migrate("aws");
+    <script>
+      import {enhanceContent} from '../scripts/content-accessibility';
+      enhanceContent();
+      const mobile=document.querySelector<HTMLDetailsElement>('.mobile-menu');
+      mobile?.addEventListener('keydown',event=>{if(event.key==='Escape'){mobile.open=false;mobile.querySelector('summary')?.focus();}});
+      document.querySelector<HTMLButtonElement>("[data-logout]")?.addEventListener("click",async(event)=>{
+        const button=event.currentTarget as HTMLButtonElement;button.disabled=true;
+        try{const response=await fetch("/api/auth/sign-out",{method:"POST",headers:{"Content-Type":"application/json"},body:"{}"});if(!response.ok)throw Error('No se pudo cerrar la sesión. Reintenta.');location.assign("/login");}
+        catch{document.querySelector<HTMLElement>('[data-persistence-status]')!.textContent='No se pudo cerrar la sesión. Comprueba la conexión y reintenta.';button.disabled=false;}
+      });
       const toggle = document.querySelector("[data-theme-toggle]");
-      const storedTheme = localStorage.getItem("studyTheme");
-      const applyTheme = (theme) => {
+      let storedTheme:string|null=null;try{storedTheme=localStorage.getItem("studyTheme");}catch{/* Theme remains usable when storage is unavailable. */}
+      const applyTheme = (theme: "dark" | "light") => {
         document.documentElement.dataset.theme = theme;
         document.querySelector('meta[name="theme-color"]')?.setAttribute("content", theme === "dark" ? "#191d1a" : "#f5f2eb");
         toggle?.setAttribute("aria-label", theme === "dark" ? "Cambiar a tema claro" : "Cambiar a tema oscuro");
@@ -50,7 +60,7 @@ const path = Astro.url.pathname;
       toggle?.addEventListener("click", () => {
         const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
         applyTheme(next);
-        localStorage.setItem("studyTheme", next);
+        try{localStorage.setItem("studyTheme", next);}catch{/* Theme still applies for this page. */}
       });
     </script>
   </body>

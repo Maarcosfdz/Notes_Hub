@@ -1,12 +1,13 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
-import StudyTools from "../../../components/StudyTools.astro";
 import { getCollection } from "astro:content";
 import { subjects, areas } from "../../../config/library";
+import questions from "../../../content/modules/devops/aws/questions/bank.json";
+import terms from "../../../content/modules/devops/aws/reference/glossary.json";
 const allNotes = await getCollection("notes");
-export function getStaticPaths() { return Object.keys(subjects).map((subject) => ({ params: { subject } })); }
 const slug = Astro.params.subject!;
 const subject = subjects[slug];
+if (!subject) return new Response("Materia no encontrada", {status:404});
 const root = import.meta.env.BASE_URL;
 const notes = allNotes.filter((note) => note.data.subject === slug).sort((a, b) => a.data.group.localeCompare(b.data.group, "es") || a.data.title.localeCompare(b.data.title, "es"));
 const groups = [...new Set(notes.map((note) => note.data.group))];
@@ -15,8 +16,28 @@ const area = areas.find((item) => item.id === subject.area);
 <BaseLayout title={subject.title} description={subject.description}>
   <div class="breadcrumb"><a href={root}>Biblioteca</a> / <a href={`${root}areas/${subject.area}/`}>{area?.title ?? subject.area}</a> / {subject.title}</div>
   <section class="page-intro reveal"><span class="eyebrow">{area?.title ?? "Colección"} / materia</span><h1>{subject.title}</h1><p class="lead">{subject.description}</p></section>
-  {notes.length > 0 ? <>
-    {slug === "aws" && <StudyTools subject={slug} />}
+  {slug === "aws" ? <>
+    <section class="study-hub-grid" aria-label="Secciones de estudio de AWS">
+      <a class="study-hub-card" data-kind="notes" href={`${root}materias/aws/apuntes/`}>
+        <span class="hub-mark" aria-hidden="true">A</span><span class="hub-count">{notes.length} apuntes</span>
+        <h2>Apuntes</h2><p>Explicaciones agrupadas por temas, de infraestructura y redes a seguridad y almacenamiento.</p>
+        <span class="hub-action">Ver apuntes <span aria-hidden="true">→</span></span>
+      </a>
+      <a class="study-hub-card" data-kind="concepts" href={`${root}materias/aws/terminos/`}>
+        <span class="hub-mark" aria-hidden="true">C</span><span class="hub-count">{terms.length} conceptos</span>
+        <h2>Conceptos</h2><p>Consulta el glosario por grupo y salta directamente al apunte que explica cada término.</p>
+        <span class="hub-action">Explorar conceptos <span aria-hidden="true">→</span></span>
+      </a>
+      <a class="study-hub-card" data-kind="questions" href={`${root}materias/aws/preguntas/`}>
+        <span class="hub-mark" aria-hidden="true">P</span><span class="hub-count">{questions.length} preguntas</span>
+        <h2>Preguntas</h2><p>Practica por tema y dificultad, revisa las explicaciones y repite las que fallaste.</p>
+        <span class="hub-action">Empezar práctica <span aria-hidden="true">→</span></span>
+      </a>
+    </section>
+    <nav class="hub-extras" aria-label="Más recursos de AWS">
+      <span>Más recursos</span><a href={`${root}materias/aws/comparativas/`}>Comparativas</a><a href={`${root}materias/aws/estadisticas/`}>Progreso de estudio</a>
+    </nav>
+  </> : notes.length > 0 ? <>
     <div class="section-heading"><div><span class="section-kicker">Ruta de estudio</span><h2>{notes.length} apuntes</h2><p>Ordenados por tema para que encuentres el hilo de cada idea.</p></div></div>
     <div class="note-list">{groups.map((group) => {
       const groupedNotes = notes.filter((note) => note.data.group === group);

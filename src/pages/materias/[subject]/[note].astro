@@ -3,25 +3,23 @@ import { getCollection, render } from "astro:content";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import StudyTools from "../../../components/StudyTools.astro";
 import { subjects, areas } from "../../../config/library";
-export async function getStaticPaths() {
-  const entries = await getCollection("notes");
-  const ordered = [...entries].sort((a, b) => a.data.subject.localeCompare(b.data.subject) || a.data.group.localeCompare(b.data.group, "es") || a.data.title.localeCompare(b.data.title, "es"));
-  return ordered.map((entry, index) => ({
-    params: { subject: entry.data.subject, note: entry.data.id },
-    props: { entry, previous: ordered[index - 1]?.data.subject === entry.data.subject ? ordered[index - 1] : null, next: ordered[index + 1]?.data.subject === entry.data.subject ? ordered[index + 1] : null },
-  }));
-}
-const { entry, previous, next } = Astro.props;
+const entries = await getCollection("notes");
+const ordered = [...entries].sort((a,b)=>a.data.subject.localeCompare(b.data.subject)||a.data.group.localeCompare(b.data.group,"es")||a.data.title.localeCompare(b.data.title,"es"));
+const index = ordered.findIndex(note=>note.data.subject===Astro.params.subject&&note.data.id===Astro.params.note);
+if (index < 0) return new Response("Apunte no encontrado",{status:404});
+const entry=ordered[index];
+const previous=ordered[index-1]?.data.subject===entry.data.subject?ordered[index-1]:null;
+const next=ordered[index+1]?.data.subject===entry.data.subject?ordered[index+1]:null;
 const { Content } = await render(entry);
 const { subject, area } = entry.data;
 const root = import.meta.env.BASE_URL;
 const areaName = areas.find((item) => item.id === area)?.title ?? area;
 ---
 <BaseLayout title={entry.data.title} description={entry.data.summary}>
-  <article class="article">
+  <article class="article" data-note-id={entry.data.id} data-subject={subject}>
     <div class="breadcrumb"><a href={root}>Biblioteca</a> / <a href={`${root}areas/${area}/`}>{areaName}</a> / <a href={`${root}materias/${subject}/`}>{subjects[subject]?.title || subject}</a> / {entry.data.group}</div>
     <header class="article-head reveal"><span class="eyebrow">{subjects[subject]?.title || subject} / {entry.data.group}</span><h1>{entry.data.title}</h1><p class="article-summary">{entry.data.summary}</p>
-      {subject === "aws" && <StudyTools subject="aws" />}
+      {subject === "aws" && <StudyTools subject="aws" active="notes" />}
       <div class="pills"><button class="action-button" type="button" data-save>Guardar apunte</button><button class="action-button" type="button" data-read>Marcar como repasado</button></div>
     </header>
     <Content />
@@ -31,19 +29,21 @@ const areaName = areas.find((item) => item.id === area)?.title ?? area;
       {next && <a href={`${root}materias/${subject}/${next.data.id}/`}><span>Apunte siguiente →</span><strong>{next.data.title}</strong></a>}
     </nav>}
   </article>
-  <script define:vars={{ noteId: entry.data.id, subject }}>
-    const bookmarksKey = `study:${subject}:bookmarks`;
-    const progressKey = `study:${subject}:progress`;
-    const getBookmarks = () => { try { return JSON.parse(localStorage.getItem(bookmarksKey) || (subject === "aws" ? localStorage.getItem("awsNeonBookmarks") : null) || "[]"); } catch { return []; } };
-    const getProgress = () => { try { return JSON.parse(localStorage.getItem(progressKey) || (subject === "aws" ? localStorage.getItem("awsNeonProgress") : null) || "{}"); } catch { return {}; } };
+  <script>
+    import { initialize, getBookmarks, getReading, saveMark } from "../../../scripts/progress";
+    const article = document.querySelector<HTMLElement>("[data-note-id]")!;
+    const noteId = article.dataset.noteId!, subject = article.dataset.subject!;
+    await initialize(subject);
     const save = document.querySelector("[data-save]");
     const read = document.querySelector("[data-read]");
     const updateButtons = () => {
-      if (save) { const saved = getBookmarks().includes(noteId); save.textContent = saved ? "Apunte guardado ✓" : "Guardar apunte"; save.setAttribute("aria-pressed", String(saved)); }
-      if (read) { const done = Boolean(getProgress()[noteId]); read.textContent = done ? "Repasado ✓" : "Marcar como repasado"; read.setAttribute("aria-pressed", String(done)); }
+      if (save) { const saved = getBookmarks(subject).includes(noteId); save.textContent = saved ? "Apunte guardado ✓" : "Guardar apunte"; save.setAttribute("aria-pressed", String(saved)); }
+      if (read) { const done = Boolean(getReading(subject)[noteId]); read.textContent = done ? "Repasado ✓" : "Marcar como repasado"; read.setAttribute("aria-pressed", String(done)); }
     };
     updateButtons();
-    save?.addEventListener("click", () => { const current = getBookmarks(); const updated = current.includes(noteId) ? current.filter((id) => id !== noteId) : [...current, noteId]; localStorage.setItem(bookmarksKey, JSON.stringify(updated)); updateButtons(); });
-    read?.addEventListener("click", () => { const current = getProgress(); current[noteId] = !current[noteId]; localStorage.setItem(progressKey, JSON.stringify(current)); updateButtons(); });
+    window.addEventListener('study:updated',updateButtons);
+    async function mark(kind:"bookmarks"|"progress",button:Element|null){button?.setAttribute('disabled','');try{await saveMark(subject,kind,noteId,kind==='bookmarks'?!getBookmarks(subject).includes(noteId):!getReading(subject)[noteId]);updateButtons();}catch{}finally{button?.removeAttribute('disabled');}}
+    save?.addEventListener("click",()=>void mark('bookmarks',save));
+    read?.addEventListener("click",()=>void mark('progress',read));
   </script>
 </BaseLayout>

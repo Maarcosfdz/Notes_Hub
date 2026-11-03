@@ -1,95 +1,19 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import StudyTools from "../../../components/StudyTools.astro";
+import QuizFilters from "../../../components/QuizFilters.astro";
 import bank from "../../../content/modules/devops/aws/questions/bank.json";
 const root = import.meta.env.BASE_URL;
 const levels = [...new Set(bank.map((question) => question.level))].sort((a, b) => a.localeCompare(b, "es"));
 ---
 <BaseLayout title="Preguntas AWS" description="Practica AWS con preguntas por tema y nivel.">
   <div class="breadcrumb"><a href={root}>Biblioteca</a> / <a href={`${root}materias/aws/`}>AWS</a> / Preguntas</div>
-  <section class="page-intro reveal"><span class="eyebrow">Estudio activo / AWS</span><h1>Practica y recuerda.</h1><p class="lead">{bank.length} preguntas con explicaciones. Filtra por tema y nivel, o vuelve a las que fallaste.</p><StudyTools subject="aws" /></section>
-  <div class="filters" aria-label="Filtros del cuestionario">
-    <label class="muted">Nivel <select class="select" data-level><option>Todos</option>{levels.map((level) => <option value={level}>{level}</option>)}</select></label>
-    <label class="muted">Tema <select class="select" data-topic><option>Todos</option></select></label>
-    <label class="muted"><input type="checkbox" data-failed /> Repetir falladas</label>
-  </div>
+  <section class="page-intro reveal"><span class="eyebrow">Estudio activo / AWS</span><h1>Practica y recuerda.</h1><p class="lead">{bank.length} preguntas con explicaciones. Filtra por tema y nivel, o vuelve a las que fallaste.</p><StudyTools subject="aws" active="questions" /></section>
+  <QuizFilters levels={levels}/>
   <section id="quiz" class="question-card" aria-live="polite" aria-atomic="true"></section>
-  <script lang="ts">
-    import bank from "../../../content/modules/devops/aws/questions/bank.json";
-    import { getStats, saveStats } from "../../../scripts/progress";
-    const subject = "aws";
-    const quiz = document.querySelector("#quiz");
-    const levelSelect = document.querySelector("[data-level]");
-    const topicSelect = document.querySelector("[data-topic]");
-    const failedSelect = document.querySelector("[data-failed]");
-    const topics = [...new Set(bank.map((question) => question.topic))].sort((a, b) => a.localeCompare(b, "es"));
-    for (const topic of topics) { const option = document.createElement("option"); option.value = topic; option.textContent = topic; topicSelect.append(option); }
-    let current;
-    const percent = (stats) => stats.done ? Math.round(stats.ok / stats.done * 100) : 0;
-    function next() {
-      const stats = getStats(subject);
-      const failed = Array.isArray(stats.failed) ? stats.failed : [];
-      let pool = bank.filter((question) =>
-        (levelSelect.value === "Todos" || question.level === levelSelect.value) &&
-        (topicSelect.value === "Todos" || question.topic === topicSelect.value) &&
-        (!failedSelect.checked || failed.includes(question.id)));
-      if (pool.length > 1 && current) pool = pool.filter((question) => question.id !== current?.id);
-      quiz.replaceChildren();
-      if (!pool.length) {
-        const message = document.createElement("p"); message.className = "empty-results";
-        message.textContent = failedSelect.checked ? "No hay preguntas falladas para estos filtros. Desactiva el filtro para continuar." : "No hay preguntas para estos filtros.";
-        quiz.append(message); return;
-      }
-      current = pool[Math.floor(Math.random() * pool.length)];
-      const tags = document.createElement("div"); tags.className = "question-tags";
-      tags.textContent = `${current.level} · ${current.topic}${current.correct.length > 1 ? ` · Elige ${current.correct.length}` : ""}`;
-      const heading = document.createElement("h2"); heading.textContent = current.q;
-      const options = document.createElement("div"); options.className = "options";
-      current.options.forEach((text, index) => {
-        const label = document.createElement("label"); label.className = "option";
-        const input = document.createElement("input"); input.type = "checkbox"; input.value = String(index);
-        const answer = document.createElement("span"); answer.textContent = text;
-        label.append(input, answer); options.append(label);
-      });
-      const submit = document.createElement("button"); submit.className = "action-button primary"; submit.textContent = "Comprobar respuesta"; submit.type = "button";
-      quiz.append(tags, heading, options, submit);
-      submit.addEventListener("click", () => {
-        if (!current) return;
-        const selected = [...options.querySelectorAll("input:checked")].map((input) => Number(input.value)).sort((a, b) => a - b);
-        if (!selected.length) {
-          let hint = quiz.querySelector("[data-answer-hint]");
-          if (!hint) { hint = document.createElement("p"); hint.className = "muted"; hint.dataset.answerHint = ""; quiz.append(hint); }
-          hint.textContent = "Selecciona al menos una respuesta para comprobarla."; return;
-        }
-        const correct = [...current.correct].sort((a, b) => a - b);
-        const isCorrect = JSON.stringify(selected) === JSON.stringify(correct);
-        const updated = getStats(subject);
-        updated.failed = Array.isArray(updated.failed) ? updated.failed : [];
-        updated.byLevel = updated.byLevel || {};
-        updated.answered = updated.answered || {};
-        updated.history = Array.isArray(updated.history) ? updated.history : [];
-        updated.done += 1;
-        if (isCorrect) updated.ok += 1;
-        if (!updated.byLevel[current.level]) updated.byLevel[current.level] = { done: 0, ok: 0 };
-        updated.byLevel[current.level].done += 1;
-        if (isCorrect) updated.byLevel[current.level].ok += 1;
-        updated.answered[current.id] = (updated.answered[current.id] || 0) + 1;
-        updated.failed = isCorrect ? updated.failed.filter((id) => id !== current?.id) : [...new Set([...updated.failed, current.id])];
-        const answeredQuestion = current;
-        updated.history.push({ id: `${Date.now()}-${answeredQuestion.id}`, questionId: answeredQuestion.id, at: new Date().toISOString(), question: answeredQuestion.q, topic: answeredQuestion.topic, level: answeredQuestion.level, selected: selected.map((index) => answeredQuestion.options[index]), correct: correct.map((index) => answeredQuestion.options[index]), ok: isCorrect, why: answeredQuestion.why });
-        saveStats(subject, updated);
-        for (const [index, label] of [...options.children].entries()) {
-          const result = document.createElement("span"); result.className = "muted";
-          result.textContent = correct.includes(index) ? " · Correcta" : selected.includes(index) ? " · Tu elección" : "";
-          label.append(result); label.querySelector("input").disabled = true;
-        }
-        submit.disabled = true;
-        const feedback = document.createElement("div"); feedback.className = `feedback${isCorrect ? "" : " bad"}`;
-        feedback.textContent = `${isCorrect ? "Correcto." : "Incorrecto."} ${current.why} Precisión acumulada: ${percent(updated)}%.`;
-        const following = document.createElement("button"); following.className = "action-button"; following.type = "button"; following.textContent = "Siguiente pregunta →"; following.addEventListener("click", next);
-        quiz.append(feedback, following);
-      });
-    }
-    levelSelect.addEventListener("change", next); topicSelect.addEventListener("change", next); failedSelect.addEventListener("change", next); next();
+  <script>
+    import {initializeQuiz} from "../../../scripts/quiz-controller";
+    import {showError} from "../../../scripts/progress";
+    void initializeQuiz().catch(showError);
   </script>
 </BaseLayout>

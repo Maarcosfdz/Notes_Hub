@@ -1,0 +1,33 @@
+{
+  "at": "2026-11-03T13:16:22.405Z",
+  "node": "v24.14.0",
+  "content": {
+    "command": "node scripts/verify-content.mjs",
+    "exitCode": 0
+  },
+  "bundling": {
+    "command": "node --test --test-reporter=tap docs/reformultation/checks/t01b.test.mjs",
+    "exitCode": 0
+  },
+  "persistence": {
+    "command": "node --test --test-reporter=tap docs/reformultation/checks/progress.test.mjs",
+    "exitCode": 1
+  },
+  "backupManifestSha256": "394a5764d145ddeeb9becf14124f38067684ce123f952c49c8299c7559601ae5",
+  "productDifferencesFromT01": [
+    "src/pages/materias/aws/estadisticas.astro",
+    "src/pages/materias/aws/preguntas.astro"
+  ],
+  "T01HistoryHashes": {
+    "docs/reformultation/docs/T01_RESULTADOS.md": "6f238989b1fd44cd9c05dc8680df5a83593bfc74cac1d81f612fc4f3764552ef",
+    "docs/reformultation/docs/tickets/T01_respaldo_y_regresion.md": "3a285cf77beec348d3eca5d4737adc9d53e33bd16721b9872490e8266585da88",
+    "docs/reformultation/docs/evidencias-T01/baseline.json": "2c33804bbfb633f44032d20fe82fd1d329af55048113baa128e16aeee2257f1a",
+    "docs/reformultation/docs/evidencias-T01/browser.json": "ed6855248b7340761aeb77143c632845f1d65b76551f2e50cdb77d0a1a43d5f1",
+    "docs/reformultation/docs/evidencias-T01/build.log": "b9af2fea9950729e33209a9ad613b3c995bc8c5e2e08a51fe2e9ee8011f5c9af",
+    "docs/reformultation/docs/evidencias-T01/content.log": "ae53fba7e280d0add819ca4f89ce7c29a68065cf2963c53f481af3be5d389299",
+    "docs/reformultation/docs/evidencias-T01/dark-desktop.png": "9f0736a98cbbd568b13eb5cd0cddbca24dc1996ad39fde9d77bd2331ca939118",
+    "docs/reformultation/docs/evidencias-T01/light-mobile-table.png": "f8b7ef0c23bfd75c33680ea3fa186633d6d99f2ad4ddcb96794030238cc3378b",
+    "docs/reformultation/docs/evidencias-T01/progress.log": "906d111ae9bd0adf7b59a181a928d7db873cefa725c249191a058b106e4c49ec",
+    "docs/reformultation/docs/evidencias-T01/recovery.json": "a36db46ba1b7216a1bb3e99a7073add623d324b1cff8ac0094bb641b2430748e"
+  }
+}

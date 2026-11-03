@@ -1,0 +1,1 @@
+export const importSchema=`CREATE TABLE study_imports(user_id TEXT NOT NULL REFERENCES "user"(id),digest TEXT NOT NULL,payload TEXT NOT NULL,summary TEXT NOT NULL,created_at TEXT NOT NULL,PRIMARY KEY(user_id,digest));`;

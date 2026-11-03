@@ -1,0 +1,27 @@
+# Allowlist: no Git history, .env, SQLite, test data, backups or historical copies.
+**
+!package.json
+!pnpm-lock.yaml
+!.npmrc
+!astro.config.mjs
+!tsconfig.json
+!src/
+!src/**
+!public/
+!public/**
+!private/
+!private/study-assets/
+!private/study-assets/**
+!scripts/
+!scripts/verify-content.mjs
+!scripts/auth-migrate.mjs
+!scripts/users.mjs
+!scripts/database.mjs
+!docker/
+!docker/*.mjs
+**/.env*
+**/*.sqlite*
+**/*.db
+**/*.pem
+**/*.key
+**/storageState*.json

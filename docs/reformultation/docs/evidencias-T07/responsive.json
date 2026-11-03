@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "theme": "light",
+      "width": 320,
+      "routes": 28,
+      "tables": 90,
+      "images": 190,
+      "code": 7,
+      "scrollable": 23,
+      "buttonContrast": 5.433159679240918,
+      "status": "PASS"
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "routes": 28,
+      "tables": 90,
+      "images": 190,
+      "code": 7,
+      "scrollable": 18,
+      "buttonContrast": 5.433159679240918,
+      "status": "PASS"
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "routes": 28,
+      "tables": 90,
+      "images": 190,
+      "code": 7,
+      "scrollable": 18,
+      "buttonContrast": 5.433159679240918,
+      "status": "PASS"
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "routes": 28,
+      "tables": 90,
+      "images": 190,
+      "code": 7,
+      "scrollable": 0,
+      "buttonContrast": 5.433159679240918,
+      "status": "PASS"
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "routes": 28,
+      "tables": 90,
+      "images": 190,
+      "code": 7,
+      "scrollable": 0,
+      "buttonContrast": 5.433159679240918,
+      "status": "PASS"
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "routes": 28,
+      "tables": 90,
+      "images": 190,
+      "code": 7,
+      "scrollable": 23,
+      "buttonContrast": 5.433159679240918,
+      "status": "PASS"
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "routes": 28,
+      "tables": 90,
+      "images": 190,
+      "code": 7,
+      "scrollable": 18,
+      "buttonContrast": 5.433159679240918,
+      "status": "PASS"
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "routes": 28,
+      "tables": 90,
+      "images": 190,
+      "code": 7,
+      "scrollable": 18,
+      "buttonContrast": 5.433159679240918,
+      "status": "PASS"
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "routes": 28,
+      "tables": 90,
+      "images": 190,
+      "code": 7,
+      "scrollable": 0,
+      "buttonContrast": 5.433159679240918,
+      "status": "PASS"
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "routes": 28,
+      "tables": 90,
+      "images": 190,
+      "code": 7,
+      "scrollable": 0,
+      "buttonContrast": 5.433159679240918,
+      "status": "PASS"
+    },
+    {
+      "case": "Keyboard menu/escape, scroll regions, group state, import focus, hints, account marks, figures, details, skip link, reduced motion, login/logout/error and empty library",
+      "motion": {
+        "animation": "1e-05s",
+        "transition": "1e-05s"
+      },
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "syntheticOnly": true
+}

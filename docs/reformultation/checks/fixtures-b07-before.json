@@ -1,0 +1,4 @@
+{
+  "sourceSha256": "242c7641ecd20b51e1d3fe26f48f42964ce53d205f8f133a8084ad41d0b4e271",
+  "selection": "if (mode.value !== \"practice\") {\n        const series = exams[mode.value];\n        if (examIndex >= series.length) { const message = document.createElement(\"p\"); message.textContent = \"Serie completada: 65 preguntas. Consulta tus resultados en Estadísticas. Es práctica, no una puntuación oficial AWS.\"; quiz.append(message); return; }\n        current = bank.find((question) => question.id === series[examIndex++].id)!;\n      } else current = pool[Math.floor(Math.random() * pool.length)];"
+}

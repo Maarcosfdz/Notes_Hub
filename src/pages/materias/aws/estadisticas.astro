@@ -5,7 +5,7 @@ const root = import.meta.env.BASE_URL;
 ---
 <BaseLayout title="Progreso AWS" description="Consulta y guarda tu progreso de estudio de AWS.">
   <div class="breadcrumb"><a href={root}>Biblioteca</a> / <a href={`${root}materias/aws/`}>AWS</a> / Progreso</div>
-  <section class="page-intro reveal"><span class="eyebrow">Progreso / AWS</span><h1>Tu camino de estudio.</h1><p class="lead">Tu historial y tus resultados se guardan en este navegador. Puedes descargar una copia cuando quieras.</p><StudyTools subject="aws" /></section>
+  <section class="page-intro reveal"><span class="eyebrow">Progreso / AWS</span><h1>Tu camino de estudio.</h1><p class="lead">Tu historial y tus resultados se guardan en tu cuenta y están disponibles desde tus dispositivos. Puedes descargar una copia cuando quieras.</p><StudyTools subject="aws" /></section>
   <div class="stat-grid">
     <div class="stat-card"><span class="muted">Respuestas</span><strong class="stat-number" data-done>0</strong></div>
     <div class="stat-card"><span class="muted">Correctas</span><strong class="stat-number" data-correct>0</strong></div>
@@ -15,17 +15,23 @@ const root = import.meta.env.BASE_URL;
   <div class="history-list" data-history></div>
   <div class="pills" style="margin-top:24px">
     <button class="action-button primary" type="button" data-export>Exportar progreso</button>
-    <label class="action-button">Importar copia de seguridad<input type="file" accept="application/json,.json" hidden data-import /></label>
+    <label class="action-button file-action">Importar copia de seguridad<input type="file" accept="application/json,.json" data-import /></label>
+    <button class="action-button" type="button" data-local-import>Importar datos de este navegador</button>
     <button class="action-button" type="button" data-reset>Reiniciar estadísticas</button>
   </div>
   <p class="muted" role="status" aria-live="polite" data-status></p>
-  <script lang="ts">
-    import { getStats, exportAll, importAll } from "../../../scripts/progress";
+  <script>
+    import { initialize, getStats, getSessions, getImports, exportAll, importAll, importBrowser, resetStats } from "../../../scripts/progress";
+    await initialize("aws");
+    function render() {
     const stats = getStats("aws");
-    document.querySelector("[data-done]").textContent = String(stats.done);
-    document.querySelector("[data-correct]").textContent = String(stats.ok);
-    document.querySelector("[data-accuracy]").textContent = `${stats.done ? Math.round(stats.ok / stats.done * 100) : 0}%`;
-    const history = document.querySelector("[data-history]");
+    document.querySelector<HTMLElement>("[data-done]")!.textContent = String(stats.done);
+    document.querySelector<HTMLElement>("[data-correct]")!.textContent = String(stats.ok);
+    document.querySelector<HTMLElement>("[data-accuracy]")!.textContent = `${stats.done ? Math.round(stats.ok / stats.done * 100) : 0}%`;
+    const history = document.querySelector<HTMLElement>("[data-history]")!;
+    history.replaceChildren();
+    for(const batch of getImports('aws')){const p=document.createElement('p');p.textContent=`Copia importada: ${batch.summary.legacy} registros sin identidad; agregados originales ${batch.summary.legacyAggregates.map(a=>`${a.ok}/${a.done}`).join(', ')}. Legado archivado por separado, disponible en la exportación; no se suma a los intentos actuales.`;history.append(p);}
+    for(const session of getSessions('aws')){const p=document.createElement('p');p.textContent=`Simulacro ${session.exam}: ${session.ok}/${session.done} correctas · ${session.status==='completed'?'Completado':'En curso'} · ${session.cursor}/65`;history.append(p);}
     const attempts = [...stats.history].reverse().slice(0, 30);
     if (!attempts.length) { const empty = document.createElement("p"); empty.className = "empty-results"; empty.textContent = "Aún no hay respuestas registradas. Practica una pregunta para empezar."; history.append(empty); }
     for (const attempt of attempts) {
@@ -34,18 +40,20 @@ const root = import.meta.env.BASE_URL;
       const body = document.createElement("p"); body.className = "muted"; body.textContent = `Tu respuesta: ${(attempt.selected || []).join(" · ")} | Correcta: ${(attempt.correct || []).join(" · ")} | ${attempt.why || ""}`;
       item.append(summary, body); history.append(item);
     }
-    document.querySelector("[data-export]").addEventListener("click", exportAll);
-    const status = document.querySelector("[data-status]");
-    const fileInput = document.querySelector("[data-import]");
+    }
+    render();window.addEventListener('study:updated',render);
+    document.querySelector<HTMLButtonElement>("[data-export]")!.addEventListener("click", exportAll);
+    const status = document.querySelector<HTMLElement>("[data-status]")!;
+    const fileInput = document.querySelector<HTMLInputElement>("[data-import]")!;
     fileInput.addEventListener("change", async () => {
       const file = fileInput.files?.[0]; if (!file) return;
-      if (!confirm("¿Reemplazar el progreso guardado por el contenido de esta copia?")) { fileInput.value = ""; return; }
-      try { await importAll(file); location.reload(); }
+      try { if(await importAll(file))location.reload(); }
       catch (error) { status.textContent = error instanceof Error ? error.message : "No se pudo importar el archivo."; fileInput.value = ""; }
     });
-    document.querySelector("[data-reset]").addEventListener("click", () => {
+    document.querySelector<HTMLButtonElement>('[data-local-import]')!.addEventListener('click',async()=>{try{if(await importBrowser())location.reload();}catch(e){status.textContent=e instanceof Error?e.message:'No se pudo importar.';}});
+    document.querySelector<HTMLButtonElement>("[data-reset]")!.addEventListener("click", async () => {
       if (!confirm("¿Reiniciar las estadísticas y el historial de AWS?")) return;
-      localStorage.removeItem("study:aws:stats"); location.reload();
+      try { await resetStats("aws"); location.reload(); } catch(error) {status.textContent=error instanceof Error?error.message:'No se pudo reiniciar.';}
     });
   </script>
 </BaseLayout>

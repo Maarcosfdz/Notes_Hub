@@ -1,0 +1,10 @@
+import fs from 'node:fs';import crypto from 'node:crypto';
+const original=JSON.parse(fs.readFileSync('C:/Users/mroma/AppData/Local/Temp/notes-hub-T01-recovery-30sJe2/manifest.json','utf8'));
+const hash=f=>crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex');
+const code=f=>f.startsWith('src/')||f.startsWith('scripts/')||['.gitignore','README.md','astro.config.mjs','package.json','pnpm-lock.yaml'].includes(f);
+const before=new Map(original.files.filter(e=>code(e.path)).map(e=>[e.path,e.sha256]));
+const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(dir+'/'+e.name):e.isFile()?[dir+'/'+e.name]:[]);
+const now=[...walk('src'),...walk('scripts'),...['.gitignore','README.md','astro.config.mjs','package.json','pnpm-lock.yaml']];
+const changes=now.map(file=>({file,status:before.has(file)?'modified':'added',before:before.get(file)||null,after:hash(file)})).filter(e=>e.before!==e.after);
+const removed=[...before.keys()].filter(f=>!fs.existsSync(f));
+fs.writeFileSync('docs/reformultation/docs/evidencias-T06B/changed-code.json',JSON.stringify({baseline:'pre-sequence recovery snapshot; not Git HEAD',changes,removed,assets:'All 744 moves and hashes recorded separately in evidencias-T03B/moved-assets.json'},null,2)+'\n');console.log(JSON.stringify({changedCode:changes.length,removedCode:removed.length}));

@@ -1,0 +1,11 @@
+import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';import {spawnSync} from 'node:child_process';
+const [phase,...tests]=process.argv.slice(2);if(!/^T\d\d[A-Z]?$/.test(phase||''))throw Error('Phase identifier required');
+const out=`docs/reformultation/docs/evidencias-${phase}`;fs.mkdirSync(out,{recursive:true});
+const run=(name,exe,args)=>{const r=spawnSync(exe,args,{encoding:'utf8',windowsHide:true,env:{...process.env,NO_COLOR:'1'}});fs.writeFileSync(`${out}/${name}.log`,(r.stdout||'')+(r.stderr||''));console.log(name+': '+r.status);return{command:[exe,...args].join(' '),exitCode:r.status,error:r.error?.message};};
+const cli=path.resolve('node_modules/astro',JSON.parse(fs.readFileSync('node_modules/astro/package.json','utf8')).bin.astro);
+const results={at:new Date().toISOString(),node:process.version,content:run('content',process.execPath,['scripts/verify-content.mjs']),types:run('types',process.execPath,[cli,'check']),build:run('build',process.execPath,[cli,'build']),tests:tests.length?run('tests',process.execPath,['--test','--test-reporter=tap',...tests]):null};
+const hash=f=>crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex');
+const baseline=JSON.parse(fs.readFileSync(phase==='T07'?'docs/reformultation/docs/evidencias-T07/content-baseline.json':'docs/reformultation/docs/evidencias-T02A-B07/before.json','utf8'));
+results.protectedDifferences=Object.entries(baseline.hashes).filter(([f])=>f.startsWith('src/content/modules/')&&(!phase.startsWith('T06')||!f.endsWith('/reference/glossary.json'))).filter(([f,h])=>!fs.existsSync(f)||hash(f)!==h).map(([f])=>f);
+fs.writeFileSync(`${out}/validation.json`,JSON.stringify(results,null,2)+'\n');
+if(results.content.exitCode||results.types.exitCode||results.build.exitCode||results.tests?.exitCode||results.protectedDifferences.length)process.exitCode=1;

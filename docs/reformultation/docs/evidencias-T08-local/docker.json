@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "at": "2026-11-03T20:39:26.105Z",
+  "context": "desktop-linux",
+  "project": "notes-hub-t08-4465d836",
+  "localOnly": true,
+  "results": [
+    {
+      "case": "Required environment, frozen build and pinned runtime",
+      "status": "PASS"
+    },
+    {
+      "case": "Chromium login, two users/two devices, idempotent answers, marks, library, persistent exam, private resources and all chapters",
+      "chapters": 18,
+      "questions": 480,
+      "resourceSamples": 9,
+      "status": "PASS"
+    },
+    {
+      "case": "Non-root/read-only image, health, permissions, force-recreate and down/up preserve users, sessions and full study state",
+      "runtime": {
+        "uid": 1000,
+        "sqlite": "3.51.2",
+        "migrations": 4,
+        "mode": "600",
+        "assets": 744,
+        "noSources": true,
+        "noTests": true,
+        "noEnv": true,
+        "noBrowser": true,
+        "clientPrivateFiles": 0
+      },
+      "localSqliteBackupAndRestore": true,
+      "imageId": "sha256:1f1dff5f7564cfd6f342635116d2adcea4115d1f814ae1106f7cd229d845fe58",
+      "imageBytes": 898991589,
+      "retainedSyntheticVolume": "notes-hub-t08-4465d836_notes_data",
+      "status": "PASS"
+    }
+  ],
+  "testContainersStopped": true
+}

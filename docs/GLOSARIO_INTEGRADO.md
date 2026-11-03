@@ -1,0 +1,15 @@
+# Integración de conceptos (T06A)
+
+Fuentes: 247 entradas activas previas, 225 del JSON editorial III y 155 del Markdown integral IV. Se integran **489 conceptos**, con 242 nuevos y 138 correspondencias. No se suman directamente las tres cifras. [Mapa completo y decisiones](../src/content/modules/devops/aws/reference/glossary-provenance.json) y [snapshot reversible](reformultation/docs/evidencias-T06A/glossary-before.json).
+
+Se normalizan acentos/caso/puntuación para detectar nombres equivalentes, conservando `+` para no fusionar Support y Support+. Solo se fusiona por nombre canónico, alias verdadero declarado en fuente o equivalencia revisada explícita: CloudFormation/AWS CloudFormation, IaC/infraestructura como código, Rightsizing/dimensionamiento adecuado, Fargate/AWS Fargate, Lambda/AWS Lambda, reglas Lifecycle de S3 y snapshot EBS. No hay coincidencia difusa ni extracción de acrónimos inventados.
+
+Las 247 entradas conservan título, definición y noteId. Los alias previos se conservan salvo la lista de productos distintos de la entrada contextual «AWS DMS Schema Conversion / AWS SCT»: la propia definición ya decía que no son idénticos. Esa entrada sigue existiendo como grupo contextual; se añaden entradas canónicas independientes para cada herramienta. El cambio y los valores originales están registrados y respaldados.
+
+Se mantienen separados servicio/pantalla/API de AWS Health; suite Amazon Quick y componente Quick Sight; conceptos de límites y herramienta Service Quotas; planes de soporte actuales/legado; tipos y componentes de servicios. Los nombres históricos explícitos mantienen su contexto temporal. Las entradas previas que explican varios conceptos juntos siguen como contexto, no se eliminan por añadir sus conceptos individuales.
+
+Cada una de las 380 entradas de origen tiene mapa a concepto activo, apartado fuente, definición original y noteId resultante. Al fusionar prevalece la definición y enlace ya activo; la definición contextual de IV permanece en procedencia, sin empobrecer la anterior. Cada apartado fuente ha sido comprobado en los capítulos reales. No se han editado teoría, banco ni comparativas.
+
+`node scripts/verify-glossary.mjs` comprueba las 247 entradas, unicidad canónica, colisiones de alias, seis campos, UTF-8, grupos presentes, noteId y 380 referencias fuente. `node scripts/integrate-glossaries.mjs` muestra el plan; `--write` reproduce esta integración desde el snapshot y solo acepta estado original o resultado idéntico. Si hay nuevas ediciones activas se detiene: revisar mapa y actualizar proceso deliberadamente, sin sobrescribirlas. Para revertir, usar el snapshot de glosario y conservar antes las ediciones posteriores; los originales editoriales nunca se alteran.
+
+La revisión semántica de integración corresponde al agente: se inspeccionaron nombres, equivalencias y casos ambiguos contra sus definiciones. El validador estructural no demuestra equivalencia pedagógica ni vigencia comercial de AWS. **No se ha efectuado revisión humana independiente ni actualización externa del contenido docente**; se integra fielmente el material versionado, con sus advertencias históricas.

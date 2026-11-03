@@ -1,0 +1,24 @@
+{
+  "at": "2026-11-03T19:18:25.331Z",
+  "snapshot": {
+    "backup": "C:\\Users\\mroma\\AppData\\Local\\Temp\\notes-hub-T01-recovery-qd1ZEv",
+    "files": 2062,
+    "bytes": 345185322
+  },
+  "verified": {
+    "result": "PASS",
+    "files": 2062,
+    "manifestSha256": "ca1cb1f8034a7ed96aa8e0af3a8c71866ea5019e30aea02c7775c97f35c88d48"
+  },
+  "restore": {
+    "restoredAt": "2026-11-03T19:18:25.327Z",
+    "backup": "C:\\Users\\mroma\\AppData\\Local\\Temp\\notes-hub-T01-recovery-qd1ZEv",
+    "target": "C:\\Users\\mroma\\AppData\\Local\\Temp\\notes-hub-T01-restore-t90MX8",
+    "verified": 2062,
+    "result": "PASS"
+  },
+  "protectedFilesChecked": 536,
+  "protectedDifferences": [],
+  "movedReport": "evidencias-T03B/moved-assets.json",
+  "moves": 744
+}

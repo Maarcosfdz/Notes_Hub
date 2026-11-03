@@ -1,0 +1,121 @@
+{
+  "at": "2026-11-03T19:25:52.333Z",
+  "original": "C:\\Users\\mroma\\Desktop\\FIC\\master\\1.Informática como servizo\\Teoria\\aws\\Notes_Hub_Recovery\\T01-20261103-fdBKQy",
+  "durable": "C:\\Users\\mroma\\Desktop\\FIC\\master\\1.Informática como servizo\\Teoria\\aws\\Notes_Hub_Recovery\\POST-T06B-20261103-qd1ZEv",
+  "counts": [
+    2480,
+    2062
+  ],
+  "categories": {
+    ".astro": {
+      "T01": 8,
+      "postT06B": 9
+    },
+    ".gitignore": {
+      "T01": 1,
+      "postT06B": 1
+    },
+    ".npmrc": {
+      "T01": 1,
+      "postT06B": 1
+    },
+    "AGENTS.md": {
+      "T01": 1,
+      "postT06B": 1
+    },
+    "astro.config.mjs": {
+      "T01": 1,
+      "postT06B": 1
+    },
+    "aws-clf-c02": {
+      "T01": 490,
+      "postT06B": 490
+    },
+    "dist": {
+      "T01": 723,
+      "postT06B": 59
+    },
+    "docs": {
+      "T01": 25,
+      "postT06B": 167
+    },
+    "iniciar.bat": {
+      "T01": 1,
+      "postT06B": 1
+    },
+    "package.json": {
+      "T01": 1,
+      "postT06B": 1
+    },
+    "pnpm-lock.yaml": {
+      "T01": 1,
+      "postT06B": 1
+    },
+    "public": {
+      "T01": 687,
+      "postT06B": 0
+    },
+    "README.md": {
+      "T01": 1,
+      "postT06B": 1
+    },
+    "scripts": {
+      "T01": 5,
+      "postT06B": 23
+    },
+    "src": {
+      "T01": 46,
+      "postT06B": 74
+    },
+    "tmp": {
+      "T01": 487,
+      "postT06B": 487
+    },
+    "tsconfig.json": {
+      "T01": 1,
+      "postT06B": 1
+    },
+    "private": {
+      "T01": 0,
+      "postT06B": 744
+    }
+  },
+  "delta": -418,
+  "originalPublicResources": 687,
+  "missingResources": [],
+  "unexplainedMissing": [],
+  "requiredCurrentFilesVerified": 1336,
+  "currentDifferences": [],
+  "originalManifestSha256": "394a5764d145ddeeb9becf14124f38067684ce123f952c49c8299c7559601ae5",
+  "durableManifestSha256": "ca1cb1f8034a7ed96aa8e0af3a8c71866ea5019e30aea02c7775c97f35c88d48",
+  "restoration": {
+    "restoredAt": "2026-11-03T19:24:07.958Z",
+    "backup": "C:\\Users\\mroma\\Desktop\\FIC\\master\\1.Informática como servizo\\Teoria\\aws\\Notes_Hub_Recovery\\POST-T06B-20261103-qd1ZEv",
+    "target": "C:\\Users\\mroma\\AppData\\Local\\Temp\\notes-hub-T01-restore-I2l7Gb",
+    "verified": 2062,
+    "result": "PASS"
+  },
+  "copiedNotDeleted": true,
+  "exclusions": [
+    {
+      "path": ".git",
+      "reason": "Git metadata/history excluded: working files captured independently, no remotes/config/hooks/index copied"
+    },
+    {
+      "path": ".pdf-tools",
+      "reason": "Regenerable dependencies or browser/tool state"
+    },
+    {
+      "path": ".playwright-mcp",
+      "reason": "Regenerable dependencies or browser/tool state"
+    },
+    {
+      "path": ".pnpm-store",
+      "reason": "Regenerable dependencies or browser/tool state"
+    },
+    {
+      "path": "node_modules",
+      "reason": "Regenerable dependencies or browser/tool state"
+    }
+  ]
+}

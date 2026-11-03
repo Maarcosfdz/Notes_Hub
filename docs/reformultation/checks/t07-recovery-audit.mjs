@@ -1,0 +1,13 @@
+import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';import {spawnSync}from 'node:child_process';
+const out='docs/reformultation/docs/evidencias-T07';fs.mkdirSync(out,{recursive:true});
+const original=path.resolve('../Notes_Hub_Recovery/T01-20261103-fdBKQy'),durable=path.resolve('../Notes_Hub_Recovery/POST-T06B-20261103-qd1ZEv');
+const hash=f=>crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex');
+for(const dir of [original,durable]){const r=spawnSync(process.execPath,['docs/reformultation/checks/recovery.mjs','verify',dir],{encoding:'utf8',windowsHide:true});if(r.status!==0)throw Error('Integrity failed');}
+const manifests=[original,durable].map(dir=>JSON.parse(fs.readFileSync(path.join(dir,'manifest.json'),'utf8'))),[a,b]=manifests.map(m=>new Map(m.files.map(f=>[f.path,f])));
+const categories={};for(const [side,map]of [['T01',a],['postT06B',b]])for(const p of map.keys()){const group=p.split('/')[0];categories[group]??={T01:0,postT06B:0};categories[group][side]++;}
+const oldOnly=[...a.keys()].filter(p=>!b.has(p));if(oldOnly.some(p=>!p.startsWith('dist/')&&!p.startsWith('public/')))throw Error('Unexplained missing original');
+const oldPublic=[...a.keys()].filter(p=>p.startsWith('public/')),missingResources=oldPublic.filter(p=>!b.has(p.replace(/^public\//,'private/study-assets/')));if(missingResources.length)throw Error('Original publication not preserved');
+const required=[...b.keys()].filter(p=>p.startsWith('src/')||p.startsWith('scripts/')||p.startsWith('private/')||p.startsWith('aws-clf-c02/')||['package.json','pnpm-lock.yaml','astro.config.mjs','tsconfig.json','.npmrc'].includes(p));
+const currentDifferences=required.filter(p=>!fs.existsSync(p)||hash(p)!==b.get(p).sha256);if(currentDifferences.length)throw Error('Working tree differs before T07: '+currentDifferences.join(','));
+const report={at:new Date().toISOString(),original,durable,counts:[a.size,b.size],categories,delta:b.size-a.size,originalPublicResources:oldPublic.length,missingResources,unexplainedMissing:oldOnly.filter(p=>!p.startsWith('dist/')&&!p.startsWith('public/')),requiredCurrentFilesVerified:required.length,currentDifferences,originalManifestSha256:hash(original+'/manifest.json'),durableManifestSha256:hash(durable+'/manifest.json'),restoration:JSON.parse(fs.readFileSync(durable+'/restore-result.json','utf8')),copiedNotDeleted:true,exclusions:manifests[1].exclusions};
+fs.writeFileSync(out+'/recovery.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({result:'PASS',counts:report.counts,delta:report.delta,required:required.length,categories}));

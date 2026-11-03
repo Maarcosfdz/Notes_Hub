@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+if(Astro.locals.user)return Astro.redirect("/");
+---
+<BaseLayout title="Iniciar sesión">
+  <section class="page-intro"><span class="eyebrow">Notes Hub</span><h1>Tu espacio de estudio.</h1><p class="lead">Accede con la cuenta que te ha facilitado la administración.</p></section>
+  <form class="card" data-login>
+    <p><label>Correo electrónico <input class="search-box" name="email" type="email" autocomplete="username" aria-describedby="login-status" required /></label></p>
+    <p><label>Contraseña <input class="search-box" name="password" type="password" autocomplete="current-password" aria-describedby="login-status" required /></label></p>
+    <button class="action-button primary" type="submit">Entrar</button>
+    <p id="login-status" role="alert" aria-live="polite" data-login-status></p>
+  </form>
+  <script>
+    const form=document.querySelector<HTMLFormElement>("[data-login]")!,status=document.querySelector<HTMLElement>("[data-login-status]")!;
+    form.addEventListener("submit",async event=>{event.preventDefault();const button=form.querySelector<HTMLButtonElement>('button')!;button.disabled=true;status.textContent='';
+      try{const data=new FormData(form),response=await fetch('/api/auth/sign-in/email',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:data.get('email'),password:data.get('password')})});if(!response.ok)throw Error('No se pudo iniciar sesión. Comprueba tus credenciales o inténtalo más tarde.');
+        const requested=new URLSearchParams(location.search).get('next')||'/',target=new URL(requested,location.origin);location.assign(target.origin===location.origin&&requested.startsWith('/')?target.href:'/');
+      }catch(error){status.textContent=error instanceof Error?error.message:'No se pudo conectar.';button.disabled=false;}});
+  </script>
+</BaseLayout>

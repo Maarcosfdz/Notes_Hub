@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "browser": "145.0.7632.6",
+  "results": [
+    {
+      "case": "Anonymous matrix and build audit",
+      "routes": 36,
+      "assets": 744,
+      "status": "PASS"
+    },
+    {
+      "case": "Two accounts access every published asset and all subjects",
+      "assetsPerAccount": 744,
+      "cookieFlags": [
+        {
+          "httpOnly": true,
+          "sameSite": "Lax",
+          "secure": false
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "case": "Registration blocked, origin rejection and HTTPS cookie attributes",
+      "status": "PASS"
+    },
+    {
+      "case": "Logout, revocation, expiry, disable/enable and administrative password recovery",
+      "status": "PASS"
+    },
+    {
+      "case": "Brute-force limit with spoofed IP headers",
+      "status": "PASS"
+    }
+  ],
+  "syntheticOnly": true
+}

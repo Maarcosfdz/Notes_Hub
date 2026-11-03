@@ -1,0 +1,10 @@
+---
+interface Props {levels:string[];}
+const {levels}=Astro.props;
+---
+<div class="filters" aria-label="Filtros del cuestionario">
+  <label class="muted">Modo <select class="select" data-mode><option value="practice">Práctica libre</option><option value="1">Simulacro 1 · 65 preguntas</option><option value="2">Simulacro 2 · 65 preguntas</option><option value="3">Simulacro 3 · 65 preguntas</option></select></label>
+  <label class="muted">Nivel <select class="select" data-level><option>Todos</option>{levels.map(level=><option value={level}>{level}</option>)}</select></label>
+  <label class="muted">Tema <select class="select" data-topic><option>Todos</option></select></label>
+  <label class="muted"><input type="checkbox" data-failed /> Repetir falladas</label>
+</div>

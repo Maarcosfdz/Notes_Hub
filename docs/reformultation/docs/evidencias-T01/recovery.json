@@ -1,0 +1,55 @@
+{
+  "backup": "C:\\Users\\mroma\\Desktop\\FIC\\master\\1.Informática como servizo\\Teoria\\aws\\Notes_Hub_Recovery\\T01-20261103-fdBKQy",
+  "manifestSha256": "394a5764d145ddeeb9becf14124f38067684ce123f952c49c8299c7559601ae5",
+  "files": 2480,
+  "categories": {
+    "generated-baseline": {
+      "files": 731,
+      "bytes": 144193860
+    },
+    "project": {
+      "files": 1265,
+      "bytes": 207990009
+    },
+    "historical-input": {
+      "files": 484,
+      "bytes": 99600737
+    }
+  },
+  "exclusions": [
+    {
+      "path": ".git",
+      "reason": "Git metadata/history excluded: working files captured independently, no remotes/config/hooks/index copied"
+    },
+    {
+      "path": ".pdf-tools",
+      "reason": "Regenerable dependencies or browser/tool state"
+    },
+    {
+      "path": ".playwright-mcp",
+      "reason": "Regenerable dependencies or browser/tool state"
+    },
+    {
+      "path": ".pnpm-store",
+      "reason": "Regenerable dependencies or browser/tool state"
+    },
+    {
+      "path": "node_modules",
+      "reason": "Regenerable dependencies or browser/tool state"
+    }
+  ],
+  "restoration": {
+    "restoredAt": "2026-11-03T12:41:33.001Z",
+    "backup": "C:\\Users\\mroma\\AppData\\Local\\Temp\\notes-hub-T01-recovery-fdBKQy",
+    "target": "C:\\Users\\mroma\\AppData\\Local\\Temp\\notes-hub-T01-restore-dntL9b",
+    "verified": 2480,
+    "result": "PASS"
+  },
+  "productDifferences": [],
+  "checks": {
+    "durableBackupVerified": true,
+    "restoredContentVerifier": "PASS",
+    "gitHistoryIncluded": false,
+    "personalBrowserDataRead": false
+  }
+}

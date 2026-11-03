@@ -1,0 +1,31 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import StudyTools from "../../../components/StudyTools.astro";
+import { getCollection } from "astro:content";
+const root = import.meta.env.BASE_URL;
+const notes = (await getCollection("notes"))
+  .filter((note) => note.data.subject === "aws")
+  .sort((a, b) => a.data.group.localeCompare(b.data.group, "es") || a.data.title.localeCompare(b.data.title, "es"));
+const groups = [...new Set(notes.map((note) => note.data.group))];
+---
+<BaseLayout title="Apuntes AWS" description="Apuntes de AWS agrupados por tema.">
+  <div class="breadcrumb"><a href={root}>Biblioteca</a> / <a href={`${root}materias/aws/`}>AWS</a> / Apuntes</div>
+  <section class="page-intro reveal">
+    <span class="eyebrow">Biblioteca de estudio / AWS</span>
+    <h1>Apuntes por tema.</h1>
+    <p class="lead">{notes.length} apuntes organizados en {groups.length} bloques para consultar y repasar.</p>
+    <StudyTools subject="aws" active="notes" />
+  </section>
+  <div class="note-list">{groups.map((group) => {
+    const groupedNotes = notes.filter((note) => note.data.group === group);
+    const groupId = `group-${group.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+    return <section aria-labelledby={groupId}>
+      <div class="note-group"><h2 id={groupId}>{group}</h2><span>{String(groupedNotes.length).padStart(2, "0")} {groupedNotes.length === 1 ? "apunte" : "apuntes"}</span></div>
+      {groupedNotes.map((note) => <a class="note-link" href={`${root}materias/aws/${note.data.id}/`}>
+        <span class="note-icon" aria-hidden="true">{String(group).slice(0, 2).toLocaleUpperCase("es")}</span>
+        <span><h3>{note.data.title}</h3><p>{note.data.summary}</p></span>
+        <span class="note-meta">Leer apunte <span aria-hidden="true">→</span></span>
+      </a>)}
+    </section>;
+  })}</div>
+</BaseLayout>

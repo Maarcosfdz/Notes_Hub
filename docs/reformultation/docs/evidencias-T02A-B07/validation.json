@@ -1,0 +1,28 @@
+{
+  "at": "2026-11-03T15:33:11.517Z",
+  "node": "v24.14.0",
+  "regression": {
+    "command": "node --test --test-reporter=tap docs/reformultation/checks/b07.test.mjs",
+    "exitCode": 0
+  },
+  "content": {
+    "command": "node scripts/verify-content.mjs",
+    "exitCode": 0
+  },
+  "sourceSync": {
+    "command": "node scripts/content-pipeline.mjs check",
+    "exitCode": 0
+  },
+  "publication": {
+    "command": "node scripts/verify-publication.mjs",
+    "exitCode": 0
+  },
+  "existingPersistence": {
+    "command": "node --test --test-reporter=tap docs/reformultation/checks/progress.test.mjs",
+    "exitCode": 1
+  },
+  "differences": [
+    "src/pages/materias/aws/preguntas.astro"
+  ],
+  "outOfScopeChanges": []
+}

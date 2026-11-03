@@ -1,0 +1,361 @@
+{
+  "baseline": "pre-sequence recovery snapshot; not Git HEAD",
+  "changes": [
+    {
+      "file": "src/components/QuizFilters.astro",
+      "status": "added",
+      "before": null,
+      "after": "124d66759c0b2f6e8dba51ed7669c8779d2f9be493fbace6c4ffbd5891bbe90d"
+    },
+    {
+      "file": "src/content/modules/devops/aws/reference/glossary-provenance.json",
+      "status": "added",
+      "before": null,
+      "after": "c93a6562198750e3931212ed2d2e283d488db634cf93593d85b9e4c6894f69ae"
+    },
+    {
+      "file": "src/content/modules/devops/aws/reference/glossary.json",
+      "status": "modified",
+      "before": "66cdbe3571f029683410426294ce15ec00731675f0349ad0f2d5a34149a2e97e",
+      "after": "1dd858b4f754861b350f302c84dfba84feca4600442eef570bda7fa5a038b909"
+    },
+    {
+      "file": "src/env.d.ts",
+      "status": "added",
+      "before": null,
+      "after": "ee8079cce9d20943cd59bd69831c0a719ba63cf72c686b3d94dfdbcfe41de525"
+    },
+    {
+      "file": "src/layouts/BaseLayout.astro",
+      "status": "modified",
+      "before": "128d14221d6d6a66e62496eef28684c851d226db4d9eb8ea790430ff5ec52b6d",
+      "after": "286e817c9be3ac9ef489e115243d3fd107d12829f889c04f91a3cf7ee595057b"
+    },
+    {
+      "file": "src/middleware.ts",
+      "status": "added",
+      "before": null,
+      "after": "fed5972d4a5f34d7ef3bb68e115b34e85332edd3fa4966b4a3a6a95a68d747c2"
+    },
+    {
+      "file": "src/pages/api/auth/[...all].ts",
+      "status": "added",
+      "before": null,
+      "after": "d49da56f42cf625cf9a12a89f175345a612736f6fba3dda68f3595b0ea77f9f6"
+    },
+    {
+      "file": "src/pages/api/study/bank.ts",
+      "status": "added",
+      "before": null,
+      "after": "cda1c4ae9af776eef5304756a736263212bf5f516e37e0a67a9f79830b7cce6b"
+    },
+    {
+      "file": "src/pages/api/study/export.ts",
+      "status": "added",
+      "before": null,
+      "after": "00dec736f35deecd176bf5cfdd61c708c1ceb5427e057f8dfca810216fefbd1d"
+    },
+    {
+      "file": "src/pages/api/study/import.ts",
+      "status": "added",
+      "before": null,
+      "after": "fe965085c18f790e80899d26374caf30730cd964bfd54819cda37791624da64d"
+    },
+    {
+      "file": "src/pages/api/study/state.ts",
+      "status": "added",
+      "before": null,
+      "after": "f97afc7bd49ece6a6cca5fb2dd44b139705e87b72c14e0a5ffb475fab11f28b9"
+    },
+    {
+      "file": "src/pages/areas/[area].astro",
+      "status": "modified",
+      "before": "15c0ef846e44ac8e67ed212da80d9b4de1f0ff6979ac2cdff209d588c9387924",
+      "after": "fc04a0e18bf414aa368727c260441dc44f418fda521d45d1ccba79a34f5bc260"
+    },
+    {
+      "file": "src/pages/docs-aws/[...asset].ts",
+      "status": "added",
+      "before": null,
+      "after": "b228834e7884984658c7d78572f91d288826f040ac7c8d9e9cfaf35b0b4b2a14"
+    },
+    {
+      "file": "src/pages/index.astro",
+      "status": "modified",
+      "before": "43da8434633eebf8907196c2e4509bd659297504462d6c61db816fe47ab75806",
+      "after": "4bc77c45a60cbb771472d4d892b179b5980139412b7ae753bbea49a8c49ed94f"
+    },
+    {
+      "file": "src/pages/login.astro",
+      "status": "added",
+      "before": null,
+      "after": "6194bcf20fee5a01de397c7604ea8859072eb03485bf3ae34b841595feb97683"
+    },
+    {
+      "file": "src/pages/materias/aws/estadisticas.astro",
+      "status": "modified",
+      "before": "23a22a3a83e3f15454561a927ae5469debae135c80e23bd0356f1fd6d68c20ca",
+      "after": "c707f06c3ee0d6860edf39c9c99e05d347410ae3abd7d87f86aa6c0af50da2f4"
+    },
+    {
+      "file": "src/pages/materias/aws/preguntas.astro",
+      "status": "modified",
+      "before": "1a059cf0d1231d9e535c978145c96ad5455dcc592c502546bd39f6d42bc9b839",
+      "after": "91de25252e475cb51d15ba20003942087ff74311d6acec169614f4533441ef63"
+    },
+    {
+      "file": "src/pages/materias/[subject]/index.astro",
+      "status": "modified",
+      "before": "b02b9f6fd2acdce1cf55719b8461260d25d63260e9f5c680b02106ef019b6193",
+      "after": "e41129c210f11c0bfe6e4ceff78041c152ee18771801ca9653ae04618f804e0d"
+    },
+    {
+      "file": "src/pages/materias/[subject]/[note].astro",
+      "status": "modified",
+      "before": "e470bda38b19f9f703e25e4655c5563a5b2d8b7c679c8f13673b846b105b6883",
+      "after": "eb86af0c9363607fd4ca0203d9a68096192bacbcd8c5c88f98e92bedfcb9d7ae"
+    },
+    {
+      "file": "src/pages/study-docs/[...asset].ts",
+      "status": "added",
+      "before": null,
+      "after": "a6657a2477a358c1ca331842d44592a8e69da492fa40d741f8d9777a44467b0a"
+    },
+    {
+      "file": "src/pages/study-figures/[...asset].ts",
+      "status": "added",
+      "before": null,
+      "after": "80193526dfa0faef28f3d390a97e16fade48b15efc3bec3cd6fdc2b243c7b886"
+    },
+    {
+      "file": "src/scripts/progress-local.ts",
+      "status": "added",
+      "before": null,
+      "after": "ff463bf3540d3e51927c769f9d88e7a594052ffa54f715b90ff137529cab3ec9"
+    },
+    {
+      "file": "src/scripts/progress-remote.ts",
+      "status": "added",
+      "before": null,
+      "after": "e5deca9bee40665b1dd5c801589b95e3a18f1480a23a2a4f5cf48a7833d9f90e"
+    },
+    {
+      "file": "src/scripts/progress.ts",
+      "status": "modified",
+      "before": "489d2e519788932b2483794568d4529fbf174569d39f9d77313bec2f943583f3",
+      "after": "d987d4ab275a767731912d9b04d156ca833edaeef8cc56f8a84fd527fd529791"
+    },
+    {
+      "file": "src/scripts/quiz-controller.ts",
+      "status": "added",
+      "before": null,
+      "after": "8c76e880df9ebe29ea762ea888aa2c74a3e5544b763e62a24d14c84c0068b147"
+    },
+    {
+      "file": "src/scripts/quiz-selection.ts",
+      "status": "added",
+      "before": null,
+      "after": "d762b229e80cedbbc579f4d0599f1ab151d0e1a45008f5d1a8972753433e7bba"
+    },
+    {
+      "file": "src/scripts/quiz-view.ts",
+      "status": "added",
+      "before": null,
+      "after": "c2e09816dc51748fe274f5afd7e268f9d44c196d380eca747a30e2780fc17398"
+    },
+    {
+      "file": "src/scripts/study.ts",
+      "status": "added",
+      "before": null,
+      "after": "ef28e0f319e593d0d01ea04e9cdc2a493f4436ceb515bc734b46d839e7f822a5"
+    },
+    {
+      "file": "src/server/assets.ts",
+      "status": "added",
+      "before": null,
+      "after": "e0a755346bbf51b01aebf44dc7a2ee69e10fa59c07b1db55d99fdfacc1be7c89"
+    },
+    {
+      "file": "src/server/auth.ts",
+      "status": "added",
+      "before": null,
+      "after": "3926154249f9cc30c2ee0ce16c393df67fd9dd912e4f6b001ef36c024e9f8aea"
+    },
+    {
+      "file": "src/server/database.ts",
+      "status": "added",
+      "before": null,
+      "after": "05de76d56d44dfee472fe968179caacf9ef729c177a77cdfa9e5c1add4364879"
+    },
+    {
+      "file": "src/server/http.ts",
+      "status": "added",
+      "before": null,
+      "after": "2d31dca477ae1dc7b021f81f0a1a97dd2a34d3c3951ee3a77cff33e72042b3d7"
+    },
+    {
+      "file": "src/server/import-schema.ts",
+      "status": "added",
+      "before": null,
+      "after": "aeb9304c6b924af7bc108417869594bd6777a0b0f44af9d95a68246bc314b70b"
+    },
+    {
+      "file": "src/server/import-service.ts",
+      "status": "added",
+      "before": null,
+      "after": "1f2040a3db4499d25ad36e2bcca4c5c85302345033533211426de90c820575c2"
+    },
+    {
+      "file": "src/server/library.ts",
+      "status": "added",
+      "before": null,
+      "after": "05aff8be7549e68d68da08e99d552ba8f304ce066f0d9bbed9f414542458a1ba"
+    },
+    {
+      "file": "src/server/study-schema.ts",
+      "status": "added",
+      "before": null,
+      "after": "547694a5c9539c296c881a20547779a99ae844b1f4385b6a5d4fde7983f02e72"
+    },
+    {
+      "file": "src/server/study-service.ts",
+      "status": "added",
+      "before": null,
+      "after": "93a66f9154bc5dd94dd3c9a5af62ff747fd8f1245adb9fb70960144ed285f062"
+    },
+    {
+      "file": "scripts/auth-migrate.mjs",
+      "status": "added",
+      "before": null,
+      "after": "b7012453235870238335f39b167fe8d0a79e811627e54759ba6a832a6d0ab867"
+    },
+    {
+      "file": "scripts/close-t03b.mjs",
+      "status": "added",
+      "before": null,
+      "after": "5fbfdebb451fa79829dc19e00744f5e134a496045cdb8ea5fb3ba0a7c9b6041c"
+    },
+    {
+      "file": "scripts/close-ticket.mjs",
+      "status": "added",
+      "before": null,
+      "after": "0caf42ea0b0b19e6b5fc6d49b2bcc0ae1903875f005fec7084f42540fcb7bfd3"
+    },
+    {
+      "file": "scripts/content-manifest.json",
+      "status": "modified",
+      "before": "53aaa75737c729dacce96c6e911a00952ee9e85a515a9dc418b1f0127183bc14",
+      "after": "35fa229a5112abf60c0d3033774f60af83fe710ea4ae98326617669a6ebef5f6"
+    },
+    {
+      "file": "scripts/content-pipeline.mjs",
+      "status": "modified",
+      "before": "0f5f1abe6a60bb06eb70096582d56f99359e4378b45cd6e2663d70213870f0d0",
+      "after": "d875744427285b8a4b9ed0de53975320683264bef7dd732f72f5fcf7ec0cda05"
+    },
+    {
+      "file": "scripts/database.mjs",
+      "status": "added",
+      "before": null,
+      "after": "f7ef93df49ac8e1150a6d0745d24257433af50baa5d1f2d817b5941d763dd860"
+    },
+    {
+      "file": "scripts/dev-server.mjs",
+      "status": "added",
+      "before": null,
+      "after": "8138e899cc9927999fca0c4ddc33fddd26b0b891ceac6df3aefeebbe3417782a"
+    },
+    {
+      "file": "scripts/dev-users.mjs",
+      "status": "added",
+      "before": null,
+      "after": "bff94a75d5445a57319c37b3130b1e15a3696488a4d606878d9b0de231e01f37"
+    },
+    {
+      "file": "scripts/development-env.mjs",
+      "status": "added",
+      "before": null,
+      "after": "85951988e29ff649bd70c903de274580b87378d1a83a606126e1d0d567b48270"
+    },
+    {
+      "file": "scripts/extract-quiz-controller.mjs",
+      "status": "added",
+      "before": null,
+      "after": "bcbe83be5baf37a41ebc73c97da5c8e366bf1060bf71f6ceb47af832fffd06d2"
+    },
+    {
+      "file": "scripts/inspect-study-assets.py",
+      "status": "modified",
+      "before": "05a99961416935c3edb4f1488aa59215428a7f9c042e72bf69a05c92c569dcd4",
+      "after": "69bc1e4f328476d92f598b8ac8a17ad1eba7b24caf9d6748c61963e4592c6caa"
+    },
+    {
+      "file": "scripts/integrate-glossaries.mjs",
+      "status": "added",
+      "before": null,
+      "after": "a64ff1469fdd6016d1023686553ebf461e56ad1b45ac1e26e69ffc2dc2e1352a"
+    },
+    {
+      "file": "scripts/run-regressions.mjs",
+      "status": "added",
+      "before": null,
+      "after": "7e020c3af9aba286b7d08b5455a823662250b8412ee75c62f080ab76ed7d6bd4"
+    },
+    {
+      "file": "scripts/users.mjs",
+      "status": "added",
+      "before": null,
+      "after": "11d6c303e0c68592484672c6929c730e72cd1804875d9518828839816effa9dd"
+    },
+    {
+      "file": "scripts/verify-glossary.mjs",
+      "status": "added",
+      "before": null,
+      "after": "882846d431a3c7ad3c78117b81c95773a8019a59a3fb151af301efc03d09a01b"
+    },
+    {
+      "file": "scripts/verify-private-publication.mjs",
+      "status": "added",
+      "before": null,
+      "after": "914b3a22cd6ccb400393e366b25e7ffc4d52154d81b7aa8506ff07e4dcac3916"
+    },
+    {
+      "file": "scripts/verify-publication.mjs",
+      "status": "modified",
+      "before": "39a26ad4bfe4e542ee4a3e2882c74b227f1cfce9f129098a879f508328741d45",
+      "after": "c4588e2ed4b867ec5954fd5a1f5dc65fdc26e0475014d88d0fe31ae58134fd3d"
+    },
+    {
+      "file": ".gitignore",
+      "status": "modified",
+      "before": "20f001cf8fed0f47f30ccc1e641b32e88bd59c2f2f958dd32947b87ee777da6e",
+      "after": "c3a7266062edc78d1114433229e6ee92afe2c67d741bb37cd6b16a6dcb86ad24"
+    },
+    {
+      "file": "README.md",
+      "status": "modified",
+      "before": "51d5b42e1a911005cb153c5220afd5c28b926b57438acc2ad89bebfa6823d7f2",
+      "after": "e3e073c89c0e7783342133017f33eb11e790cbb68ad83b85c4a95af2206f4dbb"
+    },
+    {
+      "file": "astro.config.mjs",
+      "status": "modified",
+      "before": "72b18d6ea49f94f023df84331231badb9a18f6f3db1360e75c0f071a2684c721",
+      "after": "76f11b565f2c1c34f7874e712f280c040e53022caf2f6b0e5b3aeeb12b0b1fa4"
+    },
+    {
+      "file": "package.json",
+      "status": "modified",
+      "before": "ed5afe30f6f2b41f9db25106dbae1403383112ab9ebeca40accd7f9c54519d2b",
+      "after": "5d80b6244604c0e0ab318db4f3f276a28eb939a8bb984fc5f021c12fa5c1ed82"
+    },
+    {
+      "file": "pnpm-lock.yaml",
+      "status": "modified",
+      "before": "a55b4d28abf355ea491ab8c0cda1b815219e490de551611bd55d802dc66d7f61",
+      "after": "d512f4608faaf605206ac5d54768bebfd20c283b50025ee99f595df22c29aa13"
+    }
+  ],
+  "removed": [],
+  "assets": "All 744 moves and hashes recorded separately in evidencias-T03B/moved-assets.json"
+}

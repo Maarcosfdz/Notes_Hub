@@ -1,0 +1,43 @@
+{
+  "results": [
+    {
+      "name": "Navigation: area → subject → chapter",
+      "status": "PASS",
+      "evidence": "http://127.0.0.1:4329/materias/aws/cloud-block-1-introduccion/"
+    },
+    {
+      "name": "Concept search, alias and group filter",
+      "status": "PASS"
+    },
+    {
+      "name": "Reading and bookmark buttons persist after reload",
+      "status": "PASS"
+    },
+    {
+      "name": "Published quiz and statistics client scripts execute",
+      "status": "PASS"
+    },
+    {
+      "name": "Light/dark theme persists after reload",
+      "status": "PASS",
+      "evidence": {
+        "dark": "rgb(25, 29, 26)",
+        "light": "rgb(245, 242, 235)"
+      }
+    },
+    {
+      "name": "Keyboard skip link focuses main content",
+      "status": "PASS"
+    },
+    {
+      "name": "No uncaught JavaScript exceptions throughout the run",
+      "status": "PASS"
+    }
+  ],
+  "broken": [],
+  "pageErrors": [],
+  "isolation": "new browser context; closed in finally",
+  "passed": 7,
+  "failed": 0,
+  "blocked": 0
+}

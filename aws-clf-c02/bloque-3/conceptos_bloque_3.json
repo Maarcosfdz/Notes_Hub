@@ -1,0 +1,1853 @@
+[
+  {
+    "term": "API",
+    "aliases": [],
+    "description": "Interfaz que especifica cómo un programa solicita operaciones o datos a otro sistema. Se utiliza para integrar y automatizar servicios; la consola, la CLI y los SDK son formas distintas de interactuar con las API de AWS y siguen sujetas a autorización.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "08_despliegue_e_infraestructura.md#seccion-8-1"
+  },
+  {
+    "term": "AWS Management Console",
+    "aliases": [],
+    "description": "Interfaz web gráfica para acceder a servicios y administrar recursos AWS. Se utiliza para explorar y configurar operaciones visualmente; frente a CLI y SDK ofrece interacción por navegador, pero sigue necesitando autenticación y permisos.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "08_despliegue_e_infraestructura.md#seccion-8-2"
+  },
+  {
+    "term": "AWS CLI",
+    "aliases": [
+      "AWS Command Line Interface"
+    ],
+    "description": "AWS Command Line Interface, herramienta para invocar operaciones de AWS mediante comandos de terminal. Se utiliza en scripts y tareas repetibles; frente al SDK ofrece comandos en vez de bibliotecas integradas en un lenguaje, y necesita credenciales y permisos adecuados.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "08_despliegue_e_infraestructura.md#seccion-8-2"
+  },
+  {
+    "term": "AWS SDK",
+    "aliases": [
+      "AWS Software Development Kit"
+    ],
+    "description": "Software Development Kit: bibliotecas para utilizar API de AWS desde un lenguaje de programación. Se utiliza para integrar servicios en aplicaciones; frente a la CLI proporciona interfaces de código en lugar de comandos y sigue requiriendo autorización adecuada.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "08_despliegue_e_infraestructura.md#seccion-8-2"
+  },
+  {
+    "term": "Región (Region)",
+    "aliases": [
+      "Region",
+      "Región"
+    ],
+    "description": "Área geográfica de AWS que contiene varias zonas de disponibilidad y ofrece un catálogo regional de servicios. Se elige por requisitos legales, latencia, disponibilidad de servicios y coste; la replicación entre regiones requiere una decisión explícita y no debe suponerse automática.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "08_despliegue_e_infraestructura.md#seccion-8-5"
+  },
+  {
+    "term": "Zona de disponibilidad (AZ)",
+    "aliases": [
+      "AZ",
+      "Availability Zone"
+    ],
+    "description": "Dominio de aislamiento dentro de una región AWS compuesto por uno o más centros de datos. Se utiliza para distribuir componentes entre dominios de fallo; un diseño multi-AZ requiere que aplicación, red y datos admitan esa distribución y no elimina automáticamente todos los puntos únicos de fallo.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "08_despliegue_e_infraestructura.md#seccion-8-5"
+  },
+  {
+    "term": "CPD / Data Center",
+    "aliases": [],
+    "description": "Instalación física con servidores, almacenamiento, redes, energía, refrigeración y controles de seguridad. Sustenta los servicios cloud; una AZ puede incluir uno o más CPD y el cliente normalmente elige región y AZ, no el edificio concreto.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "08_despliegue_e_infraestructura.md#seccion-8-5"
+  },
+  {
+    "term": "Edge Location",
+    "aliases": [],
+    "description": "Ubicación de borde desde la que se prestan determinadas funciones de entrega y red cerca de usuarios. Se utiliza, por ejemplo, para distribución de contenido; no es una AZ ni un centro regional donde se despliegue cualquier servicio de cómputo.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "08_despliegue_e_infraestructura.md#seccion-8-7"
+  },
+  {
+    "term": "Alta disponibilidad",
+    "aliases": [
+      "High availability",
+      "HA"
+    ],
+    "description": "Diseño que procura mantener un servicio accesible y minimizar sus interrupciones mediante redundancia, detección y recuperación. Se utiliza para cumplir un objetivo de continuidad; no equivale a conservar los datos, que es una cuestión de durabilidad, ni implica ausencia absoluta de fallos.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "08_despliegue_e_infraestructura.md#seccion-8-6"
+  },
+  {
+    "term": "RTO",
+    "aliases": [],
+    "description": "Recovery Time Objective: objetivo de tiempo máximo tolerable para recuperar el servicio tras una interrupción. Se utiliza para definir procedimientos, recursos y pruebas de recuperación; no expresa cuántos datos se pueden perder, que es el foco del RPO.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "08_despliegue_e_infraestructura.md#seccion-8-6"
+  },
+  {
+    "term": "RPO",
+    "aliases": [],
+    "description": "Recovery Point Objective: objetivo de pérdida temporal máxima de datos tolerable después de un incidente. Se utiliza para diseñar la frecuencia y método de protección; se diferencia de RTO, que establece el tiempo tolerable para restablecer el servicio.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "08_despliegue_e_infraestructura.md#seccion-8-6"
+  },
+  {
+    "term": "AWS IAM",
+    "aliases": [],
+    "description": "Identity and Access Management, servicio de identidades y autorización para recursos AWS. Se utiliza para definir quién puede realizar qué acciones sobre qué recursos; no filtra puertos ni paquetes como Security Groups o Network ACL.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-2"
+  },
+  {
+    "term": "Rol IAM",
+    "aliases": [
+      "IAM role"
+    ],
+    "description": "Identidad asumible que permite obtener una sesión con credenciales temporales. Se utiliza para delegar acceso a personas, aplicaciones o servicios; quién puede asumirlo y qué puede hacer se definen mediante políticas con funciones diferentes.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-2"
+  },
+  {
+    "term": "Perfil de instancia",
+    "aliases": [
+      "Instance profile"
+    ],
+    "description": "Mecanismo mediante el que se presenta un rol IAM a una instancia EC2 en el caso compatible. Se utiliza para que la aplicación obtenga credenciales del rol; no equivale a una imagen AMI ni concede permisos diferentes de los definidos para ese rol.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-2"
+  },
+  {
+    "term": "Security Group",
+    "aliases": [
+      "Security Groups",
+      "SG",
+      "grupo de seguridad"
+    ],
+    "description": "Control de red que permite tráfico de entrada y salida para recursos asociados compatibles. Se utiliza para restringir fuentes, destinos, protocolos y puertos y es stateful; una Network ACL opera en subredes, puede permitir o denegar y es stateless.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-8"
+  },
+  {
+    "term": "Network ACL",
+    "aliases": [
+      "Network ACL (NACL)",
+      "NACL",
+      "ACL de red",
+      "lista de control de acceso de red"
+    ],
+    "description": "Lista de reglas que permite o deniega tráfico cuando entra o sale de una subred de VPC. Se utiliza como control de red adicional y es stateless, por lo que el retorno requiere reglas apropiadas; los Security Groups se asocian a recursos compatibles y conservan estado de conexión.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-8"
+  },
+  {
+    "term": "Amazon EC2",
+    "aliases": [],
+    "description": "Servicio para ejecutar instancias de cómputo virtual configurables. Se utiliza cuando la carga necesita control sobre el sistema operativo y su entorno; frente a Lambda exige administrar más componentes del servidor invitado.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-2"
+  },
+  {
+    "term": "AMI — Amazon Machine Image",
+    "aliases": [
+      "AMI",
+      "Amazon Machine Image"
+    ],
+    "description": "Plantilla con la información necesaria para lanzar una instancia EC2, incluido su sistema operativo y software inicial. Permite reproducir una configuración base; se diferencia de la instancia, que es el recurso en ejecución, y no sustituye la estrategia de respaldo de los datos de la aplicación.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-2"
+  },
+  {
+    "term": "IaaS",
+    "aliases": [],
+    "description": "Infrastructure as a Service: consumo de infraestructura virtualizada de cómputo, red y almacenamiento. Se utiliza para conservar control del sistema operativo y las aplicaciones; frente a PaaS deja más administración técnica en manos del cliente.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-1"
+  },
+  {
+    "term": "PaaS",
+    "aliases": [],
+    "description": "Platform as a Service: modelo en el que el proveedor opera infraestructura y componentes de plataforma para desplegar aplicaciones. Se utiliza para concentrarse en código, datos y configuración del servicio; frente a IaaS reduce administración del entorno y frente a SaaS conserva una aplicación propia.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-8"
+  },
+  {
+    "term": "EC2 Auto Scaling",
+    "aliases": [
+      "Amazon EC2 Auto Scaling"
+    ],
+    "description": "Servicio que administra grupos de instancias EC2 y ajusta su capacidad mediante políticas y comprobaciones de salud. Se utiliza para responder a demanda y reemplazar instancias no saludables; el Auto Scaling Group es el conjunto administrado, mientras que rightsizing selecciona tipos y tamaños adecuados.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-10"
+  },
+  {
+    "term": "Elastic Load Balancing",
+    "aliases": [
+      "Elastic Load Balancing (ELB)",
+      "ELB"
+    ],
+    "description": "Familia de servicios que distribuye tráfico entre destinos compatibles y puede integrar comprobaciones de salud. Se utiliza para repartir solicitudes y apoyar arquitecturas disponibles; no almacena los pedidos ni sustituye las copias o la resiliencia de los destinos.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-9"
+  },
+  {
+    "term": "Amazon ECR",
+    "aliases": [],
+    "description": "Registro administrado para almacenar y distribuir imágenes de contenedores. Se utiliza como repositorio de artefactos que después ejecutan motores y orquestadores; subir una imagen al registro no pone en marcha el contenedor.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-5"
+  },
+  {
+    "term": "Amazon ECS",
+    "aliases": [],
+    "description": "Servicio administrado de AWS para organizar tareas y servicios en contenedores. Se utiliza con el modelo de orquestación de AWS; se diferencia de EKS, que expone el ecosistema Kubernetes, y puede utilizar capacidad de ejecución compatible como Fargate.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-5"
+  },
+  {
+    "term": "Amazon EKS",
+    "aliases": [],
+    "description": "Servicio administrado para ejecutar Kubernetes y orquestar aplicaciones en contenedores. Se elige cuando se necesitan la API y el ecosistema Kubernetes; ECS utiliza el orquestador propio de AWS y Fargate aporta capacidad de ejecución, no una API de orquestación alternativa.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-5"
+  },
+  {
+    "term": "AWS Fargate",
+    "aliases": [],
+    "description": "Modalidad administrada de capacidad para ejecutar contenedores sin que el cliente administre directamente los hosts. Se utiliza con orquestadores compatibles como ECS o EKS; el cliente sigue gestionando imágenes, aplicación, permisos y configuración.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-6"
+  },
+  {
+    "term": "AWS Lambda",
+    "aliases": [],
+    "description": "Servicio para ejecutar funciones en respuesta a invocaciones o eventos sin administrar servidores subyacentes. Se utiliza para lógica que encaja en sus condiciones de ejecución; frente a EC2 reduce gestión del host, pero el cliente mantiene código, dependencias y permisos.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-7"
+  },
+  {
+    "term": "AWS Elastic Beanstalk",
+    "aliases": [],
+    "description": "Servicio que simplifica el despliegue y la operación de aplicaciones sobre recursos AWS. Se utiliza para delegar parte del aprovisionamiento de plataforma conservando el código propio; no es una aplicación SaaS terminada ni elimina la configuración del cliente.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-8"
+  },
+  {
+    "term": "Amazon Lightsail",
+    "aliases": [],
+    "description": "Servicio que simplifica la puesta en marcha de entornos y recursos para proyectos de alcance acotado. Se utiliza para priorizar facilidad de configuración; frente a componer cada componente con EC2 y otros servicios ofrece una experiencia más integrada y menos granular.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-8"
+  },
+  {
+    "term": "AWS Batch",
+    "aliases": [],
+    "description": "Servicio para planificar y ejecutar trabajos de procesamiento por lotes sobre capacidad de cómputo. Se utiliza cuando los trabajos pueden organizarse y esperar en colas según recursos disponibles; se diferencia de una aplicación web que debe responder interactivamente a cada petición.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-8"
+  },
+  {
+    "term": "AWS Outposts",
+    "aliases": [],
+    "description": "Infraestructura y servicios AWS compatibles desplegados en instalaciones del cliente. Se utiliza cuando una carga requiere procesamiento local, integración cercana o requisitos específicos; no equivale a disponer de una región AWS completa dentro del edificio.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-8"
+  },
+  {
+    "term": "VMware Cloud on AWS",
+    "aliases": [],
+    "description": "Entorno de tecnología VMware sobre infraestructura AWS mencionado en el catálogo histórico del curso. Se utiliza como ejemplo de continuidad de plataforma para cargas compatibles; el icono de 2022 no acredita disponibilidad, condiciones comerciales ni regiones vigentes.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-8"
+  },
+  {
+    "term": "Amazon CloudWatch",
+    "aliases": [],
+    "description": "Servicio de observabilidad para métricas, registros, alarmas y otras señales operativas. Se utiliza para detectar problemas y evaluar el funcionamiento de cargas; una métrica de rendimiento no reemplaza el registro de actividad de API que aporta CloudTrail.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-11"
+  },
+  {
+    "term": "AWS CloudTrail",
+    "aliases": [],
+    "description": "Servicio que registra actividad de cuenta y operaciones de API dentro del alcance configurado. Se utiliza para auditoría e investigación de acciones; se diferencia de CloudWatch, centrado en observabilidad, y de Config, centrado en configuración de recursos.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-10"
+  },
+  {
+    "term": "AWS Config",
+    "aliases": [],
+    "description": "Servicio que registra configuraciones e historial de recursos y permite evaluarlos mediante reglas. Se utiliza para analizar cambios y conformidad de configuración; CloudTrail documenta actividad y llamadas, mientras que Config permite examinar el estado configurado.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-10"
+  },
+  {
+    "term": "AWS Auto Scaling",
+    "aliases": [],
+    "description": "Nombre utilizado en el material para capacidades de ajuste automático de recursos compatibles. Ayuda a adaptar la capacidad a condiciones y políticas; EC2 Auto Scaling se centra específicamente en grupos de instancias EC2, por lo que los nombres no deben tratarse como servicios idénticos.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-10"
+  },
+  {
+    "term": "Amazon RDS",
+    "aliases": [],
+    "description": "Servicio administrado para operar motores de bases de datos relacionales compatibles. Se utiliza para delegar tareas de infraestructura y del motor admitidas por el servicio; el cliente mantiene responsabilidad sobre datos, acceso y configuración, y el modelo difiere de DynamoDB.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-2"
+  },
+  {
+    "term": "Amazon Aurora",
+    "aliases": [],
+    "description": "Base de datos relacional administrada por AWS con compatibilidad con MySQL o PostgreSQL según la edición. Se utiliza para cargas relacionales que necesitan esas interfaces; se distingue de DynamoDB, que es NoSQL, y de Redshift, orientado a analítica.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-4"
+  },
+  {
+    "term": "Amazon DynamoDB",
+    "aliases": [],
+    "description": "Base de datos NoSQL administrada con modelos de clave-valor y documentos. Se utiliza para patrones de acceso compatibles con ese modelo; no sustituye automáticamente una base relacional con otras consultas, y no es la base de pedidos de Show and Sell en CA p.13.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-5"
+  },
+  {
+    "term": "Amazon Redshift",
+    "aliases": [],
+    "description": "Almacén de datos administrado orientado a consultas analíticas. Se utiliza para analizar conjuntos de datos y generar información de negocio; su propósito difiere del procesamiento transaccional típico de una base relacional de aplicación.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-7"
+  },
+  {
+    "term": "Amazon VPC",
+    "aliases": [],
+    "description": "Red virtual lógicamente aislada en AWS donde se configuran subredes, direcciones, rutas y controles de conectividad. Se utiliza para organizar redes de cargas; no es una instalación física ni concede por sí sola permisos IAM sobre los servicios.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-2"
+  },
+  {
+    "term": "CIDR",
+    "aliases": [
+      "Classless Inter-Domain Routing"
+    ],
+    "description": "Notación para representar prefijos y rangos de direcciones IP. Se utiliza en reglas y direccionamiento, como los rangos ilustrativos del curso; un prefijo no es una identidad IAM ni una referencia a un Security Group.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-1"
+  },
+  {
+    "term": "Internet Gateway",
+    "aliases": [
+      "Gateway de Internet",
+      "IGW"
+    ],
+    "description": "Componente de conectividad de VPC que participa en el acceso a Internet bajo rutas y configuraciones admitidas. Se utiliza en arquitecturas de red pública; su presencia no sustituye direccionamiento, Security Groups, ACL ni autenticación.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-4"
+  },
+  {
+    "term": "AWS Direct Connect",
+    "aliases": [],
+    "description": "Servicio de conectividad dedicada entre una ubicación externa y AWS. Se utiliza cuando se necesita una conexión de red dedicada con características planificadas; no debe suponerse cifrado extremo a extremo por defecto, a diferencia del túnel cifrado de una VPN.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-6"
+  },
+  {
+    "term": "AWS Transit Gateway",
+    "aliases": [],
+    "description": "Servicio de interconexión central para conectar múltiples redes, incluidas VPC y redes externas compatibles. Se utiliza para simplificar topologías de conectividad; no elimina la necesidad de definir rutas, rangos de direcciones y segmentación.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-5"
+  },
+  {
+    "term": "AWS VPN",
+    "aliases": [],
+    "description": "Servicios de conectividad mediante túneles cifrados entre redes o clientes y AWS, según la modalidad. Se utilizan para acceso remoto o conexión de entornos; una Site-to-Site VPN suele emplear Internet como transporte y se diferencia de la conectividad dedicada de Direct Connect.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-6"
+  },
+  {
+    "term": "Amazon CloudFront",
+    "aliases": [],
+    "description": "Servicio CDN de AWS que entrega contenido desde ubicaciones distribuidas y puede almacenarlo en caché. Se utiliza para acercar respuestas a los usuarios y aliviar el origen; una ubicación edge no equivale a una región en la que desplegar cualquier recurso AWS.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-9"
+  },
+  {
+    "term": "Amazon Route 53",
+    "aliases": [],
+    "description": "Servicio DNS administrado con funciones de resolución y enrutamiento de respuestas. Se utiliza para dirigir clientes hacia recursos mediante nombres y políticas compatibles; no reparte cada conexión de aplicación como un balanceador de tráfico.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-10"
+  },
+  {
+    "term": "CDN",
+    "aliases": [],
+    "description": "Content Delivery Network: red distribuida que acerca contenido a los usuarios mediante puntos de entrega y mecanismos de caché. Se utiliza para reducir latencia y solicitudes al origen; se diferencia de DNS, que resuelve nombres y dirige a destinos, y CloudFront es un servicio que implementa esta función.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-9"
+  },
+  {
+    "term": "DNS",
+    "aliases": [],
+    "description": "Domain Name System, sistema de resolución de nombres y otros registros de dominio. Se utiliza para localizar servicios mediante nombres; una respuesta DNS dirige hacia un destino y no balancea cada conexión activa de la misma forma que ELB.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-10"
+  },
+  {
+    "term": "SSH",
+    "aliases": [
+      "Secure Shell"
+    ],
+    "description": "Protocolo de acceso remoto protegido a sistemas compatibles. Se utiliza para administrar un sistema invitado y requiere custodiar claves y limitar exposición; su clave privada no es una access key de API AWS.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-2"
+  },
+  {
+    "term": "Amazon Inspector",
+    "aliases": [
+      "Inspector"
+    ],
+    "description": "Servicio que identifica vulnerabilidades y determinados problemas de exposición en recursos y software compatibles. Se utiliza para priorizar remediación; un hallazgo de vulnerabilidad no significa necesariamente que ya se haya observado un ataque.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-8"
+  },
+  {
+    "term": "AWS Organizations",
+    "aliases": [],
+    "description": "Servicio para administrar y gobernar varias cuentas AWS de forma centralizada. Se utiliza para agrupar cuentas y aplicar políticas de organización; las políticas de control limitan permisos máximos y no conceden por sí solas acceso a cada recurso.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-5"
+  },
+  {
+    "term": "Amazon S3",
+    "aliases": [],
+    "description": "Servicio de almacenamiento de objetos organizados en buckets e identificados mediante claves. Se utiliza para archivos, imágenes, registros y conjuntos de datos; no expone un volumen de bloques como EBS ni la misma interfaz de archivos compartidos que EFS.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-4"
+  },
+  {
+    "term": "Amazon EBS",
+    "aliases": [],
+    "description": "Almacenamiento persistente de bloques para cargas compatibles con EC2. Se utiliza para volúmenes que el sistema operativo trata como discos; se diferencia del almacenamiento de objetos S3 y necesita una estrategia de snapshots y recuperación apropiada.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-2"
+  },
+  {
+    "term": "Amazon EFS",
+    "aliases": [],
+    "description": "Sistema de archivos administrado y compartido por red para clientes compatibles. Se utiliza cuando varias cargas necesitan acceder a archivos comunes; ofrece una interfaz de archivos, distinta del almacenamiento de objetos de S3 y de los volúmenes de bloques EBS.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-8"
+  },
+  {
+    "term": "EBS snapshot",
+    "aliases": [
+      "instantánea EBS"
+    ],
+    "description": "Copia de estado de un volumen EBS que permite recuperar datos a un punto conservado. Se utiliza dentro de una estrategia de copias; la replicación de infraestructura y la existencia de una copia no prueban una restauración completa ensayada.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-3"
+  },
+  {
+    "term": "AWS Storage Gateway",
+    "aliases": [
+      "Storage Gateway"
+    ],
+    "description": "Servicio de integración de almacenamiento entre entornos locales y AWS mediante modalidades compatibles. Se utiliza en el ejemplo de transferencia protegida hacia S3; no es un gestor de identidad ni un certificado TLS.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-10"
+  },
+  {
+    "term": "AWS KMS",
+    "aliases": [],
+    "description": "Key Management Service, servicio para crear y administrar claves criptográficas y controlar su uso. Se integra con cifrado de servicios compatibles; no sustituye la clasificación de datos ni concede automáticamente a cualquier identidad permiso para descifrarlos.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-7"
+  },
+  {
+    "term": "Amazon S3 Glacier",
+    "aliases": [],
+    "description": "Familia de clases de almacenamiento de S3 destinada a archivo y datos de acceso poco frecuente. Se utiliza cuando retención, coste y tiempos de recuperación permiten esas clases; no se debe asumir el mismo acceso inmediato ni las mismas condiciones de recuperación en todas ellas.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-6"
+  },
+  {
+    "term": "Amazon SNS",
+    "aliases": [
+      "Simple Notification Service",
+      "SNS"
+    ],
+    "description": "Servicio de publicación y entrega de notificaciones mediante destinos compatibles. Se utiliza para avisos de alarmas del ejemplo; recibir una notificación no ejecuta por sí solo una investigación ni es lo mismo que almacenar un trabajo en una cola.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-3"
+  },
+  {
+    "term": "AWS Support",
+    "aliases": [
+      "Soporte AWS"
+    ],
+    "description": "Servicio de asistencia para incidencias y consultas de AWS según el ámbito y plan aplicables. Se utiliza en el material al tratar situaciones de acceso o gestión de la cuenta que requieren soporte; no sustituye los permisos IAM ni concede automáticamente administración sobre recursos del cliente.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-10"
+  },
+  {
+    "term": "AWS Trusted Advisor",
+    "aliases": [],
+    "description": "Herramienta que realiza comprobaciones y ofrece recomendaciones sobre recursos y configuración dentro de su alcance. Se utiliza para investigar oportunidades de mejora operativa, seguridad o coste; frente a Well-Architected Tool aporta hallazgos del entorno y necesita evaluación contextual.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-10"
+  },
+  {
+    "term": "AWS Well-Architected Tool",
+    "aliases": [],
+    "description": "Herramienta que guía y registra revisiones de cargas mediante preguntas del marco y planes de mejora. Se utiliza para organizar decisiones y revisiones posteriores; no sustituye pruebas de recuperación o seguridad ni funciona igual que las comprobaciones de Trusted Advisor.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-10"
+  },
+  {
+    "term": "AWS Cost and Usage Report",
+    "aliases": [],
+    "description": "Informe con datos detallados de costes y uso de servicios AWS. Se utiliza para análisis y atribución del consumo con mayor detalle que una vista resumida; no debe confundirse con una alerta presupuestaria de AWS Budgets.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-10"
+  },
+  {
+    "term": "AWS Budgets",
+    "aliases": [],
+    "description": "Herramienta para definir presupuestos y supervisar costes o uso frente a umbrales. Sirve para avisar de desviaciones y, en configuraciones compatibles, apoyar acciones; un presupuesto no constituye por sí mismo un límite duro que detenga toda la factura.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-10"
+  },
+  {
+    "term": "AWS Cost Explorer",
+    "aliases": [],
+    "description": "Herramienta para visualizar y analizar costes y uso a lo largo del tiempo, con funciones de previsión disponibles. Se utiliza para identificar tendencias y cambios de gasto; sus estimaciones no constituyen una garantía de la factura futura.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-10"
+  },
+  {
+    "term": "AWS Artifact",
+    "aliases": [],
+    "description": "Portal para consultar documentos e informes de cumplimiento de AWS y gestionar determinados acuerdos. Sirve como evidencia sobre controles del proveedor; no configura los controles de la aplicación ni demuestra por sí solo el cumplimiento del cliente.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-8"
+  },
+  {
+    "term": "Amazon Cognito",
+    "aliases": [],
+    "description": "Servicio para gestionar identidad y autenticación de usuarios de aplicaciones. Sirve para registro, inicio de sesión y funciones de acceso compatibles; su propósito difiere de administrar los permisos de operadores y cargas sobre recursos AWS mediante IAM.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-8"
+  },
+  {
+    "term": "AWS Shield",
+    "aliases": [],
+    "description": "Servicio de protección frente a determinados ataques distribuidos de denegación de servicio dentro del alcance de sus modalidades. Se utiliza para proteger disponibilidad ante ese tipo de amenaza; no sustituye autorización IAM, reglas de red ni seguridad de la aplicación.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-8"
+  },
+  {
+    "term": "SQL Server",
+    "aliases": [
+      "Microsoft SQL Server"
+    ],
+    "description": "Motor de base de datos citado como destino de la regla TCP 1433 del ejemplo. Se utiliza para interpretar por qué una aplicación necesita ese flujo; permitir el puerto no concede acceso a sus datos ni convierte el motor en un servicio administrado.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-2"
+  },
+  {
+    "term": "SaaS",
+    "aliases": [],
+    "description": "Software as a Service: aplicación completa consumida como servicio y operada principalmente por el proveedor. Se utiliza para acceder a funcionalidad sin administrar su plataforma; el cliente conserva decisiones sobre usuarios, datos y configuración disponible y no despliega su propio código como en PaaS.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-7"
+  },
+  {
+    "term": "JSON",
+    "aliases": [],
+    "description": "JavaScript Object Notation, formato textual para representar datos estructurados mediante objetos, listas y valores. Se utiliza en intercambios de API y configuraciones; a diferencia de XML no expresa la estructura mediante etiquetas de marcado.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "08_despliegue_e_infraestructura.md#seccion-8-1"
+  },
+  {
+    "term": "AWS CloudFormation",
+    "aliases": [],
+    "description": "Servicio que administra infraestructura definida mediante plantillas y stacks. Se utiliza para despliegues repetibles; una plantilla no acredita por sí sola seguridad ni ausencia de sustituciones al actualizar recursos.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "08_despliegue_e_infraestructura.md#seccion-8-3"
+  },
+  {
+    "term": "Infraestructura como código",
+    "aliases": [
+      "IaC"
+    ],
+    "description": "Representación versionable de recursos y relaciones para administrar despliegues. Facilita reproducir y revisar entornos; no equivale a observar métricas ni a cualquier script de creación sin control de estado.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "08_despliegue_e_infraestructura.md#seccion-8-3"
+  },
+  {
+    "term": "Stack de CloudFormation",
+    "aliases": [],
+    "description": "Unidad de administración de recursos desplegados a partir de una plantilla. Permite gestionar su ciclo de vida conjunto; no es el archivo de plantilla ni una instancia EC2 individual.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "08_despliegue_e_infraestructura.md#seccion-8-3"
+  },
+  {
+    "term": "Plano de control",
+    "aliases": [
+      "Control plane"
+    ],
+    "description": "Conjunto de capacidades que administran recursos y configuración. Se usa para crear o modificar infraestructura; se distingue del plano que presta el trabajo operativo de la aplicación.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "08_despliegue_e_infraestructura.md#seccion-8-1"
+  },
+  {
+    "term": "Plano de datos",
+    "aliases": [
+      "Data plane"
+    ],
+    "description": "Capacidades que atienden las operaciones de datos o servicio de un sistema. Permite distinguir uso de administración; su comportamiento no debe inferirse únicamente del estado de una interfaz de control.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "08_despliegue_e_infraestructura.md#seccion-8-1"
+  },
+  {
+    "term": "Despliegue híbrido",
+    "aliases": [
+      "Hybrid deployment"
+    ],
+    "description": "Combinación de entornos cloud y de instalaciones bajo una arquitectura integrada. Permite mantener necesidades locales y utilizar nube; no exige necesariamente dos proveedores públicos.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "08_despliegue_e_infraestructura.md#seccion-8-4"
+  },
+  {
+    "term": "On-premises",
+    "aliases": [
+      "En las instalaciones"
+    ],
+    "description": "Infraestructura situada en instalaciones administradas por la organización o para ella. Describe ubicación y operación; no es sinónimo de una región AWS ni de una conexión VPN.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "08_despliegue_e_infraestructura.md#seccion-8-4"
+  },
+  {
+    "term": "Multi-AZ",
+    "aliases": [],
+    "description": "Diseño o modalidad que utiliza varias zonas de disponibilidad. Ayuda frente a fallos zonales; sus capacidades concretas dependen del servicio y no equivalen siempre a réplicas de lectura.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "08_despliegue_e_infraestructura.md#seccion-8-6"
+  },
+  {
+    "term": "Multirregión",
+    "aliases": [
+      "Multi-Region"
+    ],
+    "description": "Arquitectura distribuida entre regiones para objetivos como continuidad o alcance geográfico. Necesita configurar datos y conmutación; no surge automáticamente de tener varios recursos AWS.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "08_despliegue_e_infraestructura.md#seccion-8-6"
+  },
+  {
+    "term": "User data",
+    "aliases": [
+      "Datos de usuario de EC2"
+    ],
+    "description": "Configuración de inicialización entregada a una instancia compatible. Ayuda a preparar software al arrancar; no debe utilizarse como almacén de secretos ni confundirse con metadatos de identidad.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-2"
+  },
+  {
+    "term": "Tipo de instancia",
+    "aliases": [],
+    "description": "Perfil de recursos de una opción EC2, relacionado con familia, generación y tamaño. Se elige según CPU, memoria, red y almacenamiento; no equivale al modelo de compra.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-3"
+  },
+  {
+    "term": "Launch template",
+    "aliases": [
+      "Plantilla de lanzamiento"
+    ],
+    "description": "Recurso versionable que conserva parámetros para lanzar instancias. Se utiliza con mecanismos como Auto Scaling; no es una AMI ni el grupo que mantiene la capacidad.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-10"
+  },
+  {
+    "term": "Auto Scaling Group",
+    "aliases": [
+      "ASG"
+    ],
+    "description": "Agrupación de instancias con límites y capacidad deseada para su administración. Permite mantener o ajustar unidades; es un recurso del servicio de escalado, no un alias del servicio completo.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-10"
+  },
+  {
+    "term": "Application Load Balancer",
+    "aliases": [
+      "ALB"
+    ],
+    "description": "Balanceador para decisiones de aplicación HTTP/HTTPS compatibles, como rutas o hosts. Distribuye solicitudes hacia destinos; no ejecuta el código de negocio.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-9"
+  },
+  {
+    "term": "Network Load Balancer",
+    "aliases": [
+      "NLB"
+    ],
+    "description": "Balanceador orientado a flujos y protocolos de transporte compatibles. Responde a necesidades de red y direccionamiento; no comparte todas las reglas de aplicación de ALB.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-9"
+  },
+  {
+    "term": "Gateway Load Balancer",
+    "aliases": [
+      "GWLB"
+    ],
+    "description": "Balanceador que integra dispositivos virtuales de red compatibles dentro del flujo. Facilita distribuir tráfico hacia esas capacidades; no es simplemente un balanceador HTTP.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-9"
+  },
+  {
+    "term": "Classic Load Balancer",
+    "aliases": [
+      "CLB"
+    ],
+    "description": "Generación anterior de balanceador conservada en actividades docentes. Sirve para interpretar arquitecturas históricas; la documentación recomienda migrar a generaciones actuales.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-9"
+  },
+  {
+    "term": "Listener",
+    "aliases": [
+      "Agente de escucha"
+    ],
+    "description": "Configuración que recibe conexiones de acuerdo con protocolo y puerto del balanceador. Participa en dirigir tráfico; no es el grupo de servidores que lo procesa.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-9"
+  },
+  {
+    "term": "Target group",
+    "aliases": [
+      "Grupo de destino"
+    ],
+    "description": "Agrupación de destinos y configuración compatible para recibir tráfico. Se utiliza con balanceadores admitidos; no es sinónimo de un Auto Scaling Group.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-9"
+  },
+  {
+    "term": "Health check",
+    "aliases": [
+      "Comprobación de salud"
+    ],
+    "description": "Evaluación configurada para determinar si un destino cumple condiciones. Ayuda a dirigir tráfico o recuperar capacidad; una comprobación simple no certifica todo el proceso de negocio.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-9"
+  },
+  {
+    "term": "IMDSv2",
+    "aliases": [],
+    "description": "Versión orientada a sesiones del servicio de metadatos de instancias. Permite consultar información bajo ese mecanismo; no es un rol IAM ni una clave SSH.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-4"
+  },
+  {
+    "term": "Elastic IP",
+    "aliases": [
+      "Dirección IP elástica"
+    ],
+    "description": "Dirección pública estática administrada como recurso bajo condiciones AWS. Permite conservar direccionamiento público cuando procede; no configura automáticamente accesibilidad ni salud.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-4"
+  },
+  {
+    "term": "Docker",
+    "aliases": [],
+    "description": "Plataforma y herramientas para construir y ejecutar contenedores. Se utiliza para empaquetar aplicaciones; no equivale a ECS, Kubernetes o un registro de imágenes.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-5"
+  },
+  {
+    "term": "Contenedor",
+    "aliases": [
+      "Container"
+    ],
+    "description": "Ejecución aislada de una aplicación bajo un modelo de virtualización del sistema. Empaqueta dependencias y configuración; no es la imagen almacenada ni necesariamente una VM completa.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-5"
+  },
+  {
+    "term": "Imagen de contenedor",
+    "aliases": [
+      "Container image"
+    ],
+    "description": "Artefacto que describe el entorno que se ejecutará como contenedor. Se guarda y distribuye en un registro; almacenarlo no significa haber desplegado una aplicación saludable.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-5"
+  },
+  {
+    "term": "Kubernetes",
+    "aliases": [],
+    "description": "Plataforma de orquestación de cargas en contenedores. Organiza despliegue y operación; EKS proporciona Kubernetes administrado y no es un nombre equivalente de todo el proyecto.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-5"
+  },
+  {
+    "term": "Serverless",
+    "aliases": [],
+    "description": "Modelo donde el consumidor no administra directamente servidores subyacentes de la capacidad utilizada. Simplifica operación de infraestructura; no elimina límites ni obligaciones sobre código, datos y permisos.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-7"
+  },
+  {
+    "term": "AWS Serverless Application Repository",
+    "aliases": [],
+    "description": "Catálogo de aplicaciones serverless empaquetadas mencionado por el material docente. Ayuda a descubrir componentes reutilizables; su presencia histórica no garantiza condiciones comerciales actuales.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "09_computacion_contenedores_serverless.md#seccion-9-8"
+  },
+  {
+    "term": "Amazon ElastiCache",
+    "aliases": [
+      "ElastiCache"
+    ],
+    "description": "Servicio administrado de capacidades en memoria con motores y modalidades compatibles. Se utiliza para caché y otras cargas admitidas; no sustituye universalmente una base transaccional duradera.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-6"
+  },
+  {
+    "term": "Amazon DocumentDB",
+    "aliases": [
+      "DocumentDB"
+    ],
+    "description": "Base documental administrada con compatibilidad MongoDB dentro del soporte del producto. Se evalúa para aplicaciones documentales; no es un alias de DynamoDB ni una garantía de toda función de MongoDB.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-6"
+  },
+  {
+    "term": "Amazon Neptune",
+    "aliases": [
+      "Neptune"
+    ],
+    "description": "Base de datos orientada a grafos bajo modelos compatibles. Permite recorrer relaciones entre entidades; no realiza por sí sola una decisión de negocio como determinar fraude.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-6"
+  },
+  {
+    "term": "AWS Database Migration Service",
+    "aliases": [
+      "AWS DMS",
+      "DMS"
+    ],
+    "description": "Servicio para mover y replicar datos entre orígenes y destinos compatibles. Ayuda en migraciones y captura de cambios admitida; no garantiza que la aplicación funcione sin adaptación.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-8"
+  },
+  {
+    "term": "AWS Schema Conversion Tool",
+    "aliases": [
+      "AWS SCT",
+      "SCT"
+    ],
+    "description": "Herramienta que ayuda a evaluar y convertir esquema y código compatible entre motores. Se utiliza en migraciones heterogéneas; no equivale a copiar todas las filas ni a DMS Schema Conversion como producto idéntico.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-8"
+  },
+  {
+    "term": "DMS Schema Conversion",
+    "aliases": [],
+    "description": "Capacidades gestionadas de evaluación y conversión de esquemas en el ámbito de DMS. Ayudan a preparar un destino; requieren revisar compatibilidad y trabajo manual pendiente.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-8"
+  },
+  {
+    "term": "Read replica",
+    "aliases": [
+      "Réplica de lectura"
+    ],
+    "description": "Copia de base que permite descargar determinadas consultas de lectura. Su actualización y desfase dependen del servicio; no equivale al standby de cualquier modalidad Multi-AZ.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-3"
+  },
+  {
+    "term": "Standby",
+    "aliases": [],
+    "description": "Instancia o capacidad de reserva preparada para asumir funciones ante fallos bajo una modalidad. Apoya disponibilidad; su uso para lecturas depende del producto y tipo de despliegue.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-3"
+  },
+  {
+    "term": "Clave de partición",
+    "aliases": [
+      "Partition key"
+    ],
+    "description": "Atributo que participa en la identificación y distribución de elementos DynamoDB. Se diseña según acceso y distribución de carga; no es una clave de cifrado.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-5"
+  },
+  {
+    "term": "Clave de ordenación",
+    "aliases": [
+      "Sort key"
+    ],
+    "description": "Atributo que completa una clave primaria compuesta en DynamoDB. Permite distinguir y ordenar elementos dentro de la clave de partición según operaciones; no es su sinónimo.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-5"
+  },
+  {
+    "term": "Query de DynamoDB",
+    "aliases": [],
+    "description": "Operación que recupera elementos mediante condiciones de clave compatibles. Aprovecha el diseño del acceso; no equivale a recorrer indiscriminadamente toda la tabla.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-5"
+  },
+  {
+    "term": "Scan de DynamoDB",
+    "aliases": [],
+    "description": "Operación que recorre elementos de una tabla o índice bajo su configuración. Puede usarse para ciertos trabajos; no suele sustituir un patrón de acceso eficiente por clave.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-5"
+  },
+  {
+    "term": "SQL",
+    "aliases": [],
+    "description": "Lenguaje para operaciones y consultas relacionales según dialecto. Se utiliza en bases y analítica; compartir SQL no garantiza idéntica compatibilidad o carga de trabajo.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-2"
+  },
+  {
+    "term": "NoSQL",
+    "aliases": [],
+    "description": "Categoría amplia de modelos de datos no reducidos a un único modelo relacional tradicional. Incluye enfoques diferentes; no promete que toda base sea más rápida ni que todas tengan las mismas APIs.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-5"
+  },
+  {
+    "term": "MySQL",
+    "aliases": [],
+    "description": "Motor relacional utilizado por aplicaciones y servicios compatibles. Se reconoce al elegir motor; no es el servicio RDS completo.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-2"
+  },
+  {
+    "term": "PostgreSQL",
+    "aliases": [],
+    "description": "Motor relacional con capacidades y extensiones propias. Se utiliza en aplicaciones SQL; compatibilidad Aurora requiere revisar funciones y versiones.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-2"
+  },
+  {
+    "term": "MariaDB",
+    "aliases": [],
+    "description": "Motor relacional mencionado en el catálogo docente. Se evalúa por compatibilidad de aplicación; no es un alias de cualquier edición MySQL.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-2"
+  },
+  {
+    "term": "Oracle Database",
+    "aliases": [],
+    "description": "Motor relacional citado en escenarios de instalación propia y servicios compatibles. Su administración depende del despliegue; no implica las mismas tareas en EC2 y RDS.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-2"
+  },
+  {
+    "term": "IBM Db2",
+    "aliases": [],
+    "description": "Motor relacional que aparece en la figura de motores entregada. Sirve para reconocer opciones de compatibilidad; la figura no prueba disponibilidad de todas las ediciones actuales.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-2"
+  },
+  {
+    "term": "Data warehouse",
+    "aliases": [
+      "Almacén de datos"
+    ],
+    "description": "Organización de datos para cargas analíticas e informes. Facilita agregaciones y exploración; no equivale al sistema transaccional de cada aplicación.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-7"
+  },
+  {
+    "term": "Caché",
+    "aliases": [
+      "Cache"
+    ],
+    "description": "Copia o representación temporal para acelerar accesos o evitar trabajo repetido. Necesita políticas de actualización o invalidación; no debe confundirse con la fuente autoritativa de datos.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "10_bases_de_datos.md#seccion-10-6"
+  },
+  {
+    "term": "ENI",
+    "aliases": [
+      "Elastic Network Interface",
+      "Interfaz de red elástica"
+    ],
+    "description": "Interfaz virtual con direcciones y atributos de red. Conecta recursos y puede reasignarse bajo condiciones; no es una IP pública ni una subred.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-3"
+  },
+  {
+    "term": "NAT Gateway",
+    "aliases": [
+      "Puerta de enlace NAT"
+    ],
+    "description": "Servicio de traducción de direcciones para flujos compatibles. En el ejemplo público permite salida iniciada desde redes privadas; no admite por ello cualquier conexión nueva entrante desde Internet.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-4"
+  },
+  {
+    "term": "VPC peering",
+    "aliases": [
+      "Interconexión de VPC"
+    ],
+    "description": "Conexión privada entre dos VPC compatibles. Requiere rutas y controles; no es transitiva por concatenar varios emparejamientos.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-5"
+  },
+  {
+    "term": "AWS PrivateLink",
+    "aliases": [
+      "PrivateLink"
+    ],
+    "description": "Capacidad de acceso privado a servicios compatibles mediante su modelo de endpoints. Se usa para consumir servicios específicos; no es una VPN general entre todas las redes.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-5"
+  },
+  {
+    "term": "AWS Resource Access Manager",
+    "aliases": [
+      "AWS RAM"
+    ],
+    "description": "Servicio para compartir recursos compatibles entre cuentas bajo sus condiciones. Participa en compartir subredes; no equivale a conceder automáticamente acceso a todos los datos.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-5"
+  },
+  {
+    "term": "AWS Site-to-Site VPN",
+    "aliases": [
+      "Site-to-Site VPN"
+    ],
+    "description": "Conectividad cifrada de red a red mediante túneles compatibles. Se utiliza entre instalaciones y AWS; necesita rutas y no equivale al acceso individual de Client VPN.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-6"
+  },
+  {
+    "term": "AWS Client VPN",
+    "aliases": [
+      "Client VPN"
+    ],
+    "description": "Servicio para acceso de usuarios y dispositivos remotos mediante VPN cliente. Se utiliza para conectividad autorizada; no es el mismo recurso que un túnel entre dos redes completas.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-6"
+  },
+  {
+    "term": "Amazon API Gateway",
+    "aliases": [
+      "API Gateway"
+    ],
+    "description": "Servicio para publicar y administrar APIs compatibles y sus integraciones. Proporciona una entrada de solicitudes; no ejecuta por sí solo toda la lógica de negocio ni es una base de datos.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-11"
+  },
+  {
+    "term": "AWS Global Accelerator",
+    "aliases": [
+      "Global Accelerator"
+    ],
+    "description": "Servicio que utiliza la red global para dirigir acceso hacia endpoints compatibles. Ayuda a prestaciones y disponibilidad bajo su modelo; no almacena objetos como una CDN.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-11"
+  },
+  {
+    "term": "Subred",
+    "aliases": [
+      "Subnet"
+    ],
+    "description": "Rango de direcciones de una VPC situado en una AZ. Organiza ubicación y rutas de recursos; no equivale a la VPC regional completa.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-2"
+  },
+  {
+    "term": "Tabla de rutas",
+    "aliases": [
+      "Route table"
+    ],
+    "description": "Conjunto de destinos y objetivos que participa en el encaminamiento de una subred. Decide caminos de red; no concede permisos IAM ni abre puertos por sí sola.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-3"
+  },
+  {
+    "term": "IPv4",
+    "aliases": [],
+    "description": "Versión de IP con direcciones de 32 bits. Permite direccionar redes y extremos; no utiliza la misma longitud y notación que IPv6.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-1"
+  },
+  {
+    "term": "IPv6",
+    "aliases": [],
+    "description": "Versión de IP con direcciones de 128 bits. Se usa bajo configuración y soporte compatibles; no se describe correctamente como cuatro números decimales separados por puntos.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-1"
+  },
+  {
+    "term": "OSI",
+    "aliases": [
+      "Open Systems Interconnection"
+    ],
+    "description": "Modelo de capas para explicar comunicaciones. Ayuda a separar aplicación, transporte y red; no es un catálogo de servicios AWS ni una descripción perfecta de toda implementación real.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-1"
+  },
+  {
+    "term": "TCP",
+    "aliases": [
+      "Transmission Control Protocol"
+    ],
+    "description": "Protocolo de transporte orientado a conexiones. Se utiliza en comunicaciones de aplicaciones; no equivale a HTTP ni garantiza cifrado.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-1"
+  },
+  {
+    "term": "UDP",
+    "aliases": [
+      "User Datagram Protocol"
+    ],
+    "description": "Protocolo de transporte basado en datagramas. Atiende patrones de comunicación distintos; no añade por sí mismo garantías de entrega de aplicación.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-1"
+  },
+  {
+    "term": "HTTP",
+    "aliases": [
+      "Hypertext Transfer Protocol"
+    ],
+    "description": "Protocolo de aplicación para intercambio de solicitudes y respuestas. Se usa en servicios web; no equivale a conectividad IP ni implica cifrado por sí solo.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-1"
+  },
+  {
+    "term": "HTTPS",
+    "aliases": [],
+    "description": "Uso de HTTP protegido mediante TLS en el contexto actual. Protege el canal bajo configuración correcta; no sustituye autorización ni diseño de caché.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-1"
+  },
+  {
+    "term": "FTP",
+    "aliases": [
+      "File Transfer Protocol"
+    ],
+    "description": "Protocolo de transferencia de archivos citado en la tabla OSI. Sirve para identificar funciones de aplicación; no es un servicio administrado AWS ni implica protección universal del canal.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-1"
+  },
+  {
+    "term": "DHCP",
+    "aliases": [
+      "Dynamic Host Configuration Protocol"
+    ],
+    "description": "Protocolo relacionado con configuración de red de clientes. Aparece como ejemplo de aplicación en la fuente; no es sinónimo de DNS ni de una tabla de rutas.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-1"
+  },
+  {
+    "term": "LDAP",
+    "aliases": [
+      "Lightweight Directory Access Protocol"
+    ],
+    "description": "Protocolo de acceso a información de directorio. Se reconoce en el modelo de red; no es una VPC ni una política IAM.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-1"
+  },
+  {
+    "term": "RPC",
+    "aliases": [
+      "Remote Procedure Call"
+    ],
+    "description": "Modelo de invocación de procedimientos remotos mencionado en OSI. Ayuda a estudiar diálogo entre sistemas; no identifica por sí solo un servicio AWS concreto.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-1"
+  },
+  {
+    "term": "NetBIOS",
+    "aliases": [],
+    "description": "Conjunto histórico de interfaces y servicios de comunicación de red. Se conserva por la tabla docente; no se prescribe como base obligatoria de una arquitectura AWS moderna.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-1"
+  },
+  {
+    "term": "MAC",
+    "aliases": [
+      "Media Access Control"
+    ],
+    "description": "Denominación relacionada con control e identificación en la capa de enlace. Se utiliza para diferenciar niveles de dirección; no equivale a una IP o identidad IAM.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "11_redes_y_contenidos.md#seccion-11-1"
+  },
+  {
+    "term": "EC2 instance store",
+    "aliases": [
+      "Instance store"
+    ],
+    "description": "Almacenamiento local ligado a la instancia y al host. Sirve para datos temporales o recreables; no debe asumirse persistencia tras parada o terminación.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-2"
+  },
+  {
+    "term": "EBS Multi-Attach",
+    "aliases": [
+      "Multi-Attach"
+    ],
+    "description": "Capacidad para asociar un volumen compatible a varias instancias de la misma AZ. Atiende aplicaciones coordinadas; no convierte automáticamente un sistema de archivos convencional en compartido seguro.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-2"
+  },
+  {
+    "term": "Amazon FSx",
+    "aliases": [
+      "FSx"
+    ],
+    "description": "Familia de sistemas de archivos administrados. Se elige una variante según protocolos y carga; no es un único sistema idéntico para todas las aplicaciones.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-9"
+  },
+  {
+    "term": "FSx for Windows File Server",
+    "aliases": [],
+    "description": "Variante de archivos administrados para necesidades compatibles con Windows y SMB. Se evalúa para aplicaciones que esperan ese entorno; no es EFS con otro nombre.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-9"
+  },
+  {
+    "term": "FSx for Lustre",
+    "aliases": [],
+    "description": "Variante de archivos paralelos orientada a cargas de alto rendimiento. Se evalúa en procesamiento intensivo; no equivale a un archivo de objetos de larga retención.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-9"
+  },
+  {
+    "term": "FSx for NetApp ONTAP",
+    "aliases": [],
+    "description": "Servicio de archivos basado en capacidades ONTAP compatibles. Permite utilizar su modelo en AWS; no comparte automáticamente todas las funciones de las otras variantes FSx.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-9"
+  },
+  {
+    "term": "FSx for OpenZFS",
+    "aliases": [],
+    "description": "Variante de archivos basada en OpenZFS bajo el modelo del servicio. Atiende aplicaciones compatibles; no es un volumen EBS individual ni un bucket.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-9"
+  },
+  {
+    "term": "AWS Backup",
+    "aliases": [],
+    "description": "Servicio para centralizar políticas y administración de copias de recursos compatibles. Ayuda al gobierno de protección; las restauraciones y objetivos deben validarse.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-10"
+  },
+  {
+    "term": "AWS Elastic Disaster Recovery",
+    "aliases": [],
+    "description": "Servicio orientado a recuperar servidores mediante replicación y mecanismos compatibles. Apoya continuidad; no es una clase de almacenamiento ni una garantía de RTO idéntico en todo entorno.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-10"
+  },
+  {
+    "term": "S3 Standard",
+    "aliases": [],
+    "description": "Clase S3 para acceso frecuente. Se utiliza en objetos activos; no es sinónimo del servicio S3 completo.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-5"
+  },
+  {
+    "term": "S3 Standard-IA",
+    "aliases": [
+      "S3 Standard-Infrequent Access"
+    ],
+    "description": "Clase para acceso infrecuente con recuperación en línea bajo sus condiciones. Se evalúa con costes de acceso y permanencia; no equivale a archivado con espera.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-5"
+  },
+  {
+    "term": "S3 One Zone-IA",
+    "aliases": [],
+    "description": "Clase de acceso infrecuente con almacenamiento en una AZ. Puede servir para datos recreables; no ofrece el mismo alcance zonal que clases multizona.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-5"
+  },
+  {
+    "term": "S3 Intelligent-Tiering",
+    "aliases": [],
+    "description": "Clase que adapta capas de acceso bajo su modelo de observación. Ayuda con patrones variables; deben conocerse condiciones y capas activadas.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-5"
+  },
+  {
+    "term": "S3 Glacier Instant Retrieval",
+    "aliases": [],
+    "description": "Clase de archivo S3 con acceso inmediato bajo sus condiciones. Sirve para archivo de acceso ocasional; demuestra por qué Glacier no siempre significa esperar horas.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-5"
+  },
+  {
+    "term": "S3 Glacier Flexible Retrieval",
+    "aliases": [],
+    "description": "Clase de archivo con opciones de restauración y plazos específicos. Se elige cuando se acepta ese procedimiento; no es Instant Retrieval.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-5"
+  },
+  {
+    "term": "S3 Glacier Deep Archive",
+    "aliases": [],
+    "description": "Clase de archivo para conservación prolongada con condiciones de recuperación. Se valora cuando puede esperarse la restauración; no se propone para contenido activo sin analizar su acceso.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-5"
+  },
+  {
+    "term": "S3 Express One Zone",
+    "aliases": [],
+    "description": "Clase orientada a un perfil de alto rendimiento en una AZ. Debe evaluarse con su modelo y condiciones; no es equivalente a One Zone-IA.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-5"
+  },
+  {
+    "term": "Lifecycle Rules",
+    "aliases": [
+      "Reglas de ciclo de vida"
+    ],
+    "description": "Reglas que automatizan transiciones o vencimiento de objetos compatibles. Reducen intervención manual; no significan que todos los datos deban seguir los plazos del ejemplo docente.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-7"
+  },
+  {
+    "term": "Versionado",
+    "aliases": [
+      "Versioning"
+    ],
+    "description": "Mecanismo para conservar versiones de objetos según configuración. Ayuda ante cambios o borrados; no elimina costes, permisos ni toda necesidad de copias.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-7"
+  },
+  {
+    "term": "NFS",
+    "aliases": [
+      "Network File System"
+    ],
+    "description": "Protocolo de sistema de archivos de red. Permite a clientes compatibles acceder a archivos; no es el mismo contrato que una API de objetos S3.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-8"
+  },
+  {
+    "term": "SMB",
+    "aliases": [
+      "Server Message Block"
+    ],
+    "description": "Protocolo de acceso a archivos y recursos de red utilizado por aplicaciones compatibles. Ayuda a seleccionar sistemas de archivos; no es un motor relacional.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-9"
+  },
+  {
+    "term": "Mount target",
+    "aliases": [
+      "Destino de montaje"
+    ],
+    "description": "Recurso de conectividad para acceder a un sistema EFS bajo su modelo. Se ubica en una subred compatible; no equivale al sistema de archivos completo.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-8"
+  },
+  {
+    "term": "IOPS",
+    "aliases": [
+      "Input/Output Operations Per Second"
+    ],
+    "description": "Medida de operaciones de entrada y salida por segundo. Ayuda a comparar cargas y almacenamiento; no equivale a bytes transferidos por segundo.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-3"
+  },
+  {
+    "term": "Throughput",
+    "aliases": [
+      "Rendimiento de transferencia"
+    ],
+    "description": "Cantidad de datos transferida por unidad de tiempo. Se usa junto con latencia e IOPS; una capacidad alta no garantiza el mismo rendimiento para todo patrón de acceso.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "12_almacenamiento_y_recuperacion.md#seccion-12-3"
+  },
+  {
+    "term": "Amazon SageMaker AI",
+    "aliases": [
+      "SageMaker AI"
+    ],
+    "description": "Servicio de herramientas administradas para desarrollar, entrenar y desplegar modelos ML. Se utiliza con necesidades de modelo propio; no es una API única de traducción preparada.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-2"
+  },
+  {
+    "term": "Amazon Lex",
+    "aliases": [
+      "Lex"
+    ],
+    "description": "Servicio para construir interfaces conversacionales de voz y texto. Gestiona interacción compatible; no es solo síntesis de voz ni un centro de contacto completo.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-3"
+  },
+  {
+    "term": "Amazon Polly",
+    "aliases": [
+      "Polly"
+    ],
+    "description": "Servicio de síntesis de voz a partir de texto. Permite lectura de contenido; realiza la dirección opuesta a transcribir audio.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-4"
+  },
+  {
+    "term": "Amazon Transcribe",
+    "aliases": [
+      "Transcribe"
+    ],
+    "description": "Servicio de reconocimiento de voz que transforma audio en texto. Ayuda con transcripciones; sus resultados requieren evaluación y no son infalibles.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-4"
+  },
+  {
+    "term": "Amazon Translate",
+    "aliases": [
+      "Translate"
+    ],
+    "description": "Servicio de traducción de texto entre idiomas compatibles. Se usa para experiencias multilingües; no reconoce audio ni genera voz por sí solo.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-4"
+  },
+  {
+    "term": "Amazon Textract",
+    "aliases": [
+      "Textract"
+    ],
+    "description": "Servicio de detección y análisis de texto y estructuras de documentos compatibles. Extrae campos y tablas; no se confunde con identificar objetos en fotografías.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-5"
+  },
+  {
+    "term": "Amazon Rekognition",
+    "aliases": [
+      "Rekognition"
+    ],
+    "description": "Servicio de análisis de imágenes y vídeo bajo sus capacidades. Se usa para reconocer contenido visual; no sustituye todo el análisis estructurado de documentos.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-5"
+  },
+  {
+    "term": "Amazon Comprehend",
+    "aliases": [
+      "Comprehend"
+    ],
+    "description": "Servicio de análisis de lenguaje natural para tareas compatibles sobre contenido. Ayuda a obtener entidades o sentimiento; no es traducción ni prueba infalible de intención humana.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-5"
+  },
+  {
+    "term": "Amazon Q",
+    "aliases": [],
+    "description": "Marca de capacidades de asistencia generativa con productos distintos. Se reconoce en el temario; sus variantes y fechas de soporte no son intercambiables.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-6"
+  },
+  {
+    "term": "Amazon Q Developer",
+    "aliases": [],
+    "description": "Asistencia generativa para tareas de desarrollo y operación compatibles. Ayuda a comprender o producir software; requiere revisión y tiene avisos de soporte de interfaces específicos.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-6"
+  },
+  {
+    "term": "Kiro",
+    "aliases": [],
+    "description": "Herramienta citada por la documentación como alternativa relacionada con asistencia de desarrollo. Se conserva para interpretar el aviso actual; no se considera alias de Q Developer.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-6"
+  },
+  {
+    "term": "Amazon Athena",
+    "aliases": [
+      "Athena"
+    ],
+    "description": "Servicio de consulta, especialmente SQL sobre datos S3 compatibles. Facilita análisis sin gestionar un clúster tradicional; no es una base OLTP para cualquier aplicación.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-8"
+  },
+  {
+    "term": "AWS Glue",
+    "aliases": [
+      "Glue"
+    ],
+    "description": "Servicio de integración, preparación y catálogo de datos. Ayuda a transformar conjuntos para consumo; no es la capa de visualización empresarial.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-8"
+  },
+  {
+    "term": "Glue Data Catalog",
+    "aliases": [],
+    "description": "Catálogo de metadatos sobre conjuntos y estructuras. Facilita interpretación y descubrimiento; no contiene por definición una copia de todos los bytes originales.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-8"
+  },
+  {
+    "term": "Amazon Kinesis",
+    "aliases": [
+      "Kinesis"
+    ],
+    "description": "Familia de capacidades de datos en flujo continuo. Se reconoce por streaming; deben distinguirse sus productos y no tratarlos como una única API idéntica.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-9"
+  },
+  {
+    "term": "Kinesis Data Streams",
+    "aliases": [],
+    "description": "Servicio de ingestión y consumo de registros como stream. Permite procesamiento continuo; no equivale a una consulta ocasional de datos históricos.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-9"
+  },
+  {
+    "term": "Amazon Data Firehose",
+    "aliases": [
+      "Data Firehose"
+    ],
+    "description": "Servicio de entrega de datos de flujo a destinos compatibles. Se relaciona históricamente con Kinesis; no es un alias de Data Streams.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-9"
+  },
+  {
+    "term": "Amazon EMR",
+    "aliases": [
+      "EMR"
+    ],
+    "description": "Servicio para ejecutar procesamiento distribuido con marcos compatibles. Se usa con grandes conjuntos y herramientas como Spark; no es un panel BI.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-10"
+  },
+  {
+    "term": "Apache Spark",
+    "aliases": [
+      "Spark"
+    ],
+    "description": "Marco de procesamiento de datos utilizado en entornos compatibles. Permite trabajos distribuidos; no es el servicio EMR completo.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-10"
+  },
+  {
+    "term": "Apache Hadoop",
+    "aliases": [
+      "Hadoop"
+    ],
+    "description": "Ecosistema de procesamiento distribuido citado en EMR. Se reconoce como tecnología utilizada por servicios; no equivale a una base de datos AWS específica.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-10"
+  },
+  {
+    "term": "Amazon OpenSearch Service",
+    "aliases": [
+      "OpenSearch Service"
+    ],
+    "description": "Servicio administrado de búsqueda y análisis de datos indexados. Ayuda a explorar información y registros; no es un volumen de archivos ni sustituye automáticamente la fuente transaccional.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-10"
+  },
+  {
+    "term": "Amazon Quick",
+    "aliases": [],
+    "description": "Plataforma que incorpora capacidades como Quick Sight según la documentación actual. Se identifica en la evolución del temario; no se reduce a un sinónimo de la función de paneles.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-11"
+  },
+  {
+    "term": "Amazon Quick Sight",
+    "aliases": [
+      "Quick Sight",
+      "Amazon QuickSight"
+    ],
+    "description": "Capacidad de visualización y BI dentro de Quick en la documentación actual. Permite explorar y presentar indicadores; no prepara automáticamente todo el pipeline ni equivale a la plataforma amplia.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-11"
+  },
+  {
+    "term": "Machine learning",
+    "aliases": [
+      "ML",
+      "Aprendizaje automático"
+    ],
+    "description": "Enfoque que utiliza modelos aprendidos a partir de datos. Permite predicciones o tareas sobre casos nuevos; no convierte cualquier consulta de datos en entrenamiento.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-1"
+  },
+  {
+    "term": "Entrenamiento",
+    "aliases": [
+      "Training"
+    ],
+    "description": "Proceso de ajustar un modelo utilizando datos y un procedimiento. Se distingue de utilizar el modelo resultante para producir inferencias.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-1"
+  },
+  {
+    "term": "Inferencia",
+    "aliases": [
+      "Inference"
+    ],
+    "description": "Uso de un modelo para obtener resultados sobre entradas. Se utiliza después o junto a procesos de aprendizaje; no equivale a entrenar desde cero en cada solicitud.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-1"
+  },
+  {
+    "term": "ETL",
+    "aliases": [
+      "Extract, Transform, Load"
+    ],
+    "description": "Proceso de extraer, transformar y cargar datos. Se usa en preparación e integración; su secuencia no es la misma que ELT.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-7"
+  },
+  {
+    "term": "ELT",
+    "aliases": [
+      "Extract, Load, Transform"
+    ],
+    "description": "Proceso que carga antes de realizar determinadas transformaciones. Se elige según arquitectura; no es un alias de ETL ni una garantía de mayor rendimiento.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-7"
+  },
+  {
+    "term": "Data lake",
+    "aliases": [
+      "Lago de datos"
+    ],
+    "description": "Repositorio de conjuntos para diferentes usos analíticos. Puede conservar datos brutos y preparados; no equivale necesariamente a un warehouse transaccionalmente modelado.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-7"
+  },
+  {
+    "term": "Business intelligence",
+    "aliases": [
+      "BI",
+      "Inteligencia de negocio"
+    ],
+    "description": "Prácticas y capacidades para explorar y presentar información útil para decisiones. Incluye métricas y paneles; la visualización no garantiza calidad de los datos de origen.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "13_ia_ml_y_analitica.md#seccion-13-11"
+  },
+  {
+    "term": "Amazon SQS",
+    "aliases": [
+      "Simple Queue Service",
+      "SQS"
+    ],
+    "description": "Servicio de colas para desacoplar productores y consumidores. Mantiene trabajo para procesamiento; no distribuye por defecto una copia a todos los consumidores como un topic.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-2"
+  },
+  {
+    "term": "Dead-letter queue",
+    "aliases": [
+      "DLQ"
+    ],
+    "description": "Cola destinada a separar mensajes que no se procesan bajo una política. Facilita investigación y tratamiento; no resuelve automáticamente la causa del fallo.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-2"
+  },
+  {
+    "term": "Visibility timeout",
+    "aliases": [
+      "Tiempo de visibilidad"
+    ],
+    "description": "Intervalo que controla disponibilidad de un mensaje recibido para otros consumidores. Se relaciona con duración y fallos de procesamiento; no es una confirmación automática del efecto de negocio.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-2"
+  },
+  {
+    "term": "FIFO",
+    "aliases": [
+      "First In, First Out"
+    ],
+    "description": "Propiedad de orden que identifica una modalidad de cola bajo sus condiciones. Ayuda en flujos que requieren orden; no asegura por sí sola exactamente una vez todo efecto externo.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-2"
+  },
+  {
+    "term": "Topic",
+    "aliases": [
+      "Tema de SNS"
+    ],
+    "description": "Punto lógico de publicación para distribuir a suscriptores compatibles. Se usa en publicación-suscripción; no es una cola compartida de trabajadores.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-3"
+  },
+  {
+    "term": "Amazon EventBridge",
+    "aliases": [
+      "EventBridge"
+    ],
+    "description": "Servicio de integración de eventos con mecanismos de encaminamiento compatibles. Relaciona fuentes y destinos; no es sinónimo de una máquina de estados completa.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-4"
+  },
+  {
+    "term": "AWS Step Functions",
+    "aliases": [
+      "Step Functions"
+    ],
+    "description": "Servicio de coordinación de procesos mediante estados y pasos. Orquesta tareas; no sustituye el código que ejecuta cada operación.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-4"
+  },
+  {
+    "term": "Máquina de estados",
+    "aliases": [
+      "State machine"
+    ],
+    "description": "Representación de un flujo y sus estados y transiciones. Se usa para coordinar procesos; no equivale a una única invocación de función.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-4"
+  },
+  {
+    "term": "Amazon Connect",
+    "aliases": [
+      "Connect"
+    ],
+    "description": "Servicio de capacidades de centro de contacto. Atiende gestión de interacciones; no equivale a enviar correo de aplicación con SES.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-5"
+  },
+  {
+    "term": "Amazon SES",
+    "aliases": [
+      "Simple Email Service",
+      "SES"
+    ],
+    "description": "Servicio de correo para aplicaciones bajo su configuración. Se usa para comunicaciones transaccionales compatibles; aceptar un envío no demuestra que el destinatario lo haya leído.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-5"
+  },
+  {
+    "term": "AWS CodeBuild",
+    "aliases": [
+      "CodeBuild"
+    ],
+    "description": "Servicio para ejecutar construcciones y comprobaciones de código. Produce artefactos compatibles; no es toda la orquestación de un pipeline.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-6"
+  },
+  {
+    "term": "AWS CodePipeline",
+    "aliases": [
+      "CodePipeline"
+    ],
+    "description": "Servicio que coordina fases de entrega de software. Puede integrar CodeBuild y despliegues; no es el archivo de infraestructura ni el ejecutor de todo trabajo concreto.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-6"
+  },
+  {
+    "term": "AWS X-Ray",
+    "aliases": [
+      "X-Ray"
+    ],
+    "description": "Servicio de trazado para diagnosticar recorridos de solicitudes compatibles. Se combina con métricas y registros; no funciona como instrumentación universal sin integración.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-6"
+  },
+  {
+    "term": "OpenTelemetry",
+    "aliases": [
+      "OTel"
+    ],
+    "description": "Estándar y herramientas de instrumentación de telemetría. Se utiliza en la evolución de trazado; no es un alias del servicio X-Ray.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-6"
+  },
+  {
+    "term": "Traza",
+    "aliases": [
+      "Trace"
+    ],
+    "description": "Representación del recorrido y partes de una solicitud. Ayuda a localizar latencia y fallos; no es simplemente un contador agregado de CPU.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-6"
+  },
+  {
+    "term": "Amazon WorkSpaces",
+    "aliases": [
+      "WorkSpaces"
+    ],
+    "description": "Servicio de entornos de escritorio virtual bajo modalidades compatibles. Entrega una experiencia de trabajo remota; no equivale a toda aplicación web ni a streaming de una sola aplicación.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-7"
+  },
+  {
+    "term": "Amazon AppStream 2.0",
+    "aliases": [
+      "Amazon WorkSpaces Applications"
+    ],
+    "description": "Denominación del examen para entrega de aplicaciones por streaming, presentada actualmente como WorkSpaces Applications. Permite usar software remoto; se distingue del escritorio completo y del navegador administrado.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-7"
+  },
+  {
+    "term": "Amazon WorkSpaces Secure Browser",
+    "aliases": [
+      "WorkSpaces Secure Browser"
+    ],
+    "description": "Capacidad de navegación web remota administrada bajo su modelo de aislamiento. Se utiliza para acceso web; no es sinónimo de un escritorio completo WorkSpaces.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-7"
+  },
+  {
+    "term": "AWS Amplify",
+    "aliases": [
+      "Amplify"
+    ],
+    "description": "Herramientas y capacidades para desarrollar y desplegar frontend y aplicaciones compatibles. Facilita flujos e integración; no elimina diseño de backend ni permisos sobre datos.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-8"
+  },
+  {
+    "term": "AWS IoT Core",
+    "aliases": [
+      "IoT Core"
+    ],
+    "description": "Servicio para conectar y autenticar dispositivos e integrar sus mensajes. Ayuda a construir soluciones IoT; no interpreta automáticamente toda señal ni autoriza cualquier acción física.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-9"
+  },
+  {
+    "term": "AWS Health Dashboard",
+    "aliases": [],
+    "description": "Recurso para consultar eventos de salud bajo su alcance. Ayuda a diagnosticar incidencias; no demuestra por sí solo la salud funcional de una aplicación.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-10"
+  },
+  {
+    "term": "Service Quotas",
+    "aliases": [],
+    "description": "Servicio para consultar y gestionar cuotas compatibles. Ayuda a planificar capacidad; no equivale a comprar una reserva ni a aumentar todos los límites automáticamente.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-10"
+  },
+  {
+    "term": "AWS Systems Manager",
+    "aliases": [
+      "Systems Manager"
+    ],
+    "description": "Conjunto de capacidades de administración de recursos compatibles. Ayuda a operar entornos; no elimina permisos ni equivale a un único agente universal.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-10"
+  },
+  {
+    "term": "AWS Service Catalog",
+    "aliases": [
+      "Service Catalog"
+    ],
+    "description": "Servicio para ofrecer productos de infraestructura aprobados. Ayuda a estandarizar aprovisionamiento; no equivale a un catálogo de todos los datos analíticos.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-10"
+  },
+  {
+    "term": "AWS Control Tower",
+    "aliases": [
+      "Control Tower"
+    ],
+    "description": "Servicio que ayuda a establecer gobierno de entornos de múltiples cuentas. Facilita controles y organización; no es una red que conecte automáticamente todas las VPC.",
+    "group": "Bloque III · Tecnología y servicios",
+    "markdown": "14_integracion_y_otros_servicios.md#seccion-14-10"
+  }
+]

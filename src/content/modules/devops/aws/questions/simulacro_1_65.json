@@ -1,0 +1,1188 @@
+[
+  {
+    "id": 89,
+    "level": "Principiante",
+    "topic": "Responsabilidad compartida",
+    "domain": "Dominio 2 - Seguridad y cumplimiento",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "¿Qué opción corresponde mejor a esta descripción? AWS protege los centros de datos, el hardware y la infraestructura física que ejecuta los servicios.",
+    "options": [
+      "AWS Secrets Manager",
+      "Responsabilidad de AWS: seguridad física",
+      "Amazon GuardDuty",
+      "Responsabilidad de AWS en RDS"
+    ],
+    "correct": [
+      1
+    ],
+    "why": "La descripción corresponde a Responsabilidad de AWS: seguridad física."
+  },
+  {
+    "id": 312,
+    "level": "Principiante",
+    "topic": "Servicios AWS",
+    "q": "¿Qué servicio permite definir infraestructura como código (IaC) usando JSON o YAML?",
+    "options": [
+      "AWS CloudFormation",
+      "AWS Elastic Beanstalk",
+      "AWS OpsWorks",
+      "AWS CodeDeploy"
+    ],
+    "correct": [
+      0
+    ],
+    "why": "CloudFormation permite desplegar infraestructura mediante código.",
+    "domain": "Dominio 3 - Tecnología y servicios en la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta"
+  },
+  {
+    "id": 157,
+    "level": "Principiante",
+    "topic": "Infraestructura global",
+    "domain": "Dominio 3 - Tecnología y servicios en la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "¿Qué opción corresponde mejor a esta descripción? Ubicación geográfica física que contiene varias zonas de disponibilidad.",
+    "options": [
+      "Amazon RDS",
+      "Amazon SQS",
+      "Availability Zone (AZ)",
+      "Región de AWS"
+    ],
+    "correct": [
+      3
+    ],
+    "why": "La descripción corresponde a Región de AWS."
+  },
+  {
+    "id": 25,
+    "level": "Medio",
+    "topic": "Almacenamiento",
+    "q": "¿Qué DOS afirmaciones sobre EBS son correctas?",
+    "options": [
+      "Es un sistema de objetos basado en buckets",
+      "Sus datos se borran obligatoriamente al detener EC2",
+      "Permite crear snapshots de sus volúmenes",
+      "Proporciona almacenamiento de bloques persistente para EC2",
+      "Cada volumen ordinario se monta simultáneamente en cualquier número de AZ"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "why": "EBS es almacenamiento de bloques persistente y permite snapshots, con restricciones según tipo y AZ.",
+    "domain": "Dominio 3 - Tecnología y servicios en la nube",
+    "type": "RESPUESTA MÚLTIPLE — Selecciona 2"
+  },
+  {
+    "id": 221,
+    "level": "Medio",
+    "topic": "Modelos de precios",
+    "domain": "Dominio 4 - Facturación, precios y soporte",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "¿Qué opción corresponde mejor a esta descripción? Opción de descuento para determinados usos de EC2/RDS a cambio de compromiso durante un periodo.",
+    "options": [
+      "EC2 On-Demand",
+      "AWS re:Post",
+      "Reserved Instances",
+      "AWS Budgets"
+    ],
+    "correct": [
+      2
+    ],
+    "why": "La descripción corresponde a Reserved Instances."
+  },
+  {
+    "id": 391,
+    "level": "Medio",
+    "topic": "Responsabilidad compartida",
+    "domain": "Dominio 2 - Seguridad y cumplimiento",
+    "type": "RESPUESTA MÚLTIPLE — Selecciona 2",
+    "q": "¿Qué DOS tareas mantiene el cliente cuando usa una base gestionada RDS?",
+    "options": [
+      "Gestionar usuarios y privilegios de base de datos",
+      "Clasificar y proteger sus datos",
+      "Mantener los racks del CPD",
+      "Sustituir discos defectuosos del servicio",
+      "Actualizar el hipervisor físico"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "why": "RDS reduce carga de infraestructura, pero datos, privilegios y uso siguen siendo del cliente."
+  },
+  {
+    "id": 34,
+    "level": "Medio",
+    "topic": "ELB",
+    "q": "En condiciones normales, ¿qué hace un balanceador con un destino que falla las comprobaciones de salud, cuando hay otros destinos sanos?",
+    "options": [
+      "Elimina su base de datos",
+      "Deja de enviarle tráfico normal y dirige solicitudes a sanos",
+      "Convierte el destino en un bucket S3",
+      "Prioriza el destino fallido"
+    ],
+    "correct": [
+      1
+    ],
+    "why": "ELB puede retirar temporalmente destinos no sanos del encaminamiento habitual; hay excepciones como escenarios de fallo de todos los destinos.",
+    "domain": "Dominio 3 - Tecnología y servicios en la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta"
+  },
+  {
+    "id": 411,
+    "level": "Difícil",
+    "topic": "IAM",
+    "domain": "Dominio 2 - Seguridad y cumplimiento",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "Una identidad necesita permisos nuevos. ¿Cuál es la secuencia conceptual correcta para obtener acceso?",
+    "options": [
+      "Una etiqueta de coste concede permisos",
+      "Debe existir un permiso aplicable de IAM o de recurso, y no haber denegaciones que lo bloqueen",
+      "AWS Support asigna permisos automáticamente",
+      "Una SCP Allow basta para concederlo"
+    ],
+    "correct": [
+      1
+    ],
+    "why": "La autorización depende de permisos positivos aplicables y ausencia de Deny/barreras relevantes."
+  },
+  {
+    "id": 292,
+    "level": "Medio",
+    "topic": "Fundamentos",
+    "q": "¿Qué pilar del AWS Well-Architected Framework se enfoca en la capacidad de un sistema para recuperarse de interrupciones de infraestructura dinámicamente?",
+    "options": [
+      "Excelencia operativa",
+      "Fiabilidad (Reliability)",
+      "Eficiencia de rendimiento",
+      "Seguridad"
+    ],
+    "correct": [
+      1
+    ],
+    "why": "El pilar de Fiabilidad se encarga de la recuperación de fallos e interrupciones.",
+    "domain": "Dominio 1 - Conceptos de la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta"
+  },
+  {
+    "id": 455,
+    "level": "Difícil",
+    "topic": "Well-Architected",
+    "domain": "Dominio 1 - Conceptos de la nube",
+    "type": "RESPUESTA MÚLTIPLE — Selecciona 2",
+    "q": "¿Qué DOS decisiones encajan mejor con una arquitectura fiable?",
+    "options": [
+      "Realizar ejercicios de recuperación antes de un incidente",
+      "Diseñar fallos de un solo componente sin interrumpir toda la aplicación",
+      "Evitar cualquier copia para pagar menos",
+      "Usar el usuario raíz en cada servicio",
+      "Guardar todos los datos solo en un disco efímero"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "why": "Fiabilidad incorpora aislamiento de fallos y prueba de recuperación; no basta con aumentar capacidad."
+  },
+  {
+    "id": 353,
+    "level": "Difícil",
+    "topic": "Route 53",
+    "q": "¿Qué política de Route 53 permite desplazar más tráfico hacia una ubicación aplicando un sesgo (bias) sobre la proximidad geográfica?",
+    "options": [
+      "Geolocation",
+      "Geoproximity",
+      "Latency",
+      "Simple"
+    ],
+    "correct": [
+      1
+    ],
+    "why": "Geoproximity routing permite basarse en la ubicación de recursos y usuarios y modificar el área mediante bias.",
+    "domain": "Dominio 3 - Tecnología y servicios en la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta"
+  },
+  {
+    "id": 260,
+    "level": "Medio",
+    "topic": "Seguridad",
+    "q": "En IAM, un usuario tiene una política Allow para eliminar objetos de S3 y otra política contiene un Explicit Deny para la misma operación. ¿Qué ocurre?",
+    "options": [
+      "Se permite porque Allow tiene prioridad.",
+      "Se permite si el usuario es administrador.",
+      "Se deniega porque Explicit Deny tiene prioridad.",
+      "AWS elige aleatoriamente una política."
+    ],
+    "correct": [
+      2
+    ],
+    "why": "En la evaluación IAM un Deny explícito aplicable prevalece ante un Allow para la misma acción.",
+    "domain": "Dominio 3 - Tecnología y servicios en la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta"
+  },
+  {
+    "id": 299,
+    "level": "Principiante",
+    "topic": "Bases de datos",
+    "q": "Una aplicación necesita una base de datos clave-valor predecible con latencia de un dígito de milisegundo. ¿Qué servicio eliges?",
+    "options": [
+      "Amazon RDS",
+      "Amazon Aurora",
+      "Amazon DynamoDB",
+      "Amazon DocumentDB"
+    ],
+    "correct": [
+      2
+    ],
+    "why": "DynamoDB es la DB clave-valor de latencia de milisegundos.",
+    "domain": "Dominio 3 - Tecnología y servicios en la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta"
+  },
+  {
+    "id": 341,
+    "level": "Difícil",
+    "topic": "Soporte",
+    "q": "Una pregunta antigua habla de acceso a un 'pool de TAMs' y no de un TAM designado. ¿Qué plan histórico encaja mejor?",
+    "options": [
+      "Business Support+",
+      "Enterprise On-Ramp",
+      "Basic",
+      "Developer Support"
+    ],
+    "correct": [
+      1
+    ],
+    "why": "Enterprise On-Ramp ofrecía acceso a un pool de TAMs. Durante 2026 se está retirando en favor de Enterprise Support.",
+    "domain": "Dominio 4 - Facturación, precios y soporte",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta"
+  },
+  {
+    "id": 134,
+    "level": "Medio",
+    "topic": "Protección de datos",
+    "domain": "Dominio 2 - Seguridad y cumplimiento",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "Un equipo necesita localizar números de identificación y otros datos sensibles dentro de objetos S3. ¿Qué servicio encaja?",
+    "options": [
+      "Amazon GuardDuty",
+      "AWS Shield",
+      "Amazon Macie",
+      "Amazon ECS"
+    ],
+    "correct": [
+      2
+    ],
+    "why": "Macie usa detección para datos sensibles en S3; GuardDuty trata amenazas y actividad sospechosa."
+  },
+  {
+    "id": 101,
+    "level": "Principiante",
+    "topic": "IAM y acceso",
+    "domain": "Dominio 2 - Seguridad y cumplimiento",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "¿Qué opción corresponde mejor a esta descripción? El usuario raíz debe protegerse con MFA y reservarse para tareas que realmente requieren sus privilegios.",
+    "options": [
+      "Protección del usuario root",
+      "Amazon Inspector",
+      "Mínimo privilegio",
+      "Responsabilidad variable según servicio"
+    ],
+    "correct": [
+      0
+    ],
+    "why": "La descripción corresponde a Protección del usuario root."
+  },
+  {
+    "id": 57,
+    "level": "Medio",
+    "topic": "Well-Architected",
+    "domain": "Dominio 1 - Conceptos de la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "¿Qué opción corresponde mejor a esta descripción? Pilar de Well-Architected centrado en ejecutar, supervisar y mejorar sistemas y procedimientos.",
+    "options": [
+      "Replatform",
+      "Excelencia operativa",
+      "Perspectiva People de AWS CAF",
+      "Sostenibilidad"
+    ],
+    "correct": [
+      1
+    ],
+    "why": "La descripción corresponde a Excelencia operativa."
+  },
+  {
+    "id": 6,
+    "level": "Medio",
+    "topic": "Infraestructura",
+    "q": "Una empresa elige dónde desplegar una aplicación con datos sometidos a residencia y clientes en Galicia. ¿Qué DOS criterios son especialmente relevantes?",
+    "options": [
+      "Color del icono de la región",
+      "Latencia hacia usuarios",
+      "Elegir siempre la región más reciente",
+      "Cumplimiento y residencia de datos",
+      "Nombre alfabético de la región"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "why": "Se consideran residencia/compliance y latencia, junto a catálogo y precio; ninguno de estos criterios es exclusivamente automático.",
+    "domain": "Dominio 3 - Tecnología y servicios en la nube",
+    "type": "RESPUESTA MÚLTIPLE — Selecciona 2"
+  },
+  {
+    "id": 86,
+    "level": "Difícil",
+    "topic": "Migración",
+    "domain": "Dominio 1 - Conceptos de la nube",
+    "type": "RESPUESTA MÚLTIPLE — Selecciona 2",
+    "q": "Una empresa quiere modernizar una aplicación monolítica en servicios independientes. ¿Qué DOS afirmaciones son correctas?",
+    "options": [
+      "Siempre es más rápido que rehost",
+      "Elimina toda responsabilidad de seguridad del cliente",
+      "Se aproxima a refactor/re-architect",
+      "Equivale a trasladar las máquinas sin cambios",
+      "Puede requerir cambios amplios de código y arquitectura"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "why": "Refactor implica rediseñar componentes y suele exigir esfuerzo considerable para aprovechar funciones cloud-native."
+  },
+  {
+    "id": 17,
+    "level": "Principiante",
+    "topic": "VPC",
+    "q": "¿Qué característica corresponde a un Security Group?",
+    "options": [
+      "Nivel de subred",
+      "Stateless",
+      "Solo reglas de permiso",
+      "Reglas evaluadas por número"
+    ],
+    "correct": [
+      2
+    ],
+    "why": "Los security groups actúan a nivel de instancia, son stateful y solo admiten reglas de permiso.",
+    "domain": "Dominio 3 - Tecnología y servicios en la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta"
+  },
+  {
+    "id": 92,
+    "level": "Medio",
+    "topic": "Responsabilidad compartida",
+    "domain": "Dominio 2 - Seguridad y cumplimiento",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "Una EC2 Linux tiene una vulnerabilidad en el SO invitado. ¿Quién debe aplicar normalmente el parche?",
+    "options": [
+      "AWS porque administra el CPD",
+      "Cliente porque administra el SO invitado de EC2",
+      "El proveedor DNS externo",
+      "El servicio Route 53"
+    ],
+    "correct": [
+      1
+    ],
+    "why": "En EC2 el parcheo del sistema operativo invitado es una responsabilidad del cliente."
+  },
+  {
+    "id": 229,
+    "level": "Principiante",
+    "topic": "Gestión de costes",
+    "domain": "Dominio 4 - Facturación, precios y soporte",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "¿Qué opción corresponde mejor a esta descripción? Herramienta para estimar costes de una arquitectura antes de desplegarla.",
+    "options": [
+      "Basic Support",
+      "AWS Pricing Calculator",
+      "AWS Business Support+",
+      "EC2 On-Demand"
+    ],
+    "correct": [
+      1
+    ],
+    "why": "La descripción corresponde a AWS Pricing Calculator."
+  },
+  {
+    "id": 190,
+    "level": "Medio",
+    "topic": "Contenedores",
+    "domain": "Dominio 3 - Tecnología y servicios en la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "Un equipo ejecuta tareas ECS y quiere evitar gestionar las instancias que proporcionan capacidad de cómputo. ¿Qué opción elegir?",
+    "options": [
+      "ECS sobre EC2 exclusivamente",
+      "AWS Direct Connect",
+      "Amazon ECR",
+      "AWS Fargate"
+    ],
+    "correct": [
+      3
+    ],
+    "why": "Fargate suministra capacidad serverless para contenedores sin administrar hosts EC2."
+  },
+  {
+    "id": 387,
+    "level": "Medio",
+    "topic": "Gobierno cloud",
+    "domain": "Dominio 1 - Conceptos de la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "Una adopción cloud tiene equipos sin criterios comunes para permisos y responsabilidades. ¿Qué práctica de gobierno ayuda?",
+    "options": [
+      "Definir políticas, propietarios y controles",
+      "Pagar todas las cargas con la misma etiqueta",
+      "Compartir el usuario root",
+      "Suprimir los registros de auditoría"
+    ],
+    "correct": [
+      0
+    ],
+    "why": "El gobierno establece responsabilidades y políticas; no equivale solo a centralizar pagos."
+  },
+  {
+    "id": 52,
+    "level": "Medio",
+    "topic": "Economía cloud",
+    "domain": "Dominio 1 - Conceptos de la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "Una EC2 muestra CPU baja, pero usa casi toda su RAM durante las horas críticas. ¿Qué harías antes de reducir su tamaño?",
+    "options": [
+      "Migrar forzosamente a S3",
+      "Contratar una RI de tres años inmediatamente",
+      "Reducir el tipo basándose solo en CPU",
+      "Medir memoria y patrones de carga representativos"
+    ],
+    "correct": [
+      3
+    ],
+    "why": "Rightsizing requiere observar también memoria, red, disco y picos para mantener rendimiento."
+  },
+  {
+    "id": 27,
+    "level": "Difícil",
+    "topic": "Almacenamiento",
+    "q": "Necesitas un sistema de archivos compartido por muchas instancias EC2 simultáneamente. ¿Qué servicio encaja?",
+    "options": [
+      "EBS",
+      "EFS",
+      "S3 Glacier",
+      "AMI"
+    ],
+    "correct": [
+      1
+    ],
+    "why": "EFS proporciona un sistema de archivos distribuido compartido, accesible por múltiples EC2.",
+    "domain": "Dominio 3 - Tecnología y servicios en la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta"
+  },
+  {
+    "id": 450,
+    "level": "Medio",
+    "topic": "Costes S3",
+    "domain": "Dominio 4 - Facturación, precios y soporte",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "Una empresa mueve objetos de S3 Standard a una clase de archivo para ahorrar. ¿Qué debe valorar además del precio por GB?",
+    "options": [
+      "Solicitudes, retención mínima y costes/tiempos de recuperación",
+      "Solo el número de usuarios IAM",
+      "Únicamente el hostname DNS",
+      "Solo las horas EC2"
+    ],
+    "correct": [
+      0
+    ],
+    "why": "Una clase barata puede generar cargos de transición/recuperación, mínimos y tiempos que importan para el caso."
+  },
+  {
+    "id": 294,
+    "level": "Principiante",
+    "topic": "Bases de datos",
+    "q": "¿Qué servicio es un motor de base de datos relacional compatible con MySQL y PostgreSQL diseñado específicamente para la nube?",
+    "options": [
+      "Amazon DynamoDB",
+      "Amazon Redshift",
+      "Amazon Aurora",
+      "Amazon Neptune"
+    ],
+    "correct": [
+      2
+    ],
+    "why": "Amazon Aurora es nativo de la nube y compatible con MySQL/PostgreSQL.",
+    "domain": "Dominio 3 - Tecnología y servicios en la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta"
+  },
+  {
+    "id": 264,
+    "level": "Medio",
+    "topic": "Redes",
+    "q": "En la subnet 10.0.1.0/24, ¿cuál de estas direcciones podría asignarse a una instancia?",
+    "options": [
+      "10.0.1.0",
+      "10.0.1.1",
+      "10.0.1.3",
+      "10.0.1.20"
+    ],
+    "correct": [
+      3
+    ],
+    "why": "La dirección .0 es de red; .1 a .3 se reservan para AWS y .255 es broadcast reservado. .20 queda disponible en el ejemplo.",
+    "domain": "Dominio 3 - Tecnología y servicios en la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta"
+  },
+  {
+    "id": 465,
+    "level": "Difícil",
+    "topic": "Gobernanza",
+    "domain": "Dominio 2 - Seguridad y cumplimiento",
+    "type": "RESPUESTA MÚLTIPLE — Selecciona 2",
+    "q": "¿Qué DOS controles son compatibles con mínimo privilegio a nivel de varias cuentas?",
+    "options": [
+      "Roles IAM con permisos específicos",
+      "Confiar en SCP como única política que concede acceso",
+      "Usar claves root compartidas",
+      "Deshabilitar CloudTrail",
+      "SCP para limitar acciones permitidas dentro de la organización"
+    ],
+    "correct": [
+      0,
+      4
+    ],
+    "why": "La SCP limita el máximo aplicable; las identidades aún necesitan permisos acotados en IAM."
+  },
+  {
+    "id": 242,
+    "level": "Principiante",
+    "topic": "Migración y servicios",
+    "q": "¿Qué servicio de AWS está diseñado específicamente para facilitar la migración de bases de datos hacia AWS?",
+    "options": [
+      "AWS Storage Gateway",
+      "AWS Database Migration Service (AWS DMS)",
+      "Amazon EC2",
+      "Amazon AppStream 2.0"
+    ],
+    "correct": [
+      1
+    ],
+    "why": "AWS DMS ayuda a migrar o replicar datos entre motores o hacia AWS. La transformación de esquemas heterogéneos es una tarea diferenciada.",
+    "domain": "Dominio 3 - Tecnología y servicios en la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta"
+  },
+  {
+    "id": 408,
+    "level": "Medio",
+    "topic": "Control de acceso",
+    "domain": "Dominio 2 - Seguridad y cumplimiento",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "La empresa quiere acceso centralizado de empleados a múltiples cuentas AWS sin usuarios IAM aislados en cada cuenta. ¿Qué servicio elegir?",
+    "options": [
+      "Amazon Cognito exclusivamente",
+      "AWS Shield",
+      "IAM Identity Center",
+      "AWS Backup"
+    ],
+    "correct": [
+      2
+    ],
+    "why": "IAM Identity Center gestiona acceso de workforce a cuentas y aplicaciones."
+  },
+  {
+    "id": 1,
+    "level": "Principiante",
+    "topic": "Fundamentos",
+    "q": "¿Cuál de estas ideas describe mejor el modelo de informática en la nube de los apuntes?",
+    "options": [
+      "Comprar toda la capacidad máxima por adelantado",
+      "Acceder bajo demanda a recursos de TI a través de Internet",
+      "Usar únicamente software SaaS",
+      "Eliminar completamente las redes"
+    ],
+    "correct": [
+      1
+    ],
+    "why": "La nube se presenta como entrega bajo demanda de recursos de TI a través de Internet, normalmente con pago por uso.",
+    "domain": "Dominio 1 - Conceptos de la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta"
+  },
+  {
+    "id": 161,
+    "level": "Principiante",
+    "topic": "Infraestructura global",
+    "domain": "Dominio 3 - Tecnología y servicios en la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "¿Qué opción corresponde mejor a esta descripción? Ubicación de borde usada por servicios como CloudFront para acercar contenido a los usuarios.",
+    "options": [
+      "Amazon Redshift",
+      "AWS Lambda",
+      "Edge Location",
+      "S3 Glacier Deep Archive"
+    ],
+    "correct": [
+      2
+    ],
+    "why": "La descripción corresponde a Edge Location."
+  },
+  {
+    "id": 458,
+    "level": "Difícil",
+    "topic": "Alcance global",
+    "domain": "Dominio 1 - Conceptos de la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "Un negocio aloja datos regulados en una región autorizada y sirve imágenes globalmente con CDN. ¿Cuál es la conclusión correcta?",
+    "options": [
+      "Toda edge location es una región AWS",
+      "Usar CDN garantiza automáticamente residencia de cada copia",
+      "Debe evaluar dónde se almacenan o cachean datos y qué controles exige la normativa",
+      "Las políticas de IAM determinan por sí solas cumplimiento territorial"
+    ],
+    "correct": [
+      2
+    ],
+    "why": "La residencia de datos, el caché y los requisitos legales necesitan evaluación específica; un servicio global no certifica cumplimiento automático."
+  },
+  {
+    "id": 453,
+    "level": "Difícil",
+    "topic": "Migración",
+    "domain": "Dominio 1 - Conceptos de la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "Una organización quiere cambiar su base instalada por RDS y adaptar mínimamente su aplicación; otra quiere dividir el monolito en microservicios. ¿Qué estrategias representan?",
+    "options": [
+      "Replatform y Refactor, respectivamente",
+      "Repurchase en ambos casos",
+      "Rehost y Retain, respectivamente",
+      "Retire y Rehost, respectivamente"
+    ],
+    "correct": [
+      0
+    ],
+    "why": "Migrar a RDS con ajustes limitados encaja con replatform; dividir la arquitectura requiere refactor/re-architect."
+  },
+  {
+    "id": 227,
+    "level": "Principiante",
+    "topic": "Gestión de costes",
+    "domain": "Dominio 4 - Facturación, precios y soporte",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "¿Qué opción corresponde mejor a esta descripción? Servicio para definir presupuestos y alertas cuando gasto o uso real/pronosticado supera umbrales.",
+    "options": [
+      "AWS Budgets",
+      "AWS Business Support+",
+      "Basic Support",
+      "EC2 Spot Instances"
+    ],
+    "correct": [
+      0
+    ],
+    "why": "La descripción corresponde a AWS Budgets."
+  },
+  {
+    "id": 285,
+    "level": "Medio",
+    "topic": "Cómputo",
+    "q": "¿Cuál de estas responsabilidades suele corresponder al cliente al ejecutar una aplicación sobre EC2?",
+    "options": [
+      "Protección física del centro de datos.",
+      "Mantenimiento del hardware físico.",
+      "Configuración del sistema operativo y permisos de la aplicación.",
+      "Protección de los cables de red del CPD."
+    ],
+    "correct": [
+      2
+    ],
+    "why": "EC2 es IaaS: el cliente debe mantener el SO invitado, las aplicaciones y los permisos que utiliza.",
+    "domain": "Dominio 2 - Seguridad y cumplimiento",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta"
+  },
+  {
+    "id": 95,
+    "level": "Medio",
+    "topic": "Responsabilidad compartida",
+    "domain": "Dominio 2 - Seguridad y cumplimiento",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "¿Qué opción corresponde mejor a esta descripción? AWS administra la infraestructura subyacente y una mayor parte del sistema operativo/plataforma que en una base instalada manualmente en EC2.",
+    "options": [
+      "Amazon Inspector",
+      "Amazon GuardDuty",
+      "AWS Firewall Manager",
+      "Responsabilidad de AWS en RDS"
+    ],
+    "correct": [
+      3
+    ],
+    "why": "La descripción corresponde a Responsabilidad de AWS en RDS."
+  },
+  {
+    "id": 67,
+    "level": "Medio",
+    "topic": "Well-Architected",
+    "domain": "Dominio 1 - Conceptos de la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "¿Qué opción corresponde mejor a esta descripción? Pilar de Well-Architected centrado en minimizar el impacto ambiental de ejecutar cargas de trabajo.",
+    "options": [
+      "Seguridad",
+      "Eficiencia del rendimiento",
+      "Sostenibilidad",
+      "Economías de escala"
+    ],
+    "correct": [
+      2
+    ],
+    "why": "La descripción corresponde a Sostenibilidad."
+  },
+  {
+    "id": 45,
+    "level": "Principiante",
+    "topic": "Beneficios de la nube",
+    "domain": "Dominio 1 - Conceptos de la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "¿Qué opción corresponde mejor a esta descripción? Desplegar aplicaciones y servicios en ubicaciones geográficas de todo el mundo sin construir centros de datos propios.",
+    "options": [
+      "Alcance global",
+      "Elasticidad",
+      "Seguridad",
+      "Perspectiva Operations de AWS CAF"
+    ],
+    "correct": [
+      0
+    ],
+    "why": "La descripción corresponde a Alcance global."
+  },
+  {
+    "id": 23,
+    "level": "Medio",
+    "topic": "Contenedores",
+    "q": "¿Qué aporta Fargate según los apuntes?",
+    "options": [
+      "DNS global",
+      "Ejecutar contenedores sin administrar hosts EC2",
+      "Un repositorio de imágenes",
+      "Una base de datos NoSQL"
+    ],
+    "correct": [
+      1
+    ],
+    "why": "Fargate simplifica la ejecución de contenedores evitando administrar las instancias subyacentes.",
+    "domain": "Dominio 3 - Tecnología y servicios en la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta"
+  },
+  {
+    "id": 138,
+    "level": "Medio",
+    "topic": "Protección de red",
+    "domain": "Dominio 2 - Seguridad y cumplimiento",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "Una aplicación pública recibe un ataque volumétrico de denegación de servicio. ¿Qué servicio se centra en protección DDoS administrada?",
+    "options": [
+      "AWS Shield",
+      "AWS Backup",
+      "AWS Secrets Manager",
+      "AWS WAF únicamente"
+    ],
+    "correct": [
+      0
+    ],
+    "why": "Shield protege frente a ataques DDoS; WAF actúa sobre solicitudes web a nivel de aplicación."
+  },
+  {
+    "id": 246,
+    "level": "Principiante",
+    "topic": "Redes",
+    "q": "¿Qué componente de la infraestructura global utiliza CloudFront para acercar el contenido a los usuarios y reducir la latencia?",
+    "options": [
+      "Regiones",
+      "Ubicaciones de borde",
+      "Zonas de disponibilidad",
+      "VPC"
+    ],
+    "correct": [
+      1
+    ],
+    "why": "CloudFront utiliza puntos de presencia y ubicaciones de borde para almacenar y entregar copias cerca de los usuarios.",
+    "domain": "Dominio 3 - Tecnología y servicios en la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta"
+  },
+  {
+    "id": 131,
+    "level": "Medio",
+    "topic": "Detección",
+    "domain": "Dominio 2 - Seguridad y cumplimiento",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "¿Qué opción corresponde mejor a esta descripción? Servicio que ayuda a detectar vulnerabilidades en determinadas cargas y recursos de AWS.",
+    "options": [
+      "AWS WAF",
+      "AWS Organizations",
+      "Service Control Policy (SCP)",
+      "Amazon Inspector"
+    ],
+    "correct": [
+      3
+    ],
+    "why": "La descripción corresponde a Amazon Inspector."
+  },
+  {
+    "id": 396,
+    "level": "Medio",
+    "topic": "Cifrado",
+    "domain": "Dominio 2 - Seguridad y cumplimiento",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "El negocio exige cifrado de datos almacenados en S3 con claves cuya administración se integra en AWS KMS. ¿Qué alternativa es pertinente?",
+    "options": [
+      "HTTP sin TLS",
+      "Route 53 Latency",
+      "IAM Role como algoritmo criptográfico",
+      "SSE-KMS"
+    ],
+    "correct": [
+      3
+    ],
+    "why": "SSE-KMS integra cifrado de S3 con claves KMS bajo políticas y condiciones aplicables."
+  },
+  {
+    "id": 449,
+    "level": "Medio",
+    "topic": "Soporte",
+    "domain": "Dominio 4 - Facturación, precios y soporte",
+    "type": "RESPUESTA MÚLTIPLE — Selecciona 2",
+    "q": "¿Qué DOS recursos cumplen funciones diferentes: estado de eventos AWS y recomendaciones de configuración?",
+    "options": [
+      "AWS Artifact escala automáticamente EC2",
+      "AWS Health sustituye registros de aplicación",
+      "AWS Trusted Advisor revisa condiciones y recomendaciones",
+      "AWS Health muestra eventos que afectan a recursos/servicios",
+      "Cost Explorer es una consola de incidentes globales"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "why": "Health comunica eventos relevantes; Trusted Advisor produce recomendaciones automatizadas."
+  },
+  {
+    "id": 393,
+    "level": "Medio",
+    "topic": "IAM",
+    "domain": "Dominio 2 - Seguridad y cumplimiento",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "Una cuenta AWS debe dar acceso temporal a un proveedor externo para realizar una tarea concreta. ¿Qué es preferible?",
+    "options": [
+      "Dar acceso AdministratorAccess permanente",
+      "Permitir que asuma un rol con permisos limitados",
+      "Publicar contraseñas en una wiki",
+      "Compartir la clave root"
+    ],
+    "correct": [
+      1
+    ],
+    "why": "Un rol asumible con confianza y permisos limitados evita claves estáticas compartidas."
+  },
+  {
+    "id": 368,
+    "level": "Medio",
+    "topic": "EBS",
+    "q": "¿Dónde guarda AWS la información de snapshots EBS y cómo puede acceder el usuario?",
+    "options": [
+      "Dentro del disco instance store",
+      "En almacenamiento administrado por AWS basado en S3, mediante las operaciones de snapshots EBS",
+      "En EFS, montando NFS",
+      "En un bucket S3 normal del cliente, siempre editable"
+    ],
+    "correct": [
+      1
+    ],
+    "why": "Los snapshots EBS usan S3 gestionado por AWS, no un bucket ordinario del cliente.",
+    "domain": "Dominio 3 - Tecnología y servicios en la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta"
+  },
+  {
+    "id": 377,
+    "level": "Medio",
+    "topic": "Migración",
+    "domain": "Dominio 1 - Conceptos de la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "Una empresa quiere mover 300 VM locales a AWS sin cambiar código en la primera fase. ¿Qué estrategia encaja?",
+    "options": [
+      "Retire",
+      "Rehost",
+      "Refactor",
+      "Repurchase"
+    ],
+    "correct": [
+      1
+    ],
+    "why": "Rehost traslada cargas con cambios mínimos; modernización puede venir después."
+  },
+  {
+    "id": 112,
+    "level": "Medio",
+    "topic": "IAM y acceso",
+    "domain": "Dominio 2 - Seguridad y cumplimiento",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "La empresa quiere que sus empleados entren con identidades corporativas y accedan a varias cuentas AWS desde una experiencia centralizada. ¿Qué servicio encaja?",
+    "options": [
+      "AWS Pricing Calculator",
+      "S3 Transfer Acceleration",
+      "IAM Identity Center",
+      "AWS Backup"
+    ],
+    "correct": [
+      2
+    ],
+    "why": "IAM Identity Center centraliza acceso de plantilla y aplicaciones mediante permisos y fuentes de identidad."
+  },
+  {
+    "id": 375,
+    "level": "Medio",
+    "topic": "Well-Architected",
+    "domain": "Dominio 1 - Conceptos de la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "Un equipo quiere que sus fallos de despliegue sean reversibles y los cambios sean pequeños y frecuentes. ¿Qué pilar guía esta mejora?",
+    "options": [
+      "Excelencia operativa",
+      "Coste de transferencia",
+      "Gobernanza de facturación",
+      "Modelo Spot"
+    ],
+    "correct": [
+      0
+    ],
+    "why": "Excelencia operativa fomenta procesos repetibles, cambios seguros y aprendizaje."
+  },
+  {
+    "id": 355,
+    "level": "Medio",
+    "topic": "Route 53",
+    "q": "¿Qué describe mejor el TTL de un registro DNS?",
+    "options": [
+      "El número máximo de IP que puede devolver Route 53",
+      "El tiempo que un resolver puede mantener la respuesta en caché",
+      "El porcentaje de tráfico asignado a una región",
+      "La frecuencia de los health checks de EC2"
+    ],
+    "correct": [
+      1
+    ],
+    "why": "TTL indica cuánto tiempo puede almacenarse en caché una respuesta DNS antes de volver a consultar.",
+    "domain": "Dominio 3 - Tecnología y servicios en la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta"
+  },
+  {
+    "id": 76,
+    "level": "Medio",
+    "topic": "AWS CAF",
+    "domain": "Dominio 1 - Conceptos de la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "Un equipo debe crear una plataforma cloud compartida y modernizar herramientas de despliegue. ¿Qué perspectiva de AWS CAF encaja?",
+    "options": [
+      "People",
+      "Business",
+      "Security",
+      "Platform"
+    ],
+    "correct": [
+      3
+    ],
+    "why": "Platform trata la infraestructura tecnológica y su modernización."
+  },
+  {
+    "id": 21,
+    "level": "Medio",
+    "topic": "Cómputo",
+    "q": "¿Qué modelo EC2 encaja mejor con una carga interrumpible y flexible?",
+    "options": [
+      "Spot",
+      "Reserved",
+      "Dedicated Host",
+      "Multi-AZ"
+    ],
+    "correct": [
+      0
+    ],
+    "why": "Spot usa capacidad sobrante con descuento, pero puede interrumpirse.",
+    "domain": "Dominio 4 - Facturación, precios y soporte",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta"
+  },
+  {
+    "id": 336,
+    "level": "Principiante",
+    "topic": "Soporte",
+    "q": "¿Qué servicio automatizado de AWS busca oportunidades para reducir gastos mensuales y ofrece recomendaciones de buenas prácticas?",
+    "options": [
+      "AWS Support Concierge",
+      "Technical Account Manager (TAM)",
+      "AWS Trusted Advisor",
+      "AWS Support"
+    ],
+    "correct": [
+      2
+    ],
+    "why": "AWS Trusted Advisor analiza el entorno y puede recomendar eliminar o redimensionar recursos para reducir costes.",
+    "domain": "Dominio 4 - Facturación, precios y soporte",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta"
+  },
+  {
+    "id": 124,
+    "level": "Medio",
+    "topic": "Gobernanza",
+    "domain": "Dominio 2 - Seguridad y cumplimiento",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "Una empresa necesita saber si un security group dejó de cumplir una regla y conservar historial de su configuración. ¿Qué servicio es el indicado?",
+    "options": [
+      "GuardDuty exclusivamente",
+      "CloudFront",
+      "S3 Intelligent-Tiering",
+      "AWS Config"
+    ],
+    "correct": [
+      3
+    ],
+    "why": "AWS Config registra cambios de configuración y evalúa cumplimiento de reglas."
+  },
+  {
+    "id": 156,
+    "level": "Medio",
+    "topic": "IaC",
+    "domain": "Dominio 3 - Tecnología y servicios en la nube",
+    "type": "RESPUESTA MÚLTIPLE — Selecciona 2",
+    "q": "¿Qué DOS beneficios se esperan de CloudFormation al gestionar infraestructura?",
+    "options": [
+      "Crear recursos repetibles mediante despliegues",
+      "Definir recursos en plantillas versionables",
+      "Sustituir automáticamente todos los backups",
+      "Convertir aplicaciones Java en funciones Lambda",
+      "Evitar pagar por recursos creados"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "why": "CloudFormation automatiza infraestructura declarativa; recursos desplegados conservan sus costes."
+  },
+  {
+    "id": 373,
+    "level": "Medio",
+    "topic": "Elasticidad",
+    "domain": "Dominio 1 - Conceptos de la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "Una carga consume diez veces más CPU los fines de semana y casi nada de lunes a viernes. ¿Qué mecanismo aporta elasticidad?",
+    "options": [
+      "Comprar capacidad permanente para el máximo sin cambios",
+      "Aumentar solo los permisos IAM",
+      "Hacer backup semanal sin cambiar recursos",
+      "Escalar automáticamente con métricas"
+    ],
+    "correct": [
+      3
+    ],
+    "why": "El escalado ajusta capacidad en función de demanda; el backup no proporciona elasticidad."
+  },
+  {
+    "id": 206,
+    "level": "Medio",
+    "topic": "Almacenamiento",
+    "domain": "Dominio 3 - Tecnología y servicios en la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "Una EC2 necesita un disco persistente para su sistema operativo y archivos locales. ¿Qué servicio de almacenamiento encaja?",
+    "options": [
+      "AWS CloudTrail",
+      "Amazon S3 Glacier",
+      "Amazon EBS",
+      "Amazon Redshift"
+    ],
+    "correct": [
+      2
+    ],
+    "why": "EBS ofrece almacenamiento de bloques persistente para EC2; una parada no implica que se borre."
+  },
+  {
+    "id": 318,
+    "level": "Principiante",
+    "topic": "Servicios AWS",
+    "q": "¿Qué servicio rastrea los cambios de configuración y el inventario de recursos de AWS?",
+    "options": [
+      "AWS CloudTrail",
+      "AWS Config",
+      "AWS Systems Manager",
+      "Amazon CloudWatch"
+    ],
+    "correct": [
+      1
+    ],
+    "why": "AWS Config evalúa y registra los cambios en las configuraciones de los recursos.",
+    "domain": "Dominio 3 - Tecnología y servicios en la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta"
+  },
+  {
+    "id": 413,
+    "level": "Medio",
+    "topic": "Seguridad",
+    "domain": "Dominio 2 - Seguridad y cumplimiento",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "Una empresa requiere agregación de hallazgos de múltiples cuentas y servicios de seguridad en una vista. ¿Qué servicio encaja?",
+    "options": [
+      "AWS Security Hub",
+      "AWS Direct Connect",
+      "Amazon RDS",
+      "AWS EFS"
+    ],
+    "correct": [
+      0
+    ],
+    "why": "Security Hub centraliza y prioriza hallazgos/controles de seguridad."
+  },
+  {
+    "id": 75,
+    "level": "Medio",
+    "topic": "AWS CAF",
+    "domain": "Dominio 1 - Conceptos de la nube",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "¿Qué opción corresponde mejor a esta descripción? Perspectiva de AWS CAF centrada en construir, migrar, modernizar y optimizar la plataforma tecnológica.",
+    "options": [
+      "Perspectiva People de AWS CAF",
+      "Perspectiva Platform de AWS CAF",
+      "Refactor/Re-architect",
+      "Excelencia operativa"
+    ],
+    "correct": [
+      1
+    ],
+    "why": "La descripción corresponde a Perspectiva Platform de AWS CAF."
+  },
+  {
+    "id": 107,
+    "level": "Principiante",
+    "topic": "IAM y acceso",
+    "domain": "Dominio 2 - Seguridad y cumplimiento",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "¿Qué opción corresponde mejor a esta descripción? Principio que concede únicamente los permisos necesarios para realizar una tarea.",
+    "options": [
+      "Mínimo privilegio",
+      "Responsabilidad de AWS: seguridad física",
+      "AWS Secrets Manager",
+      "Service Control Policy (SCP)"
+    ],
+    "correct": [
+      0
+    ],
+    "why": "La descripción corresponde a Mínimo privilegio."
+  },
+  {
+    "id": 462,
+    "level": "Difícil",
+    "topic": "Responsabilidad compartida",
+    "domain": "Dominio 2 - Seguridad y cumplimiento",
+    "type": "OPCIÓN MÚLTIPLE — Una respuesta",
+    "q": "Una empresa usa RDS Multi-AZ y asume que AWS configurará automáticamente permisos SQL seguros y clasificación de datos personales. ¿Qué corregirías?",
+    "options": [
+      "El cliente sigue controlando usuarios, privilegios y datos; AWS gestiona más plataforma subyacente",
+      "RDS solo gestiona backups, nunca infraestructura",
+      "Multi-AZ concede roles de IAM por defecto",
+      "La responsabilidad depende solo del coste contratado"
+    ],
+    "correct": [
+      0
+    ],
+    "why": "La administración gestionada del servicio no transfiere responsabilidad de clasificación y autorización de datos."
+  }
+]

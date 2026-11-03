@@ -1,0 +1,36 @@
+{
+  "images_checked": 678,
+  "pdfs": [
+    {
+      "path": "public/docs-aws/proceso/AWS_Bloque_IV_Para_Codex/pdf_originales/isT2.pdf",
+      "pages": 20,
+      "links": []
+    },
+    {
+      "path": "public/docs-aws/proceso/AWS_Bloque_IV_Para_Codex/pdf_originales/isT4.pdf",
+      "pages": 37,
+      "links": []
+    },
+    {
+      "path": "public/docs-aws/proceso/AWS_Bloque_IV_Para_Codex/pdf_originales/isT6.pdf",
+      "pages": 62,
+      "links": []
+    },
+    {
+      "path": "public/docs-aws/proceso/AWS_Bloque_IV_Para_Codex/pdf_originales/isT7.pdf",
+      "pages": 43,
+      "links": []
+    },
+    {
+      "path": "public/docs-aws/proceso/AWS_Bloque_IV_Para_Codex/pdf_originales/isT8.pdf",
+      "pages": 42,
+      "links": []
+    }
+  ],
+  "errors": [],
+  "external_not_fetched": [],
+  "pdf_tool": {
+    "name": "PyMuPDF",
+    "version": "2.0"
+  }
+}

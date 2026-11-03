@@ -3,10 +3,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import { areas, subjects } from "../config/library";
 import questions from "../content/modules/devops/aws/questions/bank.json";
+import {getDatabase}from '../server/database';
+import {librarySelection}from '../server/library';
 const allNotes = await getCollection("notes");
 const root = import.meta.env.BASE_URL;
 const countFor = (id: string) => allNotes.filter((note) => note.data.subject === id).length;
 const totalSubjects = areas.reduce((total, area) => total + area.subjects.length, 0);
+const selected=librarySelection(getDatabase(),Astro.locals.user!.id);
 ---
 <BaseLayout title="Biblioteca">
   <section class="hero reveal">
@@ -14,7 +17,7 @@ const totalSubjects = areas.reduce((total, area) => total + area.subjects.length
     <h1>Ideas claras.<br />Aprendizaje a tu ritmo.</h1>
     <p class="lead">Un cuaderno vivo para reunir apuntes, conceptos y preguntas de todo lo que estás aprendiendo.</p>
     <div class="hero-actions">
-      <a class="action-button primary" href={`${root}materias/aws/`}>Seguir con AWS <span aria-hidden="true">→</span></a>
+      <a class="action-button primary" href="#catalogo">Elegir materias <span aria-hidden="true">→</span></a>
       <a class="action-button" href={`${root}buscar/`}>Buscar en la biblioteca</a>
     </div>
   </section>
@@ -25,6 +28,11 @@ const totalSubjects = areas.reduce((total, area) => total + area.subjects.length
     <div class="overview-item"><strong>{allNotes.length}</strong><span>apuntes disponibles</span></div>
   </div>
 
+  <section aria-labelledby="personal-title"><h2 id="personal-title">Mi biblioteca</h2>
+    {!selected.length&&<p>Aún no has elegido materias. Añádelas desde el catálogo completo.</p>}
+    <div class="subject-grid">{selected.map(id=><a class="subject-card" href={`${root}materias/${id}/`} data-library-subject={id}><h3>{subjects[id].title}</h3><p>{subjects[id].description}</p></a>)}</div>
+  </section>
+  <h2 id="catalogo">Catálogo completo</h2><p>Todas las materias publicadas están disponibles. Ocultar una materia de tu biblioteca conserva su progreso.</p>
   {areas.map((area, index) => <section class={`reveal reveal-delay-${Math.min(index + 1, 3)}`}>
     <div class="section-heading">
       <div><span class="section-kicker">Colección {String(index + 1).padStart(2, "0")}</span><h2>{area.title}</h2><p>{area.description}</p></div>
@@ -33,11 +41,12 @@ const totalSubjects = areas.reduce((total, area) => total + area.subjects.length
     <div class="subject-grid">{area.subjects.map((id) => {
       const subject = subjects[id];
       const count = countFor(id);
-      return <a class="subject-card" href={`${root}materias/${id}/`}>
+      const mark=getDatabase().prepare("SELECT version FROM study_marks WHERE user_id=? AND subject=? AND kind='library' AND item=?").get(Astro.locals.user!.id,id,id);
+      return <div class="subject-card"><a href={`${root}materias/${id}/`}>
         <div class="subject-top"><span class="area-icon" aria-hidden="true">{subject.icon}</span><span class="count-label">{count ? `${String(count).padStart(2, "0")} apuntes` : "Colección nueva"}</span></div>
         <h3>{subject.title}</h3><p>{subject.description}</p>
         <span class="arrow">{count ? "Abrir materia" : "Preparar materia"} <span aria-hidden="true">→</span></span>
-      </a>;
+      </a><button class="action-button" type="button" data-library-toggle={id} data-version={Number(mark?.version||0)} aria-pressed={selected.includes(id)}>{selected.includes(id)?'Ocultar de mi biblioteca':'Añadir a mi biblioteca'}</button></div>;
     })}</div>
   </section>)}
 
@@ -45,4 +54,12 @@ const totalSubjects = areas.reduce((total, area) => total + area.subjects.length
     <div><strong>La biblioteca crece contigo.</strong><p>Apuntes, vocabulario y ejercicios se organizan por área y materia.</p></div>
     <a href={`${root}materias/aws/preguntas/`}>Practicar {questions.length} preguntas de AWS →</a>
   </aside>
+  <p role="status" data-library-status></p>
+  <script>
+    const status=document.querySelector<HTMLElement>('[data-library-status]')!;
+    for(const button of document.querySelectorAll<HTMLButtonElement>('[data-library-toggle]'))button.addEventListener('click',async()=>{
+      button.disabled=true;status.textContent='Guardando…';
+      try{const subject=button.dataset.libraryToggle;const r=await fetch('/api/study/state',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({subject,op:'mark',kind:'library',item:subject,value:button.getAttribute('aria-pressed')!=='true',version:Number(button.dataset.version)})});if(!r.ok)throw Error((await r.json()).error||'No se pudo guardar.');location.reload();}catch(e){status.textContent=e instanceof Error?e.message:'No se pudo guardar.';button.disabled=false;}
+    });
+  </script>
 </BaseLayout>

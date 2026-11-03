@@ -1,0 +1,3793 @@
+{
+  "checked": 4918,
+  "fragments": 1993,
+  "errors": [],
+  "externalNotChecked": [
+    "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/",
+    "https://aws.amazon.com/about-aws/whats-new/2023/03/aws-re-post-includes-knowledge-center-articles/",
+    "https://aws.amazon.com/about-aws/whats-new/2025/07/aws-free-tier-credits-month-free-plan/",
+    "https://aws.amazon.com/architecture/",
+    "https://aws.amazon.com/artifact/",
+    "https://aws.amazon.com/blogs/",
+    "https://aws.amazon.com/blogs/security/",
+    "https://aws.amazon.com/compliance/",
+    "https://aws.amazon.com/compliance/shared-responsibility-model/",
+    "https://aws.amazon.com/ebs/pricing/",
+    "https://aws.amazon.com/free/free-tier-faqs/",
+    "https://aws.amazon.com/marketplace/",
+    "https://aws.amazon.com/marketplace/features/governance",
+    "https://aws.amazon.com/marketplace/partners/private-offers",
+    "https://aws.amazon.com/marketplace/resources/faqs",
+    "https://aws.amazon.com/partners/paths/",
+    "https://aws.amazon.com/premiumsupport/faqs/",
+    "https://aws.amazon.com/premiumsupport/plans/",
+    "https://aws.amazon.com/prescriptive-guidance/",
+    "https://aws.amazon.com/professional-services/",
+    "https://aws.amazon.com/rds/pricing/",
+    "https://aws.amazon.com/s3/pricing/",
+    "https://aws.amazon.com/savingsplans/database-pricing/",
+    "https://aws.amazon.com/savingsplans/faqs/",
+    "https://aws.amazon.com/security/",
+    "https://aws.amazon.com/shield/",
+    "https://aws.amazon.com/snowball/",
+    "https://aws.amazon.com/whitepapers/",
+    "https://aws.amazon.com/windows/faq/",
+    "https://aws.amazon.com/windows/resources/licensing/",
+    "https://docs.aws.amazon.com/",
+    "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-whatis-concepts.html",
+    "https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PurchaseScheduledInstances.html",
+    "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/apply_ri.html",
+    "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-instance-metadata-service.html",
+    "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-overview.html",
+    "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-instance.html",
+    "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-reservations.html",
+    "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html",
+    "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-reserved-instances.html",
+    "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-purchasing-options.html",
+    "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-store-lifetime.html",
+    "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/reserved-instances-scope.html",
+    "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/reserved-instances-types.html",
+    "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-instance-termination-notices.html",
+    "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html",
+    "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html",
+    "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html",
+    "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/OverviewAurora.html",
+    "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html",
+    "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html",
+    "https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html",
+    "https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html",
+    "https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html",
+    "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+    "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html",
+    "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html",
+    "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html",
+    "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+    "https://docs.aws.amazon.com/IAM/latest/UserGuide/root-user-best-practices.html",
+    "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html",
+    "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html",
+    "https://docs.aws.amazon.com/accounts/latest/reference/create-spend-limit.html",
+    "https://docs.aws.amazon.com/accounts/latest/reference/sign-in-new.html",
+    "https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html",
+    "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html",
+    "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html",
+    "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html",
+    "https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html",
+    "https://docs.aws.amazon.com/appstream2/latest/developerguide/what-is-appstream.html",
+    "https://docs.aws.amazon.com/athena/latest/ug/what-is.html",
+    "https://docs.aws.amazon.com/audit-manager/latest/userguide/what-is.html",
+    "https://docs.aws.amazon.com/autoscaling/ec2/userguide/launch-templates.html",
+    "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html",
+    "https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html",
+    "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/clf-02-in-scope-services.html",
+    "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/clf-02-revisions.html",
+    "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain1.html",
+    "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain2.html",
+    "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain3.html",
+    "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain4.html",
+    "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-what-is.html",
+    "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html",
+    "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html",
+    "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier-plans.html",
+    "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-cost-categories.html",
+    "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ri-turn-off.html",
+    "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html",
+    "https://docs.aws.amazon.com/awssupport/latest/user/",
+    "https://docs.aws.amazon.com/awssupport/latest/user/aws-support-plans.html",
+    "https://docs.aws.amazon.com/awssupport/latest/user/get-started-with-aws-trusted-advisor.html",
+    "https://docs.aws.amazon.com/awssupport/latest/user/support-plans-eos.html",
+    "https://docs.aws.amazon.com/awssupport/latest/user/trusted-advisor-check-reference.html",
+    "https://docs.aws.amazon.com/awssupport/latest/user/trusted-advisor.html",
+    "https://docs.aws.amazon.com/awssupport/latest/user/unified-operations-intro.html",
+    "https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html",
+    "https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html",
+    "https://docs.aws.amazon.com/compute-optimizer/latest/ug/what-is-compute-optimizer.html",
+    "https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html",
+    "https://docs.aws.amazon.com/cost-management/latest/userguide/billing-getting-started.html",
+    "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-best-practices.html",
+    "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-controls.html",
+    "https://docs.aws.amazon.com/cost-management/latest/userguide/ce-advanced.html",
+    "https://docs.aws.amazon.com/cost-management/latest/userguide/ce-rightsizing.html",
+    "https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html",
+    "https://docs.aws.amazon.com/cost-management/latest/userguide/cost-optimization-hub.html",
+    "https://docs.aws.amazon.com/cost-management/latest/userguide/manage-ad.html",
+    "https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html",
+    "https://docs.aws.amazon.com/cur/latest/userguide/what-is-data-exports.html",
+    "https://docs.aws.amazon.com/dms/latest/userguide/",
+    "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html",
+    "https://docs.aws.amazon.com/dms/latest/userguide/data-migrations.html",
+    "https://docs.aws.amazon.com/ebs/latest/userguide/ebs-modify-volume.html",
+    "https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volumes-multi.html",
+    "https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html",
+    "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html",
+    "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-what-is-emr.html",
+    "https://docs.aws.amazon.com/es_es/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain1.html",
+    "https://docs.aws.amazon.com/es_es/datasync/latest/userguide/what-is-datasync.html",
+    "https://docs.aws.amazon.com/es_es/datatransferterminal/latest/userguide/what-is-dtt.html",
+    "https://docs.aws.amazon.com/es_es/dms/latest/userguide/Welcome.html",
+    "https://docs.aws.amazon.com/es_es/migrationhub-strategy/latest/userguide/migrationhub-availability-change.html",
+    "https://docs.aws.amazon.com/es_es/securityhub/latest/userguide/what-are-securityhub-services.html",
+    "https://docs.aws.amazon.com/es_es/wellarchitected/latest/framework/a-sustainability.html",
+    "https://docs.aws.amazon.com/es_es/wellarchitected/latest/framework/definitions.html",
+    "https://docs.aws.amazon.com/es_es/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html",
+    "https://docs.aws.amazon.com/es_es/whitepapers/latest/how-aws-pricing-works/key-principles.html",
+    "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html",
+    "https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html",
+    "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html",
+    "https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html",
+    "https://docs.aws.amazon.com/health/latest/ug/",
+    "https://docs.aws.amazon.com/health/latest/ug/health-api.html",
+    "https://docs.aws.amazon.com/health/latest/ug/what-is-aws-health.html",
+    "https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html",
+    "https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html",
+    "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html",
+    "https://docs.aws.amazon.com/lexv2/latest/dg/what-is.html",
+    "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+    "https://docs.aws.amazon.com/mgn/latest/ug/what-is-mgn.html",
+    "https://docs.aws.amazon.com/migrationhub/latest/ug/whatishub.html",
+    "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html",
+    "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html",
+    "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.html",
+    "https://docs.aws.amazon.com/partner-central/latest/getting-started/partner-programs.html",
+    "https://docs.aws.amazon.com/polly/latest/dg/what-is.html",
+    "https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html",
+    "https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/phases.html",
+    "https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-tools/business-case-migration-evaluator.html",
+    "https://docs.aws.amazon.com/pricing-calculator/latest/userguide/what-is-pricing-calculator.html",
+    "https://docs.aws.amazon.com/quick/latest/userguide/what-is.html",
+    "https://docs.aws.amazon.com/rekognition/latest/dg/what-is.html",
+    "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "https://docs.aws.amazon.com/savingsplans/latest/userguide/ce-sp-cr-metrics.html",
+    "https://docs.aws.amazon.com/savingsplans/latest/userguide/plan-types.html",
+    "https://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html",
+    "https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html",
+    "https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html",
+    "https://docs.aws.amazon.com/snowball/latest/developer-guide/snowball-edge-availability-change.html",
+    "https://docs.aws.amazon.com/sns/latest/dg/welcome.html",
+    "https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html",
+    "https://docs.aws.amazon.com/storagegateway/latest/userguide/WhatIsStorageGateway.html",
+    "https://docs.aws.amazon.com/streams/latest/dev/introduction.html",
+    "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html",
+    "https://docs.aws.amazon.com/textract/latest/dg/what-is.html",
+    "https://docs.aws.amazon.com/transcribe/latest/dg/what-is.html",
+    "https://docs.aws.amazon.com/translate/latest/dg/what-is.html",
+    "https://docs.aws.amazon.com/vpc/latest/userguide/subnet-sizing.html",
+    "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-cidr-blocks.html",
+    "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html",
+    "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html",
+    "https://docs.aws.amazon.com/waf/latest/developerguide/fms-chapter.html",
+    "https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html",
+    "https://docs.aws.amazon.com/wellarchitected/latest/framework/sus-design-principles.html",
+    "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/business-applications.html",
+    "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/compute-services.html",
+    "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/containers.html",
+    "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/database.html",
+    "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/developer-tools.html",
+    "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/end-user-computing.html",
+    "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/networking-services.html",
+    "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/storage-services.html",
+    "https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works/key-principles.html",
+    "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/accelerating-business-outcomes.html",
+    "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html",
+    "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/your-cloud-transformation-journey.html",
+    "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-migration.html",
+    "https://repost.aws/",
+    "https://repost.aws/knowledge-center/",
+    "https://wellarchitectedlabs.com/",
+    "https://www.repost.aws/knowledge-center/report-aws-abuse"
+  ],
+  "consumers": {
+    "_astro/BaseLayout.DP79BUEf.css": [
+      "areas/development/index.html",
+      "areas/devops/index.html",
+      "areas/languages/index.html",
+      "buscar/index.html",
+      "como-aportar/index.html",
+      "index.html",
+      "materias/aws/apuntes/index.html",
+      "materias/aws/aws-block-3-08/index.html",
+      "materias/aws/aws-block-3-09/index.html",
+      "materias/aws/aws-block-3-10/index.html",
+      "materias/aws/aws-block-3-11/index.html",
+      "materias/aws/aws-block-3-12/index.html",
+      "materias/aws/aws-block-3-13/index.html",
+      "materias/aws/aws-block-3-14/index.html",
+      "materias/aws/aws-block-4-15/index.html",
+      "materias/aws/aws-block-4-16/index.html",
+      "materias/aws/aws-block-4-17/index.html",
+      "materias/aws/aws-block-4-18/index.html",
+      "materias/aws/cloud-block-1-economia/index.html",
+      "materias/aws/cloud-block-1-infraestructura/index.html",
+      "materias/aws/cloud-block-1-introduccion/index.html",
+      "materias/aws/cloud-block-1-migracion/index.html",
+      "materias/aws/comparativas/index.html",
+      "materias/aws/estadisticas/index.html",
+      "materias/aws/index.html",
+      "materias/aws/preguntas/index.html",
+      "materias/aws/security-block-2-05/index.html",
+      "materias/aws/security-block-2-06/index.html",
+      "materias/aws/security-block-2-07/index.html",
+      "materias/aws/terminos/index.html",
+      "materias/clean-code/index.html",
+      "materias/design-patterns/index.html",
+      "materias/english/index.html",
+      "materias/galician/index.html",
+      "materias/refactoring/index.html"
+    ],
+    "areas/development/index.html": [
+      "areas/development/index.html",
+      "index.html",
+      "materias/clean-code/index.html",
+      "materias/design-patterns/index.html",
+      "materias/refactoring/index.html"
+    ],
+    "index.html": [
+      "areas/development/index.html",
+      "areas/devops/index.html",
+      "areas/languages/index.html",
+      "buscar/index.html",
+      "como-aportar/index.html",
+      "index.html",
+      "materias/aws/apuntes/index.html",
+      "materias/aws/aws-block-3-08/index.html",
+      "materias/aws/aws-block-3-09/index.html",
+      "materias/aws/aws-block-3-10/index.html",
+      "materias/aws/aws-block-3-11/index.html",
+      "materias/aws/aws-block-3-12/index.html",
+      "materias/aws/aws-block-3-13/index.html",
+      "materias/aws/aws-block-3-14/index.html",
+      "materias/aws/aws-block-4-15/index.html",
+      "materias/aws/aws-block-4-16/index.html",
+      "materias/aws/aws-block-4-17/index.html",
+      "materias/aws/aws-block-4-18/index.html",
+      "materias/aws/cloud-block-1-economia/index.html",
+      "materias/aws/cloud-block-1-infraestructura/index.html",
+      "materias/aws/cloud-block-1-introduccion/index.html",
+      "materias/aws/cloud-block-1-migracion/index.html",
+      "materias/aws/comparativas/index.html",
+      "materias/aws/estadisticas/index.html",
+      "materias/aws/index.html",
+      "materias/aws/preguntas/index.html",
+      "materias/aws/security-block-2-05/index.html",
+      "materias/aws/security-block-2-06/index.html",
+      "materias/aws/security-block-2-07/index.html",
+      "materias/aws/terminos/index.html",
+      "materias/clean-code/index.html",
+      "materias/design-patterns/index.html",
+      "materias/english/index.html",
+      "materias/galician/index.html",
+      "materias/refactoring/index.html"
+    ],
+    "buscar/index.html": [
+      "areas/development/index.html",
+      "areas/devops/index.html",
+      "areas/languages/index.html",
+      "buscar/index.html",
+      "como-aportar/index.html",
+      "index.html",
+      "materias/aws/apuntes/index.html",
+      "materias/aws/aws-block-3-08/index.html",
+      "materias/aws/aws-block-3-09/index.html",
+      "materias/aws/aws-block-3-10/index.html",
+      "materias/aws/aws-block-3-11/index.html",
+      "materias/aws/aws-block-3-12/index.html",
+      "materias/aws/aws-block-3-13/index.html",
+      "materias/aws/aws-block-3-14/index.html",
+      "materias/aws/aws-block-4-15/index.html",
+      "materias/aws/aws-block-4-16/index.html",
+      "materias/aws/aws-block-4-17/index.html",
+      "materias/aws/aws-block-4-18/index.html",
+      "materias/aws/cloud-block-1-economia/index.html",
+      "materias/aws/cloud-block-1-infraestructura/index.html",
+      "materias/aws/cloud-block-1-introduccion/index.html",
+      "materias/aws/cloud-block-1-migracion/index.html",
+      "materias/aws/comparativas/index.html",
+      "materias/aws/estadisticas/index.html",
+      "materias/aws/index.html",
+      "materias/aws/preguntas/index.html",
+      "materias/aws/security-block-2-05/index.html",
+      "materias/aws/security-block-2-06/index.html",
+      "materias/aws/security-block-2-07/index.html",
+      "materias/aws/terminos/index.html",
+      "materias/clean-code/index.html",
+      "materias/design-patterns/index.html",
+      "materias/english/index.html",
+      "materias/galician/index.html",
+      "materias/refactoring/index.html"
+    ],
+    "materias/design-patterns/index.html": [
+      "areas/development/index.html",
+      "index.html",
+      "materias/design-patterns/index.html"
+    ],
+    "materias/clean-code/index.html": [
+      "areas/development/index.html",
+      "index.html",
+      "materias/clean-code/index.html"
+    ],
+    "materias/refactoring/index.html": [
+      "areas/development/index.html",
+      "index.html",
+      "materias/refactoring/index.html"
+    ],
+    "_astro/BaseLayout.astro_astro_type_script_index_0_lang.wZLATRkg.js": [
+      "areas/development/index.html",
+      "areas/devops/index.html",
+      "areas/languages/index.html",
+      "buscar/index.html",
+      "como-aportar/index.html",
+      "index.html",
+      "materias/aws/apuntes/index.html",
+      "materias/aws/aws-block-3-08/index.html",
+      "materias/aws/aws-block-3-09/index.html",
+      "materias/aws/aws-block-3-10/index.html",
+      "materias/aws/aws-block-3-11/index.html",
+      "materias/aws/aws-block-3-12/index.html",
+      "materias/aws/aws-block-3-13/index.html",
+      "materias/aws/aws-block-3-14/index.html",
+      "materias/aws/aws-block-4-15/index.html",
+      "materias/aws/aws-block-4-16/index.html",
+      "materias/aws/aws-block-4-17/index.html",
+      "materias/aws/aws-block-4-18/index.html",
+      "materias/aws/cloud-block-1-economia/index.html",
+      "materias/aws/cloud-block-1-infraestructura/index.html",
+      "materias/aws/cloud-block-1-introduccion/index.html",
+      "materias/aws/cloud-block-1-migracion/index.html",
+      "materias/aws/comparativas/index.html",
+      "materias/aws/estadisticas/index.html",
+      "materias/aws/index.html",
+      "materias/aws/preguntas/index.html",
+      "materias/aws/security-block-2-05/index.html",
+      "materias/aws/security-block-2-06/index.html",
+      "materias/aws/security-block-2-07/index.html",
+      "materias/aws/terminos/index.html",
+      "materias/clean-code/index.html",
+      "materias/design-patterns/index.html",
+      "materias/english/index.html",
+      "materias/galician/index.html",
+      "materias/refactoring/index.html"
+    ],
+    "areas/devops/index.html": [
+      "areas/devops/index.html",
+      "index.html",
+      "materias/aws/aws-block-3-08/index.html",
+      "materias/aws/aws-block-3-09/index.html",
+      "materias/aws/aws-block-3-10/index.html",
+      "materias/aws/aws-block-3-11/index.html",
+      "materias/aws/aws-block-3-12/index.html",
+      "materias/aws/aws-block-3-13/index.html",
+      "materias/aws/aws-block-3-14/index.html",
+      "materias/aws/aws-block-4-15/index.html",
+      "materias/aws/aws-block-4-16/index.html",
+      "materias/aws/aws-block-4-17/index.html",
+      "materias/aws/aws-block-4-18/index.html",
+      "materias/aws/cloud-block-1-economia/index.html",
+      "materias/aws/cloud-block-1-infraestructura/index.html",
+      "materias/aws/cloud-block-1-introduccion/index.html",
+      "materias/aws/cloud-block-1-migracion/index.html",
+      "materias/aws/index.html",
+      "materias/aws/security-block-2-05/index.html",
+      "materias/aws/security-block-2-06/index.html",
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "materias/aws/index.html": [
+      "areas/devops/index.html",
+      "como-aportar/index.html",
+      "index.html",
+      "materias/aws/apuntes/index.html",
+      "materias/aws/aws-block-3-08/index.html",
+      "materias/aws/aws-block-3-09/index.html",
+      "materias/aws/aws-block-3-10/index.html",
+      "materias/aws/aws-block-3-11/index.html",
+      "materias/aws/aws-block-3-12/index.html",
+      "materias/aws/aws-block-3-13/index.html",
+      "materias/aws/aws-block-3-14/index.html",
+      "materias/aws/aws-block-4-15/index.html",
+      "materias/aws/aws-block-4-16/index.html",
+      "materias/aws/aws-block-4-17/index.html",
+      "materias/aws/aws-block-4-18/index.html",
+      "materias/aws/cloud-block-1-economia/index.html",
+      "materias/aws/cloud-block-1-infraestructura/index.html",
+      "materias/aws/cloud-block-1-introduccion/index.html",
+      "materias/aws/cloud-block-1-migracion/index.html",
+      "materias/aws/comparativas/index.html",
+      "materias/aws/estadisticas/index.html",
+      "materias/aws/index.html",
+      "materias/aws/preguntas/index.html",
+      "materias/aws/security-block-2-05/index.html",
+      "materias/aws/security-block-2-06/index.html",
+      "materias/aws/security-block-2-07/index.html",
+      "materias/aws/terminos/index.html"
+    ],
+    "areas/languages/index.html": [
+      "areas/languages/index.html",
+      "index.html",
+      "materias/english/index.html",
+      "materias/galician/index.html"
+    ],
+    "materias/english/index.html": [
+      "areas/languages/index.html",
+      "index.html",
+      "materias/english/index.html"
+    ],
+    "materias/galician/index.html": [
+      "areas/languages/index.html",
+      "index.html",
+      "materias/galician/index.html"
+    ],
+    "como-aportar/index.html": [
+      "como-aportar/index.html",
+      "materias/clean-code/index.html",
+      "materias/design-patterns/index.html",
+      "materias/english/index.html",
+      "materias/galician/index.html",
+      "materias/refactoring/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/01_introduccion_cloud_computing.md": [
+      "docs-aws/aws-clf-c02/bloque-1/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-1/05_glosario_integral.md",
+      "docs-aws/aws-clf-c02/bloque-1/06_control_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-1/06_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/02_beneficios_economia.md": [
+      "docs-aws/aws-clf-c02/bloque-1/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-1/05_glosario_integral.md",
+      "docs-aws/aws-clf-c02/bloque-1/06_control_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-1/06_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-4/16_tco_y_optimizacion_de_costes.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md": [
+      "docs-aws/aws-clf-c02/bloque-1/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-1/05_glosario_integral.md",
+      "docs-aws/aws-clf-c02/bloque-1/06_control_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-1/06_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-3/08_despliegue_e_infraestructura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/04_adopcion_y_migracion_aws.md": [
+      "docs-aws/aws-clf-c02/bloque-1/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-1/05_glosario_integral.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/05_glosario_integral.md": [
+      "docs-aws/aws-clf-c02/bloque-1/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-4/19_glosario_integral_facturacion.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/06_control_cobertura.md": [
+      "docs-aws/aws-clf-c02/bloque-1/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-1/06_control_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-1/06_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/06_matriz_cobertura.md": [
+      "docs-aws/aws-clf-c02/bloque-1/00_indice.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/07_informe_validacion.md": [
+      "docs-aws/aws-clf-c02/bloque-1/00_indice.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/t1_p05.png": [
+      "docs-aws/aws-clf-c02/bloque-1/01_introduccion_cloud_computing.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/t1_p08.png": [
+      "docs-aws/aws-clf-c02/bloque-1/01_introduccion_cloud_computing.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/t1_p09.png": [
+      "docs-aws/aws-clf-c02/bloque-1/01_introduccion_cloud_computing.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/t1_p10.png": [
+      "docs-aws/aws-clf-c02/bloque-1/01_introduccion_cloud_computing.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/t1_p11.png": [
+      "docs-aws/aws-clf-c02/bloque-1/01_introduccion_cloud_computing.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/t1_p16.png": [
+      "docs-aws/aws-clf-c02/bloque-1/01_introduccion_cloud_computing.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/t1_p28.png": [
+      "docs-aws/aws-clf-c02/bloque-1/01_introduccion_cloud_computing.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/t1_p30.png": [
+      "docs-aws/aws-clf-c02/bloque-1/01_introduccion_cloud_computing.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/t1_p20.png": [
+      "docs-aws/aws-clf-c02/bloque-1/02_beneficios_economia.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/t1_p23.png": [
+      "docs-aws/aws-clf-c02/bloque-1/02_beneficios_economia.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/t2_p04.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/t2_p05.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/t2_p06.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/t2_p07.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/t2_p08.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/t2_p09.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/t2_p10.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/t2_p12.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/t2_p14.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/t2_p15.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/t2_p16.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/t2_p17.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/t2_p18.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/t2_p19.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/t2_p20.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p07.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p08.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p12.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/originales/ca_p12.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p13.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/originales/ca_p13.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p14.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/originales/ca_p14.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p18.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p20.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p23.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p25.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p28.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p30.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p33.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p35.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p38.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p41.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p42.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p47.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/originales/ca_p47.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p50.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/originales/ca_p50.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p54.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p55.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p56.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p57.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p58.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p59.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p60.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p65.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/figuras/ca_p66.png": [
+      "docs-aws/aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p04.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/05_responsabilidad_compartida.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p05.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/05_responsabilidad_compartida.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p06.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/05_responsabilidad_compartida.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p07.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/05_responsabilidad_compartida.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p08.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/05_responsabilidad_compartida.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p09.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/05_responsabilidad_compartida.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p10.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/05_responsabilidad_compartida.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p11.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/05_responsabilidad_compartida.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p12.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/05_responsabilidad_compartida.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md": [
+      "docs-aws/aws-clf-c02/bloque-2/05_responsabilidad_compartida.md",
+      "docs-aws/aws-clf-c02/bloque-2/08_glosario_integral_seguridad.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/08_despliegue_e_infraestructura.md",
+      "docs-aws/aws-clf-c02/bloque-4/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-4/17_facturacion_presupuestos_y_costes.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/08_glosario_integral_seguridad.md": [
+      "docs-aws/aws-clf-c02/bloque-2/05_responsabilidad_compartida.md",
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-4/19_glosario_integral_facturacion.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p14.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p15.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p16.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p17.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p18.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p19.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p20.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p21.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p22.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p23.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p24.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p25.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p26.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p28.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p29.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p30.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p34.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p35.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p36.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p37.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p38.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p39.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p40.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p42.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/ca_p10.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md": [
+      "docs-aws/aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "docs-aws/aws-clf-c02/bloque-2/08_glosario_integral_seguridad.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/08_despliegue_e_infraestructura.md",
+      "docs-aws/aws-clf-c02/bloque-3/11_redes_y_contenidos.md",
+      "docs-aws/aws-clf-c02/bloque-3/12_almacenamiento_y_recuperacion.md",
+      "docs-aws/aws-clf-c02/bloque-3/14_integracion_y_otros_servicios.md",
+      "docs-aws/aws-clf-c02/bloque-4/18_soporte_y_recursos_aws.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/ca_p22.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/ca_p23.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/ca_p24.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/ca_p25.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t5_p26.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t5_p27.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t5_p28.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t5_p29.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t5_p30.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t5_p31.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t5_p32.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p41.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p45.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p46.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p47.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p43.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p31.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p50.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t9_p13.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t9_p14.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t9_p15.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t9_p16.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t9_p17.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p32.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t2_p18.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t2_p19.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t2_p20.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-1/00_indice.md": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p49.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/t3_p51.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/ca_p54.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/ca_p55.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/ca_p56.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/ca_p57.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/ca_p58.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/ca_p59.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/ca_p60.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/ca_p65.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/figuras/ca_p66.jpg": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md": [
+      "docs-aws/aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-2/05_responsabilidad_compartida.md": [
+      "docs-aws/aws-clf-c02/bloque-2/08_glosario_integral_seguridad.md",
+      "docs-aws/aws-clf-c02/bloque-2/09_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/09_computacion_contenedores_serverless.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/08_despliegue_e_infraestructura.md": [
+      "docs-aws/aws-clf-c02/bloque-3/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-3/15_glosario_integral_tecnologia.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/17_informe_validacion.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/09_computacion_contenedores_serverless.md": [
+      "docs-aws/aws-clf-c02/bloque-3/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-3/08_despliegue_e_infraestructura.md",
+      "docs-aws/aws-clf-c02/bloque-3/15_glosario_integral_tecnologia.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/17_informe_validacion.md",
+      "docs-aws/aws-clf-c02/bloque-3/19_revision_final_calidad.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/10_bases_de_datos.md": [
+      "docs-aws/aws-clf-c02/bloque-3/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-3/13_ia_ml_y_analitica.md",
+      "docs-aws/aws-clf-c02/bloque-3/15_glosario_integral_tecnologia.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/17_informe_validacion.md",
+      "docs-aws/aws-clf-c02/bloque-3/19_revision_final_calidad.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/11_redes_y_contenidos.md": [
+      "docs-aws/aws-clf-c02/bloque-3/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-3/08_despliegue_e_infraestructura.md",
+      "docs-aws/aws-clf-c02/bloque-3/15_glosario_integral_tecnologia.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/17_informe_validacion.md",
+      "docs-aws/aws-clf-c02/bloque-3/19_revision_final_calidad.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/12_almacenamiento_y_recuperacion.md": [
+      "docs-aws/aws-clf-c02/bloque-3/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-3/09_computacion_contenedores_serverless.md",
+      "docs-aws/aws-clf-c02/bloque-3/15_glosario_integral_tecnologia.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/17_informe_validacion.md",
+      "docs-aws/aws-clf-c02/bloque-3/19_revision_final_calidad.md",
+      "docs-aws/aws-clf-c02/bloque-4/15_modelos_de_precios_aws.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/13_ia_ml_y_analitica.md": [
+      "docs-aws/aws-clf-c02/bloque-3/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-3/10_bases_de_datos.md",
+      "docs-aws/aws-clf-c02/bloque-3/15_glosario_integral_tecnologia.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/17_informe_validacion.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/14_integracion_y_otros_servicios.md": [
+      "docs-aws/aws-clf-c02/bloque-3/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-3/08_despliegue_e_infraestructura.md",
+      "docs-aws/aws-clf-c02/bloque-3/15_glosario_integral_tecnologia.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/17_informe_validacion.md",
+      "docs-aws/aws-clf-c02/bloque-4/18_soporte_y_recursos_aws.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md": [
+      "docs-aws/aws-clf-c02/bloque-3/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-3/08_despliegue_e_infraestructura.md",
+      "docs-aws/aws-clf-c02/bloque-3/09_computacion_contenedores_serverless.md",
+      "docs-aws/aws-clf-c02/bloque-3/10_bases_de_datos.md",
+      "docs-aws/aws-clf-c02/bloque-3/11_redes_y_contenidos.md",
+      "docs-aws/aws-clf-c02/bloque-3/12_almacenamiento_y_recuperacion.md",
+      "docs-aws/aws-clf-c02/bloque-3/14_integracion_y_otros_servicios.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/17_informe_validacion.md",
+      "materias/aws/aws-block-3-08/index.html",
+      "materias/aws/aws-block-3-09/index.html",
+      "materias/aws/aws-block-3-10/index.html",
+      "materias/aws/aws-block-3-11/index.html",
+      "materias/aws/aws-block-3-12/index.html",
+      "materias/aws/aws-block-3-14/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/fuentes/02_BASE_DOCENTE_DESARROLLADA.md": [
+      "docs-aws/aws-clf-c02/bloque-3/00_indice.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/fuentes/03_AMPLIACION_OFICIAL_CLF_C02_DOMINIO_3.md": [
+      "docs-aws/aws-clf-c02/bloque-3/00_indice.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/15_glosario_integral_tecnologia.md": [
+      "docs-aws/aws-clf-c02/bloque-3/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-3/17_informe_validacion.md",
+      "docs-aws/aws-clf-c02/bloque-4/19_glosario_integral_facturacion.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md": [
+      "docs-aws/aws-clf-c02/bloque-3/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-3/17_informe_validacion.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/17_informe_validacion.md": [
+      "docs-aws/aws-clf-c02/bloque-3/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-3/19_revision_final_calidad.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/18_registro_enlaces.md": [
+      "docs-aws/aws-clf-c02/bloque-3/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-3/17_informe_validacion.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/19_revision_final_calidad.md": [
+      "docs-aws/aws-clf-c02/bloque-3/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/17_informe_validacion.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t1_p25.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/08_despliegue_e_infraestructura.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-08/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t1_p30.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/08_despliegue_e_infraestructura.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-08/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t2_p06.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/08_despliegue_e_infraestructura.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-08/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t2_p09.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/08_despliegue_e_infraestructura.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-08/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p09.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/09_computacion_contenedores_serverless.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-09/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p11.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/09_computacion_contenedores_serverless.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/19_revision_final_calidad.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-09/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p14.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/09_computacion_contenedores_serverless.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-09/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p44.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/09_computacion_contenedores_serverless.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-09/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p46.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/09_computacion_contenedores_serverless.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/19_revision_final_calidad.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-09/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p47.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/09_computacion_contenedores_serverless.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/19_revision_final_calidad.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-09/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p57.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/09_computacion_contenedores_serverless.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-09/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p54.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/09_computacion_contenedores_serverless.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/19_revision_final_calidad.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-09/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p55.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/09_computacion_contenedores_serverless.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/19_revision_final_calidad.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-09/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p58.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/09_computacion_contenedores_serverless.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/19_revision_final_calidad.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-09/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p06.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/09_computacion_contenedores_serverless.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-09/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p10.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/09_computacion_contenedores_serverless.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-09/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p27.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/09_computacion_contenedores_serverless.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-09/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p09.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/10_bases_de_datos.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-10/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p14.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/10_bases_de_datos.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-10/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p12.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/10_bases_de_datos.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/19_revision_final_calidad.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-10/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p41.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/10_bases_de_datos.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-10/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p42.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/10_bases_de_datos.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/19_revision_final_calidad.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-10/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p25.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/10_bases_de_datos.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-10/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p26.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/10_bases_de_datos.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/19_revision_final_calidad.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-10/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p32.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/10_bases_de_datos.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-10/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p10.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/11_redes_y_contenidos.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-11/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p18.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/11_redes_y_contenidos.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-11/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p20.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/11_redes_y_contenidos.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/19_revision_final_calidad.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-11/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p21.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/11_redes_y_contenidos.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/19_revision_final_calidad.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-11/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p23.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/11_redes_y_contenidos.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-11/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p24.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/11_redes_y_contenidos.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-11/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p37.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/11_redes_y_contenidos.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-11/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p44.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/11_redes_y_contenidos.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-11/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p06.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/12_almacenamiento_y_recuperacion.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-12/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p09.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/12_almacenamiento_y_recuperacion.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-12/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p10.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/12_almacenamiento_y_recuperacion.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-12/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p11.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/12_almacenamiento_y_recuperacion.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/19_revision_final_calidad.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-12/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p24.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/12_almacenamiento_y_recuperacion.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-12/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p16.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/12_almacenamiento_y_recuperacion.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/19_revision_final_calidad.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-12/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p20.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/12_almacenamiento_y_recuperacion.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/19_revision_final_calidad.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-12/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p30.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/12_almacenamiento_y_recuperacion.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/19_revision_final_calidad.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-12/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p31.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/12_almacenamiento_y_recuperacion.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/19_revision_final_calidad.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-12/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p33.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/12_almacenamiento_y_recuperacion.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-12/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p41.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/12_almacenamiento_y_recuperacion.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-12/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p17.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/14_integracion_y_otros_servicios.md",
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md",
+      "materias/aws/aws-block-3-14/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t2_p04.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t2_p05.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t2_p07.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t2_p08.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t2_p10.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t2_p14.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t2_p15.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t2_p16.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t2_p17.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t2_p18.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t2_p19.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t2_p20.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p01.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p02.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p03.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p04.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p05.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p06.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p07.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p08.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p09.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p11.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p12.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p13.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p14.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p15.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p16.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p17.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p19.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p22.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p25.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p26.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p27.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p28.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p29.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p30.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p31.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p32.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p33.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p34.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p35.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p36.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p38.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p39.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p40.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p41.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p42.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t5_p43.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p01.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p02.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p03.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p04.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p05.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p06.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p07.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p08.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p10.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p12.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p13.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p15.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p16.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p17.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p18.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p19.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p20.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p21.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p22.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p23.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p24.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p25.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p26.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p27.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p28.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p29.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p30.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p31.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p32.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p33.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p34.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p35.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p36.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p37.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p38.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p39.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p40.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p41.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p42.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p43.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p45.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p48.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p49.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p50.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p51.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p52.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p53.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p56.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p59.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p60.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p61.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t6_p62.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p01.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p02.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p03.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p04.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p05.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p07.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p08.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p12.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p13.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p14.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p15.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p17.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p18.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p19.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p21.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p22.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p23.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p25.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p26.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p27.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p28.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p29.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p32.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p34.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p35.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p36.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p37.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p38.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p39.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p40.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p42.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t7_p43.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p01.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p02.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p03.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p04.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p05.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p06.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p07.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p08.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p10.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p11.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p13.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p15.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p16.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p17.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p18.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p19.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p20.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p21.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p22.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p23.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p24.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p27.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p28.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p29.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p30.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p31.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p33.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p34.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p35.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p36.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p37.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p38.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p39.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t8_p40.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p01.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p02.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p03.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p04.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p05.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p07.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p08.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p09.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p11.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p12.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p13.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p14.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p15.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p16.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p18.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p19.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p20.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p21.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p22.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p23.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p24.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p25.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p26.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p28.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/figuras/t9_p29.jpg": [
+      "docs-aws/aws-clf-c02/bloque-3/16_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-3/fuentes/05_CORPUS_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-3/00_indice.md": [
+      "docs-aws/aws-clf-c02/bloque-3/17_informe_validacion.md",
+      "docs-aws/aws-clf-c02/bloque-4/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-4/15_modelos_de_precios_aws.md",
+      "materias/aws/aws-block-4-15/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/15_modelos_de_precios_aws.md": [
+      "docs-aws/aws-clf-c02/bloque-4/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-4/16_tco_y_optimizacion_de_costes.md",
+      "docs-aws/aws-clf-c02/bloque-4/19_glosario_integral_facturacion.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/21_informe_validacion.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/16_tco_y_optimizacion_de_costes.md": [
+      "docs-aws/aws-clf-c02/bloque-4/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-4/15_modelos_de_precios_aws.md",
+      "docs-aws/aws-clf-c02/bloque-4/17_facturacion_presupuestos_y_costes.md",
+      "docs-aws/aws-clf-c02/bloque-4/19_glosario_integral_facturacion.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/21_informe_validacion.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/17_facturacion_presupuestos_y_costes.md": [
+      "docs-aws/aws-clf-c02/bloque-4/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-4/15_modelos_de_precios_aws.md",
+      "docs-aws/aws-clf-c02/bloque-4/16_tco_y_optimizacion_de_costes.md",
+      "docs-aws/aws-clf-c02/bloque-4/18_soporte_y_recursos_aws.md",
+      "docs-aws/aws-clf-c02/bloque-4/19_glosario_integral_facturacion.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/21_informe_validacion.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/18_soporte_y_recursos_aws.md": [
+      "docs-aws/aws-clf-c02/bloque-4/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-4/17_facturacion_presupuestos_y_costes.md",
+      "docs-aws/aws-clf-c02/bloque-4/19_glosario_integral_facturacion.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/21_informe_validacion.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/19_glosario_integral_facturacion.md": [
+      "docs-aws/aws-clf-c02/bloque-4/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-4/21_informe_validacion.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md": [
+      "docs-aws/aws-clf-c02/bloque-4/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-4/21_informe_validacion.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/21_informe_validacion.md": [
+      "docs-aws/aws-clf-c02/bloque-4/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/22_registro_fuentes_oficiales.md": [
+      "docs-aws/aws-clf-c02/bloque-4/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-4/21_informe_validacion.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md": [
+      "docs-aws/aws-clf-c02/bloque-4/00_indice.md",
+      "docs-aws/aws-clf-c02/bloque-4/15_modelos_de_precios_aws.md",
+      "docs-aws/aws-clf-c02/bloque-4/16_tco_y_optimizacion_de_costes.md",
+      "docs-aws/aws-clf-c02/bloque-4/17_facturacion_presupuestos_y_costes.md",
+      "docs-aws/aws-clf-c02/bloque-4/18_soporte_y_recursos_aws.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "materias/aws/aws-block-4-15/index.html",
+      "materias/aws/aws-block-4-16/index.html",
+      "materias/aws/aws-block-4-17/index.html",
+      "materias/aws/aws-block-4-18/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/fuentes/03_AMPLIACION_OFICIAL_DOMINIO_4.md": [
+      "docs-aws/aws-clf-c02/bloque-4/00_indice.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md": [
+      "docs-aws/aws-clf-c02/bloque-4/00_indice.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/fuentes/04_AUDITORIA_COBERTURA.md": [
+      "docs-aws/aws-clf-c02/bloque-4/00_indice.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/00_indice.md": [
+      "docs-aws/aws-clf-c02/bloque-4/15_modelos_de_precios_aws.md",
+      "docs-aws/aws-clf-c02/bloque-4/16_tco_y_optimizacion_de_costes.md",
+      "docs-aws/aws-clf-c02/bloque-4/17_facturacion_presupuestos_y_costes.md",
+      "docs-aws/aws-clf-c02/bloque-4/18_soporte_y_recursos_aws.md",
+      "docs-aws/aws-clf-c02/bloque-4/21_informe_validacion.md",
+      "materias/aws/aws-block-4-15/index.html",
+      "materias/aws/aws-block-4-16/index.html",
+      "materias/aws/aws-block-4-17/index.html",
+      "materias/aws/aws-block-4-18/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p04.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/15_modelos_de_precios_aws.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md",
+      "materias/aws/aws-block-4-15/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p07.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/15_modelos_de_precios_aws.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md",
+      "materias/aws/aws-block-4-15/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t6_p34.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/15_modelos_de_precios_aws.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md",
+      "materias/aws/aws-block-4-15/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t7_p12.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/15_modelos_de_precios_aws.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md",
+      "materias/aws/aws-block-4-15/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t7_p27.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/15_modelos_de_precios_aws.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md",
+      "materias/aws/aws-block-4-15/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t7_p34.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/15_modelos_de_precios_aws.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md",
+      "materias/aws/aws-block-4-15/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t8_p20.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/15_modelos_de_precios_aws.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md",
+      "materias/aws/aws-block-4-15/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p10.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/15_modelos_de_precios_aws.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md",
+      "materias/aws/aws-block-4-15/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p15.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/16_tco_y_optimizacion_de_costes.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md",
+      "materias/aws/aws-block-4-16/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p16.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/16_tco_y_optimizacion_de_costes.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md",
+      "materias/aws/aws-block-4-16/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p18.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/16_tco_y_optimizacion_de_costes.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md",
+      "materias/aws/aws-block-4-16/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p23.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/16_tco_y_optimizacion_de_costes.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md",
+      "materias/aws/aws-block-4-16/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p24.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/16_tco_y_optimizacion_de_costes.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md",
+      "materias/aws/aws-block-4-16/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t6_p36.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/16_tco_y_optimizacion_de_costes.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md",
+      "materias/aws/aws-block-4-16/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p27.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/17_facturacion_presupuestos_y_costes.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md",
+      "materias/aws/aws-block-4-17/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p29.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/17_facturacion_presupuestos_y_costes.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md",
+      "materias/aws/aws-block-4-17/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p30.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/17_facturacion_presupuestos_y_costes.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md",
+      "materias/aws/aws-block-4-17/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p31.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/17_facturacion_presupuestos_y_costes.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md",
+      "materias/aws/aws-block-4-17/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p32.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/17_facturacion_presupuestos_y_costes.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md",
+      "materias/aws/aws-block-4-17/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p36.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/18_soporte_y_recursos_aws.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md",
+      "materias/aws/aws-block-4-18/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p37.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/18_soporte_y_recursos_aws.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md",
+      "materias/aws/aws-block-4-18/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p35.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/18_soporte_y_recursos_aws.md",
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md",
+      "materias/aws/aws-block-4-18/index.html"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p01.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p02.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p03.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p05.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p06.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p08.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p09.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p11.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p12.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p13.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p14.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p17.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p19.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p20.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p21.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p22.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p25.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p26.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p28.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p33.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t4_p34.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t6_p31.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t6_p32.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t6_p33.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t6_p35.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t6_p37.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t6_p38.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t6_p39.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t6_p40.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t8_p17.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t8_p18.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t8_p19.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/aws-clf-c02/bloque-4/figuras/t2_p19.jpg": [
+      "docs-aws/aws-clf-c02/bloque-4/20_matriz_cobertura.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/01_INVENTARIO_Y_MAPA.md",
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/proceso/AWS_Bloque_IV_Para_Codex/pdf_originales/isT4.pdf": [
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/proceso/AWS_Bloque_IV_Para_Codex/pdf_originales/isT6.pdf": [
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/proceso/AWS_Bloque_IV_Para_Codex/pdf_originales/isT7.pdf": [
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/proceso/AWS_Bloque_IV_Para_Codex/pdf_originales/isT8.pdf": [
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "docs-aws/proceso/AWS_Bloque_IV_Para_Codex/pdf_originales/isT2.pdf": [
+      "docs-aws/aws-clf-c02/bloque-4/fuentes/02_CORPUS_DOCENTE_POR_PAGINA.md"
+    ],
+    "materias/aws/preguntas/index.html": [
+      "index.html",
+      "materias/aws/apuntes/index.html",
+      "materias/aws/aws-block-3-08/index.html",
+      "materias/aws/aws-block-3-09/index.html",
+      "materias/aws/aws-block-3-10/index.html",
+      "materias/aws/aws-block-3-11/index.html",
+      "materias/aws/aws-block-3-12/index.html",
+      "materias/aws/aws-block-3-13/index.html",
+      "materias/aws/aws-block-3-14/index.html",
+      "materias/aws/aws-block-4-15/index.html",
+      "materias/aws/aws-block-4-16/index.html",
+      "materias/aws/aws-block-4-17/index.html",
+      "materias/aws/aws-block-4-18/index.html",
+      "materias/aws/cloud-block-1-economia/index.html",
+      "materias/aws/cloud-block-1-infraestructura/index.html",
+      "materias/aws/cloud-block-1-introduccion/index.html",
+      "materias/aws/cloud-block-1-migracion/index.html",
+      "materias/aws/comparativas/index.html",
+      "materias/aws/estadisticas/index.html",
+      "materias/aws/index.html",
+      "materias/aws/preguntas/index.html",
+      "materias/aws/security-block-2-05/index.html",
+      "materias/aws/security-block-2-06/index.html",
+      "materias/aws/security-block-2-07/index.html",
+      "materias/aws/terminos/index.html"
+    ],
+    "materias/aws/apuntes/index.html": [
+      "materias/aws/apuntes/index.html",
+      "materias/aws/aws-block-3-08/index.html",
+      "materias/aws/aws-block-3-09/index.html",
+      "materias/aws/aws-block-3-10/index.html",
+      "materias/aws/aws-block-3-11/index.html",
+      "materias/aws/aws-block-3-12/index.html",
+      "materias/aws/aws-block-3-13/index.html",
+      "materias/aws/aws-block-3-14/index.html",
+      "materias/aws/aws-block-4-15/index.html",
+      "materias/aws/aws-block-4-16/index.html",
+      "materias/aws/aws-block-4-17/index.html",
+      "materias/aws/aws-block-4-18/index.html",
+      "materias/aws/cloud-block-1-economia/index.html",
+      "materias/aws/cloud-block-1-infraestructura/index.html",
+      "materias/aws/cloud-block-1-introduccion/index.html",
+      "materias/aws/cloud-block-1-migracion/index.html",
+      "materias/aws/comparativas/index.html",
+      "materias/aws/estadisticas/index.html",
+      "materias/aws/index.html",
+      "materias/aws/preguntas/index.html",
+      "materias/aws/security-block-2-05/index.html",
+      "materias/aws/security-block-2-06/index.html",
+      "materias/aws/security-block-2-07/index.html",
+      "materias/aws/terminos/index.html"
+    ],
+    "materias/aws/terminos/index.html": [
+      "materias/aws/apuntes/index.html",
+      "materias/aws/aws-block-3-08/index.html",
+      "materias/aws/aws-block-3-09/index.html",
+      "materias/aws/aws-block-3-10/index.html",
+      "materias/aws/aws-block-3-11/index.html",
+      "materias/aws/aws-block-3-12/index.html",
+      "materias/aws/aws-block-3-13/index.html",
+      "materias/aws/aws-block-3-14/index.html",
+      "materias/aws/aws-block-4-15/index.html",
+      "materias/aws/aws-block-4-16/index.html",
+      "materias/aws/aws-block-4-17/index.html",
+      "materias/aws/aws-block-4-18/index.html",
+      "materias/aws/cloud-block-1-economia/index.html",
+      "materias/aws/cloud-block-1-infraestructura/index.html",
+      "materias/aws/cloud-block-1-introduccion/index.html",
+      "materias/aws/cloud-block-1-migracion/index.html",
+      "materias/aws/comparativas/index.html",
+      "materias/aws/estadisticas/index.html",
+      "materias/aws/index.html",
+      "materias/aws/preguntas/index.html",
+      "materias/aws/security-block-2-05/index.html",
+      "materias/aws/security-block-2-06/index.html",
+      "materias/aws/security-block-2-07/index.html",
+      "materias/aws/terminos/index.html"
+    ],
+    "materias/aws/cloud-block-1-migracion/index.html": [
+      "materias/aws/apuntes/index.html",
+      "materias/aws/cloud-block-1-economia/index.html",
+      "materias/aws/cloud-block-1-migracion/index.html",
+      "materias/aws/terminos/index.html"
+    ],
+    "materias/aws/cloud-block-1-economia/index.html": [
+      "materias/aws/apuntes/index.html",
+      "materias/aws/aws-block-4-16/index.html",
+      "materias/aws/cloud-block-1-economia/index.html",
+      "materias/aws/cloud-block-1-infraestructura/index.html",
+      "materias/aws/cloud-block-1-migracion/index.html",
+      "materias/aws/terminos/index.html"
+    ],
+    "materias/aws/cloud-block-1-infraestructura/index.html": [
+      "materias/aws/apuntes/index.html",
+      "materias/aws/aws-block-3-08/index.html",
+      "materias/aws/cloud-block-1-economia/index.html",
+      "materias/aws/cloud-block-1-infraestructura/index.html",
+      "materias/aws/cloud-block-1-introduccion/index.html",
+      "materias/aws/security-block-2-07/index.html",
+      "materias/aws/terminos/index.html"
+    ],
+    "materias/aws/cloud-block-1-introduccion/index.html": [
+      "materias/aws/apuntes/index.html",
+      "materias/aws/cloud-block-1-infraestructura/index.html",
+      "materias/aws/cloud-block-1-introduccion/index.html",
+      "materias/aws/security-block-2-05/index.html",
+      "materias/aws/terminos/index.html"
+    ],
+    "materias/aws/security-block-2-05/index.html": [
+      "materias/aws/apuntes/index.html",
+      "materias/aws/aws-block-3-09/index.html",
+      "materias/aws/cloud-block-1-introduccion/index.html",
+      "materias/aws/security-block-2-05/index.html",
+      "materias/aws/security-block-2-06/index.html",
+      "materias/aws/terminos/index.html"
+    ],
+    "materias/aws/security-block-2-06/index.html": [
+      "materias/aws/apuntes/index.html",
+      "materias/aws/aws-block-3-08/index.html",
+      "materias/aws/aws-block-4-17/index.html",
+      "materias/aws/security-block-2-05/index.html",
+      "materias/aws/security-block-2-06/index.html",
+      "materias/aws/security-block-2-07/index.html",
+      "materias/aws/terminos/index.html"
+    ],
+    "materias/aws/security-block-2-07/index.html": [
+      "materias/aws/apuntes/index.html",
+      "materias/aws/aws-block-3-08/index.html",
+      "materias/aws/aws-block-3-11/index.html",
+      "materias/aws/aws-block-3-12/index.html",
+      "materias/aws/aws-block-3-14/index.html",
+      "materias/aws/aws-block-4-18/index.html",
+      "materias/aws/security-block-2-06/index.html",
+      "materias/aws/security-block-2-07/index.html",
+      "materias/aws/terminos/index.html"
+    ],
+    "materias/aws/aws-block-3-08/index.html": [
+      "materias/aws/apuntes/index.html",
+      "materias/aws/aws-block-3-08/index.html",
+      "materias/aws/aws-block-3-09/index.html",
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "materias/aws/aws-block-3-09/index.html": [
+      "materias/aws/apuntes/index.html",
+      "materias/aws/aws-block-3-08/index.html",
+      "materias/aws/aws-block-3-09/index.html",
+      "materias/aws/aws-block-3-10/index.html"
+    ],
+    "materias/aws/aws-block-3-10/index.html": [
+      "materias/aws/apuntes/index.html",
+      "materias/aws/aws-block-3-09/index.html",
+      "materias/aws/aws-block-3-10/index.html",
+      "materias/aws/aws-block-3-11/index.html",
+      "materias/aws/aws-block-3-13/index.html"
+    ],
+    "materias/aws/aws-block-3-11/index.html": [
+      "materias/aws/apuntes/index.html",
+      "materias/aws/aws-block-3-08/index.html",
+      "materias/aws/aws-block-3-10/index.html",
+      "materias/aws/aws-block-3-11/index.html",
+      "materias/aws/aws-block-3-12/index.html"
+    ],
+    "materias/aws/aws-block-3-12/index.html": [
+      "materias/aws/apuntes/index.html",
+      "materias/aws/aws-block-3-09/index.html",
+      "materias/aws/aws-block-3-11/index.html",
+      "materias/aws/aws-block-3-12/index.html",
+      "materias/aws/aws-block-3-13/index.html",
+      "materias/aws/aws-block-4-15/index.html"
+    ],
+    "materias/aws/aws-block-3-13/index.html": [
+      "materias/aws/apuntes/index.html",
+      "materias/aws/aws-block-3-10/index.html",
+      "materias/aws/aws-block-3-12/index.html",
+      "materias/aws/aws-block-3-13/index.html",
+      "materias/aws/aws-block-3-14/index.html"
+    ],
+    "materias/aws/aws-block-3-14/index.html": [
+      "materias/aws/apuntes/index.html",
+      "materias/aws/aws-block-3-08/index.html",
+      "materias/aws/aws-block-3-13/index.html",
+      "materias/aws/aws-block-3-14/index.html",
+      "materias/aws/aws-block-4-15/index.html",
+      "materias/aws/aws-block-4-18/index.html"
+    ],
+    "materias/aws/aws-block-4-15/index.html": [
+      "materias/aws/apuntes/index.html",
+      "materias/aws/aws-block-3-14/index.html",
+      "materias/aws/aws-block-4-15/index.html",
+      "materias/aws/aws-block-4-16/index.html"
+    ],
+    "materias/aws/aws-block-4-16/index.html": [
+      "materias/aws/apuntes/index.html",
+      "materias/aws/aws-block-4-15/index.html",
+      "materias/aws/aws-block-4-16/index.html",
+      "materias/aws/aws-block-4-17/index.html"
+    ],
+    "materias/aws/aws-block-4-17/index.html": [
+      "materias/aws/apuntes/index.html",
+      "materias/aws/aws-block-4-15/index.html",
+      "materias/aws/aws-block-4-16/index.html",
+      "materias/aws/aws-block-4-17/index.html",
+      "materias/aws/aws-block-4-18/index.html"
+    ],
+    "materias/aws/aws-block-4-18/index.html": [
+      "materias/aws/apuntes/index.html",
+      "materias/aws/aws-block-4-17/index.html",
+      "materias/aws/aws-block-4-18/index.html"
+    ],
+    "study-figures/bloque-1/t1_p20.png": [
+      "materias/aws/cloud-block-1-economia/index.html"
+    ],
+    "study-figures/bloque-1/t1_p23.png": [
+      "materias/aws/cloud-block-1-economia/index.html"
+    ],
+    "study-figures/bloque-1/t2_p04.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/t2_p05.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/t2_p06.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/t2_p07.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/t2_p08.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/t2_p09.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/t2_p10.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/t2_p12.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/t2_p14.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/t2_p15.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/t2_p16.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/t2_p17.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/t2_p18.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/t2_p19.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/t2_p20.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p07.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p08.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p12.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/originales/ca_p12.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p13.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/originales/ca_p13.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p14.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/originales/ca_p14.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p18.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p20.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p23.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p25.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p28.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p30.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p33.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p35.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p38.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p41.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p42.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p47.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/originales/ca_p47.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p50.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/originales/ca_p50.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p54.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p55.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p56.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p57.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p58.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p59.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p60.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p65.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/ca_p66.png": [
+      "materias/aws/cloud-block-1-infraestructura/index.html"
+    ],
+    "study-figures/bloque-1/t1_p05.png": [
+      "materias/aws/cloud-block-1-introduccion/index.html"
+    ],
+    "study-figures/bloque-1/t1_p08.png": [
+      "materias/aws/cloud-block-1-introduccion/index.html"
+    ],
+    "study-figures/bloque-1/t1_p09.png": [
+      "materias/aws/cloud-block-1-introduccion/index.html"
+    ],
+    "study-figures/bloque-1/t1_p10.png": [
+      "materias/aws/cloud-block-1-introduccion/index.html"
+    ],
+    "study-figures/bloque-1/t1_p11.png": [
+      "materias/aws/cloud-block-1-introduccion/index.html"
+    ],
+    "study-figures/bloque-1/t1_p16.png": [
+      "materias/aws/cloud-block-1-introduccion/index.html"
+    ],
+    "study-figures/bloque-1/t1_p28.png": [
+      "materias/aws/cloud-block-1-introduccion/index.html"
+    ],
+    "study-figures/bloque-1/t1_p30.png": [
+      "materias/aws/cloud-block-1-introduccion/index.html"
+    ],
+    "materias/aws/comparativas/index.html": [
+      "materias/aws/comparativas/index.html",
+      "materias/aws/index.html",
+      "materias/aws/terminos/index.html"
+    ],
+    "materias/aws/estadisticas/index.html": [
+      "materias/aws/estadisticas/index.html",
+      "materias/aws/index.html"
+    ],
+    "_astro/estadisticas.astro_astro_type_script_index_0_lang.HV6w-RQI.js": [
+      "materias/aws/estadisticas/index.html"
+    ],
+    "_astro/preguntas.astro_astro_type_script_index_0_lang.DtuwyKW1.js": [
+      "materias/aws/preguntas/index.html"
+    ],
+    "study-figures/bloque-2/t3_p04.jpg": [
+      "materias/aws/security-block-2-05/index.html"
+    ],
+    "study-figures/bloque-2/t3_p05.jpg": [
+      "materias/aws/security-block-2-05/index.html"
+    ],
+    "study-figures/bloque-2/t3_p06.jpg": [
+      "materias/aws/security-block-2-05/index.html"
+    ],
+    "study-figures/bloque-2/t3_p07.jpg": [
+      "materias/aws/security-block-2-05/index.html"
+    ],
+    "study-figures/bloque-2/t3_p08.jpg": [
+      "materias/aws/security-block-2-05/index.html"
+    ],
+    "study-figures/bloque-2/t3_p09.jpg": [
+      "materias/aws/security-block-2-05/index.html"
+    ],
+    "study-figures/bloque-2/t3_p10.jpg": [
+      "materias/aws/security-block-2-05/index.html"
+    ],
+    "study-figures/bloque-2/t3_p11.jpg": [
+      "materias/aws/security-block-2-05/index.html"
+    ],
+    "study-figures/bloque-2/t3_p12.jpg": [
+      "materias/aws/security-block-2-05/index.html"
+    ],
+    "study-docs/bloque-2/08_glosario_integral_seguridad.md": [
+      "materias/aws/security-block-2-05/index.html",
+      "materias/aws/security-block-2-06/index.html",
+      "materias/aws/security-block-2-07/index.html",
+      "study-docs/bloque-2/00_indice.md",
+      "study-docs/bloque-2/05_responsabilidad_compartida.md",
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/10_informe_validacion.md"
+    ],
+    "study-figures/bloque-2/t3_p14.jpg": [
+      "materias/aws/security-block-2-06/index.html"
+    ],
+    "study-figures/bloque-2/t3_p15.jpg": [
+      "materias/aws/security-block-2-06/index.html"
+    ],
+    "study-figures/bloque-2/t3_p16.jpg": [
+      "materias/aws/security-block-2-06/index.html"
+    ],
+    "study-figures/bloque-2/t3_p17.jpg": [
+      "materias/aws/security-block-2-06/index.html"
+    ],
+    "study-figures/bloque-2/t3_p18.jpg": [
+      "materias/aws/security-block-2-06/index.html"
+    ],
+    "study-figures/bloque-2/t3_p19.jpg": [
+      "materias/aws/security-block-2-06/index.html"
+    ],
+    "study-figures/bloque-2/t3_p20.jpg": [
+      "materias/aws/security-block-2-06/index.html"
+    ],
+    "study-figures/bloque-2/t3_p21.jpg": [
+      "materias/aws/security-block-2-06/index.html"
+    ],
+    "study-figures/bloque-2/t3_p22.jpg": [
+      "materias/aws/security-block-2-06/index.html"
+    ],
+    "study-figures/bloque-2/t3_p23.jpg": [
+      "materias/aws/security-block-2-06/index.html"
+    ],
+    "study-figures/bloque-2/t3_p24.jpg": [
+      "materias/aws/security-block-2-06/index.html"
+    ],
+    "study-figures/bloque-2/t3_p25.jpg": [
+      "materias/aws/security-block-2-06/index.html"
+    ],
+    "study-figures/bloque-2/t3_p26.jpg": [
+      "materias/aws/security-block-2-06/index.html"
+    ],
+    "study-figures/bloque-2/t3_p28.jpg": [
+      "materias/aws/security-block-2-06/index.html"
+    ],
+    "study-figures/bloque-2/t3_p29.jpg": [
+      "materias/aws/security-block-2-06/index.html"
+    ],
+    "study-figures/bloque-2/t3_p30.jpg": [
+      "materias/aws/security-block-2-06/index.html"
+    ],
+    "study-figures/bloque-2/t3_p34.jpg": [
+      "materias/aws/security-block-2-06/index.html"
+    ],
+    "study-figures/bloque-2/t3_p35.jpg": [
+      "materias/aws/security-block-2-06/index.html"
+    ],
+    "study-figures/bloque-2/t3_p36.jpg": [
+      "materias/aws/security-block-2-06/index.html"
+    ],
+    "study-figures/bloque-2/t3_p37.jpg": [
+      "materias/aws/security-block-2-06/index.html"
+    ],
+    "study-figures/bloque-2/t3_p38.jpg": [
+      "materias/aws/security-block-2-06/index.html"
+    ],
+    "study-figures/bloque-2/t3_p39.jpg": [
+      "materias/aws/security-block-2-06/index.html"
+    ],
+    "study-figures/bloque-2/t3_p40.jpg": [
+      "materias/aws/security-block-2-06/index.html"
+    ],
+    "study-figures/bloque-2/t3_p42.jpg": [
+      "materias/aws/security-block-2-06/index.html"
+    ],
+    "study-figures/bloque-2/ca_p10.jpg": [
+      "materias/aws/security-block-2-06/index.html"
+    ],
+    "study-figures/bloque-2/ca_p22.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/ca_p23.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/ca_p24.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/ca_p25.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/t5_p26.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/t5_p27.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/t5_p28.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/t5_p29.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/t5_p30.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/t5_p31.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/t5_p32.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/t3_p41.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/t3_p45.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/t3_p46.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/t3_p47.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/t3_p43.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/t3_p31.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/t3_p50.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/t9_p13.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/t9_p14.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/t9_p15.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/t9_p16.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/t9_p17.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/t3_p32.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/t2_p18.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/t2_p19.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/t2_p20.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-docs/bloque-1/00_indice.md": [
+      "materias/aws/security-block-2-07/index.html",
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md"
+    ],
+    "study-figures/bloque-2/t3_p49.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/t3_p51.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/ca_p54.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/ca_p55.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/ca_p56.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/ca_p57.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/ca_p58.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/ca_p59.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/ca_p60.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/ca_p65.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-figures/bloque-2/ca_p66.jpg": [
+      "materias/aws/security-block-2-07/index.html"
+    ],
+    "study-docs/bloque-2/09_matriz_cobertura.md": [
+      "materias/aws/security-block-2-07/index.html",
+      "study-docs/bloque-2/00_indice.md",
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/10_informe_validacion.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-1/01_introduccion_cloud_computing.md": [
+      "study-docs/bloque-1/00_indice.md",
+      "study-docs/bloque-1/05_glosario_integral.md",
+      "study-docs/bloque-1/06_control_cobertura.md",
+      "study-docs/bloque-1/06_matriz_cobertura.md"
+    ],
+    "study-docs/bloque-1/02_beneficios_economia.md": [
+      "study-docs/bloque-1/00_indice.md",
+      "study-docs/bloque-1/05_glosario_integral.md",
+      "study-docs/bloque-1/06_control_cobertura.md",
+      "study-docs/bloque-1/06_matriz_cobertura.md"
+    ],
+    "study-docs/bloque-1/03_infraestructura_y_arquitectura.md": [
+      "study-docs/bloque-1/00_indice.md",
+      "study-docs/bloque-1/05_glosario_integral.md",
+      "study-docs/bloque-1/06_control_cobertura.md",
+      "study-docs/bloque-1/06_matriz_cobertura.md",
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md"
+    ],
+    "study-docs/bloque-1/04_adopcion_y_migracion_aws.md": [
+      "study-docs/bloque-1/00_indice.md",
+      "study-docs/bloque-1/05_glosario_integral.md"
+    ],
+    "study-docs/bloque-1/05_glosario_integral.md": [
+      "study-docs/bloque-1/00_indice.md"
+    ],
+    "study-docs/bloque-1/06_control_cobertura.md": [
+      "study-docs/bloque-1/00_indice.md",
+      "study-docs/bloque-1/06_control_cobertura.md",
+      "study-docs/bloque-1/06_matriz_cobertura.md"
+    ],
+    "study-docs/bloque-1/06_matriz_cobertura.md": [
+      "study-docs/bloque-1/00_indice.md"
+    ],
+    "study-docs/bloque-1/07_informe_validacion.md": [
+      "study-docs/bloque-1/00_indice.md"
+    ],
+    "study-docs/bloque-1/figuras/t1_p05.png": [
+      "study-docs/bloque-1/01_introduccion_cloud_computing.md"
+    ],
+    "study-docs/bloque-1/figuras/t1_p08.png": [
+      "study-docs/bloque-1/01_introduccion_cloud_computing.md"
+    ],
+    "study-docs/bloque-1/figuras/t1_p09.png": [
+      "study-docs/bloque-1/01_introduccion_cloud_computing.md"
+    ],
+    "study-docs/bloque-1/figuras/t1_p10.png": [
+      "study-docs/bloque-1/01_introduccion_cloud_computing.md"
+    ],
+    "study-docs/bloque-1/figuras/t1_p11.png": [
+      "study-docs/bloque-1/01_introduccion_cloud_computing.md"
+    ],
+    "study-docs/bloque-1/figuras/t1_p16.png": [
+      "study-docs/bloque-1/01_introduccion_cloud_computing.md"
+    ],
+    "study-docs/bloque-1/figuras/t1_p28.png": [
+      "study-docs/bloque-1/01_introduccion_cloud_computing.md"
+    ],
+    "study-docs/bloque-1/figuras/t1_p30.png": [
+      "study-docs/bloque-1/01_introduccion_cloud_computing.md"
+    ],
+    "study-docs/bloque-1/figuras/t1_p20.png": [
+      "study-docs/bloque-1/02_beneficios_economia.md"
+    ],
+    "study-docs/bloque-1/figuras/t1_p23.png": [
+      "study-docs/bloque-1/02_beneficios_economia.md"
+    ],
+    "study-docs/bloque-1/figuras/t2_p04.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/t2_p05.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/t2_p06.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/t2_p07.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/t2_p08.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/t2_p09.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/t2_p10.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/t2_p12.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/t2_p14.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/t2_p15.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/t2_p16.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/t2_p17.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/t2_p18.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/t2_p19.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/t2_p20.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p07.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p08.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p12.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/originales/ca_p12.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p13.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/originales/ca_p13.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p14.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/originales/ca_p14.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p18.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p20.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p23.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p25.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p28.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p30.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p33.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p35.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p38.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p41.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p42.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p47.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/originales/ca_p47.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p50.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/originales/ca_p50.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p54.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p55.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p56.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p57.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p58.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p59.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p60.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p65.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-1/figuras/ca_p66.png": [
+      "study-docs/bloque-1/03_infraestructura_y_arquitectura.md"
+    ],
+    "study-docs/bloque-2/05_responsabilidad_compartida.md": [
+      "study-docs/bloque-2/00_indice.md",
+      "study-docs/bloque-2/08_glosario_integral_seguridad.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/10_informe_validacion.md"
+    ],
+    "study-docs/bloque-2/06_identidad_y_acceso.md": [
+      "study-docs/bloque-2/00_indice.md",
+      "study-docs/bloque-2/05_responsabilidad_compartida.md",
+      "study-docs/bloque-2/08_glosario_integral_seguridad.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/10_informe_validacion.md"
+    ],
+    "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md": [
+      "study-docs/bloque-2/00_indice.md",
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/08_glosario_integral_seguridad.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/10_informe_validacion.md"
+    ],
+    "study-docs/bloque-2/10_informe_validacion.md": [
+      "study-docs/bloque-2/00_indice.md"
+    ],
+    "study-docs/bloque-2/figuras/README.md": [
+      "study-docs/bloque-2/00_indice.md",
+      "study-docs/bloque-2/10_informe_validacion.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p04.jpg": [
+      "study-docs/bloque-2/05_responsabilidad_compartida.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p05.jpg": [
+      "study-docs/bloque-2/05_responsabilidad_compartida.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p06.jpg": [
+      "study-docs/bloque-2/05_responsabilidad_compartida.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p07.jpg": [
+      "study-docs/bloque-2/05_responsabilidad_compartida.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p08.jpg": [
+      "study-docs/bloque-2/05_responsabilidad_compartida.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p09.jpg": [
+      "study-docs/bloque-2/05_responsabilidad_compartida.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p10.jpg": [
+      "study-docs/bloque-2/05_responsabilidad_compartida.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p11.jpg": [
+      "study-docs/bloque-2/05_responsabilidad_compartida.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p12.jpg": [
+      "study-docs/bloque-2/05_responsabilidad_compartida.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p14.jpg": [
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p15.jpg": [
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p16.jpg": [
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p17.jpg": [
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p18.jpg": [
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p19.jpg": [
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p20.jpg": [
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p21.jpg": [
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p22.jpg": [
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p23.jpg": [
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p24.jpg": [
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p25.jpg": [
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p26.jpg": [
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p28.jpg": [
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p29.jpg": [
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p30.jpg": [
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p34.jpg": [
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p35.jpg": [
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p36.jpg": [
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p37.jpg": [
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p38.jpg": [
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p39.jpg": [
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p40.jpg": [
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p42.jpg": [
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/ca_p10.jpg": [
+      "study-docs/bloque-2/06_identidad_y_acceso.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/ca_p22.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/ca_p23.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/ca_p24.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/ca_p25.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t5_p26.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t5_p27.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t5_p28.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t5_p29.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t5_p30.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t5_p31.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t5_p32.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p41.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p45.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p46.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p47.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p43.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p31.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p50.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t9_p13.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t9_p14.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t9_p15.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t9_p16.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t9_p17.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p32.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t2_p18.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t2_p19.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t2_p20.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p49.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/t3_p51.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/ca_p54.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/ca_p55.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/ca_p56.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/ca_p57.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/ca_p58.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/ca_p59.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/ca_p60.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/ca_p65.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/figuras/ca_p66.jpg": [
+      "study-docs/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "study-docs/bloque-2/09_matriz_cobertura.md",
+      "study-docs/bloque-2/figuras/README.md"
+    ],
+    "study-docs/bloque-2/00_indice.md": [
+      "study-docs/bloque-2/10_informe_validacion.md"
+    ]
+  },
+  "orphanCandidates": [
+    "study-docs/bloque-1/08_registro_enlaces.md"
+  ],
+  "limits": [
+    "HTTP external targets not fetched",
+    "PDF annotations checked by optional Python companion, not this command",
+    "Markdown download fragments checked semantically; raw downloads are not rendered Astro pages",
+    "Candidates are not deletion authorization"
+  ]
+}

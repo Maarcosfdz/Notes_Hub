@@ -1,0 +1,10 @@
+{
+  "checked": 1327,
+  "historicalEvidenceFiles": 28,
+  "differences": [
+    "src/pages/materias/aws/preguntas.astro"
+  ],
+  "unexpected": [],
+  "missingDocumentationLinks": [],
+  "examGate": "PASS"
+}

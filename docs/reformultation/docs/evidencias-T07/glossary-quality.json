@@ -1,0 +1,59 @@
+{
+  "entries": 489,
+  "identity": "Materia AWS + nombre canónico; no hay ID de concepto independiente. noteId referencia capítulo y no debe ser único entre conceptos.",
+  "exactCanonicalDuplicates": [],
+  "aliasCollisions": [],
+  "exactDefinitionDuplicates": [],
+  "semanticCandidates": [
+    {
+      "a": "Data at rest / in transit",
+      "b": "Cifrado en reposo y en tránsito",
+      "reason": "Posible solapamiento; datos en estados distintos y cifrado no son necesariamente el mismo concepto.",
+      "present": true,
+      "status": "Revisión humana pendiente; no se modificó contenido"
+    },
+    {
+      "a": "AWS DMS Schema Conversion / AWS SCT",
+      "b": "AWS Schema Conversion Tool",
+      "reason": "Entrada contextual conjunta frente a herramientas separadas; revisar etiquetas, no fusionar productos.",
+      "present": true,
+      "status": "Revisión humana pendiente; no se modificó contenido"
+    },
+    {
+      "a": "TCP, HTTP y HTTPS",
+      "b": "TCP",
+      "reason": "Entrada contextual conjunta frente a protocolos individuales; no tratar como alias.",
+      "present": true,
+      "status": "Revisión humana pendiente; no se modificó contenido"
+    },
+    {
+      "a": "AWS Documentation y Whitepapers",
+      "b": "AWS Documentation",
+      "reason": "Recursos agrupados frente a entradas individuales; mantener distinción hasta revisión humana.",
+      "present": true,
+      "status": "Revisión humana pendiente; no se modificó contenido"
+    },
+    {
+      "a": "Amazon S3 Glacier",
+      "b": "Glacier, servicio histórico de archivos",
+      "reason": "Familia/clases actuales frente a servicio histórico: revisar alcance temporal.",
+      "present": true,
+      "status": "Revisión humana pendiente; no se modificó contenido"
+    },
+    {
+      "a": "Service limits / quotas",
+      "b": "Service Quotas",
+      "reason": "Concepto de límite frente a herramienta; relación, no equivalencia.",
+      "present": true,
+      "status": "Revisión humana pendiente; no se modificó contenido"
+    },
+    {
+      "a": "Rightsizing",
+      "b": "AWS Compute Optimizer",
+      "reason": "Práctica frente a herramienta: evitar falsa sinonimia.",
+      "present": true,
+      "status": "Revisión humana pendiente; no se modificó contenido"
+    }
+  ],
+  "pedagogicallyVerified": false
+}

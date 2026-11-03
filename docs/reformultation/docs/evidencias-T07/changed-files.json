@@ -1,0 +1,177 @@
+{
+  "baseline": "Verified durable post-T06B checkpoint, not Git HEAD",
+  "changes": [
+    {
+      "file": "src/components/StudyTools.astro",
+      "before": "c5d79831f21d8a63de04a6bed20d27666c725b54f6d2572ad16618ce06540d39",
+      "after": "47f927502938c7cc4acfc3161a04a5d87c96a4cd584e3c9062f169e819e41f1c"
+    },
+    {
+      "file": "src/config/study-groups.ts",
+      "before": null,
+      "after": "5a9e2cf9da86e31ef5946436564cbb9c723c314eeae2e3bbfe995de00fe16116"
+    },
+    {
+      "file": "src/layouts/BaseLayout.astro",
+      "before": "286e817c9be3ac9ef489e115243d3fd107d12829f889c04f91a3cf7ee595057b",
+      "after": "81eb665e5e531f167298f08c260f7c74ff014765f78d46c42f7784f1dc907acd"
+    },
+    {
+      "file": "src/pages/como-aportar.astro",
+      "before": "0e53e43063c483bd26aade7b703c4bdc5169f7dbed441e0e4afd39961b8e8e59",
+      "after": "2b20fd2d3e1e1e790ca18984ee883918fdc2e4f59eed88abb7e872d0a8d44892"
+    },
+    {
+      "file": "src/pages/login.astro",
+      "before": "6194bcf20fee5a01de397c7604ea8859072eb03485bf3ae34b841595feb97683",
+      "after": "7c1298e906aae58beb69e7318c30d11c9bfd7c67163e0387fb8d5b83c5d8070c"
+    },
+    {
+      "file": "src/pages/materias/aws/estadisticas.astro",
+      "before": "c707f06c3ee0d6860edf39c9c99e05d347410ae3abd7d87f86aa6c0af50da2f4",
+      "after": "3061340966ed1647959a3c68dd13661994e02113cec5bace2fd968de442cd8e4"
+    },
+    {
+      "file": "src/pages/materias/aws/terminos.astro",
+      "before": "e52f004b3407b00aa5c38184924d2b42d257e201dce3e449aaccfa92453716e3",
+      "after": "68a52aa8bbcb5a56b1f3be841939acb6320efab7e1ff039b247edf68a980c1cf"
+    },
+    {
+      "file": "src/scripts/content-accessibility.ts",
+      "before": null,
+      "after": "169225e6c1eeb4307652662c0fe279d00fd077de694dae6b87a574fbc07d4854"
+    },
+    {
+      "file": "src/scripts/progress-remote.ts",
+      "before": "e5deca9bee40665b1dd5c801589b95e3a18f1480a23a2a4f5cf48a7833d9f90e",
+      "after": "f431d4c347fc1a5823ba4f0d2eeb1b6cf47692075c86c8ce655217123e6ffe4e"
+    },
+    {
+      "file": "src/scripts/quiz-controller.ts",
+      "before": "8c76e880df9ebe29ea762ea888aa2c74a3e5544b763e62a24d14c84c0068b147",
+      "after": "5173bfb24f32ab28535b945b5e4ec806018de1a32adab8f05bfd6fabc33ea9b4"
+    },
+    {
+      "file": "src/styles/global.css",
+      "before": "5323aefe8201292f8319d35feb238a547e046b172282e95cba0f2f3257779a4c",
+      "after": "a3ec273ba218d22a5a7c4a81e11ead750ca0088567d201c4447f537b81f5ffee"
+    },
+    {
+      "file": "src/styles/tokens.css",
+      "before": "39223a54d3d135827ef44697f0dc7a3757b6d4fbf603d8ece9951cf02443ab9b",
+      "after": "800b29c43263a2928f0a4cfedf6de14a99303f2d8e35d1a10be52d496ab079d3"
+    },
+    {
+      "file": "scripts/README.md",
+      "before": "0807452cbb9819667c61453878791dd4e6b488936bcec5ceaf1250a166f88c6c",
+      "after": "d2e3cb47814f0cc8b06bf2a7226f9692564b6fdb23a3c4169caef617d10c34b2"
+    },
+    {
+      "file": "scripts/run-regressions.mjs",
+      "before": "7e020c3af9aba286b7d08b5455a823662250b8412ee75c62f080ab76ed7d6bd4",
+      "after": "ce2cfdeae96924cc2a66af4654e96a651d5d7b866da8cc92ee95920f82de4fa1"
+    },
+    {
+      "file": "scripts/t07-css-consolidate.mjs",
+      "before": null,
+      "after": "d84031e6618f8efc929d0e9517f247029f765ea5f8d4881fc20755de4a99dc2b"
+    },
+    {
+      "file": "docs/ARQUITECTURA.md",
+      "before": "2d2644cd41a607c6fdb1dae46c81d53560c839a79f0a5c294e171affa15e0516",
+      "after": "fc395e5d4318bc0844c7744863c917cca8e08cbde741e01aacbc123f272c8f80"
+    },
+    {
+      "file": "docs/ESTILO.md",
+      "before": "c6857a4dc71b6411ec029ebed521a761f1a104b349d6a36a9a2fb6aa5626033e",
+      "after": "daec7a55db2fc0746e70c27b978f888373f8be9170a4f350db8b746b3bed869e"
+    },
+    {
+      "file": "docs/LIMPIEZA_PENDIENTE.md",
+      "before": "7c0bb1f36c9329aef536b107f77298e80f09358f8a57f69764f3d8bb3282f370",
+      "after": "edd69476c65b23f918b220d882c668909682b422a819feab672661b07bea28b6"
+    },
+    {
+      "file": "docs/reformultation/checks/b07.test.mjs",
+      "before": "82f7b985d10a7016b93bfdba4d29d213e1a9ef0a515fa16a6415b8bf172dfabc",
+      "after": "5ed7eab58116d6d7f16ba6e3d220598a90813932ae515acfea75db7db952a5e7"
+    },
+    {
+      "file": "docs/reformultation/checks/phase-check.mjs",
+      "before": "51a669773e6890cf74d4b333114ba3d9568a6e6c78efbbe60ff1cd94159c7e71",
+      "after": "e90833c36353617cdc9bf1e892f7d665ed906fbb5989294330fb7454f5ad2228"
+    },
+    {
+      "file": "docs/reformultation/checks/README.md",
+      "before": "10b5f2d2835ee803b17baad3ed994a2dcc511e2e41b8e5fd5044bbdefbbb8874",
+      "after": "b51a07d022571e5a65e51e0ad117168a9e389758f7fb16632fc8feefa2218dfd"
+    },
+    {
+      "file": "docs/reformultation/checks/study-e2e.mjs",
+      "before": "13092c68dfc217119ebb770a723a8bdf5da40fce9e65cc32f78b11df9b9e2279",
+      "after": "9d8793ba091aec111e0ff76700812af8a21b2706276a0eddcb47bdecf5d7e423"
+    },
+    {
+      "file": "docs/reformultation/checks/t07-browser.mjs",
+      "before": null,
+      "after": "953d37e0c248763748e5b1eec509f214725b5445fa0c0d853ca6f7b76b22917b"
+    },
+    {
+      "file": "docs/reformultation/checks/t07-change-inventory.mjs",
+      "before": null,
+      "after": "ecb7502a75440af1d571b901ef861198209678fc225b1ae7eaf6675982b4a44a"
+    },
+    {
+      "file": "docs/reformultation/checks/t07-contrast.test.mjs",
+      "before": null,
+      "after": "8c877aa29f42f38deb104a44481ac192f3170e74ac0265ce4bd0b1cb31c6e1e7"
+    },
+    {
+      "file": "docs/reformultation/checks/t07-data-tools-audit.mjs",
+      "before": null,
+      "after": "425036d51f92a68c8763677fd53cd79ecc9ea639dbdf89e9df9a7e268489319c"
+    },
+    {
+      "file": "docs/reformultation/checks/t07-recovery-audit.mjs",
+      "before": null,
+      "after": "6ea0b627a5caaa94f19dea0a73329ca345af5588844aad554fb1c1867f42d22a"
+    },
+    {
+      "file": "docs/reformultation/checks/t07.test.mjs",
+      "before": null,
+      "after": "ad99aa21ceafac1bced767cdc7f2ec8ab192d59b8c2709e30827b2eb8d5aa128"
+    },
+    {
+      "file": "docs/reformultation/docs/PLAN_EVOLUCION.md",
+      "before": "e34f6e61ca9141af42b4bce003ac482fb042f39810f1aeeecbceb3cff67aea7d",
+      "after": "740265764dba723ca27e8482a075c842ead3c63b0142b10dac82bc178286dce9"
+    },
+    {
+      "file": "docs/reformultation/docs/SEGUIMIENTO_INCIDENCIAS.md",
+      "before": "fc1f4ebd5c0982b5f4c231119ac64419117687f48948d1a1460870c03a24cd65",
+      "after": "340c4843d947137220a7488b9e8048516a4ab7e9a971e810fa857a45b528006b"
+    },
+    {
+      "file": "docs/reformultation/docs/T07_RESULTADOS.md",
+      "before": null,
+      "after": "b1db1d93525f6a0986d2284165034af066759ce7467222412b4c796943ffaa3c"
+    },
+    {
+      "file": "docs/reformultation/docs/T07_SQLITE.md",
+      "before": null,
+      "after": "294d878223e32625af78e4234b719ebdb091020949297eee32adfdc05260ba5a"
+    },
+    {
+      "file": "docs/reformultation/docs/tickets/T07_estilos_utilidades_y_documentacion.md",
+      "before": "155cad4eb98d4c6285704d9c917d6028ac7a5810bd06d562f4fe3f12f33c5192",
+      "after": "18104bb40e483982a87f42c85a725d6f49a3cbc79b765e627b02332c291b7fc5"
+    },
+    {
+      "file": "docs/REQUISITOS.md",
+      "before": "c0682fd0ba8be502a55b1a7670cec0ae77e4d9465455ec451500e849e3a38218",
+      "after": "6c5047b1c620845b89fc387f6a8e476045978973a3cf40607038e37176666d79"
+    }
+  ],
+  "deleted": [],
+  "evidence": "New logs/JSON/screenshots under evidencias-T07 are listed by directory; no credentials or real user data"
+}

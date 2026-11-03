@@ -1,0 +1,2 @@
+import type {Question}from './study';
+export function renderOptions(q:Question){const options=document.createElement('div');options.className='options';q.options.forEach((text,index)=>{const label=document.createElement('label');label.className='option';const input=document.createElement('input');input.type='checkbox';input.value=String(index);const answer=document.createElement('span');answer.textContent=text;label.append(input,answer);options.append(label);});return options;}

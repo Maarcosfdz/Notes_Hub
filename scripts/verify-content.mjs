@@ -7,10 +7,10 @@ const [terms, comparisons, questions, theoryFiles] = await Promise.all([
   load("reference/glossary.json"), load("reference/comparisons.json"), load("questions/bank.json"),
   readdir(new URL("theory/", moduleRoot)),
 ]);
-const noteIds = new Set(theoryFiles.filter((file) => file.endsWith(".mdx")).map((file) => file.slice(0, -4)));
+const noteIds = new Set(theoryFiles.filter((file) => /\.mdx?$/.test(file)).map((file) => file.replace(/\.mdx?$/, "")));
 const questionIds = new Set();
 
-assert.ok(noteIds.size > 0, "AWS debe conservar apuntes MDX.");
+assert.ok(noteIds.size > 0, "AWS debe conservar apuntes Markdown o MDX.");
 for (const [abbreviation, label, group, noteId, description] of terms) {
   assert.ok(abbreviation && label && group && description, `Término incompleto: ${abbreviation}`);
   assert.ok(noteIds.has(noteId), `${abbreviation} enlaza a un apunte inexistente: ${noteId}`);

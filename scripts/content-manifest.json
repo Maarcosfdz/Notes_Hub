@@ -1,0 +1,229 @@
+{
+  "version": 1,
+  "editorialRoots": [
+    "aws-clf-c02/"
+  ],
+  "authority": {
+    "aws": "aws-clf-c02/bloque-{1,2,3,4}: current editorial editions; archivo/ is history",
+    "questionsAndReferences": "src/content/modules/devops/aws/questions and reference remain separately maintained, not managed by this pipeline",
+    "preservedInputs": "Public copies are preserved inputs only when the original historical path is absent; never reconstruct missing originals silently"
+  },
+  "chapters": [
+    {
+      "source": "aws-clf-c02/bloque-1/01_introduccion_cloud_computing.md",
+      "destination": "src/content/modules/devops/aws/theory/cloud-block-1-introduccion.md",
+      "id": "cloud-block-1-introduccion",
+      "subject": "aws",
+      "metadataOverrides": {}
+    },
+    {
+      "source": "aws-clf-c02/bloque-1/02_beneficios_economia.md",
+      "destination": "src/content/modules/devops/aws/theory/cloud-block-1-economia.md",
+      "id": "cloud-block-1-economia",
+      "subject": "aws",
+      "metadataOverrides": {}
+    },
+    {
+      "source": "aws-clf-c02/bloque-1/03_infraestructura_y_arquitectura.md",
+      "destination": "src/content/modules/devops/aws/theory/cloud-block-1-infraestructura.md",
+      "id": "cloud-block-1-infraestructura",
+      "subject": "aws",
+      "metadataOverrides": {}
+    },
+    {
+      "source": "aws-clf-c02/bloque-1/04_adopcion_y_migracion_aws.md",
+      "destination": "src/content/modules/devops/aws/theory/cloud-block-1-migracion.md",
+      "id": "cloud-block-1-migracion",
+      "subject": "aws",
+      "metadataOverrides": {}
+    },
+    {
+      "source": "aws-clf-c02/bloque-2/05_responsabilidad_compartida.md",
+      "destination": "src/content/modules/devops/aws/theory/security-block-2-05.md",
+      "id": "security-block-2-05",
+      "subject": "aws",
+      "metadataOverrides": {}
+    },
+    {
+      "source": "aws-clf-c02/bloque-2/06_identidad_y_acceso.md",
+      "destination": "src/content/modules/devops/aws/theory/security-block-2-06.md",
+      "id": "security-block-2-06",
+      "subject": "aws",
+      "metadataOverrides": {}
+    },
+    {
+      "source": "aws-clf-c02/bloque-2/07_seguridad_datos_y_cumplimiento.md",
+      "destination": "src/content/modules/devops/aws/theory/security-block-2-07.md",
+      "id": "security-block-2-07",
+      "subject": "aws",
+      "metadataOverrides": {}
+    },
+    {
+      "source": "aws-clf-c02/bloque-3/08_despliegue_e_infraestructura.md",
+      "destination": "src/content/modules/devops/aws/theory/aws-block-3-08.md",
+      "id": "aws-block-3-08",
+      "subject": "aws",
+      "metadataOverrides": {
+        "id": "aws-block-3-08",
+        "summary": "Capítulo 08 del Bloque 3: apuntes completos, figuras y referencias.",
+        "source": "AWS Academy y ampliación oficial; aws-clf-c02/bloque-3/08_despliegue_e_infraestructura.md"
+      }
+    },
+    {
+      "source": "aws-clf-c02/bloque-3/09_computacion_contenedores_serverless.md",
+      "destination": "src/content/modules/devops/aws/theory/aws-block-3-09.md",
+      "id": "aws-block-3-09",
+      "subject": "aws",
+      "metadataOverrides": {
+        "id": "aws-block-3-09",
+        "summary": "Capítulo 09 del Bloque 3: apuntes completos, figuras y referencias.",
+        "source": "AWS Academy y ampliación oficial; aws-clf-c02/bloque-3/09_computacion_contenedores_serverless.md"
+      }
+    },
+    {
+      "source": "aws-clf-c02/bloque-3/10_bases_de_datos.md",
+      "destination": "src/content/modules/devops/aws/theory/aws-block-3-10.md",
+      "id": "aws-block-3-10",
+      "subject": "aws",
+      "metadataOverrides": {
+        "id": "aws-block-3-10",
+        "summary": "Capítulo 10 del Bloque 3: apuntes completos, figuras y referencias.",
+        "source": "AWS Academy y ampliación oficial; aws-clf-c02/bloque-3/10_bases_de_datos.md"
+      }
+    },
+    {
+      "source": "aws-clf-c02/bloque-3/11_redes_y_contenidos.md",
+      "destination": "src/content/modules/devops/aws/theory/aws-block-3-11.md",
+      "id": "aws-block-3-11",
+      "subject": "aws",
+      "metadataOverrides": {
+        "id": "aws-block-3-11",
+        "summary": "Capítulo 11 del Bloque 3: apuntes completos, figuras y referencias.",
+        "source": "AWS Academy y ampliación oficial; aws-clf-c02/bloque-3/11_redes_y_contenidos.md"
+      }
+    },
+    {
+      "source": "aws-clf-c02/bloque-3/12_almacenamiento_y_recuperacion.md",
+      "destination": "src/content/modules/devops/aws/theory/aws-block-3-12.md",
+      "id": "aws-block-3-12",
+      "subject": "aws",
+      "metadataOverrides": {
+        "id": "aws-block-3-12",
+        "summary": "Capítulo 12 del Bloque 3: apuntes completos, figuras y referencias.",
+        "source": "AWS Academy y ampliación oficial; aws-clf-c02/bloque-3/12_almacenamiento_y_recuperacion.md"
+      }
+    },
+    {
+      "source": "aws-clf-c02/bloque-3/13_ia_ml_y_analitica.md",
+      "destination": "src/content/modules/devops/aws/theory/aws-block-3-13.md",
+      "id": "aws-block-3-13",
+      "subject": "aws",
+      "metadataOverrides": {
+        "id": "aws-block-3-13",
+        "summary": "Capítulo 13 del Bloque 3: apuntes completos, figuras y referencias.",
+        "source": "AWS Academy y ampliación oficial; aws-clf-c02/bloque-3/13_ia_ml_y_analitica.md"
+      }
+    },
+    {
+      "source": "aws-clf-c02/bloque-3/14_integracion_y_otros_servicios.md",
+      "destination": "src/content/modules/devops/aws/theory/aws-block-3-14.md",
+      "id": "aws-block-3-14",
+      "subject": "aws",
+      "metadataOverrides": {
+        "id": "aws-block-3-14",
+        "summary": "Capítulo 14 del Bloque 3: apuntes completos, figuras y referencias.",
+        "source": "AWS Academy y ampliación oficial; aws-clf-c02/bloque-3/14_integracion_y_otros_servicios.md"
+      }
+    },
+    {
+      "source": "aws-clf-c02/bloque-4/15_modelos_de_precios_aws.md",
+      "destination": "src/content/modules/devops/aws/theory/aws-block-4-15.md",
+      "id": "aws-block-4-15",
+      "subject": "aws",
+      "metadataOverrides": {
+        "id": "aws-block-4-15",
+        "area": "devops",
+        "subject": "aws",
+        "group": "Bloque IV · Facturación, precios y soporte",
+        "summary": "Capítulo 15 del Bloque 4: apuntes completos, figuras y referencias.",
+        "source": "AWS Academy y ampliación oficial; aws-clf-c02/bloque-4/15_modelos_de_precios_aws.md"
+      }
+    },
+    {
+      "source": "aws-clf-c02/bloque-4/16_tco_y_optimizacion_de_costes.md",
+      "destination": "src/content/modules/devops/aws/theory/aws-block-4-16.md",
+      "id": "aws-block-4-16",
+      "subject": "aws",
+      "metadataOverrides": {
+        "id": "aws-block-4-16",
+        "area": "devops",
+        "subject": "aws",
+        "group": "Bloque IV · Facturación, precios y soporte",
+        "summary": "Capítulo 16 del Bloque 4: apuntes completos, figuras y referencias.",
+        "source": "AWS Academy y ampliación oficial; aws-clf-c02/bloque-4/16_tco_y_optimizacion_de_costes.md"
+      }
+    },
+    {
+      "source": "aws-clf-c02/bloque-4/17_facturacion_presupuestos_y_costes.md",
+      "destination": "src/content/modules/devops/aws/theory/aws-block-4-17.md",
+      "id": "aws-block-4-17",
+      "subject": "aws",
+      "metadataOverrides": {
+        "id": "aws-block-4-17",
+        "area": "devops",
+        "subject": "aws",
+        "group": "Bloque IV · Facturación, precios y soporte",
+        "summary": "Capítulo 17 del Bloque 4: apuntes completos, figuras y referencias.",
+        "source": "AWS Academy y ampliación oficial; aws-clf-c02/bloque-4/17_facturacion_presupuestos_y_costes.md"
+      }
+    },
+    {
+      "source": "aws-clf-c02/bloque-4/18_soporte_y_recursos_aws.md",
+      "destination": "src/content/modules/devops/aws/theory/aws-block-4-18.md",
+      "id": "aws-block-4-18",
+      "subject": "aws",
+      "metadataOverrides": {
+        "id": "aws-block-4-18",
+        "area": "devops",
+        "subject": "aws",
+        "group": "Bloque IV · Facturación, precios y soporte",
+        "summary": "Capítulo 18 del Bloque 4: apuntes completos, figuras y referencias.",
+        "source": "AWS Academy y ampliación oficial; aws-clf-c02/bloque-4/18_soporte_y_recursos_aws.md"
+      }
+    }
+  ],
+  "publicationPrefixes": [
+    {
+      "source": "aws-clf-c02/bloque-1/figuras/",
+      "destination": "private/study-assets/study-figures/bloque-1/"
+    },
+    {
+      "source": "aws-clf-c02/bloque-1/",
+      "destination": "private/study-assets/study-docs/bloque-1/"
+    },
+    {
+      "source": "aws-clf-c02/bloque-2/figuras/",
+      "destination": "private/study-assets/study-figures/bloque-2/"
+    },
+    {
+      "source": "aws-clf-c02/bloque-2/",
+      "destination": "private/study-assets/study-docs/bloque-2/"
+    },
+    {
+      "source": "aws-clf-c02/",
+      "destination": "private/study-assets/docs-aws/aws-clf-c02/"
+    },
+    {
+      "source": "proceso/",
+      "destination": "private/study-assets/docs-aws/proceso/"
+    }
+  ],
+  "preservedInputs": {
+    "proceso/AWS_Bloque_IV_Para_Codex/pdf_originales/isT2.pdf": "private/study-assets/docs-aws/proceso/AWS_Bloque_IV_Para_Codex/pdf_originales/isT2.pdf",
+    "proceso/AWS_Bloque_IV_Para_Codex/pdf_originales/isT4.pdf": "private/study-assets/docs-aws/proceso/AWS_Bloque_IV_Para_Codex/pdf_originales/isT4.pdf",
+    "proceso/AWS_Bloque_IV_Para_Codex/pdf_originales/isT6.pdf": "private/study-assets/docs-aws/proceso/AWS_Bloque_IV_Para_Codex/pdf_originales/isT6.pdf",
+    "proceso/AWS_Bloque_IV_Para_Codex/pdf_originales/isT7.pdf": "private/study-assets/docs-aws/proceso/AWS_Bloque_IV_Para_Codex/pdf_originales/isT7.pdf",
+    "proceso/AWS_Bloque_IV_Para_Codex/pdf_originales/isT8.pdf": "private/study-assets/docs-aws/proceso/AWS_Bloque_IV_Para_Codex/pdf_originales/isT8.pdf"
+  },
+  "assetRoot": "private/study-assets/"
+}

@@ -3,8 +3,8 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import { areas, subjects } from "../../config/library";
 const allNotes = await getCollection("notes");
-export function getStaticPaths() { return areas.map((area) => ({ params: { area: area.id }, props: { area } })); }
-const { area } = Astro.props;
+const area = areas.find(area => area.id === Astro.params.area);
+if (!area) return new Response("Área no encontrada", {status:404});
 const root = import.meta.env.BASE_URL;
 ---
 <BaseLayout title={area.title}>

@@ -1,0 +1,21 @@
+{
+  "at": "2026-11-03T16:00:57.173Z",
+  "node": "v24.14.0",
+  "content": {
+    "command": "C:\\Program Files\\nodejs\\node.exe scripts/verify-content.mjs",
+    "exitCode": 0
+  },
+  "types": {
+    "command": "C:\\Program Files\\nodejs\\node.exe C:\\Users\\mroma\\Desktop\\FIC\\master\\1.Informática como servizo\\Teoria\\aws\\Notes_Hub\\node_modules\\astro\\bin\\astro.mjs check",
+    "exitCode": 0
+  },
+  "build": {
+    "command": "C:\\Program Files\\nodejs\\node.exe C:\\Users\\mroma\\Desktop\\FIC\\master\\1.Informática como servizo\\Teoria\\aws\\Notes_Hub\\node_modules\\astro\\bin\\astro.mjs build",
+    "exitCode": 0
+  },
+  "tests": {
+    "command": "C:\\Program Files\\nodejs\\node.exe --test --test-reporter=tap docs/reformultation/checks/local-progress.test.mjs docs/reformultation/checks/b07.test.mjs docs/reformultation/checks/t01b.test.mjs",
+    "exitCode": 0
+  },
+  "protectedDifferences": []
+}

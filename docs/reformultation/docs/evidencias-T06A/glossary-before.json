@@ -1,0 +1,2618 @@
+[
+  [
+    "Alta disponibilidad",
+    "High availability, HA",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Diseño que procura mantener un servicio accesible y minimizar sus interrupciones mediante redundancia, detección y recuperación. Se utiliza para cumplir un objetivo de continuidad; no equivale a conservar los datos, que es una cuestión de durabilidad, ni implica ausencia absoluta de fallos.",
+    [
+      "Alta disponibilidad",
+      "High availability",
+      "HA"
+    ]
+  ],
+  [
+    "AMI — Amazon Machine Image",
+    "AMI, Amazon Machine Image",
+    "Bloque I · Fundamentos",
+    "cloud-block-1-introduccion",
+    "Plantilla con la información necesaria para lanzar una instancia EC2, incluido su sistema operativo y software inicial. Permite reproducir una configuración base; se diferencia de la instancia, que es el recurso en ejecución, y no sustituye la estrategia de respaldo de los datos de la aplicación.",
+    [
+      "AMI — Amazon Machine Image",
+      "AMI",
+      "Amazon Machine Image"
+    ]
+  ],
+  [
+    "API",
+    "API",
+    "Bloque I · Fundamentos",
+    "cloud-block-1-introduccion",
+    "Interfaz que especifica cómo un programa solicita operaciones o datos a otro sistema. Se utiliza para integrar y automatizar servicios; la consola, la CLI y los SDK son formas distintas de interactuar con las API de AWS y siguen sujetas a autorización.",
+    [
+      "API"
+    ]
+  ],
+  [
+    "AWS Artifact",
+    "AWS Artifact",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Portal para consultar documentos e informes de cumplimiento de AWS y gestionar determinados acuerdos. Sirve como evidencia sobre controles del proveedor; no configura los controles de la aplicación ni demuestra por sí solo el cumplimiento del cliente.",
+    [
+      "AWS Artifact"
+    ]
+  ],
+  [
+    "Amazon Aurora",
+    "Amazon Aurora",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Base de datos relacional administrada por AWS con compatibilidad con MySQL o PostgreSQL según la edición. Se utiliza para cargas relacionales que necesitan esas interfaces; se distingue de DynamoDB, que es NoSQL, y de Redshift, orientado a analítica.",
+    [
+      "Amazon Aurora"
+    ]
+  ],
+  [
+    "AWS Auto Scaling",
+    "AWS Auto Scaling",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Nombre utilizado en el material para capacidades de ajuste automático de recursos compatibles. Ayuda a adaptar la capacidad a condiciones y políticas; EC2 Auto Scaling se centra específicamente en grupos de instancias EC2, por lo que los nombres no deben tratarse como servicios idénticos.",
+    [
+      "AWS Auto Scaling"
+    ]
+  ],
+  [
+    "Availability",
+    "Disponibilidad",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Disponibilidad: proporción del intervalo observado durante el que el servicio satisface el criterio de funcionamiento definido. Sirve para evaluar continuidad y objetivos operativos; debe indicarse la ventana de medida y qué cuenta como éxito, y no confundirse con el número de AZ de una región.",
+    [
+      "Availability",
+      "Disponibilidad"
+    ]
+  ],
+  [
+    "AWS",
+    "AWS",
+    "Bloque I · Fundamentos",
+    "cloud-block-1-introduccion",
+    "Amazon Web Services, plataforma que ofrece recursos y servicios tecnológicos bajo demanda. Permite combinar cómputo, redes, almacenamiento y servicios administrados; consumir AWS no elimina las responsabilidades del cliente sobre datos, permisos y configuración.",
+    [
+      "AWS"
+    ]
+  ],
+  [
+    "AWS Batch",
+    "AWS Batch",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Servicio para planificar y ejecutar trabajos de procesamiento por lotes sobre capacidad de cómputo. Se utiliza cuando los trabajos pueden organizarse y esperar en colas según recursos disponibles; se diferencia de una aplicación web que debe responder interactivamente a cada petición.",
+    [
+      "AWS Batch"
+    ]
+  ],
+  [
+    "AWS Budgets",
+    "AWS Budgets",
+    "Bloque I · Economía",
+    "cloud-block-1-economia",
+    "Herramienta para definir presupuestos y supervisar costes o uso frente a umbrales. Sirve para avisar de desviaciones y, en configuraciones compatibles, apoyar acciones; un presupuesto no constituye por sí mismo un límite duro que detenga toda la factura.",
+    [
+      "AWS Budgets"
+    ]
+  ],
+  [
+    "Business Case",
+    "Business Case",
+    "Bloque I · Migración",
+    "cloud-block-1-migracion",
+    "Justificación de una iniciativa que reúne inversión, beneficios esperados, riesgos y objetivos. Se utiliza para decidir y priorizar una migración; el TCO contribuye con la estimación de costes, pero no sustituye la evaluación de beneficios y alternativas.",
+    [
+      "Business Case"
+    ]
+  ],
+  [
+    "BYOL",
+    "BYOL",
+    "Bloque I · Economía",
+    "cloud-block-1-economia",
+    "Bring Your Own License: uso de licencias propias existentes cuando sus condiciones permiten emplearlas en el entorno cloud seleccionado. Puede aprovechar inversiones previas; se diferencia de License Included, que integra derechos de licencia concretos en la tarifa del producto.",
+    [
+      "BYOL"
+    ]
+  ],
+  [
+    "AWS CAF",
+    "Cloud Adoption Framework",
+    "Bloque I · Migración",
+    "cloud-block-1-migracion",
+    "AWS Cloud Adoption Framework, marco para identificar capacidades y preparar una transformación cloud mediante seis perspectivas. Se utiliza para alinear negocio, personas, gobierno y capacidades técnicas; sus perspectivas no son fases de migración ni pilares de Well-Architected.",
+    [
+      "AWS CAF",
+      "Cloud Adoption Framework"
+    ]
+  ],
+  [
+    "CAPEX",
+    "CAPEX",
+    "Bloque I · Economía",
+    "cloud-block-1-economia",
+    "Gasto de capital destinado a adquirir o mejorar activos, como servidores e instalaciones. Se utiliza en el análisis de inversión de un entorno propio; no equivale exactamente a coste fijo, porque la clasificación contable y el comportamiento del coste responden a criterios distintos.",
+    [
+      "CAPEX"
+    ]
+  ],
+  [
+    "CDC",
+    "CDC",
+    "Bloque I · Migración",
+    "cloud-block-1-migracion",
+    "Change Data Capture: captura de cambios posteriores a una copia inicial para propagarlos a un destino. Se utiliza en migraciones y replicación de bases de datos para reducir el desfase; no elimina la necesidad de validar consistencia y planificar el corte.",
+    [
+      "CDC"
+    ]
+  ],
+  [
+    "CDN",
+    "CDN",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Content Delivery Network: red distribuida que acerca contenido a los usuarios mediante puntos de entrega y mecanismos de caché. Se utiliza para reducir latencia y solicitudes al origen; se diferencia de DNS, que resuelve nombres y dirige a destinos, y CloudFront es un servicio que implementa esta función.",
+    [
+      "CDN"
+    ]
+  ],
+  [
+    "AWS CLI",
+    "AWS Command Line Interface",
+    "Bloque I · Fundamentos",
+    "cloud-block-1-introduccion",
+    "AWS Command Line Interface, herramienta para invocar operaciones de AWS mediante comandos de terminal. Se utiliza en scripts y tareas repetibles; frente al SDK ofrece comandos en vez de bibliotecas integradas en un lenguaje, y necesita credenciales y permisos adecuados.",
+    [
+      "AWS CLI",
+      "AWS Command Line Interface"
+    ]
+  ],
+  [
+    "Cloud Computing",
+    "Cloud Computing",
+    "Bloque I · Fundamentos",
+    "cloud-block-1-introduccion",
+    "Modelo de acceso por red, bajo demanda, a recursos tecnológicos configurables que pueden aprovisionarse y liberarse con rapidez. Permite consumir capacidad sin adquirir cada equipo físico; no significa que los recursos sean ilimitados, gratuitos o ajenos a la gestión del cliente.",
+    [
+      "Cloud Computing"
+    ]
+  ],
+  [
+    "Cloud Financial Management",
+    "Cloud Financial Management",
+    "Bloque I · Economía",
+    "cloud-block-1-economia",
+    "Disciplina que coordina ingeniería, finanzas y responsables de negocio para gobernar el gasto cloud y su valor. Se utiliza para asignar costes, definir responsabilidades y mejorar el coste por resultado; no consiste únicamente en escoger el recurso con menor precio por hora.",
+    [
+      "Cloud Financial Management"
+    ]
+  ],
+  [
+    "CloudFormation",
+    "CloudFormation",
+    "Bloque I · Economía",
+    "cloud-block-1-economia",
+    "Servicio de infraestructura como código para definir y aprovisionar recursos mediante plantillas. Facilita entornos repetibles y cambios revisables; una plantilla reproducible sigue necesitando revisión de permisos, parámetros y decisiones arquitectónicas.",
+    [
+      "CloudFormation"
+    ]
+  ],
+  [
+    "Amazon CloudFront",
+    "Amazon CloudFront",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Servicio CDN de AWS que entrega contenido desde ubicaciones distribuidas y puede almacenarlo en caché. Se utiliza para acercar respuestas a los usuarios y aliviar el origen; una ubicación edge no equivale a una región en la que desplegar cualquier recurso AWS.",
+    [
+      "Amazon CloudFront"
+    ]
+  ],
+  [
+    "AWS CloudTrail",
+    "AWS CloudTrail",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Servicio que registra actividad de cuenta y operaciones de API dentro del alcance configurado. Se utiliza para auditoría e investigación de acciones; se diferencia de CloudWatch, centrado en observabilidad, y de Config, centrado en configuración de recursos.",
+    [
+      "AWS CloudTrail"
+    ]
+  ],
+  [
+    "Amazon CloudWatch",
+    "Amazon CloudWatch",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Servicio de observabilidad para métricas, registros, alarmas y otras señales operativas. Se utiliza para detectar problemas y evaluar el funcionamiento de cargas; una métrica de rendimiento no reemplaza el registro de actividad de API que aporta CloudTrail.",
+    [
+      "Amazon CloudWatch"
+    ]
+  ],
+  [
+    "Amazon Cognito",
+    "Amazon Cognito",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Servicio para gestionar identidad y autenticación de usuarios de aplicaciones. Sirve para registro, inicio de sesión y funciones de acceso compatibles; su propósito difiere de administrar los permisos de operadores y cargas sobre recursos AWS mediante IAM.",
+    [
+      "Amazon Cognito"
+    ]
+  ],
+  [
+    "AWS Compute Optimizer",
+    "Compute Optimizer",
+    "Bloque I · Economía",
+    "cloud-block-1-economia",
+    "Servicio que analiza configuración y métricas de utilización para recomendar ajustes de capacidad de recursos compatibles. Se utiliza para apoyar el dimensionamiento correcto; sus recomendaciones deben contrastarse con requisitos de la aplicación y se diferencian de las comprobaciones más generales de Trusted Advisor.",
+    [
+      "AWS Compute Optimizer",
+      "Compute Optimizer"
+    ]
+  ],
+  [
+    "AWS Config",
+    "AWS Config",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Servicio que registra configuraciones e historial de recursos y permite evaluarlos mediante reglas. Se utiliza para analizar cambios y conformidad de configuración; CloudTrail documenta actividad y llamadas, mientras que Config permite examinar el estado configurado.",
+    [
+      "AWS Config"
+    ]
+  ],
+  [
+    "AWS Cost and Usage Report",
+    "AWS Cost and Usage Report",
+    "Bloque I · Economía",
+    "cloud-block-1-economia",
+    "Informe con datos detallados de costes y uso de servicios AWS. Se utiliza para análisis y atribución del consumo con mayor detalle que una vista resumida; no debe confundirse con una alerta presupuestaria de AWS Budgets.",
+    [
+      "AWS Cost and Usage Report"
+    ]
+  ],
+  [
+    "AWS Cost Explorer",
+    "AWS Cost Explorer",
+    "Bloque I · Economía",
+    "cloud-block-1-economia",
+    "Herramienta para visualizar y analizar costes y uso a lo largo del tiempo, con funciones de previsión disponibles. Se utiliza para identificar tendencias y cambios de gasto; sus estimaciones no constituyen una garantía de la factura futura.",
+    [
+      "AWS Cost Explorer"
+    ]
+  ],
+  [
+    "Cost Optimization",
+    "Optimización de costes",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Pilar de Well-Architected que busca entregar valor de negocio evitando gasto innecesario. Relaciona recursos, demanda y coste por resultado; se diferencia de sostenibilidad, cuyo objetivo principal es reducir el impacto ambiental por trabajo útil.",
+    [
+      "Cost Optimization",
+      "Optimización de costes"
+    ]
+  ],
+  [
+    "CPD / Data Center",
+    "CPD / Data Center",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Instalación física con servidores, almacenamiento, redes, energía, refrigeración y controles de seguridad. Sustenta los servicios cloud; una AZ puede incluir uno o más CPD y el cliente normalmente elige región y AZ, no el edificio concreto.",
+    [
+      "CPD / Data Center"
+    ]
+  ],
+  [
+    "DAS",
+    "DAS",
+    "Bloque I · Fundamentos",
+    "cloud-block-1-introduccion",
+    "Direct-Attached Storage: almacenamiento conectado directamente al equipo que lo utiliza. Sirve para proporcionar capacidad local al host; se diferencia de NAS, que ofrece archivos por red, y de SAN, que proporciona acceso a almacenamiento de bloques mediante una red especializada.",
+    [
+      "DAS"
+    ]
+  ],
+  [
+    "Data at rest / in transit",
+    "Data at rest / in transit",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Distinción entre datos almacenados y datos que se transmiten entre componentes. Sirve para definir protecciones en ambos estados: cifrar un objeto o volumen no cifra automáticamente todos los trayectos de comunicación, y TLS no sustituye el cifrado en reposo.",
+    [
+      "Data at rest / in transit"
+    ]
+  ],
+  [
+    "AWS Data Transfer Terminal",
+    "Data Transfer Terminal, DTT",
+    "Bloque I · Migración",
+    "cloud-block-1-migracion",
+    "Servicio que proporciona acceso programado a instalaciones físicas para conectar dispositivos propios y transferir datos a AWS mediante conectividad de alta capacidad. Se utiliza cuando se necesita cargar grandes volúmenes bajo las condiciones de acceso del servicio; se diferencia de enviar un dispositivo de la familia Snow y de una transferencia administrada por software como DataSync.",
+    [
+      "AWS Data Transfer Terminal",
+      "Data Transfer Terminal",
+      "DTT"
+    ]
+  ],
+  [
+    "DataSync",
+    "DataSync",
+    "Bloque I · Migración",
+    "cloud-block-1-migracion",
+    "Servicio administrado para transferir archivos y objetos entre sistemas de almacenamiento compatibles. Se utiliza para mover conjuntos de datos y verificar transferencias según las capacidades del servicio; no convierte el esquema ni el código de una base de datos como las herramientas de conversión especializadas.",
+    [
+      "DataSync"
+    ]
+  ],
+  [
+    "AWS Direct Connect",
+    "AWS Direct Connect",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Servicio de conectividad dedicada entre una ubicación externa y AWS. Se utiliza cuando se necesita una conexión de red dedicada con características planificadas; no debe suponerse cifrado extremo a extremo por defecto, a diferencia del túnel cifrado de una VPN.",
+    [
+      "AWS Direct Connect"
+    ]
+  ],
+  [
+    "DMS",
+    "AWS Database Migration Service",
+    "Bloque I · Migración",
+    "cloud-block-1-migracion",
+    "AWS Database Migration Service, servicio de migración y replicación de bases de datos entre orígenes y destinos admitidos. Puede combinar carga inicial y captura de cambios; trasladar los datos no garantiza compatibilidad del esquema o del código con un motor diferente.",
+    [
+      "DMS",
+      "AWS Database Migration Service"
+    ]
+  ],
+  [
+    "AWS DMS Schema Conversion / AWS SCT",
+    "DMS Schema Conversion, AWS Schema Conversion Tool, AWS SCT, SCT",
+    "Bloque I · Migración",
+    "cloud-block-1-migracion",
+    "Grupo de herramientas relacionadas para evaluar y convertir esquemas y determinados objetos o código al migrar entre motores de bases de datos. DMS Schema Conversion ofrece capacidades de conversión dentro de AWS DMS y AWS SCT es una herramienta diferenciada; sus nombres se agrupan para estudiar la misma necesidad, pero no son productos idénticos. La conversión puede requerir adaptaciones manuales y se distingue de la carga o replicación de datos realizada por DMS.",
+    [
+      "AWS DMS Schema Conversion / AWS SCT",
+      "DMS Schema Conversion",
+      "AWS Schema Conversion Tool",
+      "AWS SCT",
+      "SCT"
+    ]
+  ],
+  [
+    "DNS",
+    "DNS",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Domain Name System, sistema de resolución de nombres y otros registros de dominio. Se utiliza para localizar servicios mediante nombres; una respuesta DNS dirige hacia un destino y no balancea cada conexión activa de la misma forma que ELB.",
+    [
+      "DNS"
+    ]
+  ],
+  [
+    "Amazon DynamoDB",
+    "Amazon DynamoDB",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Base de datos NoSQL administrada con modelos de clave-valor y documentos. Se utiliza para patrones de acceso compatibles con ese modelo; no sustituye automáticamente una base relacional con otras consultas, y no es la base de pedidos de Show and Sell en CA p.13.",
+    [
+      "Amazon DynamoDB"
+    ]
+  ],
+  [
+    "Amazon EBS",
+    "Amazon EBS",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Almacenamiento persistente de bloques para cargas compatibles con EC2. Se utiliza para volúmenes que el sistema operativo trata como discos; se diferencia del almacenamiento de objetos S3 y necesita una estrategia de snapshots y recuperación apropiada.",
+    [
+      "Amazon EBS"
+    ]
+  ],
+  [
+    "Amazon EC2",
+    "Amazon EC2",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Servicio para ejecutar instancias de cómputo virtual configurables. Se utiliza cuando la carga necesita control sobre el sistema operativo y su entorno; frente a Lambda exige administrar más componentes del servidor invitado.",
+    [
+      "Amazon EC2"
+    ]
+  ],
+  [
+    "EC2 Auto Scaling",
+    "Amazon EC2 Auto Scaling",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Servicio que administra grupos de instancias EC2 y ajusta su capacidad mediante políticas y comprobaciones de salud. Se utiliza para responder a demanda y reemplazar instancias no saludables; el Auto Scaling Group es el conjunto administrado, mientras que rightsizing selecciona tipos y tamaños adecuados.",
+    [
+      "EC2 Auto Scaling",
+      "Amazon EC2 Auto Scaling"
+    ]
+  ],
+  [
+    "Economías de escala",
+    "Economías de escala",
+    "Bloque I · Economía",
+    "cloud-block-1-economia",
+    "Reducción potencial del coste unitario al distribuir costes y operar recursos a gran escala. Permiten que un proveedor reúna demanda de muchos clientes y obtenga eficiencias; no garantizan que cualquier aplicación cloud sea más barata sin considerar diseño y uso.",
+    [
+      "Economías de escala"
+    ]
+  ],
+  [
+    "Amazon ECR",
+    "Amazon ECR",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Registro administrado para almacenar y distribuir imágenes de contenedores. Se utiliza como repositorio de artefactos que después ejecutan motores y orquestadores; subir una imagen al registro no pone en marcha el contenedor.",
+    [
+      "Amazon ECR"
+    ]
+  ],
+  [
+    "Amazon ECS",
+    "Amazon ECS",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Servicio administrado de AWS para organizar tareas y servicios en contenedores. Se utiliza con el modelo de orquestación de AWS; se diferencia de EKS, que expone el ecosistema Kubernetes, y puede utilizar capacidad de ejecución compatible como Fargate.",
+    [
+      "Amazon ECS"
+    ]
+  ],
+  [
+    "Edge Location",
+    "Edge Location",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Ubicación de borde desde la que se prestan determinadas funciones de entrega y red cerca de usuarios. Se utiliza, por ejemplo, para distribución de contenido; no es una AZ ni un centro regional donde se despliegue cualquier servicio de cómputo.",
+    [
+      "Edge Location"
+    ]
+  ],
+  [
+    "Amazon EFS",
+    "Amazon EFS",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Sistema de archivos administrado y compartido por red para clientes compatibles. Se utiliza cuando varias cargas necesitan acceder a archivos comunes; ofrece una interfaz de archivos, distinta del almacenamiento de objetos de S3 y de los volúmenes de bloques EBS.",
+    [
+      "Amazon EFS"
+    ]
+  ],
+  [
+    "Amazon EKS",
+    "Amazon EKS",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Servicio administrado para ejecutar Kubernetes y orquestar aplicaciones en contenedores. Se elige cuando se necesitan la API y el ecosistema Kubernetes; ECS utiliza el orquestador propio de AWS y Fargate aporta capacidad de ejecución, no una API de orquestación alternativa.",
+    [
+      "Amazon EKS"
+    ]
+  ],
+  [
+    "AWS Elastic Beanstalk",
+    "AWS Elastic Beanstalk",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Servicio que simplifica el despliegue y la operación de aplicaciones sobre recursos AWS. Se utiliza para delegar parte del aprovisionamiento de plataforma conservando el código propio; no es una aplicación SaaS terminada ni elimina la configuración del cliente.",
+    [
+      "AWS Elastic Beanstalk"
+    ]
+  ],
+  [
+    "Elastic Load Balancing",
+    "Elastic Load Balancing (ELB), ELB",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Familia de servicios que distribuye tráfico entre destinos compatibles y puede integrar comprobaciones de salud. Se utiliza para repartir solicitudes y apoyar arquitecturas disponibles; no almacena los pedidos ni sustituye las copias o la resiliencia de los destinos.",
+    [
+      "Elastic Load Balancing",
+      "Elastic Load Balancing (ELB)",
+      "ELB"
+    ]
+  ],
+  [
+    "Elasticidad",
+    "Elasticidad",
+    "Bloque I · Economía",
+    "cloud-block-1-economia",
+    "Capacidad de aumentar y reducir recursos conforme cambia la demanda. Se utiliza para evitar mantener permanentemente capacidad de pico; se distingue de escalabilidad, que describe la capacidad de soportar crecimiento y no exige ajuste automático en ambos sentidos.",
+    [
+      "Elasticidad"
+    ]
+  ],
+  [
+    "Escalabilidad",
+    "Escalabilidad",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Capacidad de una solución para soportar más carga mediante recursos mayores o más componentes. Se utiliza para planificar crecimiento vertical u horizontal; no implica por sí sola que la capacidad se reduzca después de un pico, como sucede en un diseño elástico.",
+    [
+      "Escalabilidad"
+    ]
+  ],
+  [
+    "ESG",
+    "ESG",
+    "Bloque I · Migración",
+    "cloud-block-1-migracion",
+    "Environmental, Social and Governance: aspectos ambientales, sociales y de gobierno corporativo usados para evaluar resultados de una organización. En adopción cloud ayudan a definir objetivos de transformación; no equivalen solo al consumo de energía del pilar de sostenibilidad.",
+    [
+      "ESG"
+    ]
+  ],
+  [
+    "Amazon EventBridge",
+    "Amazon EventBridge",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Servicio para enrutar eventos desde productores hacia destinos mediante reglas y capacidades compatibles. Se utiliza para automatizar respuestas y desacoplar integraciones; una cola de mensajes tiene otro cometido principal, mantener trabajos pendientes hasta su consumo.",
+    [
+      "Amazon EventBridge"
+    ]
+  ],
+  [
+    "AWS Fargate",
+    "AWS Fargate",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Modalidad administrada de capacidad para ejecutar contenedores sin que el cliente administre directamente los hosts. Se utiliza con orquestadores compatibles como ECS o EKS; el cliente sigue gestionando imágenes, aplicación, permisos y configuración.",
+    [
+      "AWS Fargate"
+    ]
+  ],
+  [
+    "IaaS",
+    "IaaS",
+    "Bloque I · Fundamentos",
+    "cloud-block-1-introduccion",
+    "Infrastructure as a Service: consumo de infraestructura virtualizada de cómputo, red y almacenamiento. Se utiliza para conservar control del sistema operativo y las aplicaciones; frente a PaaS deja más administración técnica en manos del cliente.",
+    [
+      "IaaS"
+    ]
+  ],
+  [
+    "AWS IAM",
+    "AWS IAM",
+    "Bloque I · Fundamentos",
+    "cloud-block-1-introduccion",
+    "Identity and Access Management, servicio de identidades y autorización para recursos AWS. Se utiliza para definir quién puede realizar qué acciones sobre qué recursos; no filtra puertos ni paquetes como Security Groups o Network ACL.",
+    [
+      "AWS IAM"
+    ]
+  ],
+  [
+    "Infrastructure as Code (IaC)",
+    "Infrastructure as Code (IaC)",
+    "Bloque I · Economía",
+    "cloud-block-1-economia",
+    "Práctica de expresar y gestionar infraestructura mediante archivos declarativos o código versionado. Se utiliza para reproducir entornos y revisar cambios; repetir una definición no demuestra que sus permisos o decisiones de diseño sean correctos.",
+    [
+      "Infrastructure as Code (IaC)"
+    ]
+  ],
+  [
+    "Instancia",
+    "Instancia",
+    "Bloque I · Fundamentos",
+    "cloud-block-1-introduccion",
+    "Recurso de cómputo virtual en ejecución, como una instancia de Amazon EC2. Se utiliza para ejecutar un sistema y sus aplicaciones; una AMI proporciona la configuración inicial, mientras que la instancia tiene su propio ciclo de vida y estado operativo.",
+    [
+      "Instancia"
+    ]
+  ],
+  [
+    "JSON",
+    "JSON",
+    "Bloque I · Fundamentos",
+    "cloud-block-1-introduccion",
+    "JavaScript Object Notation, formato textual para representar datos estructurados mediante objetos, listas y valores. Se utiliza en intercambios de API y configuraciones; a diferencia de XML no expresa la estructura mediante etiquetas de marcado.",
+    [
+      "JSON"
+    ]
+  ],
+  [
+    "AWS KMS",
+    "AWS KMS",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Key Management Service, servicio para crear y administrar claves criptográficas y controlar su uso. Se integra con cifrado de servicios compatibles; no sustituye la clasificación de datos ni concede automáticamente a cualquier identidad permiso para descifrarlos.",
+    [
+      "AWS KMS"
+    ]
+  ],
+  [
+    "AWS Lambda",
+    "AWS Lambda",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Servicio para ejecutar funciones en respuesta a invocaciones o eventos sin administrar servidores subyacentes. Se utiliza para lógica que encaja en sus condiciones de ejecución; frente a EC2 reduce gestión del host, pero el cliente mantiene código, dependencias y permisos.",
+    [
+      "AWS Lambda"
+    ]
+  ],
+  [
+    "Landing Zone",
+    "Landing Zone",
+    "Bloque I · Migración",
+    "cloud-block-1-migracion",
+    "Entorno cloud inicial con cuentas, identidad, red, registros y controles de gobierno y seguridad. Se utiliza para recibir cargas de forma consistente durante una adopción o migración; no es una aplicación de negocio ni una fase del CAF.",
+    [
+      "Landing Zone"
+    ]
+  ],
+  [
+    "Latencia",
+    "Latencia",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Tiempo que transcurre entre una acción o solicitud y la respuesta observada en el trayecto considerado. Se utiliza para evaluar experiencia y rendimiento; mayor ancho de banda no elimina necesariamente distancia, procesamiento o esperas en otros componentes.",
+    [
+      "Latencia"
+    ]
+  ],
+  [
+    "License Included",
+    "License Included",
+    "Bloque I · Economía",
+    "cloud-block-1-economia",
+    "Modelo en el que derechos de licencia de un producto concreto están incluidos en la tarifa del recurso o servicio. Simplifica la adquisición de las licencias admitidas; se diferencia de BYOL, donde el cliente aporta derechos existentes y elegibles.",
+    [
+      "License Included"
+    ]
+  ],
+  [
+    "AWS License Manager",
+    "AWS License Manager",
+    "Bloque I · Economía",
+    "cloud-block-1-economia",
+    "Servicio para gestionar y supervisar el uso de licencias de software en entornos compatibles. Ayuda a controlar asignaciones y cumplimiento; no modifica los derechos contractuales del fabricante ni hace transferible una licencia que no lo sea.",
+    [
+      "AWS License Manager"
+    ]
+  ],
+  [
+    "Amazon Lightsail",
+    "Amazon Lightsail",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Servicio que simplifica la puesta en marcha de entornos y recursos para proyectos de alcance acotado. Se utiliza para priorizar facilidad de configuración; frente a componer cada componente con EC2 y otros servicios ofrece una experiencia más integrada y menos granular.",
+    [
+      "Amazon Lightsail"
+    ]
+  ],
+  [
+    "AWS Management Console",
+    "AWS Management Console",
+    "Bloque I · Fundamentos",
+    "cloud-block-1-introduccion",
+    "Interfaz web gráfica para acceder a servicios y administrar recursos AWS. Se utiliza para explorar y configurar operaciones visualmente; frente a CLI y SDK ofrece interacción por navegador, pero sigue necesitando autenticación y permisos.",
+    [
+      "AWS Management Console"
+    ]
+  ],
+  [
+    "MFA",
+    "MFA",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Multi-Factor Authentication: autenticación que exige factores de categorías diferentes para reforzar la verificación de identidad. Se utiliza para proteger accesos, especialmente el usuario raíz; no concede permisos adicionales ni sustituye el principio de mínimo privilegio.",
+    [
+      "MFA"
+    ]
+  ],
+  [
+    "MGN / AWS Transform MGN",
+    "MGN / AWS Transform MGN",
+    "Bloque I · Migración",
+    "cloud-block-1-migracion",
+    "Nombre de la herramienta de migración de servidores tratada en la ampliación 06, relacionada con AWS Application Migration Service y el rehost. Se utiliza para replicar y trasladar cargas con pocos cambios de aplicación; la denominación comercial y disponibilidad deben comprobarse en la documentación enlazada antes de un proyecto real.",
+    [
+      "MGN / AWS Transform MGN"
+    ]
+  ],
+  [
+    "Migration Evaluator",
+    "Migration Evaluator",
+    "Bloque I · Migración",
+    "cloud-block-1-migracion",
+    "Herramienta de evaluación para apoyar el caso económico de una migración a partir de inventario y uso. Se utiliza para estimar alternativas y costes; no realiza por sí misma el traslado de servidores ni convierte una estimación en ahorro garantizado.",
+    [
+      "Migration Evaluator"
+    ]
+  ],
+  [
+    "AWS Migration Hub",
+    "Migration Hub",
+    "Bloque I · Migración",
+    "cloud-block-1-migracion",
+    "Servicio utilizado para centralizar información y seguimiento de migraciones de aplicaciones y servidores mediante herramientas compatibles. Se estudia como recurso histórico de coordinación, no como herramienta que traslada por sí sola todas las cargas. El complemento 06 recoge el aviso de que no acepta nuevos clientes desde el 7 de noviembre de 2025 y remite a AWS Transform para nuevas iniciativas; debe consultarse ese aviso antes de planificar un uso real.",
+    [
+      "AWS Migration Hub",
+      "Migration Hub"
+    ]
+  ],
+  [
+    "Migration Wave",
+    "Migration Wave",
+    "Bloque I · Migración",
+    "cloud-block-1-migracion",
+    "Oleada: grupo de aplicaciones y recursos que se migran de forma coordinada según dependencias, riesgos y ventanas de cambio. Se utiliza para ejecutar una cartera por etapas y aprender de las primeras migraciones; no es una de las estrategias 7 Rs.",
+    [
+      "Migration Wave"
+    ]
+  ],
+  [
+    "MTBF",
+    "MTBF",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Mean Time Between Failures: tiempo medio entre fallos bajo la convención y el intervalo de medida adoptados. Se utiliza para analizar sistemas reparables; en el ejemplo docente incluye 96 horas de operación y 72 de reparación, mientras que MTTF considera el tramo operativo.",
+    [
+      "MTBF"
+    ]
+  ],
+  [
+    "MTTF",
+    "MTTF",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Mean Time To Failure: tiempo medio de operación antes de fallar bajo el modelo estudiado. Se utiliza para describir fiabilidad y el tramo disponible de un ciclo; no debe confundirse con MTTR, que mide la reparación o recuperación.",
+    [
+      "MTTF"
+    ]
+  ],
+  [
+    "MTTR",
+    "MTTR",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Mean Time To Repair o Recover, según la definición adoptada: tiempo medio empleado en reparar o restablecer el servicio. Se utiliza para evaluar capacidad de recuperación; reducirlo puede mejorar disponibilidad aunque no cambie la frecuencia de fallos.",
+    [
+      "MTTR"
+    ]
+  ],
+  [
+    "Multi-tenancy",
+    "Multi-tenancy",
+    "Bloque I · Fundamentos",
+    "cloud-block-1-introduccion",
+    "Modelo en el que varios clientes o tenants comparten infraestructura con separación lógica. Se utiliza para aprovechar recursos comunes a escala; compartir hardware no significa que cada cliente pueda acceder a datos o recursos privados de los demás.",
+    [
+      "Multi-tenancy"
+    ]
+  ],
+  [
+    "NAS",
+    "NAS",
+    "Bloque I · Fundamentos",
+    "cloud-block-1-introduccion",
+    "Network-Attached Storage: almacenamiento que ofrece acceso a archivos mediante una red. Se utiliza para compartir archivos entre equipos; se diferencia de DAS, conectado directamente a un host, y de SAN, que proporciona almacenamiento de bloques a través de una red especializada.",
+    [
+      "NAS"
+    ]
+  ],
+  [
+    "Network ACL",
+    "Network ACL (NACL), NACL, ACL de red, lista de control de acceso de red",
+    "Bloque I · Fundamentos",
+    "cloud-block-1-introduccion",
+    "Lista de reglas que permite o deniega tráfico cuando entra o sale de una subred de VPC. Se utiliza como control de red adicional y es stateless, por lo que el retorno requiere reglas apropiadas; los Security Groups se asocian a recursos compatibles y conservan estado de conexión.",
+    [
+      "Network ACL",
+      "Network ACL (NACL)",
+      "NACL",
+      "ACL de red",
+      "lista de control de acceso de red"
+    ]
+  ],
+  [
+    "NIST",
+    "NIST",
+    "Bloque I · Fundamentos",
+    "cloud-block-1-introduccion",
+    "National Institute of Standards and Technology, institución que formuló el modelo de cloud computing 5-3-4 utilizado en las fuentes. Sirve para organizar cinco características, tres modelos de servicio y cuatro de despliegue; es un marco conceptual, no un servicio AWS.",
+    [
+      "NIST"
+    ]
+  ],
+  [
+    "Operational Excellence",
+    "Excelencia operativa",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Pilar de Well-Architected centrado en operar y observar cargas para entregar valor y mejorar procedimientos continuamente. Se utiliza para orientar automatización, respuesta y aprendizaje de eventos; se diferencia de fiabilidad, cuyo foco es que la carga funcione correctamente y se recupere.",
+    [
+      "Operational Excellence",
+      "Excelencia operativa"
+    ]
+  ],
+  [
+    "OPEX",
+    "OPEX",
+    "Bloque I · Economía",
+    "cloud-block-1-economia",
+    "Gasto operativo asociado al funcionamiento y consumo habitual de recursos y servicios. Se utiliza al analizar el cambio económico hacia cloud; no es sinónimo exacto de coste variable, pues puede haber compromisos recurrentes o componentes estables de gasto.",
+    [
+      "OPEX"
+    ]
+  ],
+  [
+    "AWS Organizations",
+    "AWS Organizations",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Servicio para administrar y gobernar varias cuentas AWS de forma centralizada. Se utiliza para agrupar cuentas y aplicar políticas de organización; las políticas de control limitan permisos máximos y no conceden por sí solas acceso a cada recurso.",
+    [
+      "AWS Organizations"
+    ]
+  ],
+  [
+    "AWS Outposts",
+    "AWS Outposts",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Infraestructura y servicios AWS compatibles desplegados en instalaciones del cliente. Se utiliza cuando una carga requiere procesamiento local, integración cercana o requisitos específicos; no equivale a disponer de una región AWS completa dentro del edificio.",
+    [
+      "AWS Outposts"
+    ]
+  ],
+  [
+    "PaaS",
+    "PaaS",
+    "Bloque I · Fundamentos",
+    "cloud-block-1-introduccion",
+    "Platform as a Service: modelo en el que el proveedor opera infraestructura y componentes de plataforma para desplegar aplicaciones. Se utiliza para concentrarse en código, datos y configuración del servicio; frente a IaaS reduce administración del entorno y frente a SaaS conserva una aplicación propia.",
+    [
+      "PaaS"
+    ]
+  ],
+  [
+    "Pago por uso",
+    "Pago por uso",
+    "Bloque I · Fundamentos",
+    "cloud-block-1-introduccion",
+    "Modelo de cobro basado en las unidades de consumo definidas por cada servicio. Se utiliza para relacionar gasto con recursos utilizados; no significa que todos los servicios tengan la misma métrica, ni que no existan costes mínimos, compromisos o recursos facturados mientras están aprovisionados.",
+    [
+      "Pago por uso"
+    ]
+  ],
+  [
+    "Performance Efficiency",
+    "Eficiencia del rendimiento",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Pilar que busca utilizar recursos de cómputo de forma eficiente para satisfacer requisitos y mantener esa eficiencia al evolucionar demanda y tecnología. Se utiliza para seleccionar y medir arquitectura, cómputo, datos y red; no equivale a elegir siempre la opción más barata.",
+    [
+      "Performance Efficiency",
+      "Eficiencia del rendimiento"
+    ]
+  ],
+  [
+    "Point of Presence (PoP)",
+    "Point of Presence (PoP)",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Punto de presencia de una red distribuida desde el que se prestan determinadas funciones de entrega y conectividad. Se utiliza para acercar servicios a usuarios e incluye ubicaciones de borde según el contexto; no representa una AZ ni una región para desplegar cualquier servicio.",
+    [
+      "Point of Presence (PoP)"
+    ]
+  ],
+  [
+    "AWS Pricing Calculator",
+    "Pricing Calculator, Calculadora de precios de AWS",
+    "Bloque I · Economía",
+    "cloud-block-1-economia",
+    "Herramienta para estimar el coste de una configuración prevista de servicios AWS a partir de sus parámetros de uso. Se utiliza para comparar escenarios antes de desplegar; no mide por sí misma el consumo real ni incorpora automáticamente todos los costes de un centro de datos local.",
+    [
+      "AWS Pricing Calculator",
+      "Pricing Calculator",
+      "Calculadora de precios de AWS"
+    ]
+  ],
+  [
+    "Queue / cola de mensajes",
+    "Queue / cola de mensajes",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Mecanismo que conserva mensajes o trabajos pendientes y desacopla productores de consumidores. Se utiliza para procesar etapas de forma asíncrona y absorber variación de demanda; el consumidor debe considerar reintentos y duplicados según la semántica del sistema.",
+    [
+      "Queue / cola de mensajes"
+    ]
+  ],
+  [
+    "RDBMS",
+    "RDBMS / base de datos relacional, Relational Database Management System, base de datos relacional",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Relational Database Management System: sistema gestor de bases de datos organizadas mediante relaciones y tablas. Se utiliza para almacenar y consultar datos relacionales; en AnyCompany se aloja sobre EC2, por lo que mencionar RDBMS no implica utilizar Amazon RDS.",
+    [
+      "RDBMS",
+      "RDBMS / base de datos relacional",
+      "Relational Database Management System",
+      "base de datos relacional"
+    ]
+  ],
+  [
+    "Amazon RDS",
+    "Amazon RDS",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Servicio administrado para operar motores de bases de datos relacionales compatibles. Se utiliza para delegar tareas de infraestructura y del motor admitidas por el servicio; el cliente mantiene responsabilidad sobre datos, acceso y configuración, y el modelo difiere de DynamoDB.",
+    [
+      "Amazon RDS"
+    ]
+  ],
+  [
+    "Recoverability",
+    "Recoverability",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Capacidad y conjunto de procedimientos para restablecer servicios y datos tras un incidente. Se utiliza para diseñar copias, restauración y recuperación según RTO y RPO; tener redundancia o una copia aislada no demuestra que la restauración completa funcione.",
+    [
+      "Recoverability"
+    ]
+  ],
+  [
+    "Amazon Redshift",
+    "Amazon Redshift",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Almacén de datos administrado orientado a consultas analíticas. Se utiliza para analizar conjuntos de datos y generar información de negocio; su propósito difiere del procesamiento transaccional típico de una base relacional de aplicación.",
+    [
+      "Amazon Redshift"
+    ]
+  ],
+  [
+    "Redundancia",
+    "Redundancia",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Duplicación de componentes o rutas para evitar depender de un único elemento. Se utiliza para tolerar ciertos fallos y apoyar disponibilidad; los elementos duplicados pueden seguir compartiendo dependencias y no sustituyen las copias de seguridad.",
+    [
+      "Redundancia"
+    ]
+  ],
+  [
+    "Refactor",
+    "Refactor",
+    "Bloque I · Migración",
+    "cloud-block-1-migracion",
+    "Estrategia de migración que modifica significativamente código o arquitectura para aprovechar capacidades cloud. Se utiliza cuando el valor de modernizar justifica el esfuerzo y riesgo; frente a replatform introduce cambios más profundos y frente a rehost supera el traslado con pocas modificaciones.",
+    [
+      "Refactor"
+    ]
+  ],
+  [
+    "Región (Region)",
+    "Region, Región",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Área geográfica de AWS que contiene varias zonas de disponibilidad y ofrece un catálogo regional de servicios. Se elige por requisitos legales, latencia, disponibilidad de servicios y coste; la replicación entre regiones requiere una decisión explícita y no debe suponerse automática.",
+    [
+      "Región (Region)",
+      "Region",
+      "Región"
+    ]
+  ],
+  [
+    "Regional Edge Cache",
+    "Regional Edge Cache",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Capa de caché de CloudFront situada entre determinados puntos de entrega y el origen. Se utiliza para reducir recuperaciones del origen y apoyar distribución de contenido; el nombre regional no la convierte en una AZ ni en una región para desplegar recursos de propósito general.",
+    [
+      "Regional Edge Cache"
+    ]
+  ],
+  [
+    "Rehost",
+    "Rehost",
+    "Bloque I · Migración",
+    "cloud-block-1-migracion",
+    "Estrategia de migración que traslada una aplicación con cambios mínimos, también llamada lift and shift. Se utiliza para mover cargas con rapidez o cumplir un plazo de salida; no produce automáticamente modernización ni optimización de costes.",
+    [
+      "Rehost"
+    ]
+  ],
+  [
+    "Reliability",
+    "Fiabilidad",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Pilar que busca que una carga cumpla su función correctamente y de forma consistente cuando se necesita, incluida recuperación ante fallos. Se utiliza para diseñar dominios de fallo, cambios controlados y restauración probada; la disponibilidad es una medida relacionada, pero no agota toda la fiabilidad.",
+    [
+      "Reliability",
+      "Fiabilidad"
+    ]
+  ],
+  [
+    "Relocate",
+    "Relocate",
+    "Bloque I · Migración",
+    "cloud-block-1-migracion",
+    "Estrategia de traslado de una plataforma o conjunto de cargas compatible sin rediseñar de forma sustancial cada aplicación. Se utiliza cuando se puede reubicar el entorno conservando buena parte de su operación; se diferencia del rehost de servidores individuales y de la refactorización del código.",
+    [
+      "Relocate"
+    ]
+  ],
+  [
+    "Rendering",
+    "Rendering",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Procesamiento de modelos, imágenes o vídeo para producir una representación visual. En Make and Ship se utiliza para crear modelos y vistas previas mediante trabajos encolados; sus requisitos de cómputo y duración difieren de la interacción web de Show and Sell.",
+    [
+      "Rendering"
+    ]
+  ],
+  [
+    "Replatform",
+    "Replatform",
+    "Bloque I · Migración",
+    "cloud-block-1-migracion",
+    "Estrategia que migra introduciendo cambios acotados de plataforma sin rediseñar por completo la aplicación. Se utiliza, por ejemplo, para sustituir un componente autogestionado por uno administrado compatible; implica más adaptación que rehost y menos transformación que refactor.",
+    [
+      "Replatform"
+    ]
+  ],
+  [
+    "Repurchase",
+    "Repurchase",
+    "Bloque I · Migración",
+    "cloud-block-1-migracion",
+    "Estrategia que sustituye una solución por otro producto, a menudo SaaS. Se utiliza cuando adquirir una alternativa satisface mejor la necesidad que mantener la aplicación existente; aun así puede requerir migración de datos, integración de identidad y cambios de proceso.",
+    [
+      "Repurchase"
+    ]
+  ],
+  [
+    "Retain",
+    "Retain",
+    "Bloque I · Migración",
+    "cloud-block-1-migracion",
+    "Decisión de mantener una carga en su entorno actual, al menos temporalmente. Se utiliza por restricciones, dependencias o prioridades de cartera; se debe documentar y revisar la razón, y no significa retirar o apagar la aplicación.",
+    [
+      "Retain"
+    ]
+  ],
+  [
+    "Retire",
+    "Retire",
+    "Bloque I · Migración",
+    "cloud-block-1-migracion",
+    "Decisión de desactivar una aplicación innecesaria o redundante tras analizar dependencias. Se utiliza para eliminar trabajo y coste sin valor; las obligaciones de conservación de datos pueden continuar aunque la aplicación deje de funcionar.",
+    [
+      "Retire"
+    ]
+  ],
+  [
+    "Rightsizing",
+    "Rightsizing",
+    "Bloque I · Economía",
+    "cloud-block-1-economia",
+    "Proceso de ajustar tipo, tamaño y configuración de recursos a demanda y requisitos medidos. Se utiliza para reducir sobreaprovisionamiento manteniendo servicio; se diferencia de Auto Scaling, que modifica capacidad conforme a políticas, y necesita mediciones representativas.",
+    [
+      "Rightsizing"
+    ]
+  ],
+  [
+    "root user",
+    "root user",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Identidad raíz de la cuenta AWS con privilegios especialmente amplios y capacidad para tareas reservadas. Se protege con autenticación reforzada y se evita en trabajo cotidiano; compartir sus credenciales dificulta la atribución y concede acceso innecesario.",
+    [
+      "root user"
+    ]
+  ],
+  [
+    "Amazon Route 53",
+    "Amazon Route 53",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Servicio DNS administrado con funciones de resolución y enrutamiento de respuestas. Se utiliza para dirigir clientes hacia recursos mediante nombres y políticas compatibles; no reparte cada conexión de aplicación como un balanceador de tráfico.",
+    [
+      "Amazon Route 53"
+    ]
+  ],
+  [
+    "RPO",
+    "RPO",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Recovery Point Objective: objetivo de pérdida temporal máxima de datos tolerable después de un incidente. Se utiliza para diseñar la frecuencia y método de protección; se diferencia de RTO, que establece el tiempo tolerable para restablecer el servicio.",
+    [
+      "RPO"
+    ]
+  ],
+  [
+    "RTO",
+    "RTO",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Recovery Time Objective: objetivo de tiempo máximo tolerable para recuperar el servicio tras una interrupción. Se utiliza para definir procedimientos, recursos y pruebas de recuperación; no expresa cuántos datos se pueden perder, que es el foco del RPO.",
+    [
+      "RTO"
+    ]
+  ],
+  [
+    "Amazon S3",
+    "Amazon S3",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Servicio de almacenamiento de objetos organizados en buckets e identificados mediante claves. Se utiliza para archivos, imágenes, registros y conjuntos de datos; no expone un volumen de bloques como EBS ni la misma interfaz de archivos compartidos que EFS.",
+    [
+      "Amazon S3"
+    ]
+  ],
+  [
+    "Amazon S3 Glacier",
+    "Amazon S3 Glacier",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Familia de clases de almacenamiento de S3 destinada a archivo y datos de acceso poco frecuente. Se utiliza cuando retención, coste y tiempos de recuperación permiten esas clases; no se debe asumir el mismo acceso inmediato ni las mismas condiciones de recuperación en todas ellas.",
+    [
+      "Amazon S3 Glacier"
+    ]
+  ],
+  [
+    "SaaS",
+    "SaaS",
+    "Bloque I · Fundamentos",
+    "cloud-block-1-introduccion",
+    "Software as a Service: aplicación completa consumida como servicio y operada principalmente por el proveedor. Se utiliza para acceder a funcionalidad sin administrar su plataforma; el cliente conserva decisiones sobre usuarios, datos y configuración disponible y no despliega su propio código como en PaaS.",
+    [
+      "SaaS"
+    ]
+  ],
+  [
+    "SAN",
+    "SAN",
+    "Bloque I · Fundamentos",
+    "cloud-block-1-introduccion",
+    "Storage Area Network: red especializada que permite a hosts acceder a almacenamiento de bloques. Se utiliza para presentar volúmenes a sistemas operativos mediante una infraestructura compartida; NAS ofrece archivos por red y DAS conecta almacenamiento directamente a un equipo.",
+    [
+      "SAN"
+    ]
+  ],
+  [
+    "AWS SDK",
+    "AWS Software Development Kit",
+    "Bloque I · Fundamentos",
+    "cloud-block-1-introduccion",
+    "Software Development Kit: bibliotecas para utilizar API de AWS desde un lenguaje de programación. Se utiliza para integrar servicios en aplicaciones; frente a la CLI proporciona interfaces de código en lugar de comandos y sigue requiriendo autorización adecuada.",
+    [
+      "AWS SDK",
+      "AWS Software Development Kit"
+    ]
+  ],
+  [
+    "Security",
+    "Seguridad",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Pilar que orienta la protección de identidades, información, sistemas y activos mediante análisis y mitigación de riesgos. Se utiliza para combinar prevención, detección y respuesta en varias capas; no equivale solo a cifrar datos o cerrar puertos.",
+    [
+      "Security",
+      "Seguridad"
+    ]
+  ],
+  [
+    "Security Group",
+    "Security Groups, SG, grupo de seguridad",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Control de red que permite tráfico de entrada y salida para recursos asociados compatibles. Se utiliza para restringir fuentes, destinos, protocolos y puertos y es stateful; una Network ACL opera en subredes, puede permitir o denegar y es stateless.",
+    [
+      "Security Group",
+      "Security Groups",
+      "SG",
+      "grupo de seguridad"
+    ]
+  ],
+  [
+    "Serverless",
+    "Serverless",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Modelo de consumo que reduce o elimina la administración directa de servidores para el cliente. Se utiliza para concentrarse en funciones o cargas administradas; siguen existiendo servidores y responsabilidades sobre aplicación, datos, configuración y costes.",
+    [
+      "Serverless"
+    ]
+  ],
+  [
+    "Service limits / quotas",
+    "Service limits / quotas",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Límites de uso o capacidad de servicios, cuentas o recursos según el alcance definido. Se consideran al planificar escalado, migración y recuperación; algunos admiten solicitudes de aumento, por lo que cloud no debe interpretarse como capacidad ilimitada inmediata.",
+    [
+      "Service limits / quotas"
+    ]
+  ],
+  [
+    "AWS Shield",
+    "AWS Shield",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Servicio de protección frente a determinados ataques distribuidos de denegación de servicio dentro del alcance de sus modalidades. Se utiliza para proteger disponibilidad ante ese tipo de amenaza; no sustituye autorización IAM, reglas de red ni seguridad de la aplicación.",
+    [
+      "AWS Shield"
+    ]
+  ],
+  [
+    "SLA — Service Level Agreement",
+    "SLA, Service Level Agreement",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Acuerdo que define compromisos de servicio, forma de medirlos y condiciones o compensaciones aplicables. Se utiliza para evaluar obligaciones contractuales; un objetivo interno de disponibilidad o una tabla de porcentajes y minutos no constituyen por sí solos un SLA.",
+    [
+      "SLA — Service Level Agreement",
+      "SLA",
+      "Service Level Agreement"
+    ]
+  ],
+  [
+    "Snowball Edge",
+    "Snowball Edge",
+    "Bloque I · Migración",
+    "cloud-block-1-migracion",
+    "Dispositivo físico de la familia Snow tratado en las fuentes para transferencia de datos sin depender únicamente de la red y para determinados usos locales. Se estudia como referencia histórica de migración; la ampliación 06 registra restricciones y retirada del producto, por lo que su disponibilidad debe comprobarse antes de planificar un uso real.",
+    [
+      "Snowball Edge"
+    ]
+  ],
+  [
+    "Sustainability",
+    "Sostenibilidad",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Pilar que busca reducir el impacto ambiental de una carga y los recursos necesarios por unidad útil de trabajo. Se utiliza para orientar utilización, retención, eficiencia y efectos sobre usuarios; se diferencia de Cost Optimization, aunque una mejora pueda favorecer ambos objetivos.",
+    [
+      "Sustainability",
+      "Sostenibilidad"
+    ]
+  ],
+  [
+    "TCO",
+    "TCO",
+    "Bloque I · Economía",
+    "cloud-block-1-economia",
+    "Total Cost of Ownership: estimación de costes directos e indirectos de una solución durante un período y alcance definidos. Se utiliza para comparar alternativas con requisitos equivalentes; ROI incorpora además el beneficio relacionado con la inversión y no es otra denominación del coste total.",
+    [
+      "TCO"
+    ]
+  ],
+  [
+    "Tolerancia a fallos",
+    "Fault tolerance",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Capacidad de continuar prestando la función prevista ante los fallos contemplados por el diseño. Se utiliza para reducir o evitar interrupciones mediante componentes y mecanismos adecuados; no equivale simplemente a poder restaurar el sistema después de una caída.",
+    [
+      "Tolerancia a fallos",
+      "Fault tolerance"
+    ]
+  ],
+  [
+    "AWS Transfer Family",
+    "Transfer Family",
+    "Bloque I · Migración",
+    "cloud-block-1-migracion",
+    "Servicio administrado para intercambiar archivos mediante protocolos compatibles, como SFTP, con almacenamiento y destinos admitidos en AWS. Se utiliza para integrar flujos de archivos y sistemas que ya emplean esos protocolos; no convierte esquemas ni replica cambios de bases de datos como AWS DMS.",
+    [
+      "AWS Transfer Family",
+      "Transfer Family"
+    ]
+  ],
+  [
+    "AWS Transit Gateway",
+    "AWS Transit Gateway",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Servicio de interconexión central para conectar múltiples redes, incluidas VPC y redes externas compatibles. Se utiliza para simplificar topologías de conectividad; no elimina la necesidad de definir rutas, rangos de direcciones y segmentación.",
+    [
+      "AWS Transit Gateway"
+    ]
+  ],
+  [
+    "AWS Trusted Advisor",
+    "AWS Trusted Advisor",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Herramienta que realiza comprobaciones y ofrece recomendaciones sobre recursos y configuración dentro de su alcance. Se utiliza para investigar oportunidades de mejora operativa, seguridad o coste; frente a Well-Architected Tool aporta hallazgos del entorno y necesita evaluación contextual.",
+    [
+      "AWS Trusted Advisor"
+    ]
+  ],
+  [
+    "VMware Cloud on AWS",
+    "VMware Cloud on AWS",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Entorno de tecnología VMware sobre infraestructura AWS mencionado en el catálogo histórico del curso. Se utiliza como ejemplo de continuidad de plataforma para cargas compatibles; el icono de 2022 no acredita disponibilidad, condiciones comerciales ni regiones vigentes.",
+    [
+      "VMware Cloud on AWS"
+    ]
+  ],
+  [
+    "Amazon VPC",
+    "Amazon VPC",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Red virtual lógicamente aislada en AWS donde se configuran subredes, direcciones, rutas y controles de conectividad. Se utiliza para organizar redes de cargas; no es una instalación física ni concede por sí sola permisos IAM sobre los servicios.",
+    [
+      "Amazon VPC"
+    ]
+  ],
+  [
+    "AWS VPN",
+    "AWS VPN",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Servicios de conectividad mediante túneles cifrados entre redes o clientes y AWS, según la modalidad. Se utilizan para acceso remoto o conexión de entornos; una Site-to-Site VPN suele emplear Internet como transporte y se diferencia de la conectividad dedicada de Direct Connect.",
+    [
+      "AWS VPN"
+    ]
+  ],
+  [
+    "AWS Well-Architected Framework",
+    "AWS Well-Architected Framework",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Marco de preguntas, principios y buenas prácticas para evaluar cargas mediante seis pilares. Se utiliza para identificar riesgos y orientar mejoras y compromisos de diseño; no es una certificación automática ni una herramienta que valide por sí sola toda configuración.",
+    [
+      "AWS Well-Architected Framework"
+    ]
+  ],
+  [
+    "Well-Architected review",
+    "Well-Architected review",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Proceso de evaluación de una carga frente a preguntas y prácticas del marco Well-Architected. Se utiliza para reunir evidencias, identificar riesgos y priorizar mejoras; depende de la calidad del análisis y debe repetirse al evolucionar la arquitectura.",
+    [
+      "Well-Architected review"
+    ]
+  ],
+  [
+    "AWS Well-Architected Tool",
+    "AWS Well-Architected Tool",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Herramienta que guía y registra revisiones de cargas mediante preguntas del marco y planes de mejora. Se utiliza para organizar decisiones y revisiones posteriores; no sustituye pruebas de recuperación o seguridad ni funciona igual que las comprobaciones de Trusted Advisor.",
+    [
+      "AWS Well-Architected Tool"
+    ]
+  ],
+  [
+    "XML",
+    "XML",
+    "Bloque I · Fundamentos",
+    "cloud-block-1-introduccion",
+    "Extensible Markup Language, formato de representación estructurada de datos mediante etiquetas. Se utiliza en documentos e intercambios de servicios web compatibles; JSON representa objetos y listas con una sintaxis diferente y ninguno de los formatos concede permisos sobre una API.",
+    [
+      "XML"
+    ]
+  ],
+  [
+    "Zona de disponibilidad (AZ)",
+    "AZ, Availability Zone",
+    "Bloque I · Arquitectura",
+    "cloud-block-1-infraestructura",
+    "Dominio de aislamiento dentro de una región AWS compuesto por uno o más centros de datos. Se utiliza para distribuir componentes entre dominios de fallo; un diseño multi-AZ requiere que aplicación, red y datos admitan esa distribución y no elimina automáticamente todos los puntos únicos de fallo.",
+    [
+      "Zona de disponibilidad (AZ)",
+      "AZ",
+      "Availability Zone"
+    ]
+  ],
+  [
+    "Responsabilidad compartida",
+    "Shared responsibility",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-05",
+    "Modelo que asigna a AWS la seguridad de la infraestructura que presta y al cliente los controles de su uso y los componentes que administra. Sirve para atribuir tareas según servicio y capa; no significa que cada actividad se reparta al cincuenta por ciento ni que un servicio administrado elimine toda responsabilidad del cliente.",
+    [
+      "Responsabilidad compartida",
+      "Shared responsibility"
+    ]
+  ],
+  [
+    "Seguridad DE la nube",
+    "Security of the cloud",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-05",
+    "Protección de instalaciones, hardware, red y plataforma subyacente operada por AWS. Se utiliza para distinguir el ámbito del proveedor; no incluye por sí sola decidir los permisos de los datos que un cliente almacena en su cuenta.",
+    [
+      "Seguridad DE la nube",
+      "Security of the cloud"
+    ]
+  ],
+  [
+    "Seguridad EN la nube",
+    "Security in the cloud",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-05",
+    "Protección de datos, identidades, configuraciones y componentes que el cliente introduce o administra en AWS. Su alcance cambia entre EC2, RDS y Lambda; no debe copiarse la lista de mantenimiento de un SO invitado a un servicio que no expone ese SO al cliente.",
+    [
+      "Seguridad EN la nube",
+      "Security in the cloud"
+    ]
+  ],
+  [
+    "Controles heredados, compartidos y específicos",
+    "Controles heredados, compartidos y específicos",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-05",
+    "Clasificación que distingue controles aprovechados del proveedor, actividades con responsabilidades coordinadas y decisiones propias del cliente. Sirve para documentar quién hace qué y con qué evidencia; un control compartido no implica que las dos partes administren exactamente el mismo componente.",
+    [
+      "Controles heredados, compartidos y específicos"
+    ]
+  ],
+  [
+    "Hipervisor",
+    "hypervisor",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-05",
+    "Capa de virtualización que permite ejecutar y aislar máquinas invitadas sobre infraestructura anfitriona. En el escenario EC2 del curso la infraestructura de virtualización es responsabilidad de AWS, mientras que el cliente mantiene el sistema operativo invitado y su configuración.",
+    [
+      "Hipervisor",
+      "hypervisor"
+    ]
+  ],
+  [
+    "Sistema operativo invitado",
+    "Guest OS, SO invitado",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-05",
+    "Sistema operativo de la máquina virtual que utiliza el cliente. En EC2 requiere administración y parcheo del cliente; se diferencia del sistema anfitrión y de la plataforma de un servicio administrado como RDS.",
+    [
+      "Sistema operativo invitado",
+      "Guest OS",
+      "SO invitado"
+    ]
+  ],
+  [
+    "Oracle sobre EC2 o RDS",
+    "Oracle sobre EC2 o RDS",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-05",
+    "Motor de base de datos usado para comparar dos repartos de mantenimiento. Si el cliente lo instala en EC2 mantiene ese software invitado, mientras que RDS ofrece administración del motor en el marco del servicio y conserva decisiones del cliente sobre datos, acceso y opciones de mantenimiento.",
+    [
+      "Oracle sobre EC2 o RDS"
+    ]
+  ],
+  [
+    "Amazon Chime",
+    "Chime",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-05",
+    "Producto de comunicaciones mostrado como ejemplo visual de software consumido como servicio en la lámina de 2022. Su aparición permite interpretar la clasificación del curso; no demuestra disponibilidad comercial vigente ni hace equivalente su función a Shield o Trusted Advisor.",
+    [
+      "Amazon Chime",
+      "Chime"
+    ]
+  ],
+  [
+    "Autenticación",
+    "Authentication",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Proceso que verifica la identidad presentada mediante los mecanismos admitidos. Se utiliza antes de establecer o aceptar una sesión; una autenticación correcta no concede por sí sola todas las acciones que evalúa la autorización.",
+    [
+      "Autenticación",
+      "Authentication"
+    ]
+  ],
+  [
+    "Autorización",
+    "Authorization",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Evaluación de si una solicitud puede realizar una acción sobre un recurso bajo sus condiciones y políticas aplicables. Se utiliza para materializar el acceso permitido; es distinta de comprobar una contraseña o un factor MFA.",
+    [
+      "Autorización",
+      "Authorization"
+    ]
+  ],
+  [
+    "Principal",
+    "Sujeto de la solicitud",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Identidad o entidad que actúa como solicitante en una evaluación de acceso. Se utiliza para interpretar políticas y actividad; una política de recurso puede designar principales, mientras que la asociación de una política de identidad determina a quién se aplica.",
+    [
+      "Principal",
+      "Sujeto de la solicitud"
+    ]
+  ],
+  [
+    "Recurso y acción",
+    "Recurso y acción",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Un recurso es la entidad sobre la que se opera y una acción es la operación definida por un servicio. Permiten acotar permisos a necesidades concretas; no todas las acciones admiten los mismos tipos de recurso ni el mismo nivel de restricción.",
+    [
+      "Recurso y acción"
+    ]
+  ],
+  [
+    "ARN",
+    "Amazon Resource Name",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Identificador que expresa un recurso AWS mediante el formato del servicio correspondiente. Se utiliza en políticas para señalar recursos; el ARN de un bucket y el de sus objetos son distintos y no deben intercambiarse al conceder acciones.",
+    [
+      "ARN",
+      "Amazon Resource Name"
+    ]
+  ],
+  [
+    "Usuario IAM",
+    "IAM user",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Identidad persistente dentro de una cuenta con credenciales configurables. Se utiliza en casos compatibles de acceso, pero para acceso humano moderno se priorizan federación y sesiones temporales cuando sea viable; no equivale a la identidad raíz.",
+    [
+      "Usuario IAM",
+      "IAM user"
+    ]
+  ],
+  [
+    "Grupo IAM",
+    "IAM group",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Conjunto de usuarios IAM al que se adjuntan políticas comunes. Facilita la administración de autorizaciones, pero no inicia sesión ni se asume como un rol; los grupos IAM no contienen subgrupos ni roles.",
+    [
+      "Grupo IAM",
+      "IAM group"
+    ]
+  ],
+  [
+    "Rol IAM",
+    "IAM role",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Identidad asumible que permite obtener una sesión con credenciales temporales. Se utiliza para delegar acceso a personas, aplicaciones o servicios; quién puede asumirlo y qué puede hacer se definen mediante políticas con funciones diferentes.",
+    [
+      "Rol IAM",
+      "IAM role"
+    ]
+  ],
+  [
+    "AWS STS",
+    "Security Token Service",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Servicio que emite credenciales temporales mediante operaciones compatibles, como la asunción de roles. Se utiliza para sesiones delegadas; no elimina la necesidad de confianza, permisos y límites aplicables al rol y al solicitante.",
+    [
+      "AWS STS",
+      "Security Token Service"
+    ]
+  ],
+  [
+    "Política de confianza",
+    "Trust policy",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Política del rol que especifica quién puede asumirlo y bajo qué condiciones. Se utiliza para controlar la entrada a esa identidad; no es el documento que por sí mismo concede al rol leer un bucket o detener una instancia.",
+    [
+      "Política de confianza",
+      "Trust policy"
+    ]
+  ],
+  [
+    "Política de permisos",
+    "Permissions policy",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Documento que define acciones permitidas o denegadas y recursos y condiciones aplicables. Se utiliza para describir autorización; debe distinguirse de las políticas que limitan un máximo y de la confianza que permite asumir un rol.",
+    [
+      "Política de permisos",
+      "Permissions policy"
+    ]
+  ],
+  [
+    "Política basada en identidad",
+    "Identity-based policy",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Política asociada a un usuario, grupo o rol IAM para definir sus autorizaciones. Se utiliza para gobernar acciones del solicitante; una política basada en recurso se adjunta al objeto que recibe la solicitud y puede identificar principales.",
+    [
+      "Política basada en identidad",
+      "Identity-based policy"
+    ]
+  ],
+  [
+    "Política basada en recurso",
+    "Resource-based policy",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Política adjunta a un recurso de un servicio compatible que define acceso sobre él. Se utiliza, por ejemplo, en buckets S3; su efecto depende del servicio, del principal y del escenario y no se debe asumir disponible en cualquier recurso AWS.",
+    [
+      "Política basada en recurso",
+      "Resource-based policy"
+    ]
+  ],
+  [
+    "Política administrada",
+    "Managed policy, política gestionada",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Objeto de política reutilizable que puede ser administrado por AWS o por el cliente. Facilita asociar permisos a entidades compatibles; ser administrada no convierte en mínimo privilegio una política excesivamente amplia.",
+    [
+      "Política administrada",
+      "Managed policy",
+      "política gestionada"
+    ]
+  ],
+  [
+    "Política inline",
+    "Inline policy, política insertada",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Política incorporada directamente a una identidad concreta. Se utiliza cuando el ciclo de vida y la asociación deben permanecer ligados a esa entidad; se diferencia de un objeto de política administrada reutilizable.",
+    [
+      "Política inline",
+      "Inline policy",
+      "política insertada"
+    ]
+  ],
+  [
+    "Allow",
+    "Concesión explícita",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Efecto de política que concede las acciones de una solicitud coincidente dentro de su alcance. Se utiliza para permitir operaciones necesarias; no prevalece sobre un Deny aplicable ni elimina otros límites de evaluación.",
+    [
+      "Allow",
+      "Concesión explícita"
+    ]
+  ],
+  [
+    "Deny",
+    "Denegación explícita",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Efecto que deniega una solicitud coincidente de forma expresa. Se utiliza para establecer prohibiciones dentro del alcance del documento; otra concesión Allow no anula esa denegación aplicable.",
+    [
+      "Deny",
+      "Denegación explícita"
+    ]
+  ],
+  [
+    "Denegación implícita",
+    "Implicit deny",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Resultado de no disponer de la concesión necesaria para permitir una solicitud en su contexto. Se utiliza para explicar el acceso denegado por defecto; es diferente de un statement Deny que prohíbe explícitamente la operación.",
+    [
+      "Denegación implícita",
+      "Implicit deny"
+    ]
+  ],
+  [
+    "NotResource",
+    "NotResource",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Elemento que hace que un statement se refiera a recursos fuera del conjunto de excepciones enumerado. Se utiliza para interpretar el Deny del ejemplo; no significa denegar precisamente los recursos listados ni afecta a acciones que el statement no incluye.",
+    [
+      "NotResource"
+    ]
+  ],
+  [
+    "Mínimo privilegio",
+    "Least privilege",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Principio de conceder únicamente las acciones y recursos necesarios para una función bajo condiciones apropiadas. Se utiliza para limitar impacto y exposición; habilitar MFA o cifrado no reduce por sí mismo una política demasiado amplia.",
+    [
+      "Mínimo privilegio",
+      "Least privilege"
+    ]
+  ],
+  [
+    "Permissions boundary",
+    "Límite de permisos",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Política que limita el máximo que pueden conceder políticas de identidad en el contexto admitido. Se utiliza para delegar administración con restricciones; no concede por sí misma las acciones que necesita una identidad.",
+    [
+      "Permissions boundary",
+      "Límite de permisos"
+    ]
+  ],
+  [
+    "Política de sesión",
+    "Session policy",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Política que puede limitar los permisos de una sesión temporal según el mecanismo utilizado. Se utiliza para acotar una delegación concreta; no debe confundirse con una contraseña temporal ni asumirse que amplía permisos del rol base.",
+    [
+      "Política de sesión",
+      "Session policy"
+    ]
+  ],
+  [
+    "Access key",
+    "clave de acceso",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Par de identificador y secreto utilizado en autenticación programática compatible con AWS. Se utiliza para firmar solicitudes y exige protección; no es una clave SSH ni debe convertirse automáticamente en una credencial permanente para toda aplicación.",
+    [
+      "Access key",
+      "clave de acceso"
+    ]
+  ],
+  [
+    "Credenciales temporales",
+    "credenciales de sesión",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Credenciales de duración limitada emitidas para una sesión autorizada, con token de sesión cuando corresponde. Reducen la necesidad de distribuir secretos permanentes; siguen representando los permisos de la sesión y necesitan renovación mediante mecanismos admitidos.",
+    [
+      "Credenciales temporales",
+      "credenciales de sesión"
+    ]
+  ],
+  [
+    "Perfil de instancia",
+    "Instance profile",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Mecanismo mediante el que se presenta un rol IAM a una instancia EC2 en el caso compatible. Se utiliza para que la aplicación obtenga credenciales del rol; no equivale a una imagen AMI ni concede permisos diferentes de los definidos para ese rol.",
+    [
+      "Perfil de instancia",
+      "Instance profile"
+    ]
+  ],
+  [
+    "AWS IAM Identity Center",
+    "IAM Identity Center, AWS SSO",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Servicio para centralizar acceso del personal a cuentas AWS y aplicaciones compatibles. Se utiliza con identidades propias o proveedores externos y asignaciones de permisos; se diferencia de Cognito, orientado a los usuarios de aplicaciones.",
+    [
+      "AWS IAM Identity Center",
+      "IAM Identity Center",
+      "AWS SSO"
+    ]
+  ],
+  [
+    "Federación",
+    "Federation",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Mecanismo de acceso basado en identidades administradas por un proveedor externo o centralizado. Se utiliza para evitar duplicar necesariamente contraseñas IAM por persona; la autenticación federada no evita la evaluación de permisos en el destino.",
+    [
+      "Federación",
+      "Federation"
+    ]
+  ],
+  [
+    "Proveedor de identidad",
+    "Identity Provider, IdP",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Sistema que administra y autentica identidades y participa en relaciones de confianza de federación. Se utiliza para integrar el directorio de una organización; no sustituye la definición de roles y autorizaciones de los recursos AWS.",
+    [
+      "Proveedor de identidad",
+      "Identity Provider",
+      "IdP"
+    ]
+  ],
+  [
+    "SAML",
+    "Security Assertion Markup Language",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Estándar para intercambiar información de autenticación y autorización en integraciones de federación compatibles. Se utiliza para conectar un proveedor de identidad con servicios que admiten ese flujo; no es una política IAM ni una clave de cifrado de objetos.",
+    [
+      "SAML",
+      "Security Assertion Markup Language"
+    ]
+  ],
+  [
+    "OIDC",
+    "OpenID Connect",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Protocolo de identidad utilizado en integraciones compatibles para comunicar autenticación mediante tokens. Se utiliza con proveedores y servicios que lo admiten; no equivale a SAML ni elimina las políticas de autorización del destino.",
+    [
+      "OIDC",
+      "OpenID Connect"
+    ]
+  ],
+  [
+    "OAuth 2.0",
+    "OAuth 2.0",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Marco de autorización delegada empleado por integraciones de aplicaciones compatibles. Ayuda a delegar acceso mediante flujos y tokens; OIDC añade una capa de identidad y no debe confundirse OAuth por sí solo con una garantía universal de autenticación.",
+    [
+      "OAuth 2.0"
+    ]
+  ],
+  [
+    "Microsoft Active Directory",
+    "Active Directory, AD",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Tecnología de directorio e identidad empresarial citada como origen de identidades integrables mediante mecanismos compatibles. Se utiliza en gobierno de usuarios de una organización; no es un grupo IAM ni una OU de Organizations aunque comparta terminología administrativa.",
+    [
+      "Microsoft Active Directory",
+      "Active Directory",
+      "AD"
+    ]
+  ],
+  [
+    "AWS Secrets Manager",
+    "Secrets Manager",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Servicio para almacenar y gestionar secretos y apoyar su rotación en configuraciones compatibles. Se utiliza para credenciales de aplicación que realmente necesitan custodia; no sustituye roles temporales cuando el servicio permite evitar un secreto estático.",
+    [
+      "AWS Secrets Manager",
+      "Secrets Manager"
+    ]
+  ],
+  [
+    "AWS Systems Manager",
+    "Systems Manager",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Conjunto de capacidades de administración de sistemas y recursos que incluye Parameter Store. Se utiliza para tareas operativas compatibles; el servicio completo no es idéntico a su componente de almacenamiento de parámetros.",
+    [
+      "AWS Systems Manager",
+      "Systems Manager"
+    ]
+  ],
+  [
+    "Systems Manager Parameter Store",
+    "Parameter Store",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Capacidad para organizar parámetros de configuración y valores sensibles con tipos y cifrado compatibles. Se utiliza para recuperar configuración controlada; no se deben asumir las mismas funciones de ciclo de vida y rotación que en Secrets Manager.",
+    [
+      "Systems Manager Parameter Store",
+      "Parameter Store"
+    ]
+  ],
+  [
+    "IAM Access Analyzer",
+    "AWS IAM Access Analyzer, Access Analyzer",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Capacidades para analizar acceso y permisos según el tipo de analizador y su alcance. Se utilizan para investigar exposición externa o permisos innecesarios; no equivalen a detectar vulnerabilidades de software con Inspector ni amenazas de comportamiento con GuardDuty.",
+    [
+      "IAM Access Analyzer",
+      "AWS IAM Access Analyzer",
+      "Access Analyzer"
+    ]
+  ],
+  [
+    "OU",
+    "Organizational Unit, unidad organizativa",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Nodo de AWS Organizations que agrupa cuentas u otras OU para gobierno. Se utiliza para aplicar controles con estructura administrativa; no es una subred ni un grupo de usuarios IAM.",
+    [
+      "OU",
+      "Organizational Unit",
+      "unidad organizativa"
+    ]
+  ],
+  [
+    "Raíz organizativa",
+    "Organization root",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Nodo superior de la jerarquía de una organización que contiene cuentas y OU. Se utiliza para organizar y heredar políticas en su ámbito; no es el usuario raíz de ninguna cuenta ni una identidad con la que iniciar sesión.",
+    [
+      "Raíz organizativa",
+      "Organization root"
+    ]
+  ],
+  [
+    "Cuenta de administración",
+    "Management account",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Cuenta desde la que se gestiona una organización y sus capacidades centrales dentro del alcance permitido. Se utiliza para gobierno multicuenta; las SCP no restringen a sus usuarios y roles como restringen identidades de cuentas miembro.",
+    [
+      "Cuenta de administración",
+      "Management account"
+    ]
+  ],
+  [
+    "Cuenta miembro",
+    "Member account",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Cuenta que forma parte de AWS Organizations y se administra en su jerarquía. Se utiliza como frontera de recursos y gobierno; pertenecer a la misma organización no concede acceso libre a datos de otras cuentas.",
+    [
+      "Cuenta miembro",
+      "Member account"
+    ]
+  ],
+  [
+    "SCP",
+    "Service Control Policy",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Política de organización que limita el máximo de permisos disponibles en las cuentas y entidades a las que se aplica. Se utiliza como guardarraíl y no concede permisos por sí sola; una identidad necesita las autorizaciones correspondientes dentro de esos límites.",
+    [
+      "SCP",
+      "Service Control Policy"
+    ]
+  ],
+  [
+    "RCP",
+    "Resource Control Policy",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Política de organización para establecer límites sobre recursos compatibles en su ámbito. Se utiliza como control de recursos y no como sustituto de toda política IAM; sus condiciones y servicios admitidos deben consultarse antes de aplicarla.",
+    [
+      "RCP",
+      "Resource Control Policy"
+    ]
+  ],
+  [
+    "Política de contraseñas",
+    "Password policy",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Conjunto de requisitos para contraseñas de las identidades a las que se aplica. Se utiliza para gobernar credenciales; no equivale a MFA ni asegura que cada usuario existente cambie inmediatamente su contraseña al modificar un requisito.",
+    [
+      "Política de contraseñas",
+      "Password policy"
+    ]
+  ],
+  [
+    "Google Authenticator, Authy, YubiKey y Gemalto",
+    "Google Authenticator, Authy, YubiKey y Gemalto",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Ejemplos de aplicaciones, llaves de seguridad y dispositivos físicos mostrados para reforzar autenticación mediante mecanismos compatibles. Sirven para reconocer modalidades MFA del curso; no son servicios AWS equivalentes ni una certificación de compatibilidad actual de cada modelo o configuración. La atribución de Windows Phone a Authy aparece en la lámina histórica y no debe tratarse como recomendación de instalación actual.",
+    [
+      "Google Authenticator, Authy, YubiKey y Gemalto"
+    ]
+  ],
+  [
+    "SSH",
+    "Secure Shell",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-05",
+    "Protocolo de acceso remoto protegido a sistemas compatibles. Se utiliza para administrar un sistema invitado y requiere custodiar claves y limitar exposición; su clave privada no es una access key de API AWS.",
+    [
+      "SSH",
+      "Secure Shell"
+    ]
+  ],
+  [
+    "Internet Gateway",
+    "Gateway de Internet, IGW",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-05",
+    "Componente de conectividad de VPC que participa en el acceso a Internet bajo rutas y configuraciones admitidas. Se utiliza en arquitecturas de red pública; su presencia no sustituye direccionamiento, Security Groups, ACL ni autenticación.",
+    [
+      "Internet Gateway",
+      "Gateway de Internet",
+      "IGW"
+    ]
+  ],
+  [
+    "CIDR",
+    "Classless Inter-Domain Routing",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Notación para representar prefijos y rangos de direcciones IP. Se utiliza en reglas y direccionamiento, como los rangos ilustrativos del curso; un prefijo no es una identidad IAM ni una referencia a un Security Group.",
+    [
+      "CIDR",
+      "Classless Inter-Domain Routing"
+    ]
+  ],
+  [
+    "Stateful y stateless",
+    "Stateful y stateless",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Distinción entre controles que recuerdan el estado de una conexión y controles que evalúan cada dirección sin ese seguimiento. Se utiliza para razonar el retorno en SG y NACL; una respuesta a una conexión permitida no equivale a iniciar cualquier conexión nueva.",
+    [
+      "Stateful y stateless"
+    ]
+  ],
+  [
+    "Puertos efímeros",
+    "Ephemeral ports",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Puertos utilizados temporalmente por clientes o sistemas para extremos de conexiones según su configuración. Importan al permitir tráfico de retorno en una ACL stateless; no existe un único rango que deba copiarse sin conocer el sistema y el flujo.",
+    [
+      "Puertos efímeros",
+      "Ephemeral ports"
+    ]
+  ],
+  [
+    "TCP, HTTP y HTTPS",
+    "TCP, HTTP y HTTPS",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Conceptos de transporte y aplicación que ayudan a interpretar puertos y solicitudes del curso. HTTPS utiliza HTTP protegido mediante TLS en el contexto moderno; permitir un puerto TCP no demuestra por sí solo cifrado ni autorización de la aplicación.",
+    [
+      "TCP, HTTP y HTTPS"
+    ]
+  ],
+  [
+    "TLS y SSL histórico",
+    "TLS y SSL histórico",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "TLS protege comunicaciones de red según versión y configuración, mientras que SSL aparece como denominación histórica de protocolos obsoletos. Se utiliza para cifrado en tránsito y autenticación del extremo según el caso; no sustituye cifrado en reposo ni permisos de datos.",
+    [
+      "TLS y SSL histórico"
+    ]
+  ],
+  [
+    "AWS Certificate Manager",
+    "ACM",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Servicio para administrar certificados en integraciones y recursos compatibles. Se utiliza para desplegar protección TLS donde se configura; no cifra automáticamente todos los saltos de una arquitectura ni almacena contraseñas como Secrets Manager.",
+    [
+      "AWS Certificate Manager",
+      "ACM"
+    ]
+  ],
+  [
+    "Certificado digital",
+    "Certificado digital",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Documento firmado que vincula una identidad con una clave pública bajo un modelo de confianza. Se utiliza en autenticación de extremos y TLS; tener un certificado no concede permisos IAM ni corrige una vulnerabilidad lógica de la aplicación.",
+    [
+      "Certificado digital"
+    ]
+  ],
+  [
+    "Cifrado en reposo y en tránsito",
+    "Cifrado en reposo y en tránsito",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Protección criptográfica de información almacenada frente a protección de comunicaciones. Se utiliza para cubrir estados distintos de los datos; configurar una modalidad no demuestra que la otra esté protegida.",
+    [
+      "Cifrado en reposo y en tránsito"
+    ]
+  ],
+  [
+    "Cifrado simétrico y asimétrico",
+    "Cifrado simétrico y asimétrico",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "El cifrado simétrico usa una clave compartida para las operaciones correspondientes y el asimétrico utiliza un par de claves con funciones diferenciadas. Se estudian para comprender mecanismos y gestión de claves; no son sinónimos de datos en reposo y en tránsito.",
+    [
+      "Cifrado simétrico y asimétrico"
+    ]
+  ],
+  [
+    "HSM",
+    "Hardware Security Module",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Módulo de seguridad dedicado a proteger operaciones y material criptográfico. Se utiliza como componente de servicios y sistemas de claves; no es equivalente a una política IAM ni acredita automáticamente cualquier versión de una certificación.",
+    [
+      "HSM",
+      "Hardware Security Module"
+    ]
+  ],
+  [
+    "FIPS 140",
+    "FIPS 140",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Familia de requisitos y validaciones de módulos criptográficos citada en relación con HSM. Sirve para estudiar evidencia de protección criptográfica; la versión de la lámina de 2022 no prueba la certificación actual de todos los módulos y configuraciones de un servicio.",
+    [
+      "FIPS 140"
+    ]
+  ],
+  [
+    "AWS Storage Gateway",
+    "Storage Gateway",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Servicio de integración de almacenamiento entre entornos locales y AWS mediante modalidades compatibles. Se utiliza en el ejemplo de transferencia protegida hacia S3; no es un gestor de identidad ni un certificado TLS.",
+    [
+      "AWS Storage Gateway",
+      "Storage Gateway"
+    ]
+  ],
+  [
+    "S3 Block Public Access",
+    "Bloqueo de acceso público S3",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Conjunto de configuraciones para restringir formas de acceso público a recursos S3 según su alcance. Se utiliza junto con políticas y opciones de la cuenta y del bucket; no reemplaza la revisión de permisos privados o entre cuentas.",
+    [
+      "S3 Block Public Access",
+      "Bloqueo de acceso público S3"
+    ]
+  ],
+  [
+    "S3 Object Ownership",
+    "S3 Object Ownership",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Configuración de S3 que controla propiedad de objetos y habilitación o deshabilitación de ACL. Bucket owner enforced deshabilita ACL y utiliza políticas para acceso; se diferencia de una Network ACL, que filtra tráfico de una subred.",
+    [
+      "S3 Object Ownership"
+    ]
+  ],
+  [
+    "ACL de S3",
+    "S3 ACL",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Mecanismo de control de acceso a buckets u objetos bajo configuraciones que lo admiten. Se estudia para interpretar material histórico y configuraciones existentes; no es una ACL de red y en configuraciones modernas con ACL deshabilitadas se usan políticas.",
+    [
+      "ACL de S3",
+      "S3 ACL"
+    ]
+  ],
+  [
+    "Bucket policy",
+    "Política de bucket S3",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Política basada en recurso asociada a un bucket que expresa acceso y condiciones sobre recursos S3 compatibles. Se utiliza para regular quién puede realizar acciones; debe distinguirse de una trust policy de rol y del cifrado del contenido.",
+    [
+      "Bucket policy",
+      "Política de bucket S3"
+    ]
+  ],
+  [
+    "DDoS",
+    "Distributed Denial of Service",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Ataque distribuido que pretende degradar disponibilidad mediante tráfico o solicitudes desde múltiples orígenes. Orienta la elección de protección y resiliencia; no es una vulnerabilidad de software ni una política IAM demasiado permisiva.",
+    [
+      "DDoS",
+      "Distributed Denial of Service"
+    ]
+  ],
+  [
+    "Shield Standard y Advanced",
+    "Shield Standard y Advanced",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Modalidades de protección DDoS con alcances y condiciones distintos. Se utilizan para interpretar las opciones citadas por el curso; no debe suponerse que todas las capacidades y condiciones de Advanced están incluidas en Standard.",
+    [
+      "Shield Standard y Advanced"
+    ]
+  ],
+  [
+    "AWS WAF",
+    "AWS Web Application Firewall",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Servicio que evalúa solicitudes HTTP(S) mediante reglas web compatibles. Se utiliza para controlar patrones maliciosos o tasas según configuración; se diferencia del filtrado de red de SG y NACL y no sustituye la autenticación de la aplicación.",
+    [
+      "AWS WAF",
+      "AWS Web Application Firewall"
+    ]
+  ],
+  [
+    "AWS Firewall Manager",
+    "Firewall Manager",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Servicio para administrar de forma centralizada políticas de seguridad compatibles entre cuentas y recursos de una organización. Se utiliza cuando el problema es gobierno de controles a escala; no equivale a un SG local ni a la mitigación DDoS de Shield.",
+    [
+      "AWS Firewall Manager",
+      "Firewall Manager"
+    ]
+  ],
+  [
+    "AWS Network Firewall",
+    "Network Firewall",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Servicio de firewall de red administrado para inspección y filtrado de tráfico en arquitecturas VPC compatibles. Se utiliza cuando se necesita ese nivel de control; WAF inspecciona solicitudes web y no es otra denominación del mismo servicio.",
+    [
+      "AWS Network Firewall",
+      "Network Firewall"
+    ]
+  ],
+  [
+    "SQL injection",
+    "SQLi, inyección SQL",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Clase de ataque que intenta alterar consultas mediante entradas que la aplicación procesa de forma insegura. Se utiliza como ejemplo de patrón web que puede motivar reglas WAF; el control perimetral no sustituye el diseño seguro de consultas.",
+    [
+      "SQL injection",
+      "SQLi",
+      "inyección SQL"
+    ]
+  ],
+  [
+    "Amazon GuardDuty",
+    "GuardDuty",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Servicio administrado de detección de amenazas a partir de señales y fuentes admitidas. Se utiliza para investigar comportamiento sospechoso; no se confunde con el análisis de vulnerabilidades de Inspector ni con la búsqueda de datos sensibles de Macie.",
+    [
+      "Amazon GuardDuty",
+      "GuardDuty"
+    ]
+  ],
+  [
+    "Amazon Inspector",
+    "Inspector",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Servicio que identifica vulnerabilidades y determinados problemas de exposición en recursos y software compatibles. Se utiliza para priorizar remediación; un hallazgo de vulnerabilidad no significa necesariamente que ya se haya observado un ataque.",
+    [
+      "Amazon Inspector",
+      "Inspector"
+    ]
+  ],
+  [
+    "Amazon Macie",
+    "Macie",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Servicio que ayuda a descubrir datos sensibles y analizar su contexto de seguridad en S3. Se utiliza para localizar información que requiere protección; no concede o deniega por sí solo todas las lecturas ni sustituye la clasificación del negocio.",
+    [
+      "Amazon Macie",
+      "Macie"
+    ]
+  ],
+  [
+    "AWS Security Hub",
+    "Security Hub",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Experiencia de seguridad para priorizar y responder a problemas correlacionando hallazgos de servicios compatibles en la nomenclatura consultada. Se utiliza para orientar análisis y flujo de respuesta; se distingue de los controles de postura de Security Hub CSPM.",
+    [
+      "AWS Security Hub",
+      "Security Hub"
+    ]
+  ],
+  [
+    "AWS Security Hub CSPM",
+    "Security Hub CSPM",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Capacidades de evaluación de postura frente a controles, estándares y buenas prácticas con consolidación de hallazgos compatibles. Se utilizan para identificar problemas de configuración y cumplimiento técnico; no equivalen a una certificación jurídica integral del cliente.",
+    [
+      "AWS Security Hub CSPM",
+      "Security Hub CSPM"
+    ]
+  ],
+  [
+    "Hallazgo de seguridad",
+    "Finding",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Resultado que describe una observación o problema potencial detectado por una herramienta. Se utiliza para investigar y priorizar respuesta; no todos los hallazgos prueban explotación ni todos requieren la misma acción automática.",
+    [
+      "Hallazgo de seguridad",
+      "Finding"
+    ]
+  ],
+  [
+    "Amazon SNS",
+    "Simple Notification Service, SNS",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Servicio de publicación y entrega de notificaciones mediante destinos compatibles. Se utiliza para avisos de alarmas del ejemplo; recibir una notificación no ejecuta por sí solo una investigación ni es lo mismo que almacenar un trabajo en una cola.",
+    [
+      "Amazon SNS",
+      "Simple Notification Service",
+      "SNS"
+    ]
+  ],
+  [
+    "Métrica y dimensión",
+    "Métrica y dimensión",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Una métrica representa observaciones de una magnitud y las dimensiones identifican recursos o subconjuntos dentro de su contexto y espacio de nombres. Se utilizan para seleccionar la señal correcta; una medida agregada no equivale a una instancia concreta sin verificar esas dimensiones.",
+    [
+      "Métrica y dimensión"
+    ]
+  ],
+  [
+    "Estadístico y período",
+    "Estadístico y período",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Parámetros que definen cómo se resumen datos y en qué intervalo se evalúan. Se utilizan para dar significado a promedio, máximo o suma; un número y un operador no bastan si falta precisar qué se está agregando.",
+    [
+      "Estadístico y período"
+    ]
+  ],
+  [
+    "Alarma de CloudWatch",
+    "CloudWatch alarm",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Evaluación de una métrica o expresión compatible frente a condiciones y ventanas configuradas. Se utiliza para notificar o activar acciones admitidas; no identifica por sí sola una amenaza salvo que la señal y el contexto la representen.",
+    [
+      "Alarma de CloudWatch",
+      "CloudWatch alarm"
+    ]
+  ],
+  [
+    "Detección de anomalías",
+    "Anomaly detection",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Evaluación de desviaciones respecto a un patrón de comportamiento modelado en mecanismos compatibles. Se utiliza como alternativa o complemento a umbrales fijos; no equivale a un dictamen de que toda variación sea un ataque.",
+    [
+      "Detección de anomalías",
+      "Anomaly detection"
+    ]
+  ],
+  [
+    "CloudWatch Logs",
+    "Logs de CloudWatch",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Capacidad para recopilar y consultar registros de aplicaciones y fuentes compatibles. Se utiliza para observabilidad e investigación; no genera retrospectivamente el detalle de API de CloudTrail que no se hubiera recogido.",
+    [
+      "CloudWatch Logs",
+      "Logs de CloudWatch"
+    ]
+  ],
+  [
+    "CloudTrail Event history y trail",
+    "CloudTrail Event history y trail",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "El historial muestra eventos del alcance y período disponibles y un trail configura entrega de registros según sus opciones. Se utilizan para consulta y conservación de actividad; el historial de administración no debe suponerse un registro permanente de todos los accesos a objetos.",
+    [
+      "CloudTrail Event history y trail"
+    ]
+  ],
+  [
+    "Eventos de administración y de datos",
+    "Eventos de administración y de datos",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Clases de actividad diferenciadas por el servicio de auditoría, como cambios de recursos frente a operaciones sobre datos. Se utilizan para seleccionar qué registrar; no debe asumirse que todo evento de datos esté incluido por defecto en el historial habitual.",
+    [
+      "Eventos de administración y de datos"
+    ]
+  ],
+  [
+    "EBS snapshot",
+    "instantánea EBS",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Copia de estado de un volumen EBS que permite recuperar datos a un punto conservado. Se utiliza dentro de una estrategia de copias; la replicación de infraestructura y la existencia de una copia no prueban una restauración completa ensayada.",
+    [
+      "EBS snapshot",
+      "instantánea EBS"
+    ]
+  ],
+  [
+    "S3 server access logging",
+    "Registro de accesos S3, bucket logging",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Mecanismo de registros de solicitudes de acceso a S3 bajo su configuración y condiciones. Se utiliza para análisis y auditoría del uso; no equivale a todos los eventos y mecanismos de CloudTrail ni a una garantía de detección automática.",
+    [
+      "S3 server access logging",
+      "Registro de accesos S3",
+      "bucket logging"
+    ]
+  ],
+  [
+    "Cumplimiento y evidencia",
+    "Cumplimiento y evidencia",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Cumplimiento evalúa requisitos aplicables y evidencias de controles dentro de un alcance definido, mientras el gobierno organiza responsabilidades y decisiones. Se utilizan para demostrar y sostener controles; un informe del proveedor no acredita automáticamente todo el proceso del cliente.",
+    [
+      "Cumplimiento y evidencia"
+    ]
+  ],
+  [
+    "AWS Audit Manager",
+    "Audit Manager",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Servicio que ayuda a recopilar y organizar evidencias de controles en evaluaciones compatibles. Se utiliza para apoyar trabajo de auditoría; no es una certificación automática y difiere de Artifact, que proporciona documentos e informes del proveedor.",
+    [
+      "AWS Audit Manager",
+      "Audit Manager"
+    ]
+  ],
+  [
+    "GDPR",
+    "RGPD, Reglamento General de Protección de Datos",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Normativa de protección de datos citada para mostrar que los requisitos dependen de jurisdicción y tratamiento. Se utiliza como referencia conceptual de cumplimiento; una región o un servicio incluido en un programa no acredita por sí solo que toda aplicación lo cumpla.",
+    [
+      "GDPR",
+      "RGPD",
+      "Reglamento General de Protección de Datos"
+    ]
+  ],
+  [
+    "HIPAA",
+    "Health Insurance Portability and Accountability Act",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Marco legal estadounidense citado como ejemplo de requisitos asociados a información sanitaria y actividades sujetas a su alcance. Se utiliza para entender que industria y uso modifican obligaciones; no es una política IAM ni una certificación automática de una aplicación.",
+    [
+      "HIPAA",
+      "Health Insurance Portability and Accountability Act"
+    ]
+  ],
+  [
+    "PCI DSS",
+    "Payment Card Industry Data Security Standard",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Estándar de seguridad del sector de tarjetas de pago que se relaciona con controles y alcance de tratamiento. Se estudia para reconocer evidencias y requisitos del sector; que AWS tenga documentos pertinentes no convierte cualquier flujo de pagos del cliente en conforme.",
+    [
+      "PCI DSS",
+      "Payment Card Industry Data Security Standard"
+    ]
+  ],
+  [
+    "ISO 27001, 27017, 27018 y 9001",
+    "ISO 27001, 27017, 27018 y 9001",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Conjunto de normas diferentes mostrado por el curso como ejemplos de certificación y acreditación en ámbitos de seguridad, nube, privacidad o gestión de calidad. Se utiliza para reconocer la categoría documental; sus números no son sinónimos ni todos acreditan el mismo control o alcance.",
+    [
+      "ISO 27001, 27017, 27018 y 9001"
+    ]
+  ],
+  [
+    "CIS",
+    "Center for Internet Security",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Organización y referencias de prácticas y configuraciones utilizadas como ejemplo de marcos de seguridad. Ayudan a evaluar controles técnicos según el perfil aplicable; no equivalen por sí mismos a una ley ni a una certificación integral de AWS y del cliente.",
+    [
+      "CIS",
+      "Center for Internet Security"
+    ]
+  ],
+  [
+    "Privacy Shield histórico",
+    "Escudo de privacidad UE–EE.UU.",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Rótulo de la lámina de 2022 relacionado con transferencias internacionales y marcos de privacidad de su contexto. Se conserva para fidelidad de fuente y no se presenta como garantía legal vigente; una decisión real requiere revisar regulación y documentación actual aplicables.",
+    [
+      "Privacy Shield histórico",
+      "Escudo de privacidad UE–EE.UU."
+    ]
+  ],
+  [
+    "AWS Marketplace",
+    "Marketplace",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Catálogo para encontrar y adquirir productos de terceros, incluidas soluciones de seguridad con condiciones propias. Se utiliza para seleccionar herramientas adicionales; contratar un producto no demuestra su correcta integración ni el cumplimiento de toda una carga.",
+    [
+      "AWS Marketplace",
+      "Marketplace"
+    ]
+  ],
+  [
+    "AWS Security Center",
+    "AWS Cloud Security, centro de seguridad AWS",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Recurso web con información de capacidades, soluciones y prácticas de seguridad de AWS. Se utiliza para orientarse y localizar recursos; no es una herramienta de detección que evalúe automáticamente la cuenta.",
+    [
+      "AWS Security Center",
+      "AWS Cloud Security",
+      "centro de seguridad AWS"
+    ]
+  ],
+  [
+    "AWS Security Blog",
+    "Blog de seguridad AWS",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Publicación de explicaciones, novedades y ejemplos técnicos de seguridad. Se utiliza para aprender y conocer cambios; la fecha y el contexto importan y una entrada no sustituye la documentación vigente del producto.",
+    [
+      "AWS Security Blog",
+      "Blog de seguridad AWS"
+    ]
+  ],
+  [
+    "AWS Knowledge Center",
+    "Knowledge Center",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Colección de artículos y soluciones de soporte accesibles en el ecosistema re:Post. Se utiliza para investigar incidencias y preguntas concretas; debe comprobarse antigüedad y alcance y no equivale al conjunto de respuestas comunitarias de la plataforma.",
+    [
+      "AWS Knowledge Center",
+      "Knowledge Center"
+    ]
+  ],
+  [
+    "AWS re:Post",
+    "re:Post",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Plataforma de conocimiento y preguntas y respuestas sobre AWS. Se utiliza para buscar orientación y discusiones, junto a recursos de soporte; una respuesta requiere evaluar autoría, fecha y correspondencia con la configuración real.",
+    [
+      "AWS re:Post",
+      "re:Post"
+    ]
+  ],
+  [
+    "AWS Documentation y Whitepapers",
+    "AWS Documentation y Whitepapers",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Recursos que describen interfaces, comportamiento y guías de arquitectura o cumplimiento según su publicación. Se utilizan para verificar capacidades y condiciones de servicios; una guía general no sustituye la documentación específica cuando un detalle técnico cambia.",
+    [
+      "AWS Documentation y Whitepapers"
+    ]
+  ],
+  [
+    "AWS Support",
+    "Soporte AWS",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-06",
+    "Servicio de asistencia para incidencias y consultas de AWS según el ámbito y plan aplicables. Se utiliza en el material al tratar situaciones de acceso o gestión de la cuenta que requieren soporte; no sustituye los permisos IAM ni concede automáticamente administración sobre recursos del cliente.",
+    [
+      "AWS Support",
+      "Soporte AWS"
+    ]
+  ],
+  [
+    "SQL Server",
+    "Microsoft SQL Server",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Motor de base de datos citado como destino de la regla TCP 1433 del ejemplo. Se utiliza para interpretar por qué una aplicación necesita ese flujo; permitir el puerto no concede acceso a sus datos ni convierte el motor en un servicio administrado.",
+    [
+      "SQL Server",
+      "Microsoft SQL Server"
+    ]
+  ],
+  [
+    "Puerto y protocolo",
+    "Puerto y protocolo",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "El protocolo define reglas de comunicación y el puerto identifica un extremo de transporte en protocolos como TCP. Se utilizan al expresar controles de red; un número de puerto no prueba qué programa escucha ni si la conexión está cifrada.",
+    [
+      "Puerto y protocolo"
+    ]
+  ],
+  [
+    "Integridad y confidencialidad",
+    "Integridad y confidencialidad",
+    "Bloque II · Seguridad y cumplimiento",
+    "security-block-2-07",
+    "Propiedades que protegen la exactitud frente a cambios indebidos y el acceso a información frente a actores no autorizados, respectivamente. Se utilizan para definir controles y riesgos; cifrado, permisos y registros aportan protecciones diferentes y no son sustitutos universales.",
+    [
+      "Integridad y confidencialidad"
+    ]
+  ]
+]

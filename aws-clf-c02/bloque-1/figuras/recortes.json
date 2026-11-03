@@ -1,0 +1,77 @@
+[
+  {
+    "file": "ca_p12.png",
+    "source": "CA p.12",
+    "normalized_clip": [
+      0.175,
+      0.165,
+      0.85,
+      0.44
+    ],
+    "pixels": [
+      1206,
+      696
+    ],
+    "full_page": "originales/ca_p12.png"
+  },
+  {
+    "file": "ca_p13.png",
+    "source": "CA p.13",
+    "normalized_clip": [
+      0.174,
+      0.18,
+      0.85,
+      0.438
+    ],
+    "pixels": [
+      1208,
+      653
+    ],
+    "full_page": "originales/ca_p13.png"
+  },
+  {
+    "file": "ca_p14.png",
+    "source": "CA p.14",
+    "normalized_clip": [
+      0.18,
+      0.17,
+      0.85,
+      0.44
+    ],
+    "pixels": [
+      1197,
+      683
+    ],
+    "full_page": "originales/ca_p14.png"
+  },
+  {
+    "file": "ca_p47.png",
+    "source": "CA p.47",
+    "normalized_clip": [
+      0.157,
+      0.09,
+      0.852,
+      0.58
+    ],
+    "pixels": [
+      1756,
+      876
+    ],
+    "full_page": "originales/ca_p47.png"
+  },
+  {
+    "file": "ca_p50.png",
+    "source": "CA p.50",
+    "normalized_clip": [
+      0.15,
+      0.09,
+      0.85,
+      0.59
+    ],
+    "pixels": [
+      1769,
+      894
+    ],
+    "full_page": "originales/ca_p50.png"
+  }
+]
